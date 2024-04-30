@@ -1,0 +1,28 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+import Label from "@/components/form/label.astro";
+
+interface Props {
+	disabled?: boolean;
+	id?: string;
+	label: string;
+	name: string;
+	required?: boolean;
+	type?: HTMLAttributes<"input">["type"];
+}
+
+const { disabled, id, label, name, required, type, ...rest } = Astro.props;
+---
+
+<label class="grid gap-y-1" id={id}>
+	<Label required={required}>{label}</Label>
+	<input
+		{...rest}
+		class="rounded-md border border-neutral-300 px-3 py-1.5 disabled:cursor-not-allowed disabled:bg-neutral-50 disabled:opacity-50"
+		disabled={disabled}
+		name={name}
+		required={required}
+		type={type}
+	/>
+</label>

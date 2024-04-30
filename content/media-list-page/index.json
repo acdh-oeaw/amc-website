@@ -1,0 +1,1310 @@
+{
+	"title": "Medienliste",
+	"image": "/assets/content/media-list-page/image.jpg",
+	"lists": [
+		{
+			"discriminant": "print",
+			"value": {
+				"title": "amc_4.3 (amc_4.23q4LTS): Medienliste",
+				"items": [
+					{
+						"docsrc": "APA",
+						"docsrc_name": "APA-Meldungen digital",
+						"sourcetype": "agentur",
+						"from": "1986",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "OTS",
+						"docsrc_name": "Original Text Service",
+						"sourcetype": "agentur",
+						"from": "1989",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "ACADEMIA",
+						"docsrc_name": "Academia",
+						"sourcetype": "print",
+						"from": "2008",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "ARBEITW",
+						"docsrc_name": "Arbeit und Wirtschaft",
+						"sourcetype": "print",
+						"from": "2000",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "AUGUSTIN",
+						"docsrc_name": "Augustin",
+						"sourcetype": "print",
+						"from": "2003",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "BAUERNZT",
+						"docsrc_name": "Bauernzeitung",
+						"sourcetype": "print",
+						"from": "2010",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "BVZ",
+						"docsrc_name": "Burgenländische Volkszeitung",
+						"sourcetype": "print",
+						"from": "2003",
+						"region": "aost"
+					},
+					{
+						"docsrc": "DATUM",
+						"docsrc_name": "Datum",
+						"sourcetype": "print",
+						"from": "2007",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "DIEWIR",
+						"docsrc_name": "Die Wirtschaft",
+						"sourcetype": "print",
+						"from": "2003",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "ECHO",
+						"docsrc_name": "Echo",
+						"sourcetype": "print",
+						"from": "2004",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "EMEDIA",
+						"docsrc_name": "E-Media",
+						"sourcetype": "print",
+						"from": "2000",
+						"to": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "FALTER",
+						"docsrc_name": "Falter",
+						"sourcetype": "print",
+						"from": "1998",
+						"region": "aost"
+					},
+					{
+						"docsrc": "FORMATDB",
+						"docsrc_name": "Format",
+						"sourcetype": "print",
+						"from": "1998",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "FURCHE",
+						"docsrc_name": "Die Furche",
+						"sourcetype": "print",
+						"from": "1998",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "GEWINN",
+						"docsrc_name": "Gewinn",
+						"sourcetype": "print",
+						"from": "1998",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "GRAZER",
+						"docsrc_name": "Der Grazer",
+						"sourcetype": "print",
+						"from": "2008",
+						"region": "asuedost"
+					},
+					{
+						"docsrc": "HEUTE",
+						"docsrc_name": "Heute",
+						"sourcetype": "print",
+						"from": "2007",
+						"region": "aost"
+					},
+					{
+						"docsrc": "HOR",
+						"docsrc_name": "Horizont",
+						"sourcetype": "print",
+						"from": "2000",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "IM",
+						"docsrc_name": "Industriemagazin",
+						"sourcetype": "print",
+						"from": "1999",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "KLEINE",
+						"docsrc_name": "Kleine Zeitung",
+						"sourcetype": "print",
+						"from": "1996",
+						"region": "asuedost"
+					},
+					{
+						"docsrc": "KONSUM",
+						"docsrc_name": "Der Konsument",
+						"sourcetype": "print",
+						"from": "1996",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "KRONE",
+						"docsrc_name": "Kronen Zeitung",
+						"sourcetype": "print",
+						"from": "1994",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "KTNMONAT",
+						"docsrc_name": "Neuer Kärntner Monat",
+						"sourcetype": "print",
+						"from": "2005",
+						"to": "2013",
+						"region": "asuedost"
+					},
+					{
+						"docsrc": "KTZ",
+						"docsrc_name": "Kärntner Tageszeitung",
+						"sourcetype": "print",
+						"from": "1999",
+						"to": "2014",
+						"region": "asuedost"
+					},
+					{
+						"docsrc": "KURIER",
+						"docsrc_name": "Kurier",
+						"sourcetype": "print",
+						"from": "1992",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "KW",
+						"docsrc_name": "Kärntner Wirtschaft",
+						"sourcetype": "print",
+						"from": "1996",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "MEDIANET",
+						"docsrc_name": "Medianet",
+						"sourcetype": "print",
+						"from": "2002",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "NEWS",
+						"docsrc_name": "News",
+						"sourcetype": "print",
+						"from": "1999",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "NOEN",
+						"docsrc_name": "NÖ Nachrichten",
+						"sourcetype": "print",
+						"from": "1995",
+						"region": "aost"
+					},
+					{
+						"docsrc": "NVB",
+						"docsrc_name": "Neues Volksblatt (bis 2018) – danach Oberösterreichisches Volksblatt",
+						"sourcetype": "print",
+						"from": "1997",
+						"to": "2023",
+						"region": "amitte"
+					},
+					{
+						"docsrc": "NVT",
+						"docsrc_name": "Neue Vorarlberger Tageszeitung",
+						"sourcetype": "print",
+						"from": "1997",
+						"region": "awest",
+						"province": "V"
+					},
+					{
+						"docsrc": "OBERRUND",
+						"docsrc_name": "Oberländer Rundschau",
+						"sourcetype": "print",
+						"from": "2010",
+						"region": "awest",
+						"province": "T"
+					},
+					{
+						"docsrc": "OEREICHE",
+						"docsrc_name": "Österreich",
+						"sourcetype": "print",
+						"from": "2006",
+						"to": "2015",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "OOEN",
+						"docsrc_name": "OÖ Nachrichten",
+						"sourcetype": "print",
+						"from": "1996",
+						"region": "amitte"
+					},
+					{
+						"docsrc": "PRESSE",
+						"docsrc_name": "Die Presse",
+						"sourcetype": "print",
+						"from": "1991",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "PROFIL",
+						"docsrc_name": "Profil",
+						"sourcetype": "print",
+						"from": "1994",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "SBGW",
+						"docsrc_name": "Salzburger Woche",
+						"sourcetype": "print",
+						"from": "2007",
+						"region": "amitte"
+					},
+					{
+						"docsrc": "SN",
+						"docsrc_name": "Salzburger Nachrichten",
+						"sourcetype": "print",
+						"from": "1991",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "SOLI",
+						"docsrc_name": "Solidarität",
+						"sourcetype": "print",
+						"from": "2001",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "SPORTZTG",
+						"docsrc_name": "Sportzeitung",
+						"sourcetype": "print",
+						"from": "1996",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "STANDARD",
+						"docsrc_name": "Der Standard",
+						"sourcetype": "print",
+						"from": "1990",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "STMONAT",
+						"docsrc_name": "Steirer Monat",
+						"sourcetype": "print",
+						"from": "2005",
+						"to": "2012",
+						"region": "asuedost"
+					},
+					{
+						"docsrc": "SVZ",
+						"docsrc_name": "Salzburger Volkszeitung",
+						"sourcetype": "print",
+						"from": "2007",
+						"to": "2014",
+						"region": "amitte"
+					},
+					{
+						"docsrc": "TREND",
+						"docsrc_name": "Trend",
+						"sourcetype": "print",
+						"from": "1994",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "TT",
+						"docsrc_name": "Tiroler Tageszeitung",
+						"sourcetype": "print",
+						"from": "1996",
+						"region": "awest",
+						"province": "T"
+					},
+					{
+						"docsrc": "TTKOMP",
+						"docsrc_name": "TT Kompakt",
+						"sourcetype": "print",
+						"from": "2008",
+						"region": "awest",
+						"province": "T"
+					},
+					{
+						"docsrc": "TVMEDIA",
+						"docsrc_name": "TV-Media",
+						"sourcetype": "print",
+						"from": "1999",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "VN",
+						"docsrc_name": "Vorarlberger Nachrichten",
+						"sourcetype": "print",
+						"from": "1997",
+						"region": "awest",
+						"province": "T"
+					},
+					{
+						"docsrc": "WIBLATT",
+						"docsrc_name": "Wirtschaftsblatt",
+						"sourcetype": "print",
+						"from": "1995",
+						"to": "2016",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "WIENER",
+						"docsrc_name": "Wiener",
+						"sourcetype": "print",
+						"from": "2001",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "WIENERIN",
+						"docsrc_name": "Wienerin",
+						"sourcetype": "print",
+						"from": "2001",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "WOMAN",
+						"docsrc_name": "Woman",
+						"sourcetype": "print",
+						"from": "2003",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "WZ",
+						"docsrc_name": "Wiener Zeitung",
+						"sourcetype": "print",
+						"from": "1996",
+						"to": "06/2023",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "ATVVOLL",
+						"docsrc_name": "ATV",
+						"sourcetype": "tv",
+						"from": "2005",
+						"to": "2020",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "MWVOLL",
+						"docsrc_name": "ORF (Radio and TV)",
+						"sourcetype": "tv",
+						"from": "2003",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "PRO7VOLL",
+						"docsrc_name": "PRO7",
+						"sourcetype": "tv",
+						"from": "2007",
+						"to": "2020",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "PULSVOLL",
+						"docsrc_name": "PULS4",
+						"sourcetype": "tv",
+						"from": "2007",
+						"to": "2020",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "SAT1VOLL",
+						"docsrc_name": "SAT1",
+						"sourcetype": "tv",
+						"from": "2008",
+						"to": "2020",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "BEEYMOFORF1",
+						"docsrc_name": "ORF 1",
+						"sourcetype": "tv",
+						"from": "2023",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "BEEYMOFORF2",
+						"docsrc_name": "ORF 2",
+						"sourcetype": "tv",
+						"from": "2023",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "BEEYMOFOE1",
+						"docsrc_name": "ORF Radio Ö1",
+						"sourcetype": "radio",
+						"from": "2023",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "BEEYMOFOE3",
+						"docsrc_name": "ORF Radio Ö3",
+						"sourcetype": "radio",
+						"from": "2023",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "BEEYMOFRADIOBGLD",
+						"docsrc_name": "ORF Radio Burgenland",
+						"sourcetype": "radio",
+						"from": "2023",
+						"region": "aost"
+					},
+					{
+						"docsrc": "BEEYMOFRADIOKTN",
+						"docsrc_name": "ORF Radio Kärnten",
+						"sourcetype": "radio",
+						"from": "2023",
+						"region": "asued"
+					},
+					{
+						"docsrc": "BEEYMOFRADIONOE",
+						"docsrc_name": "ORF Radio Niederösterreich",
+						"sourcetype": "radio",
+						"from": "2023",
+						"region": "aost"
+					},
+					{
+						"docsrc": "BEEYMOFRADIOOOE",
+						"docsrc_name": "ORF Radio Oberösterreich",
+						"sourcetype": "radio",
+						"from": "2023",
+						"region": "amitte"
+					},
+					{
+						"docsrc": "BEEYMOFRADIOSBG",
+						"docsrc_name": "ORF Radio Salzburg",
+						"sourcetype": "radio",
+						"from": "2023",
+						"region": "amitte"
+					},
+					{
+						"docsrc": "BEEYMOFRADIOSTMK",
+						"docsrc_name": "ORF Radio Steiermark",
+						"sourcetype": "radio",
+						"from": "2023",
+						"region": "asued"
+					},
+					{
+						"docsrc": "BEEYMOFRADIOTIR",
+						"docsrc_name": "ORF Radio Tirol",
+						"sourcetype": "radio",
+						"from": "2023",
+						"region": "awest",
+						"province": "T"
+					},
+					{
+						"docsrc": "BEEYMOFRADIOVBG",
+						"docsrc_name": "ORF Radio Vorarlberg",
+						"sourcetype": "radio",
+						"from": "2023",
+						"region": "awest",
+						"province": "V"
+					}
+				]
+			}
+		},
+		{
+			"discriminant": "web",
+			"value": {
+				"title": "Medienliste amc_4_2023www (experimentell)",
+				"items": [
+					{
+						"wwwsrc": "WWW5MINAT",
+						"www": "https://www.5min.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWANDRE",
+						"www": "https://www.andreas-unterberger.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWAUTO",
+						"www": "https://www.autoaktuell.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWBVZAT",
+						"www": "https://www.bvz.at",
+						"docsrc": "Burgenländische Volkszeitung",
+						"docsrc_name": "BVZ",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "aost"
+					},
+					{
+						"wwwsrc": "WWWCASHAT",
+						"www": "https://www.cash.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWDIEPRESSE",
+						"www": "https://diepresse.com",
+						"docsrc": "Die Presse",
+						"docsrc_name": "PRESSE",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "agesamt"
+					},
+					{
+						"wwwsrc": "WWWDOSSIERAT",
+						"www": "https://www.dossier.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWFALTER",
+						"www": "https://www.falter.at",
+						"docsrc": "Falter",
+						"docsrc_name": "FALTER",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "aost"
+					},
+					{
+						"wwwsrc": "WWWFILMAT",
+						"www": "https://www.film.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWFREIZEITAT",
+						"www": "https://freizeit.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWFUTUREZONEAT",
+						"www": "https://futurezone.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWGESUENDLEBAT",
+						"www": "https://gesuenderleben.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWGEWINNCOM",
+						"www": "https://www.gewinn.com",
+						"docsrc": "Gewinn",
+						"docsrc_name": "GEWINN",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWHEUTEAT",
+						"www": "https://www.heute.at",
+						"docsrc": "Heute",
+						"docsrc_name": "HEUTE",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "aost"
+					},
+					{
+						"wwwsrc": "WWWHORIZONTAT",
+						"www": "https://www.horizont.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWKATHPRESSAT",
+						"www": "https://www.kathpress.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWKAT",
+						"www": "https://k.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWKLEINEZ",
+						"www": "https://www.kleinezeitung.at",
+						"docsrc": "Kleine Zeitung",
+						"docsrc_name": "KLEINE",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "asuedost"
+					},
+					{
+						"wwwsrc": "WWWKRONE",
+						"www": "https://www.krone.at",
+						"docsrc": "Kronenzeitung",
+						"docsrc_name": "KRONE",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "agesamt"
+					},
+					{
+						"wwwsrc": "WWWKURIERAT",
+						"www": "https://kurier.at",
+						"docsrc": "Kurier",
+						"docsrc_name": "KURIER",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "agesamt"
+					},
+					{
+						"wwwsrc": "WWWMEINBEZIRKAT",
+						"www": "https://www.meinbezirk.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWMNETAT",
+						"www": "https://medianet.at",
+						"docsrc": "Medianet",
+						"docsrc_name": "MEDIANET",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "agesamt"
+					},
+					{
+						"wwwsrc": "WWWMOTORAT",
+						"www": "https://motor.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWNACHRICHT",
+						"www": "https://www.nachrichten.at",
+						"docsrc": "OÖ Nachrichten",
+						"docsrc_name": "OOEN",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "amitte"
+					},
+					{
+						"wwwsrc": "WWWNEUEAT",
+						"www": "https://www.neue.at",
+						"docsrc": "Neue Vorarlberger Tageszeitung",
+						"docsrc_name": "NVT",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "awest",
+						"province": "V"
+					},
+					{
+						"wwwsrc": "WWWNOENAT",
+						"www": "https://www.noen.at",
+						"docsrc": "NÖ Nachrichten",
+						"docsrc_name": "NÖN",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "aost"
+					},
+					{
+						"wwwsrc": "WWWORFAT",
+						"www": "https://orf.at",
+						"docsrc": "ORF online / agesamt und regional",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "agesamt"
+					},
+					{
+						"wwwsrc": "WWWPROFIL",
+						"www": "https://www.profil.at",
+						"docsrc": "Profil",
+						"docsrc_name": "PROFIL",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "agesamt"
+					},
+					{
+						"wwwsrc": "WWWREISE",
+						"www": "https://www.reiseaktuell.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWSALZBURG24",
+						"www": "https://www.salzburg24.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "amitte"
+					},
+					{
+						"wwwsrc": "WWWSTA",
+						"www": "http://derstandard.at",
+						"docsrc": "Der Standard",
+						"docsrc_name": "STANDARD",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "agesamt"
+					},
+					{
+						"wwwsrc": "WWWTEXTILZEITAT",
+						"www": "https://www.textilzeitung.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWTHEGAP",
+						"www": "https://thegap.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWTIPSAT",
+						"www": "https://www.tips.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "spezifisch"
+					},
+					{
+						"wwwsrc": "WWWTTCOM",
+						"www": "https://www.tt.com",
+						"docsrc": "Tiroler Tageszeitung",
+						"docsrc_name": "TT",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "awest",
+						"province": "T"
+					},
+					{
+						"wwwsrc": "WWWVIENN",
+						"www": "https://www.vienna.at",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "aost"
+					},
+					{
+						"wwwsrc": "WWWVNAT",
+						"www": "https://www.vn.at",
+						"docsrc": "Vorarlberg Nachrichten",
+						"docsrc_name": "VN",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "awest",
+						"province": "V"
+					},
+					{
+						"wwwsrc": "WWWVOLAT",
+						"www": "https://www.vol.at",
+						"docsrc": "Vorarlberg Online",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "awest",
+						"province": "V"
+					},
+					{
+						"wwwsrc": "WWWVOLBLATT",
+						"www": "https://volksblatt.at",
+						"docsrc": "Oberösterreichisches Volksblatt / vormals: Neues Volksblatt",
+						"docsrc_name": "NVB",
+						"sourcetype": "www",
+						"from": "2023",
+						"region": "amitte"
+					}
+				]
+			}
+		},
+		{
+			"discriminant": "print",
+			"value": {
+				"title": "amc_4.2: Medienliste",
+				"items": [
+					{
+						"docsrc": "APA",
+						"docsrc_name": "APA-Meldungen digital",
+						"sourcetype": "agentur",
+						"from": "1986",
+						"to": "2022",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "OTS",
+						"docsrc_name": "Original Text Service",
+						"sourcetype": "agentur",
+						"from": "1989",
+						"to": "2022",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "ACADEMIA",
+						"docsrc_name": "Academia",
+						"sourcetype": "print",
+						"from": "2008",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "ARBEITW",
+						"docsrc_name": "Arbeit und Wirtschaft",
+						"sourcetype": "print",
+						"from": "2000",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "AUGUSTIN",
+						"docsrc_name": "Augustin",
+						"sourcetype": "print",
+						"from": "2003",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "BAUERNZT",
+						"docsrc_name": "Bauernzeitung",
+						"sourcetype": "print",
+						"from": "2010",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "BVZ",
+						"docsrc_name": "Burgenländische Volkszeitung",
+						"sourcetype": "print",
+						"from": "2003",
+						"to": "2022",
+						"region": "aost"
+					},
+					{
+						"docsrc": "DATUM",
+						"docsrc_name": "Datum",
+						"sourcetype": "print",
+						"from": "2007",
+						"to": "2022",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "DIEWIR",
+						"docsrc_name": "Die Wirtschaft",
+						"sourcetype": "print",
+						"from": "2003",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "ECHO",
+						"docsrc_name": "Echo",
+						"sourcetype": "print",
+						"from": "2004",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "EMEDIA",
+						"docsrc_name": "E-Media",
+						"sourcetype": "print",
+						"from": "2000",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "FALTER",
+						"docsrc_name": "Falter",
+						"sourcetype": "print",
+						"from": "1998",
+						"to": "2022",
+						"region": "aost"
+					},
+					{
+						"docsrc": "FORMATDB",
+						"docsrc_name": "Format",
+						"sourcetype": "print",
+						"from": "1998",
+						"to": "2022",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "FURCHE",
+						"docsrc_name": "Die Furche",
+						"sourcetype": "print",
+						"from": "1998",
+						"to": "2022",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "GEWINN",
+						"docsrc_name": "Gewinn",
+						"sourcetype": "print",
+						"from": "1998",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "GRAZER",
+						"docsrc_name": "Der Grazer",
+						"sourcetype": "print",
+						"from": "2008",
+						"to": "2022",
+						"region": "asuedost"
+					},
+					{
+						"docsrc": "HEUTE",
+						"docsrc_name": "Heute",
+						"sourcetype": "print",
+						"from": "2007",
+						"to": "2022",
+						"region": "aost"
+					},
+					{
+						"docsrc": "HOR",
+						"docsrc_name": "Horizont",
+						"sourcetype": "print",
+						"from": "2000",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "IM",
+						"docsrc_name": "Industriemagazin",
+						"sourcetype": "print",
+						"from": "1999",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "KLEINE",
+						"docsrc_name": "Kleine Zeitung",
+						"sourcetype": "print",
+						"from": "1996",
+						"to": "2022",
+						"region": "asuedost"
+					},
+					{
+						"docsrc": "KONSUM",
+						"docsrc_name": "Der Konsument",
+						"sourcetype": "print",
+						"from": "1996",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "KRONE",
+						"docsrc_name": "Kronen Zeitung",
+						"sourcetype": "print",
+						"from": "1994",
+						"to": "2022",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "KTNMONAT",
+						"docsrc_name": "Neuer Kärntner Monat",
+						"sourcetype": "print",
+						"from": "2005",
+						"to": "2013",
+						"region": "asuedost"
+					},
+					{
+						"docsrc": "KTZ",
+						"docsrc_name": "Kärntner Tageszeitung",
+						"sourcetype": "print",
+						"from": "1999",
+						"to": "2014",
+						"region": "asuedost"
+					},
+					{
+						"docsrc": "KURIER",
+						"docsrc_name": "Kurier",
+						"sourcetype": "print",
+						"from": "1992",
+						"to": "2022",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "KW",
+						"docsrc_name": "Kärntner Wirtschaft",
+						"sourcetype": "print",
+						"from": "1996",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "MEDIANET",
+						"docsrc_name": "Medianet",
+						"sourcetype": "print",
+						"from": "2002",
+						"to": "2022",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "NEWS",
+						"docsrc_name": "News",
+						"sourcetype": "print",
+						"from": "1999",
+						"to": "2022",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "NOEN",
+						"docsrc_name": "NÖ Nachrichten",
+						"sourcetype": "print",
+						"from": "1995",
+						"to": "2022",
+						"region": "aost"
+					},
+					{
+						"docsrc": "NVB",
+						"docsrc_name": "Neues Volksblatt",
+						"sourcetype": "print",
+						"from": "1997",
+						"to": "2022",
+						"region": "amitte"
+					},
+					{
+						"docsrc": "NVT",
+						"docsrc_name": "Neue Vorarlberger Tageszeitung",
+						"sourcetype": "print",
+						"from": "1997",
+						"to": "2022",
+						"region": "awest"
+					},
+					{
+						"docsrc": "OBERRUND",
+						"docsrc_name": "Oberländer Rundschau",
+						"sourcetype": "print",
+						"from": "2010",
+						"to": "2022",
+						"region": "awest"
+					},
+					{
+						"docsrc": "OEREICHE",
+						"docsrc_name": "Österreich",
+						"sourcetype": "print",
+						"from": "2006",
+						"to": "2015",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "OOEN",
+						"docsrc_name": "OÖ Nachrichten",
+						"sourcetype": "print",
+						"from": "1996",
+						"to": "2022",
+						"region": "amitte"
+					},
+					{
+						"docsrc": "PRESSE",
+						"docsrc_name": "Die Presse",
+						"sourcetype": "print",
+						"from": "1991",
+						"to": "2022",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "PROFIL",
+						"docsrc_name": "Profil",
+						"sourcetype": "print",
+						"from": "1994",
+						"to": "2022",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "SBGW",
+						"docsrc_name": "Salzburger Woche",
+						"sourcetype": "print",
+						"from": "2007",
+						"to": "2022",
+						"region": "amitte"
+					},
+					{
+						"docsrc": "SN",
+						"docsrc_name": "Salzburger Nachrichten",
+						"sourcetype": "print",
+						"from": "1991",
+						"to": "2022",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "SOLI",
+						"docsrc_name": "Solidarität",
+						"sourcetype": "print",
+						"from": "2001",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "SPORTZTG",
+						"docsrc_name": "Sportzeitung",
+						"sourcetype": "print",
+						"from": "1996",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "STANDARD",
+						"docsrc_name": "Der Standard",
+						"sourcetype": "print",
+						"from": "1990",
+						"to": "2022",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "STMONAT",
+						"docsrc_name": "Steirer Monat",
+						"sourcetype": "print",
+						"from": "2005",
+						"to": "2012",
+						"region": "asuedost"
+					},
+					{
+						"docsrc": "SVZ",
+						"docsrc_name": "Salzburger Volkszeitung",
+						"sourcetype": "print",
+						"from": "2007",
+						"to": "2014",
+						"region": "amitte"
+					},
+					{
+						"docsrc": "TREND",
+						"docsrc_name": "Trend",
+						"sourcetype": "print",
+						"from": "1994",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "TT",
+						"docsrc_name": "Tiroler Tageszeitung",
+						"sourcetype": "print",
+						"from": "1996",
+						"to": "2022",
+						"region": "awest"
+					},
+					{
+						"docsrc": "TTKOMP",
+						"docsrc_name": "TT Kompakt",
+						"sourcetype": "print",
+						"from": "2008",
+						"to": "2022",
+						"region": "awest"
+					},
+					{
+						"docsrc": "TVMEDIA",
+						"docsrc_name": "TV-Media",
+						"sourcetype": "print",
+						"from": "1999",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "VN",
+						"docsrc_name": "Vorarlberger Nachrichten",
+						"sourcetype": "print",
+						"from": "1997",
+						"to": "2022",
+						"region": "awest"
+					},
+					{
+						"docsrc": "WIBLATT",
+						"docsrc_name": "Wirtschaftsblatt",
+						"sourcetype": "print",
+						"from": "1995",
+						"to": "2016",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "WIENER",
+						"docsrc_name": "Wiener",
+						"sourcetype": "print",
+						"from": "2001",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "WIENERIN",
+						"docsrc_name": "Wienerin",
+						"sourcetype": "print",
+						"from": "2001",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "WOMAN",
+						"docsrc_name": "Woman",
+						"sourcetype": "print",
+						"from": "2003",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "WZ",
+						"docsrc_name": "Wiener Zeitung",
+						"sourcetype": "print",
+						"from": "1996",
+						"to": "2022",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "ATVVOLL",
+						"docsrc_name": "ATV",
+						"sourcetype": "tv",
+						"from": "2005",
+						"to": "2020",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "MWVOLL",
+						"docsrc_name": "ORF (Radio and TV)",
+						"sourcetype": "tv",
+						"from": "2003",
+						"to": "2022",
+						"region": "spezifisch"
+					},
+					{
+						"docsrc": "PRO7VOLL",
+						"docsrc_name": "PRO7",
+						"sourcetype": "tv",
+						"from": "2007",
+						"to": "2020",
+						"region": "agesamt"
+					},
+					{
+						"docsrc": "PULSVOLL",
+						"docsrc_name": "PULS4",
+						"sourcetype": "tv",
+						"from": "2007",
+						"to": "2020",
+						"region": "agesamt"
+					}
+				]
+			}
+		}
+	]
+}

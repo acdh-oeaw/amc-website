@@ -1,0 +1,14 @@
+/* stylelint-disable comment-empty-line-before */
+
+:root {
+	--font-body: "Inter Variable";
+
+	/* --color-background: #f1f1f1; */
+	/* --color-border: #0000001a; */
+	/* --color-separator: #00000026; */
+	--color-brand: hsl(182.8deg 57.6% 70.4%);
+	/* --color-foreground-body: #444; */
+	/* --color-foreground-heading: #212529; */
+	/* --color-foreground-muted: #6f757c; */
+	/* --color--hover: #212529; */
+}

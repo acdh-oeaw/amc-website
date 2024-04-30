@@ -1,0 +1,69 @@
+---
+import { isNonNullable } from "@acdh-oeaw/lib";
+
+import type { MediaListPage } from "@/lib/content/types";
+
+interface Props {
+	items: Extract<MediaListPage["lists"][number], { discriminant: "web" }>["value"]["items"];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="divide-y">
+	{
+		items.map((item) => {
+			return (
+				<article class="not-prose py-2">
+					<h3 class="font-bold">{item.wwwsrc}</h3>
+					<dl class="flex flex-wrap gap-x-8 gap-y-1 text-sm">
+						<div>
+							<dt class="text-xs font-medium uppercase tracking-wider text-neutral-600">
+								Printmedium
+							</dt>
+							<dd>{item.docsrc}</dd>
+						</div>
+						<div>
+							<dt class="text-xs font-medium uppercase tracking-wider text-neutral-600">
+								Vollständige Bezeichnung des Printmediums
+							</dt>
+							<dd>{item.docsrc_name}</dd>
+						</div>
+						<div>
+							<dt class="text-xs font-medium uppercase tracking-wider text-neutral-600">
+								Medientyp
+							</dt>
+							<dd>{item.sourcetype}</dd>
+						</div>
+						<div>
+							<dt class="text-xs font-medium uppercase tracking-wider text-neutral-600">
+								Zeitraum
+							</dt>
+							<dd>{[item.from, item.to].filter(isNonNullable).join(" - ")}</dd>
+						</div>
+						<div>
+							<dt class="text-xs font-medium uppercase tracking-wider text-neutral-600">Region</dt>
+							<dd>{item.region}</dd>
+						</div>
+						{item.province ? (
+							<div>
+								<dt>Bundesland</dt>
+								<dd>{item.province}</dd>
+							</div>
+						) : null}
+						<div>
+							<dt class="text-xs font-medium uppercase tracking-wider text-neutral-600">
+								Web-Adresse
+							</dt>
+							<dd>
+								<a href={item.www} target="_blank">
+									{item.www}
+								</a>
+							</dd>
+						</div>
+					</dl>
+				</article>
+			);
+		})
+	}
+</div>

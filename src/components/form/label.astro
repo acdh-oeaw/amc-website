@@ -1,0 +1,12 @@
+---
+import RequiredIndicator from "@/components/form/required-indicator.astro";
+
+interface Props {
+	id?: string;
+	required?: boolean;
+}
+
+const { id, required } = Astro.props;
+---
+
+<div id={id}><slot /><RequiredIndicator required={required} /></div>

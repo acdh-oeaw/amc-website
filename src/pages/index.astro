@@ -1,0 +1,100 @@
+---
+import MainContent from "@/components/main-content.astro";
+import { defaultLocale, type Locale } from "@/config/i18n.config";
+import PageLayout from "@/layouts/page-layout.astro";
+import { reader } from "@/lib/content/reader";
+import { createI18n } from "@/lib/i18n";
+
+const locale = (Astro.currentLocale ?? defaultLocale) as Locale;
+const { t } = await createI18n(locale);
+
+const page = await reader().singletons.indexPage.readOrThrow();
+
+const documentTitle = t("IndexPage.meta.title");
+---
+
+<PageLayout locale={locale} title={documentTitle}>
+	<MainContent>
+		<section class="relative border-y border-brand">
+			<div class="absolute inset-0 size-full bg-neutral-400">
+				<img alt="" class="size-full object-cover" src={page.hero.image} />
+				<div class="absolute inset-0 size-full bg-[#cfeefbeb]"></div>
+			</div>
+			<div class="relative mx-auto grid w-full max-w-screen-lg gap-y-6 px-4 py-16">
+				<h1 class="text-5xl font-medium text-[#212529]">{page.hero.title}</h1>
+				<p class="max-w-[52rem] text-lg text-[#444]">
+					{page.hero.leadIn}
+				</p>
+				<div>
+					{
+						page.hero.links.map((link) => {
+							return (
+								<a
+									class="inline-flex rounded-md border border-[#0000001a] px-4 py-1.5 text-[#212529] transition hover:bg-[#212529] hover:text-white"
+									href={link.url}
+								>
+									{link.label}
+								</a>
+							);
+						})
+					}
+				</div>
+			</div>
+		</section>
+
+		<div class="grid gap-y-12 py-12">
+			{
+				page.main.sections.map((section) => {
+					return (
+						<section class="mx-auto grid w-full max-w-screen-lg gap-y-8 px-4">
+							<h2 class="border-b border-[#00000026] text-xl font-medium">
+								<span class="-my-px inline-flex border-b border-[#212529] pb-4 text-[#212529]">
+									{section.title}
+								</span>
+							</h2>
+							<ul class="grid gap-8 grid-fluid-cols-80" role="list">
+								{section.cards.map((card) => {
+									return (
+										<li>
+											<article class="rounded-b-md border border-t-[5px] border-[#0000001a] border-t-brand bg-white">
+												<a
+													aria-label={card.link.label}
+													class="relative block aspect-[1.5]"
+													href={card.link.url}
+												>
+													<img
+														alt=""
+														class="absolute inset-0 size-full object-cover"
+														src={card.image}
+													/>
+												</a>
+												<div class="grid gap-y-3 border-t border-[#00000026] p-6">
+													<header>
+														<h3 class="text-xl font-medium text-[#444]">
+															<a class="hover:underline" href={card.link.url}>
+																{card.title}
+															</a>
+														</h3>
+													</header>
+													<p class="text-md text-[#6f757c]">{card.leadIn}</p>
+													<footer>
+														<a
+															class="inline-flex rounded-md border border-[#0000001a] px-3 py-1 text-[#212529] transition hover:bg-[#212529] hover:text-white"
+															href={card.link.url}
+														>
+															{card.link.label}
+														</a>
+													</footer>
+												</div>
+											</article>
+										</li>
+									);
+								})}
+							</ul>
+						</section>
+					);
+				})
+			}
+		</div>
+	</MainContent>
+</PageLayout>

@@ -1,0 +1,19 @@
+---
+import Label from "@/components/form/label.astro";
+
+interface Props {
+	disabled?: boolean;
+	id?: string;
+	label: string;
+	name: string;
+	required?: boolean;
+	value: string;
+}
+
+const { disabled, id, label, name, required, value, ...rest } = Astro.props;
+---
+
+<label class="inline-flex gap-x-2" id={id}>
+	<input {...rest} disabled={disabled} name={name} required={required} type="radio" value={value} />
+	<Label>{label}</Label>
+</label>

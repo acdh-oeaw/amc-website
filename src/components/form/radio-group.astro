@@ -1,0 +1,17 @@
+---
+import Label from "@/components/form/label.astro";
+
+interface Props {
+	label: string;
+	required?: boolean;
+}
+
+const { label, required } = Astro.props;
+
+const id = crypto.randomUUID();
+---
+
+<div aria-labelledby={id} class="grid gap-y-1" role="radiogroup">
+	<Label id={id} required={required}>{label}</Label>
+	<slot />
+</div>

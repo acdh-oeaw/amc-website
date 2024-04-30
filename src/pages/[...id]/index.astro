@@ -1,0 +1,39 @@
+---
+import MainContent from "@/components/main-content.astro";
+import PageCard from "@/components/page-card.astro";
+import PageSection from "@/components/page-section.astro";
+import PageTitle from "@/components/page-title.astro";
+import { defaultLocale, type Locale } from "@/config/i18n.config";
+import PageLayout from "@/layouts/page-layout.astro";
+import { processMdx } from "@/lib/content/mdx";
+import { reader } from "@/lib/content/reader";
+
+export async function getStaticPaths() {
+	const pages = await reader().collections.pages.all();
+
+	return pages.flatMap((page) => {
+		return { params: { id: page.slug }, props: { page: page.entry } };
+	});
+}
+
+const locale = (Astro.currentLocale ?? defaultLocale) as Locale;
+
+const { page } = Astro.props;
+
+const documentTitle = page.title;
+const { title, image } = page;
+const { default: Content } = await processMdx(await page.content(), locale);
+---
+
+<PageLayout locale={locale} title={documentTitle}>
+	<MainContent>
+		<PageSection>
+			<PageCard image={image}>
+				<PageTitle>{title}</PageTitle>
+				<div class="prose">
+					<Content />
+				</div>
+			</PageCard>
+		</PageSection>
+	</MainContent>
+</PageLayout>

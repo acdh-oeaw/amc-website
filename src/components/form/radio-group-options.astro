@@ -1,0 +1,48 @@
+<radio-group-options>
+	<slot />
+</radio-group-options>
+
+<script>
+	class RadioGroupOptions extends HTMLElement {
+		constructor() {
+			super();
+
+			const textInputs = Array.from(
+				this.querySelectorAll<HTMLInputElement>("input[data-radio-text]"),
+			);
+
+			if (textInputs.length === 0) return;
+
+			function onChange(event: Event) {
+				textInputs.forEach((input) => {
+					input.disabled = true;
+				});
+
+				const radio = event.currentTarget as HTMLInputElement;
+
+				if ("radio" in radio.dataset) {
+					const value = radio.value;
+					const textInput = textInputs.find((input) => {
+						return input.dataset.radioText === value;
+					});
+					if (textInput) {
+						textInput.disabled = false;
+						textInput.focus();
+					}
+				}
+			}
+
+			this.querySelectorAll<HTMLInputElement>("input[type=radio]").forEach((option) => {
+				option.addEventListener("change", onChange);
+			});
+		}
+	}
+
+	customElements.define("radio-group-options", RadioGroupOptions);
+</script>
+
+<style is:global>
+	radio-group-options {
+		display: contents;
+	}
+</style>

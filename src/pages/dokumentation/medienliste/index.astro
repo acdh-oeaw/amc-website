@@ -1,0 +1,52 @@
+---
+import MainContent from "@/components/main-content.astro";
+import MediaListPrint from "@/components/media-list-print.astro";
+import MediaListWeb from "@/components/media-list-web.astro";
+import PageCard from "@/components/page-card.astro";
+import PageSection from "@/components/page-section.astro";
+import PageTitle from "@/components/page-title.astro";
+import { defaultLocale, type Locale } from "@/config/i18n.config";
+import PageLayout from "@/layouts/page-layout.astro";
+import { processMdx } from "@/lib/content/mdx";
+import { reader } from "@/lib/content/reader";
+
+const locale = (Astro.currentLocale ?? defaultLocale) as Locale;
+
+const page = await reader().singletons.mediaListPage.readOrThrow();
+
+const documentTitle = page.title;
+const { title, image, lists } = page;
+const { default: Content } = await processMdx(await page.content(), locale);
+---
+
+<PageLayout locale={locale} title={documentTitle}>
+	<MainContent>
+		<PageSection>
+			<PageCard image={image}>
+				<PageTitle>{title}</PageTitle>
+				<div class="prose">
+					<Content />
+				</div>
+				<div class="prose">
+					{
+						lists.map(async (list) => {
+							const { default: Content } = await processMdx(await list.value.description(), locale);
+
+							return (
+								<div>
+									<h2>{list.value.title}</h2>
+									<Content />
+									{list.discriminant === "print" ? (
+										<MediaListPrint items={list.value.items} />
+									) : (
+										<MediaListWeb items={list.value.items} />
+									)}
+								</div>
+							);
+						})
+					}
+				</div>
+			</PageCard>
+		</PageSection>
+	</MainContent>
+</PageLayout>

@@ -1,0 +1,138 @@
+---
+import Radio from "@/components/form/radio.astro";
+import RadioGroup from "@/components/form/radio-group.astro";
+import RadioGroupOptions from "@/components/form/radio-group-options.astro";
+import RadioTextField from "@/components/form/radio-text-field.astro";
+import TextAreaField from "@/components/form/text-area-field.astro";
+import TextInputField from "@/components/form/text-input-field.astro";
+---
+
+<form action="/api/registration" class="grid gap-y-6" method="post">
+	<TextInputField label="Vorname" name="first-name" required={true} />
+
+	<TextInputField label="Familienname" name="last-name" required={true} />
+
+	<TextInputField label="Email-Adresse" name="email" required={true} type="email" />
+
+	<TextInputField label="Affiliation (Universität + Institut)" name="affiliation" required={true} />
+
+	<!-- FIXME: should be a checkbox -->
+	<RadioGroup
+		label="Handelt es sich um die Verlängerung einer bereits bestehenden Nutzungsbewilligung?"
+		required={true}
+	>
+		<Radio label="Nein" name="renewal" required={true} value="no" />
+		<Radio label="Ja" name="renewal" required={true} value="yes" />
+	</RadioGroup>
+
+	<RadioGroup label="Art des Forschungsvorhabens" required={true}>
+		<RadioGroupOptions>
+			<Radio
+				label="(Pro-)Seminarabeit"
+				name="research-type"
+				required={true}
+				value="(Pro-)Seminarabeit"
+			/>
+			<Radio
+				label="Bachelor- oder Masterarbeit"
+				name="research-type"
+				required={true}
+				value="Bachelor- oder Masterarbeit"
+			/>
+			<Radio
+				label="Dissertation oder Habilitationsschrift"
+				name="research-type"
+				required={true}
+				value="Dissertation oder Habilitationsschrift"
+			/>
+			<Radio
+				label="Forschungsprojekt"
+				name="research-type"
+				required={true}
+				value="Forschungsprojekt"
+			/>
+			<RadioTextField
+				label="Sonstiges / und zwar:"
+				name="research-type"
+				required={true}
+				value="other"
+			/>
+		</RadioGroupOptions>
+	</RadioGroup>
+
+	<!-- FIXME: should be a checkbox -->
+	<RadioGroup label="Verwendung im Rahmen eines geförderten Projekts?" required={true}>
+		<RadioGroupOptions>
+			<Radio label="Nein" name="funding" required={true} value="no" />
+			<RadioTextField
+				label="Ja / Projektnamen und Projektsumme:"
+				name="funding"
+				required={true}
+				value="other"
+			/>
+		</RadioGroupOptions>
+	</RadioGroup>
+
+	<TextInputField
+		label="Kompakter Kurztitel des Forschungsvorhabens"
+		name="short-title"
+		required={true}
+	/>
+
+	<TextAreaField
+		label="Möglichst konkrete Beschreibung des Forschungsvorhabens"
+		name="description"
+		required={true}
+	/>
+
+	<TextInputField
+		label="Vorgesehene Laufzeit (von - bis) des Forschungsvorhabens"
+		name="duration"
+		required={true}
+	/>
+
+	<!-- FIXME: should be a checkbox -->
+	<RadioGroup label="Ist eine Publikationen geplant?" required={true}>
+		<RadioGroupOptions>
+			<Radio label="Nein" name="publication" required={true} value="no" />
+			<RadioTextField label="Ja  / und zwar:" name="publication" required={true} value="other" />
+		</RadioGroupOptions>
+	</RadioGroup>
+
+	<!-- FIXME: should be a checkbox -->
+	<RadioGroup label="Ist die Verwendung von KI Modellen vorgesehen?" required={true}>
+		<RadioGroupOptions>
+			<Radio label="Nein" name="ai" required={true} value="no" />
+			<RadioTextField
+				label="Ja  / Modelle bitte vollständig anführen:"
+				name="ai"
+				required={true}
+				value="other"
+			/>
+		</RadioGroupOptions>
+	</RadioGroup>
+
+	<label class="text-sm">
+		<input class="mr-0.5" name="terms-and-conditions" required={true} type="checkbox" />
+		<span>
+			Ich akzeptiere die <a href="/nutzungsbedingungen/" target="_blank"> Nutzungsbedingungen </a> und
+			den <a href="/imprint/" target="_blank">Haftungsausschluss</a> in der Fassung 2023-12-01.
+		</span>
+	</label>
+
+	<label class="text-sm">
+		<input class="mr-0.5" name="data-consent" required={true} type="checkbox" />
+		<span>
+			Insbesondere nehme ich ausdrücklich die Speicherung meiner Registrierungsangaben und meiner
+			Suchanfragen sowie eine allfällige Weitergabe dieser Informationen an die Austria Presse
+			Agentur zur Kenntnis.
+		</span>
+	</label>
+
+	<button
+		class="rounded-md bg-[#212529] px-4 py-2 font-semibold text-white transition hover:bg-neutral-700"
+		type="submit"
+	>
+		Registrieren
+	</button>
+</form>

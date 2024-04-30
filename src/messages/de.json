@@ -1,0 +1,57 @@
+{
+	"ContactPage": {
+		"meta": {
+			"title": "Kontakt"
+		},
+		"title": "Kontakt"
+	},
+	"ImprintPage": {
+		"meta": {
+			"title": "Impressum"
+		},
+		"title": "Impressum"
+	},
+	"IndexPage": {
+		"meta": {
+			"title": "Startseite"
+		}
+	},
+	"Mdx": {
+		"FootnoteBackLabel": "Zurück zur Referenz {reference}",
+		"Footnotes": "Fußnoten"
+	},
+	"MobileNavToggle": {
+		"label": "Navigationsmenü öffnen"
+	},
+	"NotFoundPage": {
+		"meta": {
+			"title": "Seite nicht gefunden"
+		},
+		"title": "Seite nicht gefunden"
+	},
+	"Search": {
+		"close-dialog": "Dialogfenster schließen",
+		"search": "Suchen"
+	},
+	"SkipLink": {
+		"skip-to-main-content": "Zum Hauptinhalt springen"
+	},
+	"SuccessPage": {
+		"message": "Registrierung erfolgreich gesendet!",
+		"meta": {
+			"title": "Registrierung"
+		},
+		"title": "Registrierung"
+	},
+	"WebsiteFooter": {
+		"links": {
+			"imprint": "Impressum"
+		}
+	},
+	"WebsiteHeader": {
+		"links": {
+			"home": "Startseite"
+		},
+		"navigation-primary": "Primär"
+	}
+}

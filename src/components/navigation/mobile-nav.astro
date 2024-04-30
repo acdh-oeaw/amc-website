@@ -1,0 +1,52 @@
+---
+import { Icon } from "astro-icon/components";
+
+import { mobileNavId } from "@/components/navigation/constants";
+import NavLink from "@/components/navigation/nav-link.astro";
+import type { Navigation } from "@/lib/content/types";
+import navigation from "~/content/navigation.json";
+---
+
+<div id={mobileNavId} hidden class="px-4 pb-6 lg:hidden" data-mobile-nav>
+	<ul class="grid gap-y-2 text-[#444]" role="list">
+		{
+			(navigation as Navigation).links.map((item) => {
+				if (item.discriminant === "menu") {
+					return (
+						<li>
+							<details class="group">
+								<summary class="inline-flex cursor-pointer items-center gap-x-1.5">
+									{item.value.label}
+									<Icon
+										aria-hidden="true"
+										class="size-4 shrink-0 group-open:rotate-180"
+										name="lucide:chevron-down"
+									/>
+								</summary>
+								<ul class="ml-4 mt-2 grid gap-y-1" role="list">
+									{item.value.links.map((link) => {
+										return (
+											<li>
+												<NavLink class="transition hover:text-[#212529]" href={link.url}>
+													{link.label}
+												</NavLink>
+											</li>
+										);
+									})}
+								</ul>
+							</details>
+						</li>
+					);
+				}
+
+				return (
+					<li>
+						<NavLink class="transition hover:text-[#212529]" href={item.value.url}>
+							{item.value.label}
+						</NavLink>
+					</li>
+				);
+			})
+		}
+	</ul>
+</div>

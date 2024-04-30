@@ -1,0 +1,35 @@
+---
+import MainContent from "@/components/main-content.astro";
+import PageCard from "@/components/page-card.astro";
+import PageSection from "@/components/page-section.astro";
+import PageTitle from "@/components/page-title.astro";
+import RegistrationForm from "@/components/registration-form.astro";
+import { defaultLocale, type Locale } from "@/config/i18n.config";
+import PageLayout from "@/layouts/page-layout.astro";
+import { processMdx } from "@/lib/content/mdx";
+import { reader } from "@/lib/content/reader";
+
+const locale = (Astro.currentLocale ?? defaultLocale) as Locale;
+
+const page = await reader().collections.pages.readOrThrow("registrierung");
+
+const documentTitle = page.title;
+const { title, image } = page;
+const { default: Content } = await processMdx(await page.content(), locale);
+---
+
+<PageLayout locale={locale} title={documentTitle}>
+	<MainContent>
+		<PageSection>
+			<PageCard image={image}>
+				<PageTitle>{title}</PageTitle>
+				<div class="prose">
+					<Content />
+				</div>
+				<div class="mx-auto w-full max-w-screen-md py-8">
+					<RegistrationForm />
+				</div>
+			</PageCard>
+		</PageSection>
+	</MainContent>
+</PageLayout>

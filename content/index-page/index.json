@@ -1,0 +1,72 @@
+{
+	"hero": {
+		"title": "Austrian Media Corpus",
+		"image": "/assets/content/index-page/hero/image.jpg",
+		"leadIn": "Das Austrian Media Corpus (amc) ist eine Textdatenbank, die nahezu die gesamte österreichische Printmedienproduktion der letzten Jahrzehnte für die sprachwissenschaftliche Forschung zugänglich macht. Diese Webseite dient der Dokumentation und als Zugangsportal zum amc.",
+		"links": [
+			{
+				"label": "Mehr lesen",
+				"url": "/about-amc/"
+			}
+		]
+	},
+	"main": {
+		"sections": [
+			{
+				"title": "Über das Projekt",
+				"cards": [
+					{
+						"title": "Das amc!",
+						"image": "/assets/content/index-page/sections/0/cards/0/image.png",
+						"leadIn": "Mit aktuell ca. 50 Mio. Artikeln und 12.4 Mrd. Token (9.4 Mrd. running words) gehört das Austrian Media Corpus (amc) zu den größten Textkorpora in deutscher Sprache.",
+						"link": {
+							"label": "Mehr lesen",
+							"url": "/about-amc/"
+						}
+					},
+					{
+						"title": "amc in Zahlen",
+						"image": "/assets/content/index-page/sections/0/cards/1/image.jpg",
+						"leadIn": "Auf dieser Seite finden Sie eine quantitative Beschreibung der aktuellen Version.",
+						"link": {
+							"label": "Mehr lesen",
+							"url": "/dokumentation/amc-in-zahlen/"
+						}
+					},
+					{
+						"title": "Medienliste",
+						"image": "/assets/content/index-page/sections/0/cards/2/image.jpg",
+						"leadIn": "Tabellarische Aufstellung aller im amc enthaltenen Medien und ihre Zuordnung zu Medientypen und Regionen.",
+						"link": {
+							"label": "Mehr lesen",
+							"url": "/dokumentation/medienliste/"
+						}
+					}
+				]
+			},
+			{
+				"title": "Zugang",
+				"cards": [
+					{
+						"title": "amc-Demo",
+						"image": "/assets/content/index-page/sections/1/cards/0/image.png",
+						"leadIn": "Hier finden Sie Zugang zur registrierungsfreien Demo-Version amc_demo Suchmaschine und Datenstrukturen sind völlig identisch mit der aktuellen Vollversion, der Inhalt ist jedoch extrem reduziert.",
+						"link": {
+							"label": "Mehr lesen",
+							"url": "/amc-sandbox/"
+						}
+					},
+					{
+						"title": "Registrierung",
+						"image": "/assets/content/index-page/sections/1/cards/1/image.jpg",
+						"leadIn": "Zur Erlangung eines Zugangs zum amc ist eine persönliche Registrierung notwendig. Hier finden Sie das entsprechende Formular.",
+						"link": {
+							"label": "Mehr lesen",
+							"url": "/registrierung/"
+						}
+					}
+				]
+			}
+		]
+	}
+}
