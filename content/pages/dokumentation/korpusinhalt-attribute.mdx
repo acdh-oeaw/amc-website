@@ -37,7 +37,7 @@ Beschreibung aller im amc verwendeten Annotationen.
       - [*<p\>*](#p)
       - [*<s\>*](#s)
       - [*<g\>*](#g)
-      - [*<meta\_info\>*](#metainfo) : [*type*](#mi.type)
+      - [*<meta\_info*](#metainfo) : [*type*](#mi.type)
         [*speaker*](#mi.speaker) [*affil*](#mi.affil)
       - [*<fmt\>*](#fmt) : [*type*](#fmt.type)
       - [*Gemeinsame Attribute für `<doc>` `<field>` und
@@ -60,7 +60,7 @@ Quelle: Grunddaten
 
 Die orthografische Wortform des Token. 
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### <span id="ix"></span>ix *(Index)*
 
@@ -70,7 +70,7 @@ Alle Token tragen eine Indexnummer. Hierfür werden die
 Token innerhalb eines Absatzes beginnend mit *0* fortlaufend
 durchnummeriert. 
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### <span id="posTT"></span>posTT: PoS aus dem TreeTagger
 
@@ -80,14 +80,14 @@ link](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger)
 
 Part-of-Speech tags, die mit dem **TreeTagger** ermittel wurden.
 Verwendetes Tagset: Stuttgart-Tübingen-Tagset (STTS) gemäß dem
-Tiger-Annotationsschema Tagset Dokumentation:
+Tiger-Annotationsschema 
 
-  - [STTS Tagset
-    (Tiger)](https://www.linguistik.hu-berlin.de/de/institut/professuren/korpuslinguistik/mitarbeiter-innen/hagen/STTS_Tagset_Tiger)\](https://www.linguistik.hu-berlin.de/de/institut/professuren/korpuslinguistik/mitarbeiter-innen/hagen/STTS\_Tagset\_Tiger)
-  - [STTS
-    Guide](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/stts_guide.pdf)
+Tagset Dokumentation:
 
-[*\>\> zurück zum Beginn*](#top)
+  - [STTS Tagset(Tiger)](https://www.linguistik.hu-berlin.de/de/institut/professuren/korpuslinguistik/mitarbeiter-innen/hagen/STTS_Tagset_Tiger)
+  - [STTS Guide](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/stts_guide.pdf)
+
+[*zurück zum Beginn*](#top)
 
 ### <span id="pos"></span>pos:  PoS aus dem RFTagger
 
@@ -116,7 +116,7 @@ pos=*VFIN.Full.2.Sg.Past.Ind*
   - [Tiger Annotation Scheme for
     **Morphology**](https://www.ims.uni-stuttgart.de/documents/ressourcen/korpora/tiger-corpus/annotation/tiger_scheme-morph.pdf)
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### <span id="posTI"></span>posTI: PoS aus Spacy im STTS Format
 
@@ -135,7 +135,7 @@ unterscheiden sich in ca. 10% der Fälle. <span id="posTI"></span>[STTS
 Tagset
 (Tiger)](https://www.linguistik.hu-berlin.de/de/institut/professuren/korpuslinguistik/mitarbeiter-innen/hagen/STTS_Tagset_Tiger)
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### <span id="posUDS"></span><span>posUDS: PoS aus Spacy im Universal Depencies Format</span>
 
@@ -176,7 +176,7 @@ eine einzige Universal Depencies Kategorie `VERB` ersetzt wurden.
 [Dokumentation zum *Universal Depencies POS*
 tagset](https://universaldependencies.org/u/pos/) 
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### <span id="ner"></span>ner: Named Entity Recognition
 
@@ -191,7 +191,7 @@ Entity Recognition*.
 | PERSON |  | Person       |
 | ORG    |  | Organisation |
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### <span id="iob"></span>iob
 
@@ -211,7 +211,7 @@ wikipedia](https://en.wikipedia.org/wiki/Inside%E2%80%93outside%E2%80%93beginnin
 | I    | inside                                                   |
 | O    | other (*d.h. das so markierte Token ist *keine* Entity*) |
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### <span id="ixNP"></span><span>ixNP: *Noun-Phrase-Index*</span>
 
@@ -233,7 +233,7 @@ Beispiel:
 (die Zahlen hinter dem ```"/"``` zeigen die *ixNP*, die eckigen Klammern sollen die durch die *ixNP* solchermaßen kodierten
 *noun chunks* verdeutlichen)
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### <span id="dep"></span><span>dep: Kategorie in Dependenzstruktur</span>
 
@@ -252,14 +252,13 @@ Mittels *ixDEP* wird die Dependenz-Baumstruktur kodiert: der Wert in
 Elternknoten. (Bei Token mit der Kategorie `ROOT` verweist *ixDEP* auf
 sich selbst.) 
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### <span id="neg"></span><span>neg (*Negation*)</span>
 
-Quelle: eigener code auf Basis von Spacy 3.2
+Quelle: eigener code auf Basis von Spacy 3.2 (*experimentell*) 
 
-(*experimentell*) Wörter,
-die im Kontext des Wortes *"nicht"* stehen, und daher möglicherweise
+Wörter, die im Kontext des Wortes *"nicht"* stehen, und daher möglicherweise
 einer Negation unterliegen. In der Mehrzahl sind es Verben, die mit
 "neg" markiert sind. Bsp.:
 
@@ -269,7 +268,7 @@ einer Negation unterliegen. In der Mehrzahl sind es Verben, die mit
 Dieses Attribut wurde experimentell für eine mögliche Verwendung im
 Bereich der *Sentiment/Polaritäts-Analyse* eingeführt. 
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### <span id="lempos"></span>lempos: Lemma plus PoS-Kürzel
 
@@ -301,7 +300,7 @@ verschiedenen Wortarten viel häufiger sind als im Deutschen.
 | fine-n   | Nomen    | die Strafe             |
 | fine-v   | Verb     | *jmd.* strafen         |
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### <span id="posx"></span>posx: PoS-Kürzel
 
@@ -316,7 +315,7 @@ Quelle: automatisch abgeleitet aus [*word*](#word)
 Eine Kleinschreibungsvariante (*lower-cased*) von *word* : für Suchanfragen,
 bei denen Groß-Klein-Schreibung ignoriert werden soll. 
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### <span id="lemma_lc"></span>lemma\_lc: *lower cased lemma*
 
@@ -325,7 +324,7 @@ Quelle: automatisch abgeleitet aus [*lemma*](#lemma)
 Eine Kleinschreibungsvariante (*lower-cased*) von *lemma* : für Suchanfragen,
 bei denen Groß-Klein-Schreibung ignoriert werden soll. 
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### <span id="posbase"></span>posbase: PoS Hauptktegorie aus RFTagger
 
@@ -362,7 +361,7 @@ dem Attribut *pos*, also die Haupt-PoS-Kategorie. Beispiele:
 | APPO                                                               |
 | ITJ                                                                |
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### <span id="lemma"></span>lemma: Grundform/Zitierform
 
@@ -397,7 +396,7 @@ Wort selbst als Lemma eingesetzt.
 | ... | ...               |                                                                                              |
 | u   | unknown           | es konnte *kein* *lemma* gefunden werden, das Attribut *lemma* enthält eine Kopie von *word* |
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ## <span id="Structs"></span>STRUKTUREN UND IHRE ATTRIBUTE
 
@@ -415,7 +414,7 @@ Artikel
 > > > > KURIER) Markierung für spezielle, nicht darstellbare
 > > > > Formatierungszeichen
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### Struktur: `<doc>` - Artikel
 
@@ -452,7 +451,7 @@ Quelle: automatisch abgeleitet aus [*datum*](#datum)
 Erscheinungsjahr im
 Format `'YYYY'` 
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 #### <span id="doc.yymm"></span>yymm
 
@@ -489,7 +488,7 @@ Der Name des Mediums in Kurzform. Für das Arbeiten mit dem Korpus (z.B.
 bei der Formulierung von Suchanfragen) empfiehlt sich die Verwendung
 dieser eindeutigen Kurzform. 
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 #### <span id="doc.docsrc_name"></span>docsrc\_name: Medien-Name
 
@@ -560,7 +559,7 @@ Der Name des Mediums in der Langform. *Zuordnung zwischen *docsrc*
 | PULSVOLL   | PULS4                          | tv            |
 | SAT1VOLL   | SAT1                           | tv            |
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 #### <span id="doc.region"></span>region
 
@@ -579,7 +578,7 @@ als überregional eingestuft werden. *Zuordnung zwischen *docsrc* und
 | agesamt    | APA, DATUM, FORMATDB, FURCHE, KRONE, KURIER, MEDIANET, NEWS, OEREICHE, OTS, PRESSE, PROFIL, SN, STANDARD, WZ, WIBLATT, ATVVOLL, PRO7VOLL, PULSVOLL, SAT1VOLL | Medien, die regional nicht zuzuordnen sind                                       |
 | spezifisch | ACADEMIA, ARBEITW, AUGUSTIN, BAUERNZT, DIEWIR, ECHO, EMEDIA, GEWINN, HOR, IM, KONSUM, KW, SOLI, SPORTZTG, TREND, TVMEDIA, WIENER, WIENERIN, WOMAN, MWVOLL    | Medien, die regional nicht zuzuordenbar und/oder thematisch sehr spezifisch sind |
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 #### <span id="doc.province"></span>province: Bundesland
 
@@ -614,7 +613,7 @@ Ressortbereinigungstabelle*
 | auto     | motor, mot, auto, auto+mot, automobil, auto\&motor                               |
 | ...      | ...                                                                              |
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 #### <span id="doc.autor"></span>autor
 
@@ -646,7 +645,7 @@ können taggleich in mehreren Mutationen derselben Zeitung in den
 Ausgangsdaten aufscheinen. Zum Umgang des amc mit Duplikaten vgl.
 [*dupl*](#dupl) 
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 #### <span id="doc.deskriptor"></span>deskriptor
 
@@ -663,7 +662,7 @@ wie "PORTUGAL" aber auch Informationen, die eher der Ressortzuordnung
 Einträge in diesem Feld sind alle einheitlich in Großbuchstaben
 gehalten. 
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 #### <span id="doc.keys"></span>keys
 
@@ -685,7 +684,7 @@ Anzahl der Token in diesem `<doc>`
 Anzahl der "Wörter" in diesem `<doc>`: die Zahl errechnet sich aus der
 Anzahl der Token abzüglich Satzzeichen und Zahlen. 
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 #### <span id="doc.dupl"></span>dupl: Duplikats-Status
 
@@ -704,7 +703,7 @@ Die Unterscheidung erfolgt über das folgende Attribut:
 | inhalt    | Der Text in `<field>` beinhaltet den "eigentlichen" Artikel |
 | stichwort | Der Text in `<field>` beinhaltet Stichwörter zum Artikel    |
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 #### <span id="field.dupl"></span>dupl
 
@@ -723,7 +722,7 @@ Quelle: Paragraphenmarker werden aus den input-Daten übernommen
 
 Quelle: Spacy 3.2
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### <span id="metainfo"></span> Struktur `<meta_info>` - Sonderinfos für tv-Transkripte 
 
@@ -749,7 +748,7 @@ Attribute, welche die im Text enthaltenen Informationen zu den
 SprecherInnen noch zusätzlich explizit und strukturiert speichert:
 
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 #### <span id="mi.speaker"></span> speaker (Spechername)
 
@@ -762,7 +761,7 @@ Interviewten) Bsp. `<meta_info type="speaker_info" speaker="Ziegler
 Robert" affil="ORF">` Ziegler Robert (ORF) `</meta_info>`
 <span id="mi.affil"></span>
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### <span id="fmt"></span>Struktur `<fmt>` - Hilfskonstrukt für nicht darstellbare Zeichen
 
@@ -821,7 +820,7 @@ Semantik wegen gleich durch das Zeichen "☎" ersetzt)
 | \\uEC2E                     |                          10 |
 | \\uEEF9                     |                           1 |
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### <span id="g"></span>Struktur `<g>` - *glue-element*
 
@@ -842,7 +841,7 @@ Satz
 !
 ```
 
- [*\>\>zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ### <span id="multiStrukturattribute"></span>Gemeinsame Attribute für `<doc>` `<field>` und `<p>`
 
@@ -873,7 +872,7 @@ Vgl. METHODS\_DEDUPLICATION
 | dkleinepart | `<doc>` ist ein *vollständiges Duplikat* eines Artikels aus KLEINE                   | onion  | nur in NVT                               |
 | ftitle      | `<field type="title">` ist ein *faux title*                                          |        | nur in Strukturen `<field type="title">` |
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ## <span id="links"></span>Weiterführende Links
 
@@ -904,7 +903,7 @@ Insbesondere relevant für das amc sind:
     kombinierten PoS *plus* Morphoplogie-tags in `pos`:
       - [http://www.ims.uni-stuttgart.de/forschung/ressourcen/korpora/TIGERCorpus/annotation/tiger_scheme-morph.pdf](http://www.ims.uni-stuttgart.de/forschung/ressourcen/korpora/TIGERCorpus/annotation/tiger_scheme-morph.pdf)
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ## <span id="tools"></span>Verwendete NLP-Tools
 
@@ -939,7 +938,7 @@ version 4.x verwendet.
 
   - Spacy v 3.2 [https://spacy.io](https://spacy.io)
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
 
 ## <span id="data"></span>Zusätzliche Resourcen
 
@@ -948,4 +947,4 @@ version 4.x verwendet.
   - Dbnary (dump von 2022-01) [http://kaiko.getalp.org/about-dbnary](http://kaiko.getalp.org/about-dbnary) :
     aus dem Wiktionary abgeleitete Vollformlexika
 
-[*\>\> zurück zum Beginn*](#top)
+[*zurück zum Beginn*](#top)
