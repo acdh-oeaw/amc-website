@@ -9,8 +9,7 @@ Beschreibung aller im amc verwendeten Annotationen.
 
 **Version:** 1.1b (zuletzt geändert: 2024-05-17) 
 
-**Autor:** Hannes
-Pirker [Austrian Centre for Digital Humanities and Cultural Heritage
+**Autor:** Hannes Pirker [Austrian Centre for Digital Humanities and Cultural Heritage
 (ACDH-CH)](https://www.oeaw.ac.at/acdh) **Lizenz:** CC-BY
 
 ## Inhalt
@@ -59,8 +58,9 @@ einzelnen Token definiert sind - also vereinfacht gesprochen,  Attribute welche 
 
 Quelle: Grunddaten
 
-Die orthografische Wortform des Token. [*\>\> zurück
-zum Beginn*](#top)
+Die orthografische Wortform des Token. 
+
+[*\>\> zurück zum Beginn*](#top)
 
 ### <span id="ix"></span>ix *(Index)*
 
@@ -68,7 +68,9 @@ Quelle: Spacy 3.2
 
 Alle Token tragen eine Indexnummer. Hierfür werden die
 Token innerhalb eines Absatzes beginnend mit *0* fortlaufend
-durchnummeriert. [*\>\> zurück zum Beginn*](#top)
+durchnummeriert. 
+
+[*\>\> zurück zum Beginn*](#top)
 
 ### <span id="posTT"></span>posTT: PoS aus dem TreeTagger
 
@@ -89,8 +91,8 @@ Tiger-Annotationsschema Tagset Dokumentation:
 
 ### <span id="pos"></span>pos:  PoS aus dem RFTagger
 
-Quelle: RFTagger [externer
-link](http://www.cis.uni-muenchen.de/~schmid/tools/RFTagger)
+Quelle: RFTagger 
+[externer link](http://www.cis.uni-muenchen.de/~schmid/tools/RFTagger)
 
 
 Part-of-Speech tags, die mit dem **RFTagger** ermittel wurden. Tagset
@@ -132,7 +134,8 @@ lässt sich nur vermuten. Die Werte für *posTT* und *posTI*
 unterscheiden sich in ca. 10% der Fälle. <span id="posTI"></span>[STTS
 Tagset
 (Tiger)](https://www.linguistik.hu-berlin.de/de/institut/professuren/korpuslinguistik/mitarbeiter-innen/hagen/STTS_Tagset_Tiger)
-lemma [*\>\> zurück zum Beginn*](#top)
+
+[*\>\> zurück zum Beginn*](#top)
 
 ### <span id="posUDS"></span><span>posUDS: PoS aus Spacy im Universal Depencies Format</span>
 
@@ -171,8 +174,9 @@ eine einzige Universal Depencies Kategorie `VERB` ersetzt wurden.
 | X             | other                     |
 
 [Dokumentation zum *Universal Depencies POS*
-tagset](https://universaldependencies.org/u/pos/) [*\>\> zurück zum
-Beginn*](#top)
+tagset](https://universaldependencies.org/u/pos/) 
+
+[*\>\> zurück zum Beginn*](#top)
 
 ### <span id="ner"></span>ner: Named Entity Recognition
 
@@ -215,16 +219,19 @@ Quelle: Spacy 3.2
 
 Spacy versucht sogenannte *noun chunks* -- einfache
 Nominalphrasen -- zu identifizieren. Die einzelnen Elemente eines
-solchen *noun chunks* weisen im Attribut *ixNP* eine natürliche Zahl auf
+solchen *noun chunks* weisen im Attribut *ixNP* eine Zahl auf
 (0,1,2,...). Benachbarte Token mit derselben Indexzahl gehören zu einem
 gemeinsamen *chunk*. Bei Token, die *nicht* Teil eines *noun\_chunk*
 sind, hat *ixNP* den Wert '-'. Der Index beginnt bei jedem neuen Satz
-wieder mit dem Wert 0. Beispiel: (die Werte hinter dem "/" entsprechen
-dem *ixNP*, die eckigen Klammern sollen die durch die *ixNP* kodierten
-*noun chunks* verdeutlichen.)
+wieder mit dem Wert 0. 
 
-  - "\[Das/0 Hauptproblem/0\] seien/- \[die/1 übertriebenen/1
-    Ausgaben/1\] \[der/2 israelischen/2 Regierung/2\]"
+Beispiel: 
+
+  - \[Das/0 Hauptproblem/0\] seien/- \[die/1 übertriebenen/1
+    Ausgaben/1\] \[der/2 israelischen/2 Regierung/2\]
+
+(die Zahlen hinter dem ```"/"``` zeigen die *ixNP*, die eckigen Klammern sollen die durch die *ixNP* solchermaßen kodierten
+*noun chunks* verdeutlichen)
 
 [*\>\> zurück zum Beginn*](#top)
 
@@ -243,7 +250,9 @@ Syntax)](https://www.ims.uni-stuttgart.de/forschung/ressourcen/korpora/TIGERCorp
 Mittels *ixDEP* wird die Dependenz-Baumstruktur kodiert: der Wert in
 *ixDEP* verweist auf den Index ( d.h. das Attribut *id* ) des
 Elternknoten. (Bei Token mit der Kategorie `ROOT` verweist *ixDEP* auf
-sich selbst.) [*\>\> zurück zum Beginn*](#top)
+sich selbst.) 
+
+[*\>\> zurück zum Beginn*](#top)
 
 ### <span id="neg"></span><span>neg (*Negation*)</span>
 
@@ -258,8 +267,9 @@ einer Negation unterliegen. In der Mehrzahl sind es Verben, die mit
   - "... denn die Richter müssen/**neg** sich nicht daran halten"
 
 Dieses Attribut wurde experimentell für eine mögliche Verwendung im
-Bereich der *Sentiment/Polaritäts-Analyse* eingeführt. [*\>\> zurück zum
-Beginn*](#top)
+Bereich der *Sentiment/Polaritäts-Analyse* eingeführt. 
+
+[*\>\> zurück zum Beginn*](#top)
 
 ### <span id="lempos"></span>lempos: Lemma plus PoS-Kürzel
 
@@ -304,16 +314,18 @@ Das Wortartkürzel aus lempos
 Quelle: automatisch abgeleitet aus [*word*](#word) 
 
 Eine Kleinschreibungsvariante (*lower-cased*) von *word* : für Suchanfragen,
-bei denen Groß-Klein-Schreibung ignoriert werden soll. [*\>\> zurück zum
-Beginn*](#top)
+bei denen Groß-Klein-Schreibung ignoriert werden soll. 
+
+[*\>\> zurück zum Beginn*](#top)
 
 ### <span id="lemma_lc"></span>lemma\_lc: *lower cased lemma*
 
 Quelle: automatisch abgeleitet aus [*lemma*](#lemma) 
 
 Eine Kleinschreibungsvariante (*lower-cased*) von *lemma* : für Suchanfragen,
-bei denen Groß-Klein-Schreibung ignoriert werden soll. [*\>\> zurück zum
-Beginn*](#top)
+bei denen Groß-Klein-Schreibung ignoriert werden soll. 
+
+[*\>\> zurück zum Beginn*](#top)
 
 ### <span id="posbase"></span>posbase: PoS Hauptktegorie aus RFTagger
 
@@ -438,7 +450,9 @@ fragwürdig. Bsp. "2010-01-26T00:00:00Z"
 Quelle: automatisch abgeleitet aus [*datum*](#datum) 
 
 Erscheinungsjahr im
-Format `'YYYY'` [*\>\> zurück zum Beginn*](#top)
+Format `'YYYY'` 
+
+[*\>\> zurück zum Beginn*](#top)
 
 #### <span id="doc.yymm"></span>yymm
 
@@ -473,7 +487,9 @@ Zuordnung zu einem Medientyp.
 
 Der Name des Mediums in Kurzform. Für das Arbeiten mit dem Korpus (z.B.
 bei der Formulierung von Suchanfragen) empfiehlt sich die Verwendung
-dieser eindeutigen Kurzform. [*\>\> zurück zum Beginn*](#top)
+dieser eindeutigen Kurzform. 
+
+[*\>\> zurück zum Beginn*](#top)
 
 #### <span id="doc.docsrc_name"></span>docsrc\_name: Medien-Name
 
@@ -628,7 +644,9 @@ vereinheitlicht. Häufig auftretende Werte sind z.B. Bundesländerkürzel,
 eine Quelle möglicher Artikelduplikate: einzelne Artikel einer Zeitung
 können taggleich in mehreren Mutationen derselben Zeitung in den
 Ausgangsdaten aufscheinen. Zum Umgang des amc mit Duplikaten vgl.
-[*dupl*](#dupl) [*\>\> zurück zum Beginn*](#top)
+[*dupl*](#dupl) 
+
+[*\>\> zurück zum Beginn*](#top)
 
 #### <span id="doc.deskriptor"></span>deskriptor
 
@@ -643,7 +661,9 @@ Korrektheit nicht überprüft wurde. Es finden sich darin z.B. Ländernamen
 wie "PORTUGAL" aber auch Informationen, die eher der Ressortzuordnung
 ähneln - wie "SPO" und "SPORT" für Sportnachrichten. Hinweis: die
 Einträge in diesem Feld sind alle einheitlich in Großbuchstaben
-gehalten. [*\>\> zurück zum Beginn*](#top)
+gehalten. 
+
+[*\>\> zurück zum Beginn*](#top)
 
 #### <span id="doc.keys"></span>keys
 
@@ -663,8 +683,9 @@ Anzahl der Token in diesem `<doc>`
 #### <span id="doc.wordcount"></span>wordcount
 
 Anzahl der "Wörter" in diesem `<doc>`: die Zahl errechnet sich aus der
-Anzahl der Token abzüglich Satzzeichen und Zahlen. [*\>\> zurück zum
-Beginn*](#top)
+Anzahl der Token abzüglich Satzzeichen und Zahlen. 
+
+[*\>\> zurück zum Beginn*](#top)
 
 #### <span id="doc.dupl"></span>dupl: Duplikats-Status
 
@@ -726,6 +747,8 @@ ausdrücken:
 Einträge für `<meta_info type="speaker_info" >` enthalten noch 2 weitere
 Attribute, welche die im Text enthaltenen Informationen zu den
 SprecherInnen noch zusätzlich explizit und strukturiert speichert:
+
+
 [*\>\> zurück zum Beginn*](#top)
 
 #### <span id="mi.speaker"></span> speaker (Spechername)
@@ -737,7 +760,9 @@ Name der SprecherIn (d.h. der InterviewerIn oder der Interviewten)
 Affiliation der SprecherIn (d.h. der InterviewerIn oder der
 Interviewten) Bsp. `<meta_info type="speaker_info" speaker="Ziegler
 Robert" affil="ORF">` Ziegler Robert (ORF) `</meta_info>`
-<span id="mi.affil"></span>[*\>\> zurück zum Beginn*](#top)
+<span id="mi.affil"></span>
+
+[*\>\> zurück zum Beginn*](#top)
 
 ### <span id="fmt"></span>Struktur `<fmt>` - Hilfskonstrukt für nicht darstellbare Zeichen
 
@@ -809,16 +834,15 @@ Im folgenden Beispiel sorgen die eingefügten `<g>`-Elemente also dafür, dass d
 ```
 Sieh
 her
-<g>
+<g/>
 ,
 ein
 Satz
-<g>
+<g/>
 !
 ```
 
- [*\>\>
-zurück zum Beginn*](#top)
+ [*\>\>zurück zum Beginn*](#top)
 
 ### <span id="multiStrukturattribute"></span>Gemeinsame Attribute für `<doc>` `<field>` und `<p>`
 
@@ -863,22 +887,22 @@ Vgl. METHODS\_DEDUPLICATION
         (dieser Link findet sich auch in der SKE selbst unter `Corpus
         info -> Tagset Description`)
   - Tag-set des RFTaggers wie es im PoS-attribut `pos` verwendet wird:
-      - <https://www.sketchengine.eu/german-rftagger-part-of-speech-tagset>
+      - [https://www.sketchengine.eu/german-rftagger-part-of-speech-tagset](https://www.sketchengine.eu/german-rftagger-part-of-speech-tagset)
 
 *Detailierte Beschreibungen* De-facto wurden *alle* für das amc
 verwendeten PoS-Tagger auf dem TIGER-Korpus trainiert. Ausführliche
 Dokumentationen der Annotations-Konventionen für das TIGER-Korpus finden
 sich hier:
-<http://www.ims.uni-stuttgart.de/forschung/ressourcen/korpora/TIGERCorpus/annotation>
+[http://www.ims.uni-stuttgart.de/forschung/ressourcen/korpora/TIGERCorpus/annotation](http://www.ims.uni-stuttgart.de/forschung/ressourcen/korpora/TIGERCorpus/annotation)
 Insbesondere relevant für das amc sind:
 
   - *"A Brief Introduction to the TIGER Treebank"*
-      - <http://www.ims.uni-stuttgart.de/forschung/ressourcen/korpora/TIGERCorpus/annotation/tiger_introduction.pdf>
+      - [http://www.ims.uni-stuttgart.de/forschung/ressourcen/korpora/TIGERCorpus/annotation/tiger_introduction.pdf](http://www.ims.uni-stuttgart.de/forschung/ressourcen/korpora/TIGERCorpus/annotation/tiger_introduction.pdf)
       - **Note**: die minimalen Adaptionen des STTS Tagsets finden sich
         in **Appendix A.2 Deviation from STTS in the TIGER Treebank**
   - *"TIGER Morphologie-Annotationsschema"* : Beschreibung der
     kombinierten PoS *plus* Morphoplogie-tags in `pos`:
-      - <http://www.ims.uni-stuttgart.de/forschung/ressourcen/korpora/TIGERCorpus/annotation/tiger_scheme-morph.pdf>
+      - [http://www.ims.uni-stuttgart.de/forschung/ressourcen/korpora/TIGERCorpus/annotation/tiger_scheme-morph.pdf](http://www.ims.uni-stuttgart.de/forschung/ressourcen/korpora/TIGERCorpus/annotation/tiger_scheme-morph.pdf)
 
 [*\>\> zurück zum Beginn*](#top)
 
@@ -889,28 +913,31 @@ version 4.x verwendet.
 
 ### Tokenisierung
 
-  - Unitok v 3.2.7 <http://corpus.tools/wiki/Unitok>
+  - Unitok v 3.2.7 [http://corpus.tools/wiki/Unitok](http://corpus.tools/wiki/Unitok)
 
 ### Duplikaterkennung
 
-  - onion v 1.2 <http://corpus.tools/wiki/Onion>
+  - onion v 1.2 [http://corpus.tools/wiki/Onion](http://corpus.tools/wiki/Onion)
 
 ### PoS Tagging
 
-  - RFTagger <http://www.cis.uni-muenchen.de/~schmid/tools/RFTagger>
+  - RFTagger 
+  
+   [http://www.cis.uni-muenchen.de/~schmid/tools/RFTagger](http://www.cis.uni-muenchen.de/~schmid/tools/RFTagger)
       - Helmut Schmid and Florian Laws: Estimation of Conditional
         Probabilities with Decision Trees and an Application to
         Fine-Grained POS Tagging, COLING 2008, Manchester, Great
         Britain.
+
   - Treetagger v 3.2
-    <http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger>
+    [http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger) 
       - Helmut Schmid (1995): Improvements in Part-of-Speech Tagging
         with an Application to German. Proceedings of the ACL
         SIGDAT-Workshop. Dublin, Ireland.
 
 ### PoS Tagging, Named Entities, Dependenzstrukturen
 
-  - Spacy v 3.2 <https://spacy.io/>
+  - Spacy v 3.2 [https://spacy.io](https://spacy.io)
 
 [*\>\> zurück zum Beginn*](#top)
 
@@ -918,7 +945,7 @@ version 4.x verwendet.
 
 ### Vollformlexika
 
-  - Dbnary (dump von 2022-01) <http://kaiko.getalp.org/about-dbnary> :
+  - Dbnary (dump von 2022-01) [http://kaiko.getalp.org/about-dbnary](http://kaiko.getalp.org/about-dbnary) :
     aus dem Wiktionary abgeleitete Vollformlexika
 
 [*\>\> zurück zum Beginn*](#top)
