@@ -20,14 +20,14 @@ Beschreibung aller im amc verwendeten Annotationen.
         [*dep*](#dep) [*ixDEP*](#ixDEP) [*ner*](#ner) [*iob*](#iob)
         [*ixNP*](#ixNP) [*neg*](#neg) [*lemma*](#lemma)
         [*lemmasource*](#lemmasource) [*lempos*](#lempos) [*lc*](#lc)
-        [*lemma\_lc*](#lemma_lc)
+        [*lemma_lc*](#lemma_lc)
   - [Strukturen und ihre Attribute](#Structs)
       - [*<doc\>*](#doc) : [*id*](#doc.id)
-        [*datum\_full*](#doc.datum_full) [*datum*](#doc.datum)
+        [*datum_full*](#doc.datum_full) [*datum*](#doc.datum)
         [*year*](#doc.year) [*yymm*](#doc.yymm)
         [*bibl*](#doc.bibl_Bibliografische%20Angaben_)
         [*mediatype*](#doc.mediatype) [*docsrc*](#doc.docsrc)
-        [*docsrc\_name*](#doc.docsrc_name) [*region*](#doc.region)
+        [*docsrc_name*](#doc.docsrc_name) [*region*](#doc.region)
         [*province*](#doc.province) [*ressort2*](#doc.ressort2)
         [*autor*](#doc.autor) [*mutation*](#doc.mutation)
         [*deskriptor*](#doc.deskriptor) [*keys*](#doc.keys)
@@ -37,7 +37,7 @@ Beschreibung aller im amc verwendeten Annotationen.
       - [*<p\>*](#p)
       - [*<s\>*](#s)
       - [*<g\>*](#g)
-      - [*<meta\_info*](#metainfo) : [*type*](#mi.type)
+      - [*<meta_info*](#metainfo) : [*type*](#mi.type)
         [*speaker*](#mi.speaker) [*affil*](#mi.affil)
       - [*<fmt\>*](#fmt) : [*type*](#fmt.type)
       - [*Gemeinsame Attribute für `<doc>` `<field>` und
@@ -46,7 +46,6 @@ Beschreibung aller im amc verwendeten Annotationen.
       - [*Verwendete TagSets*](#tagsets)
       - [*Verwendete Annotationstools*](#tools)
       - [*Zusätzliche Resourcen*](#data)
-
 
 
 ## <span id="token"></span>Token-Attribute
@@ -221,7 +220,7 @@ Spacy versucht sogenannte *noun chunks* -- einfache
 Nominalphrasen -- zu identifizieren. Die einzelnen Elemente eines
 solchen *noun chunks* weisen im Attribut *ixNP* eine Zahl auf
 (0,1,2,...). Benachbarte Token mit derselben Indexzahl gehören zu einem
-gemeinsamen *chunk*. Bei Token, die *nicht* Teil eines *noun\_chunk*
+gemeinsamen *chunk*. Bei Token, die *nicht* Teil eines *noun_chunk*
 sind, hat *ixNP* den Wert '-'. Der Index beginnt bei jedem neuen Satz
 wieder mit dem Wert 0. 
 
@@ -317,7 +316,7 @@ bei denen Groß-Klein-Schreibung ignoriert werden soll.
 
 [*zurück zum Beginn*](#top)
 
-### <span id="lemma_lc"></span>lemma\_lc: *lower cased lemma*
+### <span id="lemma_lc"></span>lemma_lc: *lower cased lemma*
 
 Quelle: automatisch abgeleitet aus [*lemma*](#lemma) 
 
@@ -432,10 +431,10 @@ Durch die *id* wird jeder Artikel im Korpus
 ein-eindeutig identifiziert. Die *id* setzt sich aus dem Mediennamen
 (vgl. *docsrc*), dem Erscheinungsdatum (vgl. *datum*) und einer
 fortlaufenden Nummer oder einem zufälligen hash-Wert zusammen. Bsp.
-"ATVVOLL\_201001261920003729056" Standarmäßig wird die *doc.id* bei
-Suchergebnissen (KWIC-Listen) als Referenz angezeigt.
+"ATVVOLL_201001261920003729056" für einen Artikel in ATV von 2010-01-26. 
+Standarmäßig wird die *doc.id* bei Suchergebnissen (KWIC-Listen) als Referenz angezeigt.
 
-#### <span id="doc.datum_full"></span>datum\_full
+#### <span id="doc.datum_full"></span>datum_full
 
 Quelle: Originaldokument
 
@@ -490,10 +489,10 @@ dieser eindeutigen Kurzform.
 
 [*zurück zum Beginn*](#top)
 
-#### <span id="doc.docsrc_name"></span>docsrc\_name: Medien-Name
+#### <span id="doc.docsrc_name"></span>docsrc_name: Medien-Name
 
 Der Name des Mediums in der Langform. *Zuordnung zwischen *docsrc*
-*docsrc\_mame* und *mediatype**
+*docsrc_name* und *mediatype**
 
 | doc.docsrc | doc.docsrcname                 | doc.mediatype |
 | :--------- | :----------------------------- | :------------ |
@@ -609,7 +608,7 @@ Ressortbereinigungstabelle*
 
 | ressort2 | ersetzt diese ursprünglichen Ressortbezeichnungen                                |
 | :------- | :------------------------------------------------------------------------------- |
-| politik  | verwaltung, pol\_auss, inland, pol\_inn, landespolitik, landes-politik, pol\_reg |
+| politik  | verwaltung, pol_auss, inland, pol_inn, landespolitik, landes-politik, pol_reg |
 | auto     | motor, mot, auto, auto+mot, automobil, auto\&motor                               |
 | ...      | ...                                                                              |
 
@@ -739,8 +738,8 @@ ausdrücken:
 
 | Wert          | Bedeutung                                                   |
 | :------------ | :---------------------------------------------------------- |
-| speaker\_info | Text enthält Informationen zu / Namen der SprecherIn        |
-| timing\_info  | Text enthält "Zeitstempel" (wird zur Zeit nicht verwendet.) |
+| speaker_info | Text enthält Informationen zu / Namen der SprecherIn        |
+| timing_info  | Text enthält "Zeitstempel" (wird zur Zeit nicht verwendet.) |
 | nn            | *unbekannt*                                                 |
 
 Einträge für `<meta_info type="speaker_info" >` enthalten noch 2 weitere
@@ -786,7 +785,7 @@ Steuerzeichen. (Lediglich das Steuerzeichen, das einheitlich
 Telefonnummern anzeigt, wurde der besseren Lesbarkeit und der klaren
 Semantik wegen gleich durch das Zeichen "☎" ersetzt)
 
-| Sonderzeichen in `fmt.type` | Anzahl am Beispiel amc\_3.1 |
+| Sonderzeichen in `fmt.type` | Anzahl am Beispiel amc_3.1 |
 | :-------------------------- | --------------------------: |
 | ☎                           |                     512.836 |
 | \\uEAF0                     |                      96.848 |
@@ -862,7 +861,7 @@ entfernen.
     bereits in anderen Artikeln vorkamen: werden als solche markiert,
     aber nicht entfernt.
 
-Vgl. METHODS\_DEDUPLICATION
+Vgl. METHODS_DEDUPLICATION
 
 | Wert        | Bedeutung                                                                            | Quelle | Kommentar                                |
 | :---------- | :----------------------------------------------------------------------------------- | :----- | :--------------------------------------- |
