@@ -1,4 +1,924 @@
 ---
 title: Annotationsdetails
 ---
-Diese Seite beinhaltet die detaillierte Beschreibung aller im amc verwendeten Annotationen.
+Diese Seite beinhaltet die detaillierte
+Beschreibung aller im amc verwendeten Annotationen.
+<span id="top"></span>
+
+# <span id="titel"></span>Attribute und Strukturen in Version 4.x des *Austrian Media Corpus (amc)*
+
+**Version:** 1.1b (zuletzt geändert: 2024-05-17) 
+
+**Autor:** Hannes
+Pirker [Austrian Centre for Digital Humanities and Cultural Heritage
+(ACDH-CH)](https://www.oeaw.ac.at/acdh) **Lizenz:** CC-BY
+
+## Inhalt
+
+  - [Token-Attribute](#token)
+      - [*word*](#word) [*ix*](#ix) [*posTT*](#posTT) [*pos*](#pos)
+        [*posbase*](#posbase) [*posTI*](#posTI) [*posUDS*](#posUDS)
+        [*dep*](#dep) [*ixDEP*](#ixDEP) [*ner*](#ner) [*iob*](#iob)
+        [*ixNP*](#ixNP) [*neg*](#neg) [*lemma*](#lemma)
+        [*lemmasource*](#lemmasource) [*lempos*](#lempos) [*lc*](#lc)
+        [*lemma\_lc*](#lemma_lc)
+  - [Strukturen und ihre Attribute](#Structs)
+      - [*<doc\>*](#doc) : [*id*](#doc.id)
+        [*datum\_full*](#doc.datum_full) [*datum*](#doc.datum)
+        [*year*](#doc.year) [*yymm*](#doc.yymm)
+        [*bibl*](#doc.bibl_Bibliografische%20Angaben_)
+        [*mediatype*](#doc.mediatype) [*docsrc*](#doc.docsrc)
+        [*docsrc\_name*](#doc.docsrc_name) [*region*](#doc.region)
+        [*province*](#doc.province) [*ressort2*](#doc.ressort2)
+        [*autor*](#doc.autor) [*mutation*](#doc.mutation)
+        [*deskriptor*](#doc.deskriptor) [*keys*](#doc.keys)
+        [*tokens*](#doc.tokens) [*wordcount*](#doc.wordcount)
+      - [*<field\>*](#field) : [*name*](#field.name)
+        [*dupl*](#field.dupl)
+      - [*<p\>*](#p)
+      - [*<s\>*](#s)
+      - [*<g\>*](#g)
+      - [*<meta\_info\>*](#metainfo) : [*type*](#mi.type)
+        [*speaker*](#mi.speaker) [*affil*](#mi.affil)
+      - [*<fmt\>*](#fmt) : [*type*](#fmt.type)
+      - [*Gemeinsame Attribute für `<doc>` `<field>` und
+        `<p>`*](#multiStrukturattribute) : [*dupl*](#multi.dupl)
+  - [Weiterführende Links](#links)
+      - [*Verwendete TagSets*](#tagsets)
+      - [*Verwendete Annotationstools*](#tools)
+      - [*Zusätzliche Resourcen*](#data)
+
+
+
+## <span id="token"></span>Token-Attribute
+
+Hier folgt die Beschreibung aller Attribute, die auf der Ebene der
+einzelnen Token definiert sind - also vereinfacht gesprochen,  Attribute welche die einzelnen Wörter im Text beschreiben.
+
+### <span id="word"></span>word: orthografische Form
+
+Quelle: Grunddaten
+
+Die orthografische Wortform des Token. [*\>\> zurück
+zum Beginn*](#top)
+
+### <span id="ix"></span>ix *(Index)*
+
+Quelle: Spacy 3.2
+
+Alle Token tragen eine Indexnummer. Hierfür werden die
+Token innerhalb eines Absatzes beginnend mit *0* fortlaufend
+durchnummeriert. [*\>\> zurück zum Beginn*](#top)
+
+### <span id="posTT"></span>posTT: PoS aus dem TreeTagger
+
+Quelle: TreeTagger [externer
+link](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger)
+
+
+Part-of-Speech tags, die mit dem **TreeTagger** ermittel wurden.
+Verwendetes Tagset: Stuttgart-Tübingen-Tagset (STTS) gemäß dem
+Tiger-Annotationsschema Tagset Dokumentation:
+
+  - [STTS Tagset
+    (Tiger)](https://www.linguistik.hu-berlin.de/de/institut/professuren/korpuslinguistik/mitarbeiter-innen/hagen/STTS_Tagset_Tiger)\](https://www.linguistik.hu-berlin.de/de/institut/professuren/korpuslinguistik/mitarbeiter-innen/hagen/STTS\_Tagset\_Tiger)
+  - [STTS
+    Guide](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/stts_guide.pdf)
+
+[*\>\> zurück zum Beginn*](#top)
+
+### <span id="pos"></span>pos:  PoS aus dem RFTagger
+
+Quelle: RFTagger [externer
+link](http://www.cis.uni-muenchen.de/~schmid/tools/RFTagger)
+
+
+Part-of-Speech tags, die mit dem **RFTagger** ermittel wurden. Tagset
+Dokumentation: Das Tagset im **RFTagger** wurde aus dem Tagset des
+**Tiger corpus** abgeleitet. Das Tagset kodiert nicht nur
+PoS-Kategorien, sondern beinhaltet auch **morphologische
+Informationen**. Das bedeutet, dass beispielsweise ein Nomen auch mit
+den Informationen zu Casus, Numerus und Genus versehen ist, Verben mit
+den Informationen zu Person, Numerus, Modus und Tempus. Beispiele:
+*word=*Häusern* pos=*N.Reg.Dat.Pl.Neut** word=*gingst*
+pos=*VFIN.Full.2.Sg.Past.Ind*
+
+  - [German RFTagger part-of-speech tagset
+    overview](https://www.sketchengine.eu/german-rftagger-part-of-speech-tagset)
+  - [A brief introduction to the TIGER
+    Treebank](https://www.ims.uni-stuttgart.de/documents/ressourcen/korpora/tiger-corpus/annotation/tiger_introduction.pdf)
+  - [Tiger Annotation Scheme for
+    **Syntax**](https://www.ims.uni-stuttgart.de/documents/ressourcen/korpora/tiger-corpus/annotation/tiger_scheme-syntax.pdf)
+    : hier ist v.A. der Abschnitt **B Stuttgart-Tubingen-Tagset STTS**
+    relevant.
+  - [Tiger Annotation Scheme for
+    **Morphology**](https://www.ims.uni-stuttgart.de/documents/ressourcen/korpora/tiger-corpus/annotation/tiger_scheme-morph.pdf)
+
+[*\>\> zurück zum Beginn*](#top)
+
+### <span id="posTI"></span>posTI: PoS aus Spacy im STTS Format
+
+Quelle: Spacy 3.2
+
+PartOfSpeech (Wortart) unter Verwendung von Modellen,
+die auf dem Tiger Korpus trainiert wurden. Verwendetes Tagset:
+Stuttgart-Tübingen-Tagset (STTS) gemäß dem Tiger-Annotationsschema. D.h.
+das Tagset ist identisch mit demjenigen im Attribut *posTT*, und auch
+die Trainingsgrundlage für die Modelle ist dieselbe. Da Spacy modernere
+Verfahren verwendet als der TreeTagger, der immerhin bereits im Jahr
+1994 veröffentlicht wurde, sind die Ergebnisse in *posTI* allerdings
+korrekter als die *posTT*. Das tatsächliche Ausmaß der Verbesserung
+lässt sich nur vermuten. Die Werte für *posTT* und *posTI*
+unterscheiden sich in ca. 10% der Fälle. <span id="posTI"></span>[STTS
+Tagset
+(Tiger)](https://www.linguistik.hu-berlin.de/de/institut/professuren/korpuslinguistik/mitarbeiter-innen/hagen/STTS_Tagset_Tiger)
+lemma [*\>\> zurück zum Beginn*](#top)
+
+### <span id="posUDS"></span><span>posUDS: PoS aus Spacy im Universal Depencies Format</span>
+
+Quelle: Spacy 3.2
+
+PartOfSpeech (Wortart) aus dem Attribut *posTI*,
+allerdings unter Verwendung des Universal Depencies POS tagset (UDS).
+Das Universal Depencies POS Tagset wurde mit dem Ziel entwickelt, mit
+einer kleineren Menge an möglichst *"universellen"* Kategorien das
+Auslangen zu finden, aber durch diese Vereinfachung z.B. den Vergleich
+zwischen verschiedenen Sprachen zu erleichtern. Im vorliegenden Fall
+wurde der Inhalt des Attributs *posUDS* aus dem Attribut *posTI*
+abgeleitet, indem beispielsweise die 12 verschiedenen Kategorien für
+Verben aus dem Stuttgart-Tübingen-Tagset (STTS), nämlich `VAFIN, VAIMP,
+VAINF, VAPP, VMFIN, VMINF, VMPP, VVFIN, VVIMP, VVINF, VVIZU, VVPP` durch
+eine einzige Universal Depencies Kategorie `VERB` ersetzt wurden.
+
+| UDS-Kategorie | Bedeutung                 |
+| :------------ | :------------------------ |
+| ADJ           | adjective                 |
+| ADP           | adposition                |
+| ADV           | adverb                    |
+| AUX           | auxiliary                 |
+| CONJ          | conjunction               |
+| DET           | determiner                |
+| INTJ          | interjection              |
+| NOUN          | noun                      |
+| NUM           | numeral                   |
+| PART          | particle                  |
+| PRON          | pronoun                   |
+| PROPN         | proper noun               |
+| PUNCT         | punctuation               |
+| SCONJ         | subordinating conjunction |
+| SYM           | symbol                    |
+| VERB          | verb                      |
+| X             | other                     |
+
+[Dokumentation zum *Universal Depencies POS*
+tagset](https://universaldependencies.org/u/pos/) [*\>\> zurück zum
+Beginn*](#top)
+
+### <span id="ner"></span>ner: Named Entity Recognition
+
+Quelle: Spacy 3.2
+
+Dieses Attribut enthält die Ergebnisse der *Named
+Entity Recognition*.
+
+| Wert   |  | Bedeutung    |
+| :----- | :- | :----------- |
+| LOC    |  | Ort          |
+| PERSON |  | Person       |
+| ORG    |  | Organisation |
+
+[*\>\> zurück zum Beginn*](#top)
+
+### <span id="iob"></span>iob
+
+Quelle: Spacy 3.2
+
+Dieses Attribut wird verwendet, um *Entities* zu
+markieren, die sich aus *mehr als einem* Token zusammensetzen (wie es
+z.B. für Personen mit Vor- und Zunamen typisch ist). In einer Abfolge
+von Token, die zusammen eine *Entity* bilden, steht im Attribut *iob*
+beim *ersten* Token der Wert **B**, bei *allen weiteren* der Wert **I**.
+vgl. [info zu iob auf
+wikipedia](https://en.wikipedia.org/wiki/Inside%E2%80%93outside%E2%80%93beginning_\(tagging\))
+
+| Wert | Bedeutung                                                |
+| :--- | :------------------------------------------------------- |
+| B    | beginning                                                |
+| I    | inside                                                   |
+| O    | other (*d.h. das so markierte Token ist *keine* Entity*) |
+
+[*\>\> zurück zum Beginn*](#top)
+
+### <span id="ixNP"></span><span>ixNP: *Noun-Phrase-Index*</span>
+
+Quelle: Spacy 3.2
+
+Spacy versucht sogenannte *noun chunks* -- einfache
+Nominalphrasen -- zu identifizieren. Die einzelnen Elemente eines
+solchen *noun chunks* weisen im Attribut *ixNP* eine natürliche Zahl auf
+(0,1,2,...). Benachbarte Token mit derselben Indexzahl gehören zu einem
+gemeinsamen *chunk*. Bei Token, die *nicht* Teil eines *noun\_chunk*
+sind, hat *ixNP* den Wert '-'. Der Index beginnt bei jedem neuen Satz
+wieder mit dem Wert 0. Beispiel: (die Werte hinter dem "/" entsprechen
+dem *ixNP*, die eckigen Klammern sollen die durch die *ixNP* kodierten
+*noun chunks* verdeutlichen.)
+
+  - "\[Das/0 Hauptproblem/0\] seien/- \[die/1 übertriebenen/1
+    Ausgaben/1\] \[der/2 israelischen/2 Regierung/2\]"
+
+[*\>\> zurück zum Beginn*](#top)
+
+### <span id="dep"></span><span>dep: Kategorie in Dependenzstruktur</span>
+
+### <span id="ixDEP"></span><span>ixDEP: Index des Elternknoten in Dependenzstruktur</span>
+
+Quelle: Spacy 3.2
+
+Mit den Attributen *dep* und *ixDEP* werden
+Dependenzstrukturen kodiert. Die Modelle für den Dependenzparser wurden
+auf dem TIGER Korpus trainiert. Die verwendeten Kategorien entsprechen
+demzufolge auch dem TIGER Annotationsschema: [TIGER Annotationsschema
+(für
+Syntax)](https://www.ims.uni-stuttgart.de/forschung/ressourcen/korpora/TIGERCorpus/annotation/tiger_scheme-syntax.pdf)
+Mittels *ixDEP* wird die Dependenz-Baumstruktur kodiert: der Wert in
+*ixDEP* verweist auf den Index ( d.h. das Attribut *id* ) des
+Elternknoten. (Bei Token mit der Kategorie `ROOT` verweist *ixDEP* auf
+sich selbst.) [*\>\> zurück zum Beginn*](#top)
+
+### <span id="neg"></span><span>neg (*Negation*)</span>
+
+Quelle: eigener code auf Basis von Spacy 3.2
+
+(*experimentell*) Wörter,
+die im Kontext des Wortes *"nicht"* stehen, und daher möglicherweise
+einer Negation unterliegen. In der Mehrzahl sind es Verben, die mit
+"neg" markiert sind. Bsp.:
+
+  - "... Gewinnmaximierung nicht an oberster Stell steht/**neg**"
+  - "... denn die Richter müssen/**neg** sich nicht daran halten"
+
+Dieses Attribut wurde experimentell für eine mögliche Verwendung im
+Bereich der *Sentiment/Polaritäts-Analyse* eingeführt. [*\>\> zurück zum
+Beginn*](#top)
+
+### <span id="lempos"></span>lempos: Lemma plus PoS-Kürzel
+
+Quelle: Treetagger, RFTagger, DBnary 
+
+Dieses Attribut enthält das Lemma
+(d.h. die Grundform) eines Wortes, die um ein Kürzel für die Wortart
+ergänzt ist. Vgl. auch [posx](#posx)
+
+| *Wortartkürzel* | Bedeutung   |
+| :-------------- | :---------- |
+| c               | conjunction |
+| i               | preposition |
+| j               | adjective   |
+| m               | cardinal    |
+| n               | noun        |
+| p               | pronoun     |
+| r               | adverb      |
+| v               | verb        |
+| x               | particle    |
+
+Die Funktion des Wortartkürzels in *lempos* erschließt sich am besten
+anhand eines Beispiels aus dem Englischen, wo identische Grundformen mit
+verschiedenen Wortarten viel häufiger sind als im Deutschen.
+
+| Beispiel | Wortart  | Bedeutung im Deutschen |
+| :------- | :------- | :--------------------- |
+| fine-j   | Adjektiv | fein                   |
+| fine-n   | Nomen    | die Strafe             |
+| fine-v   | Verb     | *jmd.* strafen         |
+
+[*\>\> zurück zum Beginn*](#top)
+
+### <span id="posx"></span>posx: PoS-Kürzel
+
+Quelle: automatisch abgeleitet aus [*lempos*](#lempos) 
+
+Das Wortartkürzel aus lempos 
+
+### <span id="lc"></span>lc:  *lower cased word*
+
+Quelle: automatisch abgeleitet aus [*word*](#word) 
+
+Eine Kleinschreibungsvariante (*lower-cased*) von *word* : für Suchanfragen,
+bei denen Groß-Klein-Schreibung ignoriert werden soll. [*\>\> zurück zum
+Beginn*](#top)
+
+### <span id="lemma_lc"></span>lemma\_lc: *lower cased lemma*
+
+Quelle: automatisch abgeleitet aus [*lemma*](#lemma) 
+
+Eine Kleinschreibungsvariante (*lower-cased*) von *lemma* : für Suchanfragen,
+bei denen Groß-Klein-Schreibung ignoriert werden soll. [*\>\> zurück zum
+Beginn*](#top)
+
+### <span id="posbase"></span>posbase: PoS Hauptktegorie aus RFTagger
+
+Quelle: automatisch abgeleitet aus [*pos*](#pos) 
+
+Das erste Element aus
+dem Attribut *pos*, also die Haupt-PoS-Kategorie. Beispiele:
+
+  - word=*Häusern* pos=**N**.Reg.Dat.Pl.Neut : posbase=**N**
+  - word=*gingst* pos=**VFIN**.Full.2.Sg.Past.Ind : posbase=**VFIN**
+
+| Aktuelle Werte für *posbase* (absteigend nach Häufigkeit sortiert) |
+| :----------------------------------------------------------------- |
+| N                                                                  |
+| SYM                                                                |
+| ART                                                                |
+| APPR                                                               |
+| CARD                                                               |
+| VFIN                                                               |
+| PRO                                                                |
+| ADJA                                                               |
+| ADV                                                                |
+| CONJ                                                               |
+| ADJD                                                               |
+| APPRART                                                            |
+| VPP                                                                |
+| VINF                                                               |
+| PART                                                               |
+| PROADV                                                             |
+| FM                                                                 |
+| TRUNC                                                              |
+| VIMP                                                               |
+| APZR                                                               |
+| APPO                                                               |
+| ITJ                                                                |
+
+[*\>\> zurück zum Beginn*](#top)
+
+### <span id="lemma"></span>lemma: Grundform/Zitierform
+
+Quelle: Treetagger, RFTagger, DBnary 
+
+Das Lemma (die Grundform) eines
+Wortes. Die Lemmatisierung für das amc erfolgt in einem mehrstufigen
+Verfahren. Die "Basislemmatisierung" erfolgt während des PoS-taggings
+durch den *Treetagger*. Für alle Wortformen, für die der *Treetagger*
+keine Lemmatisierung vornehmen konnte, wird versucht in einem
+Nachbearbeitungsschritt doch noch ein Lemma zu ermitteln, indem in
+zusätzlichen Vollformlexika wie z.B. Dbnary nachgeschlagen wird, und
+"verzeihendere" Heuristiken zur Anwendung kommen. Vgl. *lemmasource*
+
+### <span id="lemmasource"></span>lemmasource: Quelle der Lemmatierungs-Entscheidung
+
+Quelle: rf-tagger post-lemmatisation 
+
+Dieses Attribut zeigt, *wie* der
+Wert in *lemma* schlussendlich ermittelt wurde. Es dient daher
+hauptsächlich der Dokumentation. Beachtung verdient der Wert `'u'` (für
+*unbekannt/unknown*): er markiert diejenigen Fälle, für die trotz
+Nachbearbeitung und Konsultation externer Lexika kein Lemma ermittelt
+werden konnte. Für diese Token wurde als finale Maßnahme einfach das
+Wort selbst als Lemma eingesetzt.
+
+| id  | Bedeutung         | Kommentar                                                                                    |
+| :-- | :---------------- | :------------------------------------------------------------------------------------------- |
+| tt  | tree-tagger       | die Zuordnung des *lemma* erfolgte durch den Treetagger                                      |
+| d   | direct hit        | das *lemma* konnte durch direktes Nachschlagen in zusätzlichen Lexika ermittelt werden       |
+| a-b | hyphened compound | für Komposita mit Bindstrich, konnte für den zweiten Wortteil das Lemma ermittelt werden     |
+| ... | ...               |                                                                                              |
+| u   | unknown           | es konnte *kein* *lemma* gefunden werden, das Attribut *lemma* enthält eine Kopie von *word* |
+
+[*\>\> zurück zum Beginn*](#top)
+
+## <span id="Structs"></span>STRUKTUREN UND IHRE ATTRIBUTE
+
+Die Hierarchie der Strukturelemente enthält folgende Elemente `<doc>`
+Artikel
+
+> `<field>` Unterteilung für "titel" und "inhalt"
+> 
+> > `<p>` Absatz
+> > 
+> > > `<s>` Satz
+> > > 
+> > > > ( `<meta_info>` ) (nur in TV-Transkripten) Meta-Informationen zu
+> > > > Sprechern & deren Affiliation ( `<fmt>` ) (nur in KRONE und
+> > > > KURIER) Markierung für spezielle, nicht darstellbare
+> > > > Formatierungszeichen
+
+[*\>\> zurück zum Beginn*](#top)
+
+### Struktur: `<doc>` - Artikel
+
+Das `<doc>` Element umfasst jeweils einen Zeitungs- oder
+Magazin-Artikel. 
+
+Metadaten zu den Artikeln werden in den folgenden Attributen gespeichert.
+
+
+#### <span id="doc.id"></span>id: Artikel-id
+
+Quelle: Originaldokument
+
+Durch die *id* wird jeder Artikel im Korpus
+ein-eindeutig identifiziert. Die *id* setzt sich aus dem Mediennamen
+(vgl. *docsrc*), dem Erscheinungsdatum (vgl. *datum*) und einer
+fortlaufenden Nummer oder einem zufälligen hash-Wert zusammen. Bsp.
+"ATVVOLL\_201001261920003729056" Standarmäßig wird die *doc.id* bei
+Suchergebnissen (KWIC-Listen) als Referenz angezeigt.
+
+#### <span id="doc.datum_full"></span>datum\_full
+
+Quelle: Originaldokument
+
+Erscheinungsdatum plus Uhrzeit im Format
+`'YYYY-MM-TT' + "T" + 'HH:MM:SS' + "Z"` Die Uhrzeit weist allerdings oft
+den Wert 00:00:00 auf - die Brauchbarkeit der Uhrzeitangabe ist daher
+fragwürdig. Bsp. "2010-01-26T00:00:00Z"
+
+#### <span id="doc.year"></span>year
+
+Quelle: automatisch abgeleitet aus [*datum*](#datum) 
+
+Erscheinungsjahr im
+Format `'YYYY'` [*\>\> zurück zum Beginn*](#top)
+
+#### <span id="doc.yymm"></span>yymm
+
+Quelle: automatisch abgeleitet aus [*datum*](#datum)
+
+Erscheinungsjahr
+und -monat im Format `'YYMM'`
+
+#### <span id="doc.bibl"></span>bibl *Bibliografische Angaben*
+
+Quelle: Originaldokumente, nicht kuratiert. 
+
+Enthält üblicherweise
+Medienname, Ausgabe, Datum und Seitennummer in der Printausgabe. Bsp.:
+
+  - `"Salzburger Nachrichten 273 vom 2013-11-25 s. 17"`
+  - `"Woman 14/2018 vom 2018-07-05 s. 58,59,60"`
+
+#### <span id="doc.mediatype"></span>mediatype
+
+Zuordnung zu einem Medientyp.
+
+| mediatype | Bedeutung                | Anmerkung                                                                       |
+| :-------- | :----------------------- | ------------------------------------------------------------------------------- |
+| print     | Printmedium              |                                                                                 |
+| tv        | TV- oder Radiotranskript | **Achtung:** bis inclusivie 2022 wird *nicht* zwischen Radio + TV unterschieden |
+|           |                          | seit 2023: tv steht nun tatsächlich nur für Television                          |
+| radio     | Radiotranskript          | existiert erst seit 2023                                                        |
+| agentur   | Online Agenturmeldung    |                                                                                 |
+
+#### <span id="doc.docsrc"></span>docsrc: Medien-Kürzel
+
+Der Name des Mediums in Kurzform. Für das Arbeiten mit dem Korpus (z.B.
+bei der Formulierung von Suchanfragen) empfiehlt sich die Verwendung
+dieser eindeutigen Kurzform. [*\>\> zurück zum Beginn*](#top)
+
+#### <span id="doc.docsrc_name"></span>docsrc\_name: Medien-Name
+
+Der Name des Mediums in der Langform. *Zuordnung zwischen *docsrc*
+*docsrc\_mame* und *mediatype**
+
+| doc.docsrc | doc.docsrcname                 | doc.mediatype |
+| :--------- | :----------------------------- | :------------ |
+| APA        | APA-Meldungen digital          | agentur       |
+| OTS        | Original Text Service          | agentur       |
+|            |                                |               |
+| ACADEMIA   | Academia                       | print         |
+| ARBEITW    | Arbeit und Wirtschaft          | print         |
+| AUGUSTIN   | Augustin                       | print         |
+| BAUERNZT   | Bauernzeitung                  | print         |
+| BVZ        | Burgenländische Volkszeitung   | print         |
+| DATUM      | Datum                          | print         |
+| DIEWIR     | Die Wirtschaft                 | print         |
+| ECHO       | Echo                           | print         |
+| EMEDIA     | E-Media                        | print         |
+| FALTER     | Falter                         | print         |
+| FORMATDB   | Format                         | print         |
+| FURCHE     | Die Furche                     | print         |
+| GEWINN     | Gewinn                         | print         |
+| GRAZER     | Der Grazer                     | print         |
+| HEUTE      | Heute                          | print         |
+| HOR        | Horizont                       | print         |
+| IM         | Industriemagazin               | print         |
+| KLEINE     | Kleine Zeitung                 | print         |
+| KONSUM     | Der Konsument                  | print         |
+| KRONE      | Kronen Zeitung                 | print         |
+| KTNMONAT   | Neuer Kärntner Monat           | print         |
+| KTZ        | Kärntner Tageszeitung          | print         |
+| KURIER     | Kurier                         | print         |
+| KW         | Kärntner Wirtschaft            | print         |
+| MEDIANET   | Medianet                       | print         |
+| NEWS       | News                           | print         |
+| NOEN       | NÖ Nachrichten                 | print         |
+| NVB        | Neues Volksblatt               | print         |
+| NVT        | Neue Vorarlberger Tageszeitung | print         |
+| OBERRUND   | Oberländer Rundschau           | print         |
+| OEREICHE   | Österreich                     | print         |
+| OOEN       | OÖ Nachrichten                 | print         |
+| OTS        | Original Text Service          | agentur       |
+| PRESSE     | Die Presse                     | print         |
+| PROFIL     | Profil                         | print         |
+| SBGW       | Salzburger Woche               | print         |
+| SN         | Salzburger Nachrichten         | print         |
+| SOLI       | Solidarität                    | print         |
+| SPORTZTG   | Sportzeitung                   | print         |
+| STANDARD   | Der Standard                   | print         |
+| STMONAT    | Steirer Monat                  | print         |
+| SVZ        | Salzburger Volkszeitung        | print         |
+| TREND      | Trend                          | print         |
+| TT         | Tiroler Tageszeitung           | print         |
+| TTKOMP     | TT Kompakt                     | print         |
+| TVMEDIA    | TV-Media                       | print         |
+| VN         | Vorarlberger Nachrichten       | print         |
+| WIBLATT    | Wirtschaftsblatt               | print         |
+| WIENER     | Wiener                         | print         |
+| WIENERIN   | Wienerin                       | print         |
+| WOMAN      | Woman                          | print         |
+| WZ         | Wiener Zeitung                 | print         |
+|            |                                |               |
+| ATVVOLL    | ATV                            | tv            |
+| MWVOLL     | ORF (Radio and TV)             | tv            |
+| PRO7VOLL   | PRO7                           | tv            |
+| PULSVOLL   | PULS4                          | tv            |
+| SAT1VOLL   | SAT1                           | tv            |
+
+[*\>\> zurück zum Beginn*](#top)
+
+#### <span id="doc.region"></span>region
+
+Die Zuordnung von Artikeln zu einer Region erfolgt einfach über den
+Mediennamen. Die Werte `aost, amitte, asuedost, awest` bezeichnen
+"echte" geographische Regionen. `agesamt` wird bei Medien vergeben, die
+als überregional eingestuft werden. *Zuordnung zwischen *docsrc* und
+*region**
+
+| doc.region | doc.docsrc                                                                                                                                                   | Notiz                                                                            |
+| :--------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------- |
+| aost       | FaltER, BVZ, HEUTE, NOEN                                                                                                                                     | Wien, Niederösterreich, Burgenland                                               |
+| amitte     | OOEN, NVB, SBGW, SVZ                                                                                                                                         | Oberösterreich, Salzburg                                                         |
+| asuedost   | KLEINE, KTZ, GRAZER, KTNMONAT, STMONAT                                                                                                                       | Kärnten, Steiermark                                                              |
+| awest      | NVT, OBERRUND, TT, TTKOMP, VN                                                                                                                                | Tirol, Vorarlberg                                                                |
+| agesamt    | APA, DATUM, FORMATDB, FURCHE, KRONE, KURIER, MEDIANET, NEWS, OEREICHE, OTS, PRESSE, PROFIL, SN, STANDARD, WZ, WIBLATT, ATVVOLL, PRO7VOLL, PULSVOLL, SAT1VOLL | Medien, die regional nicht zuzuordnen sind                                       |
+| spezifisch | ACADEMIA, ARBEITW, AUGUSTIN, BAUERNZT, DIEWIR, ECHO, EMEDIA, GEWINN, HOR, IM, KONSUM, KW, SOLI, SPORTZTG, TREND, TVMEDIA, WIENER, WIENERIN, WOMAN, MWVOLL    | Medien, die regional nicht zuzuordenbar und/oder thematisch sehr spezifisch sind |
+
+[*\>\> zurück zum Beginn*](#top)
+
+#### <span id="doc.province"></span>province: Bundesland
+
+Bundesland. Zur Zeit ist das Attribut *province* nur für Medien aus den
+Ländern Vorarlberg und Tirol in Verwendung, da diese weitere
+Unterscheidung der Region *awest* linguistisch bedeutsam sein kann
+(bairischer vs. alemannischer Sprachraum). Bei allen anderen Medien
+bleibt *province* leer. *Zuordnung zwischen *docsrc* und *province**
+
+| doc.province | doc.docsrc         | Name       |
+| :----------- | :----------------- | :--------- |
+| V            | VN, NVT            | Vorarlberg |
+| T            | TT,TTKOMP,OBERRUND | Tirol      |
+
+[*zurück zum Beginn*](#top)
+
+#### <span id="doc.ressort2"></span>ressort2
+
+Quelle: Originaldokumente, teilkuratiert. 
+
+Multiple Werte möglich. Trennzeichen: ' '
+Die von den einzelnen Medien verwendeten
+Ressortbezeichnungen folgen ursprünglich keinem einheitlichen Schema. Es
+wurde versucht für das amc zumindest einen Teil der verwendeten
+unterschiedlichen Bezeichnungen mittels einer Umsetzungstabelle auf eine
+kanonische(re) Ressortbezeichnung zurückzuführen. *Beispiele aus der
+Ressortbereinigungstabelle*
+
+| ressort2 | ersetzt diese ursprünglichen Ressortbezeichnungen                                |
+| :------- | :------------------------------------------------------------------------------- |
+| politik  | verwaltung, pol\_auss, inland, pol\_inn, landespolitik, landes-politik, pol\_reg |
+| auto     | motor, mot, auto, auto+mot, automobil, auto\&motor                               |
+| ...      | ...                                                                              |
+
+[*\>\> zurück zum Beginn*](#top)
+
+#### <span id="doc.autor"></span>autor
+
+Quelle: Originaldokumente, nicht kuratiert.
+
+Multiple Werte möglich.
+
+Trennzeichen: ' '
+
+Die von den einzelnen Medien verwendeten
+Autorenbezeichnungen folgen keinem einheitlichen Schema: es können
+sowohl Redaktionskürzel als auch Vollnamen oder auch Namen plus
+Zusatzinformationen (*"X.Y. berichtet aus Z"*) verwendet werden.
+
+#### <span id="doc.mutation"></span>mutation
+
+Quelle: Originaldokumente, nicht kuratiert.
+
+Multiple Werte möglich. Trennzeichen: ","
+
+Von manchen Medien erscheinen lokale bzw. regionale
+Mutationen, die in den Ausgaben des amc ebenfalls enthalten sind. Das
+Attribut *doc.mutation* kann Informationen zu diesen Mutationen
+enthalten, die Informationen sind aber medienspezifisch und wurden nicht
+vereinheitlicht. Häufig auftretende Werte sind z.B. Bundesländerkürzel,
+"Morgenausgabe", "Abendausgabe" oder auch Bezirksnamen. Mutationen sind
+eine Quelle möglicher Artikelduplikate: einzelne Artikel einer Zeitung
+können taggleich in mehreren Mutationen derselben Zeitung in den
+Ausgangsdaten aufscheinen. Zum Umgang des amc mit Duplikaten vgl.
+[*dupl*](#dupl) [*\>\> zurück zum Beginn*](#top)
+
+#### <span id="doc.deskriptor"></span>deskriptor
+
+Quelle: Originaldokumente, nicht kuratiert.
+
+Multiple Werte möglich.
+Trennzeichen: ' ' 
+
+Dieses Feld enthält Marker und Stichworte, die direkt
+aus der APA-Datenbank übernommen wurden, und deren Vollständigkeit und
+Korrektheit nicht überprüft wurde. Es finden sich darin z.B. Ländernamen
+wie "PORTUGAL" aber auch Informationen, die eher der Ressortzuordnung
+ähneln - wie "SPO" und "SPORT" für Sportnachrichten. Hinweis: die
+Einträge in diesem Feld sind alle einheitlich in Großbuchstaben
+gehalten. [*\>\> zurück zum Beginn*](#top)
+
+#### <span id="doc.keys"></span>keys
+
+Quelle: Originaldokumente, nicht kuratiert.
+
+Multiple Werte möglich.
+Trennzeichen: ' '
+
+Dieses Feld enthält Marker, die direkt aus der
+APA-Datenbank übernommen wurden, und deren Funktion nicht überprüft
+wurde.
+
+#### <span id="doc.tokens"></span>tokens
+
+Anzahl der Token in diesem `<doc>`
+
+#### <span id="doc.wordcount"></span>wordcount
+
+Anzahl der "Wörter" in diesem `<doc>`: die Zahl errechnet sich aus der
+Anzahl der Token abzüglich Satzzeichen und Zahlen. [*\>\> zurück zum
+Beginn*](#top)
+
+#### <span id="doc.dupl"></span>dupl: Duplikats-Status
+
+Multiple Werte möglich. Trennzeichen: '|'
+
+### Struktur <span id="field"></span>`<field>`
+
+Mit `<field>` können die Inhalte weiter in die Abschnitte Titel, Inhalt und Stichworte strukturiert werden.
+Die Unterscheidung erfolgt über das folgende Attribut:
+  
+#### <span id="field.name"></span>name
+
+| Wert      | Bedeutung                                                   |
+| :-------- | :---------------------------------------------------------- |
+| titel     | Der Text in `<field>` beinhaltet einen Titel                |
+| inhalt    | Der Text in `<field>` beinhaltet den "eigentlichen" Artikel |
+| stichwort | Der Text in `<field>` beinhaltet Stichwörter zum Artikel    |
+
+[*\>\> zurück zum Beginn*](#top)
+
+#### <span id="field.dupl"></span>dupl
+
+In der Struktur `<field>` kann das Attribut *dupl* einen zusätzlichen
+Wert aufweisen, nämlich *ftitle*. In vielen Artikeln werden im amc in
+Ermangelung eines echten Titels einfach die ersten paar Wörter des
+Inhalts als Titel vorangestellt. Diese *faux titles* werden automatisch
+erkannt aber nicht entfernt, sondern mit dem Attribut *dupl="ftitle"*
+markiert.
+
+### <span id="p"></span> Struktur `<p>` - Paragraph
+
+Quelle: Paragraphenmarker werden aus den input-Daten übernommen
+
+### <span id="s"></span> Struktur  `<s>` - Satz
+
+Quelle: Spacy 3.2
+
+[*\>\> zurück zum Beginn*](#top)
+
+### <span id="metainfo"></span> Struktur `<meta_info>` - Sonderinfos für tv-Transkripte 
+
+(Wird *ausschließlich* in Quellen mit *mediatype* 'tv' verwendet) In den
+Radio- und TV-Transkripten können zusätzliche Metainformation enthalten
+sein, die mit Hilfe der Struktur `<meta_info>` explizit ausgezeichnet
+werden.
+
+#### <span id="mi.type"></span> type
+
+Das Attribut *type* gibt Auskunft darüber, welche Art von
+(Meta)-Information der Text innerhalb der Struktur `<meta_info>`
+ausdrücken:
+
+| Wert          | Bedeutung                                                   |
+| :------------ | :---------------------------------------------------------- |
+| speaker\_info | Text enthält Informationen zu / Namen der SprecherIn        |
+| timing\_info  | Text enthält "Zeitstempel" (wird zur Zeit nicht verwendet.) |
+| nn            | *unbekannt*                                                 |
+
+Einträge für `<meta_info type="speaker_info" >` enthalten noch 2 weitere
+Attribute, welche die im Text enthaltenen Informationen zu den
+SprecherInnen noch zusätzlich explizit und strukturiert speichert:
+[*\>\> zurück zum Beginn*](#top)
+
+#### <span id="mi.speaker"></span> speaker (Spechername)
+
+Name der SprecherIn (d.h. der InterviewerIn oder der Interviewten)
+
+#### <span id="mi.speaker"></span><span id="mi.affil"></span> affil (Affiliation)
+
+Affiliation der SprecherIn (d.h. der InterviewerIn oder der
+Interviewten) Bsp. `<meta_info type="speaker_info" speaker="Ziegler
+Robert" affil="ORF">` Ziegler Robert (ORF) `</meta_info>`
+<span id="mi.affil"></span>[*\>\> zurück zum Beginn*](#top)
+
+### <span id="fmt"></span>Struktur `<fmt>` - Hilfskonstrukt für nicht darstellbare Zeichen
+
+(Spezialzeichen zur Formatauszeichnung: wird nur für Artikel aus KRONE
+und KURIER verwendet.) 
+
+In jüngeren Jahrgängen der Tageszeitungen KRONE
+und KURIER finden sich in den Ausgangsdaten nicht druckbare
+Formatierungszeichen, die offenbar verwendet werden, um
+redaktionsinterne Markierungen wie "Bildunterschrift" oder
+"Telefonnummer" anzubringen. Damit diese sehr spezifischen
+Auszeichnungen nicht störend in der Textanzeige aufscheinen, die
+Informationen aber dennoch für künftige Auswertungen erhalten bleiben,
+wurden diese Spezialzeichen in eine Struktur namens `<fmt>`verpackt:
+damit werden sie in der Textanzeige *unsichtbar*, die Information bleibt
+aber dennoch für Suchanfragen verfügbar.
+
+#### <span id="fmt.type"></span>type
+
+Das Attribut *type* enthält das ursprüngliche, nun "versteckte"
+Steuerzeichen. (Lediglich das Steuerzeichen, das einheitlich
+Telefonnummern anzeigt, wurde der besseren Lesbarkeit und der klaren
+Semantik wegen gleich durch das Zeichen "☎" ersetzt)
+
+| Sonderzeichen in `fmt.type` | Anzahl am Beispiel amc\_3.1 |
+| :-------------------------- | --------------------------: |
+| ☎                           |                     512.836 |
+| \\uEAF0                     |                      96.848 |
+| \\uEAE7                     |                      41.713 |
+| \\uEAE9                     |                      34.606 |
+| \\uEEE7                     |                      29.755 |
+| \\uEAEB                     |                      21.305 |
+| \\uEAEF                     |                      19.925 |
+| \\uEAEE                     |                      14.968 |
+| \\uEAE8                     |                      11.040 |
+| \\uEAF4                     |                       8.410 |
+| \\uEEE8                     |                       5.864 |
+| \\uEBAD                     |                       3.300 |
+| \\uEBE4                     |                       2.996 |
+| \\uEC14                     |                       2.114 |
+| \\uEEE9                     |                         507 |
+| \\uEAF1                     |                         358 |
+| \\uEF1E                     |                         181 |
+| \\uEF1F                     |                         160 |
+| \\uEF20                     |                         150 |
+| \\uEF21                     |                         130 |
+| \\uEF22                     |                         122 |
+| \\uEF23                     |                          92 |
+| \\uEF24                     |                          80 |
+| \\uEF25                     |                          65 |
+| \\uEF26                     |                          64 |
+| \\uEF27                     |                          58 |
+| \\uEEED                     |                          41 |
+| \\uEEEE                     |                          39 |
+| \\uEBE6                     |                          24 |
+| \\uEC2E                     |                          10 |
+| \\uEEF9                     |                           1 |
+
+[*\>\> zurück zum Beginn*](#top)
+
+### <span id="g"></span>Struktur `<g>` - *glue-element*
+
+Bei der Anzeige von Texten in der SKE wird zwischen zwei Token
+standardmäßig ein Leerzeichen eingefügt. Ein `<g>` Element unterdrückt
+dieses Leerzeichen in der Anzeige. `<g>`-Elemente finden sich also 
+typischerweise zwischen Wörtern und nachfolgenden Satzzeichen.
+
+Im folgenden Beispiel sorgen die eingefügten `<g>`-Elemente also dafür, dass der Text in der SketchEngine als *"Sieh her, ein Satz!"* und nicht als *"Sieh her , ein Satz !"* angezeigt wird:
+```
+Sieh
+her
+<g>
+,
+ein
+Satz
+<g>
+!
+```
+
+ [*\>\>
+zurück zum Beginn*](#top)
+
+### <span id="multiStrukturattribute"></span>Gemeinsame Attribute für `<doc>` `<field>` und `<p>`
+
+#### <span id="multi.dupl"></span>dupl (in `<doc>`, `<field>`, `<p>`)
+
+Quelle: onion [externer
+link](http://corpus.tools/wiki/Onion)
+
+In den Ausgangsdaten können sich Doubletten von Artikeln
+befinden. Es wurde versucht diese Doubletten automatisch zu erkennen und
+-- je nach Art und Ursache -- explizit zu markieren oder gleich ganz zu
+entfernen.
+
+  - *vollständige Duplikate*: Artikel die sich in mindestens 98% ihrer
+    n-gramme mit anderen Artikeln derselben Zeitungsausgabe
+    überschneiden: werden vorab entfernt.
+  - *partielle Duplikate* - Artikel in denen mindestens 60% der n-gramme
+    bereits in anderen Artikeln vorkamen: werden als solche markiert,
+    aber nicht entfernt.
+
+Vgl. METHODS\_DEDUPLICATION
+
+| Wert        | Bedeutung                                                                            | Quelle | Kommentar                                |
+| :---------- | :----------------------------------------------------------------------------------- | :----- | :--------------------------------------- |
+| dfull       | `<doc>` ist ein *vollständiges Duplikat* eines anderen Artikels in derselben Ausgabe | onion  | *wurde vorab entfernt*                   |
+| dpart       | `<doc>` ist ein *partielles Duplikat* eines anderen Artikels in derselben Ausgabe    | onion  |                                          |
+| dkleinefull | `<doc>` ist ein *vollständiges Duplikat* eines Artikels aus KLEINE                   | onion  | nur in NVT *wurde vorab entfernt*        |
+| dkleinepart | `<doc>` ist ein *vollständiges Duplikat* eines Artikels aus KLEINE                   | onion  | nur in NVT                               |
+| ftitle      | `<field type="title">` ist ein *faux title*                                          |        | nur in Strukturen `<field type="title">` |
+
+[*\>\> zurück zum Beginn*](#top)
+
+## <span id="links"></span>Weiterführende Links
+
+### <span id="tagsets"></span>Informationen zu den verwendeten Tag-sets
+
+*Kompakte Übersicht*
+
+  - Stuttgart-Tübingen-PoS-Tagset (STTS) wie es im PoS-attribut `posTT`
+    verwendet wird
+      - [https://www.ims.uni-stuttgart.de/forschung/ressourcen/lexika/germantagsets](https://www.ims.uni-stuttgart.de/forschung/ressourcen/lexika/germantagsets/#id-cfcbf0a7-0)
+        (dieser Link findet sich auch in der SKE selbst unter `Corpus
+        info -> Tagset Description`)
+  - Tag-set des RFTaggers wie es im PoS-attribut `pos` verwendet wird:
+      - <https://www.sketchengine.eu/german-rftagger-part-of-speech-tagset>
+
+*Detailierte Beschreibungen* De-facto wurden *alle* für das amc
+verwendeten PoS-Tagger auf dem TIGER-Korpus trainiert. Ausführliche
+Dokumentationen der Annotations-Konventionen für das TIGER-Korpus finden
+sich hier:
+<http://www.ims.uni-stuttgart.de/forschung/ressourcen/korpora/TIGERCorpus/annotation>
+Insbesondere relevant für das amc sind:
+
+  - *"A Brief Introduction to the TIGER Treebank"*
+      - <http://www.ims.uni-stuttgart.de/forschung/ressourcen/korpora/TIGERCorpus/annotation/tiger_introduction.pdf>
+      - **Note**: die minimalen Adaptionen des STTS Tagsets finden sich
+        in **Appendix A.2 Deviation from STTS in the TIGER Treebank**
+  - *"TIGER Morphologie-Annotationsschema"* : Beschreibung der
+    kombinierten PoS *plus* Morphoplogie-tags in `pos`:
+      - <http://www.ims.uni-stuttgart.de/forschung/ressourcen/korpora/TIGERCorpus/annotation/tiger_scheme-morph.pdf>
+
+[*\>\> zurück zum Beginn*](#top)
+
+## <span id="tools"></span>Verwendete NLP-Tools
+
+Die folgenden Tools wurden für die Erstellung der Annotationen im amc
+version 4.x verwendet.
+
+### Tokenisierung
+
+  - Unitok v 3.2.7 <http://corpus.tools/wiki/Unitok>
+
+### Duplikaterkennung
+
+  - onion v 1.2 <http://corpus.tools/wiki/Onion>
+
+### PoS Tagging
+
+  - RFTagger <http://www.cis.uni-muenchen.de/~schmid/tools/RFTagger>
+      - Helmut Schmid and Florian Laws: Estimation of Conditional
+        Probabilities with Decision Trees and an Application to
+        Fine-Grained POS Tagging, COLING 2008, Manchester, Great
+        Britain.
+  - Treetagger v 3.2
+    <http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger>
+      - Helmut Schmid (1995): Improvements in Part-of-Speech Tagging
+        with an Application to German. Proceedings of the ACL
+        SIGDAT-Workshop. Dublin, Ireland.
+
+### PoS Tagging, Named Entities, Dependenzstrukturen
+
+  - Spacy v 3.2 <https://spacy.io/>
+
+[*\>\> zurück zum Beginn*](#top)
+
+## <span id="data"></span>Zusätzliche Resourcen
+
+### Vollformlexika
+
+  - Dbnary (dump von 2022-01) <http://kaiko.getalp.org/about-dbnary> :
+    aus dem Wiktionary abgeleitete Vollformlexika
+
+[*\>\> zurück zum Beginn*](#top)
