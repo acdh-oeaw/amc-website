@@ -1,68 +1,68 @@
 {
-  "links": [
-    {
-      "discriminant": "link",
-      "value": {
-        "label": "Das amc!",
-        "url": "/about-amc/"
-      }
-    },
-    {
-      "discriminant": "link",
-      "value": {
-        "label": "Zugang",
-        "url": "/access-conditions/"
-      }
-    },
-    {
-      "discriminant": "menu",
-      "value": {
-        "label": "Dokumentation",
-        "links": [
-          {
-            "label": "Medienliste",
-            "url": "/dokumentation/medienliste/"
-          },
-          {
-            "label": "amc in Zahlen",
-            "url": "/dokumentation/amc-in-zahlen/"
-          },
-          {
-            "label": "Annotationsdetails",
-            "url": "/dokumentation/korpusinhalt-attribute/"
-          },
-          {
-            "label": "Versionsarchiv",
-            "url": "/dokumentation/dokumentation-versionsarchiv/"
-          },
-          {
-            "label": "Trefferzahlen normalisieren",
-            "url": "/normalisierung/"
-          },
-          {
-            "label": "Suchen mit der CorpusQueryLanguage CQL (Tutorial)",
-            "url": "/dokumentation/nosketchengine-query-language/"
-          },
-          {
-            "label": "amc zitieren",
-            "url": "/dokumentation/zitieren/"
-          }
-        ]
-      }
-    },
-    {
-      "discriminant": "link",
-      "value": {
-        "label": "Publikationen",
-        "url": "/publikationen/"
-      }
-    },
-    {
-      "discriminant": "link",
-      "value": {
-        "label": "Nutzungsbedingungen",
-        "url": "/nutzungsbedingungen/"
-      }
-    }
-  ]
+	"links": [
+		{
+			"discriminant": "link",
+			"value": {
+				"label": "Das amc!",
+				"href": "/about-amc/"
+			}
+		},
+		{
+			"discriminant": "link",
+			"value": {
+				"label": "Zugang",
+				"href": "/access-conditions/"
+			}
+		},
+		{
+			"discriminant": "menu",
+			"value": {
+				"label": "Dokumentation",
+				"links": [
+					{
+						"label": "Medienliste",
+						"href": "/dokumentation/medienliste/"
+					},
+					{
+						"label": "amc in Zahlen",
+						"href": "/dokumentation/amc-in-zahlen/"
+					},
+					{
+						"label": "Annotationsdetails",
+						"href": "/dokumentation/korpusinhalt-attribute/"
+					},
+					{
+						"label": "Versionsarchiv",
+						"href": "/dokumentation/dokumentation-versionsarchiv/"
+					},
+					{
+						"label": "Trefferzahlen normalisieren",
+						"href": "/normalisierung/"
+					},
+					{
+						"label": "Suchen mit der CorpusQueryLanguage CQL (Tutorial)",
+						"href": "/dokumentation/nosketchengine-query-language/"
+					},
+					{
+						"label": "amc zitieren",
+						"href": "/dokumentation/zitieren/"
+					}
+				]
+			}
+		},
+		{
+			"discriminant": "link",
+			"value": {
+				"label": "Publikationen",
+				"href": "/publikationen/"
+			}
+		},
+		{
+			"discriminant": "link",
+			"value": {
+				"label": "Nutzungsbedingungen",
+				"href": "/nutzungsbedingungen/"
+			}
+		}
+	]
 }

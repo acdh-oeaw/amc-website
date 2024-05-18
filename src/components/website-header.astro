@@ -47,7 +47,7 @@ const home = t("WebsiteHeader.links.home");
 												{item.value.links.map((link) => {
 													return (
 														<li>
-															<NavMenuItem href={link.url}>{link.label}</NavMenuItem>
+															<NavMenuItem href={link.href}>{link.label}</NavMenuItem>
 														</li>
 													);
 												})}
@@ -60,7 +60,7 @@ const home = t("WebsiteHeader.links.home");
 
 						return (
 							<li>
-								<NavMenuLink href={item.value.url}>{item.value.label}</NavMenuLink>
+								<NavMenuLink href={item.value.href}>{item.value.label}</NavMenuLink>
 							</li>
 						);
 					})

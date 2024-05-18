@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+
+import { getImageImport } from "@/lib/get-image-import";
+
+interface Props {
+	image: string;
+	leadIn: string;
+	link: {
+		label: string;
+		href: string;
+	};
+	title: string;
+}
+
+const { image, leadIn, link, title } = Astro.props;
+---
+
+<article class="rounded-b-md border border-t-[5px] border-[#0000001a] border-t-brand bg-white">
+	<a aria-label={link.label} class="relative block aspect-[1.5]" href={link.href}>
+		<Image alt="" class="absolute inset-0 size-full object-cover" src={getImageImport(image)} />
+	</a>
+	<div class="grid gap-y-3 border-t border-[#00000026] p-6">
+		<header>
+			<h3 class="text-xl font-medium text-[#444]">
+				<a class="hover:underline" href={link.href}>
+					{title}
+				</a>
+			</h3>
+		</header>
+		<p class="text-md text-[#6f757c]">{leadIn}</p>
+		<footer>
+			<a
+				class="inline-flex rounded-md border border-[#0000001a] px-3 py-1 text-[#212529] transition hover:bg-[#212529] hover:text-white"
+				href={link.href}
+			>
+				{link.label}
+			</a>
+		</footer>
+	</div>
+</article>

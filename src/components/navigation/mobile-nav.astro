@@ -27,7 +27,7 @@ import navigation from "~/content/navigation.json";
 									{item.value.links.map((link) => {
 										return (
 											<li>
-												<NavLink class="transition hover:text-[#212529]" href={link.url}>
+												<NavLink class="transition hover:text-[#212529]" href={link.href}>
 													{link.label}
 												</NavLink>
 											</li>
@@ -41,7 +41,7 @@ import navigation from "~/content/navigation.json";
 
 				return (
 					<li>
-						<NavLink class="transition hover:text-[#212529]" href={item.value.url}>
+						<NavLink class="transition hover:text-[#212529]" href={item.value.href}>
 							{item.value.label}
 						</NavLink>
 					</li>

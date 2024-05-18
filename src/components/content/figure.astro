@@ -1,4 +1,8 @@
 ---
+import { Image } from "astro:assets";
+
+import { getImageImport } from "@/lib/get-image-import";
+
 interface Props {
 	alt?: string;
 	href: string;
@@ -8,7 +12,7 @@ const { alt = "", href } = Astro.props;
 ---
 
 <figure>
-	<img alt={alt} src={href} />
+	<Image alt={alt} src={getImageImport(href)} />
 	<figcaption>
 		<slot />
 	</figcaption>

@@ -170,7 +170,7 @@ export default config({
 										label: "Label",
 										validation: { isRequired: true },
 									}),
-									url: fields.url({
+									href: fields.url({
 										label: "URL",
 										validation: { isRequired: true },
 									}),
@@ -246,7 +246,7 @@ export default config({
 															label: "Label",
 															validation: { isRequired: true },
 														}),
-														url: fields.url({
+														href: fields.url({
 															label: "URL",
 															validation: { isRequired: true },
 														}),
@@ -606,7 +606,7 @@ export default config({
 									label: "Label",
 									validation: { isRequired: true },
 								}),
-								url: fields.url({
+								href: fields.url({
 									label: "URL",
 									validation: { isRequired: true },
 								}),
@@ -629,7 +629,7 @@ export default config({
 												label: "Label",
 												validation: { isRequired: true },
 											}),
-											url: fields.url({
+											href: fields.url({
 												label: "URL",
 												validation: { isRequired: true },
 											}),

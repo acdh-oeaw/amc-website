@@ -72,6 +72,7 @@
 		"remark-smartypants": "^3.0.1",
 		"retext-smartypants": "^6.1.0",
 		"satori": "^0.10.13",
+		"sharp": "^0.33.4",
 		"shiki": "^1.5.1",
 		"unified": "^11.0.4",
 		"unist-util-visit": "^5.0.0",
