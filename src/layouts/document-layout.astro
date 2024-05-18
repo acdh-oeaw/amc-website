@@ -37,6 +37,7 @@ const jsonLd: WithContext<WebSite> = {
 
 const matomoBaseUrl = env.PUBLIC_MATOMO_BASE_URL;
 const matomoId = env.PUBLIC_MATOMO_ID;
+const googleSiteVerification = env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 ---
 
 <html lang={locale}>
@@ -99,6 +100,12 @@ const matomoId = env.PUBLIC_MATOMO_ID;
 
 					<script>import {initAnalytics} from "@/lib/analytics"; initAnalytics(Astro);</script>
 				</Fragment>
+			) : null
+		}
+
+		{
+			googleSiteVerification != null ? (
+				<meta name="google-site-verification" content={googleSiteVerification} />
 			) : null
 		}
 	</head>
