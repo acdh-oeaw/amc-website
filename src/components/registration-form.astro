@@ -115,8 +115,19 @@ import TextInputField from "@/components/form/text-input-field.astro";
 	<label class="text-sm">
 		<input class="mr-0.5" name="terms-and-conditions" required={true} type="checkbox" />
 		<span>
-			Ich akzeptiere die <a href="/nutzungsbedingungen/" target="_blank"> Nutzungsbedingungen </a> und
-			den <a href="/imprint/" target="_blank">Haftungsausschluss</a> in der Fassung 2023-12-01.
+			Ich akzeptiere die <a
+				class="underline decoration-dotted underline-offset-4 hover:decoration-solid"
+				href="/nutzungsbedingungen/"
+				target="_blank"
+			>
+				Nutzungsbedingungen
+			</a> und den <a
+				class="underline decoration-dotted underline-offset-4 hover:decoration-solid"
+				href="/imprint/"
+				target="_blank"
+			>
+				Haftungsausschluss
+			</a> in der Fassung 2023-12-01.
 		</span>
 	</label>
 

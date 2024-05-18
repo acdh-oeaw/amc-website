@@ -19,10 +19,11 @@ const id = generateUniqueId();
 
 {
 	Array.isArray(tableOfContents) && tableOfContents.length > 0 ? (
-		<nav aria-labelledby={id}>
-			<h2 class:list={{ "sr-only": title == null }} id={id}>
-				{title ?? t("TableOfContents.tableOfContents")}
-			</h2>
+		<nav
+			aria-label={title != null ? undefined : t("TableOfContents.tableOfContents")}
+			aria-labelledby={title != null ? id : undefined}
+		>
+			{title != null ? <h2 id={id}>{title}</h2> : null}
 			<div class="not-prose mb-12">
 				<TableOfContentsLevel headings={tableOfContents} />
 			</div>
