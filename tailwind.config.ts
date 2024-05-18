@@ -19,6 +19,19 @@ const config: Config = {
 			screens: {
 				lg: "70rem",
 			},
+			typography: {
+				DEFAULT: {
+					css: {
+						maxWidth: "none",
+						/** Don't add quotes around `blockquote`. */
+						"blockquote p:first-of-type::before": null,
+						"blockquote p:last-of-type::after": null,
+						/** Don't add backticks around inline `code`. */
+						"code::before": null,
+						"code::after": null,
+					},
+				},
+			},
 		},
 	},
 };

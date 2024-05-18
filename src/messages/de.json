@@ -43,6 +43,9 @@
 		},
 		"title": "Registrierung"
 	},
+	"TableOfContents": {
+		"tableOfContents": "Inhaltsverzeichnis"
+	},
 	"WebsiteFooter": {
 		"links": {
 			"imprint": "Impressum"

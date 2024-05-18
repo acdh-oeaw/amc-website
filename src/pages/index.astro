@@ -45,6 +45,13 @@ const documentTitle = t("IndexPage.meta.title");
 		<div class="grid gap-y-12 py-12">
 			{
 				page.main.sections.map((section) => {
+					const sectionStyles = {
+						fluid: "grid-fluid-cols-80",
+						"two-columns": "grid-cols-2",
+						"three-columns": "grid-cols-3",
+						"four-columns": "grid-cols-4",
+					};
+
 					return (
 						<section class="mx-auto grid w-full max-w-screen-lg gap-y-8 px-4">
 							<h2 class="border-b border-[#00000026] text-xl font-medium">
@@ -52,7 +59,7 @@ const documentTitle = t("IndexPage.meta.title");
 									{section.title}
 								</span>
 							</h2>
-							<ul class="grid gap-8 grid-fluid-cols-80" role="list">
+							<ul class:list={["grid gap-8", sectionStyles[section.variant]]} role="list">
 								{section.cards.map((card) => {
 									return (
 										<li>

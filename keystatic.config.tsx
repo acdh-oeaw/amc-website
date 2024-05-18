@@ -1,7 +1,7 @@
 import { pick } from "@acdh-oeaw/lib";
 import { collection, config, fields, singleton } from "@keystatic/core";
 import { block, mark, wrapper } from "@keystatic/core/content-components";
-import { DownloadIcon, ImageIcon, LinkIcon } from "lucide-react";
+import { DownloadIcon, ImageIcon, LinkIcon, ListIcon } from "lucide-react";
 
 import { Logo } from "@/components/logo";
 import { createAssetPaths, createPreviewUrl } from "@/config/content.config";
@@ -58,6 +58,17 @@ function createComponents(
 			},
 			ContentView(props) {
 				return props.value.label;
+			},
+		}),
+		TableOfContents: block({
+			label: "Table of contents",
+			description: "Insert a table of contents",
+			icon: <ListIcon />,
+			schema: {
+				title: fields.text({
+					label: "Title",
+					// validation: { isRequired: false },
+				}),
 			},
 		}),
 	};
@@ -189,6 +200,28 @@ export default config({
 									title: fields.text({
 										label: "Title",
 										validation: { isRequired: true },
+									}),
+									variant: fields.select({
+										label: "Variant",
+										options: [
+											{
+												label: "Fluid",
+												value: "fluid",
+											},
+											{
+												label: "Two columns",
+												value: "two-columns",
+											},
+											{
+												label: "Three columns",
+												value: "three-columns",
+											},
+											{
+												label: "Four columns",
+												value: "four-columns",
+											},
+										],
+										defaultValue: "fluid",
 									}),
 									cards: fields.array(
 										fields.object(
