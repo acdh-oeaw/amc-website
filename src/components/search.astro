@@ -21,7 +21,7 @@ const { t } = await createI18n(Astro.currentLocale as Locale | undefined);
 
 	<dialog
 		aria-label={t("Search.search")}
-		class="fixed mx-auto min-h-full w-full max-w-screen-md rounded-lg border bg-[#f1f1f1] backdrop:bg-[#545864a8] backdrop:backdrop-blur-sm open:grid sm:mt-[5rem] sm:max-h-[calc(100%-10rem)] sm:min-h-[16rem] sm:shadow-lg"
+		class="fixed mx-auto min-h-full w-full max-w-screen-md border bg-[#f1f1f1] backdrop:bg-[#545864a8] backdrop:backdrop-blur-sm open:grid sm:mt-[5rem] sm:max-h-[calc(100%-10rem)] sm:min-h-[16rem] sm:rounded-lg sm:shadow-lg"
 	>
 		<div class="grid size-full gap-y-4 px-8 py-6" data-dialog-content>
 			<div class="relative mt-8">

@@ -3,6 +3,7 @@ import { Icon } from "astro-icon/components";
 
 import { mobileNavId } from "@/components/navigation/constants";
 import NavLink from "@/components/navigation/nav-link.astro";
+import Search from "@/components/search.astro";
 import type { Navigation } from "@/lib/content/types";
 import navigation from "~/content/navigation.json";
 ---
@@ -49,4 +50,10 @@ import navigation from "~/content/navigation.json";
 			})
 		}
 	</ul>
+
+	<hr class="my-6" />
+
+	<div class="flex justify-end">
+		<Search />
+	</div>
 </div>
