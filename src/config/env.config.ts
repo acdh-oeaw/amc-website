@@ -17,6 +17,7 @@ export const env = createEnv({
 	private(input) {
 		const Schema = v.object({
 			EMAIL_CONTACT_ADDRESS: v.optional(v.string([v.email()])),
+			EMAIL_CONTACT_ADDRESS_BCC: v.optional(v.string([v.email()])),
 			EMAIL_SMTP_PORT: v.optional(v.coerce(v.number([v.integer(), v.minValue(1)]), Number)),
 			EMAIL_SMTP_SERVER: v.optional(v.string([v.minLength(1)])),
 			EMAIL_SMTP_USERNAME: v.optional(v.string([v.minLength(1)])),

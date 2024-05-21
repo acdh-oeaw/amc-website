@@ -38,6 +38,7 @@ the following variables are available:
 the email service can be configured with these environment variables:
 
 - `EMAIL_CONTACT_ADDRESS` (required): email will be sent to this address.
+- `EMAIL_CONTACT_ADDRESS_BCC` (optional): email will be sent to this address.
 - `EMAIL_SMTP_SERVER` and `EMAIL_SMTP_PORT` (required): which smtp server to use.
 - `EMAIL_SMTP_USERNAME` and `EMAIL_SMTP_PASSWORD` (optional): not needed on acdh-ch infrastructure,
   can be useful for testing with e.e. <https://ethereal.email>.
