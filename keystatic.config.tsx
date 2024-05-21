@@ -9,7 +9,7 @@ import { env } from "@/config/env.config";
 
 function createComponents(
 	assetPath: `/${string}/`,
-	components?: Array<"Download" | "Figure" | "LinkButton">,
+	components?: Array<"Download" | "Figure" | "LinkButton" | "TableOfContents">,
 ) {
 	const allComponents = {
 		Download: mark({

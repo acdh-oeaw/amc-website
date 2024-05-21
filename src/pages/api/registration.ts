@@ -137,7 +137,7 @@ function createPdf(submission: RegistrationFormSchema): Promise<Buffer> {
 			reject(error);
 		});
 
-		pdf.image(join(process.cwd(), "./public/assets/images/amc-logo.png"), 20, 20, { height: 50 });
+		pdf.image(join(process.cwd(), "./client/assets/images/amc-logo.png"), 20, 20, { height: 50 });
 
 		pdf.fontSize(16).text("Antrag auf Nutzung des amc", 25, 125);
 

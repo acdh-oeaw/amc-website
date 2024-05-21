@@ -13,7 +13,12 @@ const { image } = Astro.props;
 <div class="my-2 border-t-[5px] border-brand bg-white">
 	{
 		image != null ? (
-			<Image alt="" class="h-60 w-full object-cover" src={getImageImport(image)} />
+			<Image
+				alt=""
+				class="h-60 w-full object-cover"
+				fetchpriority="high"
+				src={getImageImport(image)}
+			/>
 		) : null
 	}
 	<div class="grid gap-y-4 px-8 pb-12 pt-6">
