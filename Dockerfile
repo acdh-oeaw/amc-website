@@ -62,7 +62,9 @@ WORKDIR /app
 USER node
 
 COPY --from=base --chown=node:node /app/node_modules ./node_modules
-COPY --from=build --chown=node:node /app/dist ./dist
+COPY --from=build --chown=node:node /app/dist ./
+# needed for registration form pdf
+COPY --from=build --chown=node:node /app/public/assets/images/amc-logo.png ./public/assets/images/amc-logo.png
 
 ENV NODE_ENV=production
 ENV HOST=0.0.0.0
@@ -70,4 +72,4 @@ ENV PORT=3000
 
 EXPOSE 3000
 
-CMD [ "node", "./dist/server/entry.mjs" ]
+CMD [ "node", "./server/entry.mjs" ]

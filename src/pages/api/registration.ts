@@ -91,7 +91,7 @@ export async function POST(context: APIContext) {
 	try {
 		const subject = "[AMC website] registration form submission";
 		const message =
-			"Dear maintainer,\n\nplease find attached details about a new request for AMC access permissions in json and pdf formats.\n\nBest,\nskynet.";
+			"Dear maintainer,\n\nplease find attached details about a new request for AMC access permissions in json and pdf formats.\n\nBest,\nAMC website.";
 
 		await sendEmail({
 			from: submission.email,
@@ -137,7 +137,7 @@ function createPdf(submission: RegistrationFormSchema): Promise<Buffer> {
 			reject(error);
 		});
 
-		pdf.image(join(process.cwd(), "./client/assets/images/amc-logo.png"), 20, 20, { height: 50 });
+		pdf.image(join(process.cwd(), "./public/assets/images/amc-logo.png"), 20, 20, { height: 50 });
 
 		pdf.fontSize(16).text("Antrag auf Nutzung des amc", 25, 125);
 
