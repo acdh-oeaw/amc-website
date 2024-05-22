@@ -7,7 +7,7 @@ import TextAreaField from "@/components/form/text-area-field.astro";
 import TextInputField from "@/components/form/text-input-field.astro";
 ---
 
-<form action="/api/registration" class="grid gap-y-6" method="post">
+<form action="/api/registration" class="grid gap-y-6" data-astro-reload method="post">
 	<TextInputField label="Vorname" name="first-name" required={true} />
 
 	<TextInputField label="Familienname" name="last-name" required={true} />
