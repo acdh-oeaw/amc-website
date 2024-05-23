@@ -24,11 +24,6 @@ export default defineConfig({
 	base: env.PUBLIC_APP_BASE_PATH,
 	experimental: {
 		contentCollectionCache: true,
-		security: {
-			csrfProtection: {
-				origin: true,
-			},
-		},
 	},
 	integrations: [
 		icon({
@@ -74,6 +69,9 @@ export default defineConfig({
 		},
 	},
 	scopedStyleStrategy: "where",
+	security: {
+		checkOrigin: true,
+	},
 	server: {
 		port: 3000,
 	},
