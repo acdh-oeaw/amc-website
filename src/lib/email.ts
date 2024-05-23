@@ -17,10 +17,13 @@ export function sendEmail(params: SendEmailParams) {
 		host: env.EMAIL_SMTP_SERVER,
 		port: env.EMAIL_SMTP_PORT,
 		secure: false,
-		auth: {
-			user: env.EMAIL_SMTP_USERNAME,
-			pass: env.EMAIL_SMTP_PASSWORD,
-		},
+		auth:
+			env.EMAIL_SMTP_USERNAME && env.EMAIL_SMTP_PASSWORD
+				? {
+						user: env.EMAIL_SMTP_USERNAME,
+						pass: env.EMAIL_SMTP_PASSWORD,
+					}
+				: undefined,
 	});
 
 	return transporter.sendMail({
