@@ -17,6 +17,7 @@ const { image } = Astro.props;
 				alt=""
 				class="h-60 w-full object-cover"
 				fetchpriority="high"
+				loading="eager"
 				src={getImageImport(image)}
 			/>
 		) : null
