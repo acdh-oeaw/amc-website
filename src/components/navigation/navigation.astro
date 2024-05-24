@@ -13,6 +13,21 @@ const { class: className, label } = Astro.props;
 	</nav>
 </nav-bar>
 
+<script is:inline>
+	/**
+	 * In the initial html, all menus are open, so they work when javascript is disabled.
+	 * Close them as soon as javascript loads.
+	 */
+	document.querySelectorAll("div[data-nav-menu]").forEach((element) => {
+		// @ts-ignore
+		element.dataset.open = "false";
+	});
+	document.querySelectorAll("button[data-nav-menu-trigger]").forEach((element) => {
+		// @ts-ignore
+		element.setAttribute("aria-expanded", "false");
+	});
+</script>
+
 <script>
 	import { generateUniqueId } from "@/lib/generate-unique-id";
 	import { assert } from "@acdh-oeaw/lib";
@@ -65,7 +80,7 @@ const { class: className, label } = Astro.props;
 					const item: NavMenu = { kind: "menu", menu, trigger, popover };
 					items.push(item);
 
-					toggleMenu(item);
+					closeMenu(item);
 
 					trigger.addEventListener("click", onTriggerClick);
 					root.addEventListener("focusout", onBlur);
