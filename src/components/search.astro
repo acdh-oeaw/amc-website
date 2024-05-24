@@ -46,10 +46,12 @@ const { t } = await createI18n(Astro.currentLocale as Locale | undefined);
 			const closeButton = this.querySelector<HTMLButtonElement>("button[data-search-close]");
 			const dialog = this.querySelector<HTMLDialogElement>("dialog");
 			const dialogContent = this.querySelector<HTMLDivElement>("div[data-dialog-content]");
+			const dialogSearchResults = this.querySelector<HTMLDivElement>("div[data-search-results]");
 			assert(openButton);
 			assert(closeButton);
 			assert(dialog);
 			assert(dialogContent);
+			assert(dialogSearchResults);
 
 			function closeDialog() {
 				dialog?.close();
@@ -89,7 +91,7 @@ const { t } = await createI18n(Astro.currentLocale as Locale | undefined);
 					// @ts-expect-error — Missing types for @pagefind/default-ui package.
 					const { PagefindUI } = await import("@pagefind/default-ui");
 					new PagefindUI({
-						element: "[data-search-results]",
+						element: dialogSearchResults,
 						baseUrl: import.meta.env.BASE_URL,
 						bundlePath: import.meta.env.BASE_URL.replace(/\/$/, "") + "/pagefind/",
 						showImages: false,
