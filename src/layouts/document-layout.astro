@@ -8,9 +8,9 @@ import inter from "@fontsource-variable/inter/files/inter-latin-slnt-normal.woff
 import { ViewTransitions } from "astro:transitions";
 import type { WebSite, WithContext } from "schema-dts";
 
+import Analytics from "@/components/analytics.astro";
 import { env } from "@/config/env.config";
 import { defaultLocale, type Locale } from "@/config/i18n.config";
-import { createAnalyticsScript } from "@/lib/analytics";
 import { createI18n } from "@/lib/i18n";
 import { safeJsonLdReplacer } from "@/lib/safe-json-ld-replacer";
 
@@ -97,18 +97,7 @@ const googleSiteVerification = env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 			type="application/ld+json"
 		/>
 
-		{
-			matomoBaseUrl && matomoId ? (
-				<Fragment>
-					<script
-						is:inline
-						set:html={`(${String(createAnalyticsScript)})("${matomoBaseUrl.endsWith("/") ? matomoBaseUrl : matomoBaseUrl + "/"}", "${String(matomoId)}");`}
-					/>
-
-					<script>import {initAnalytics} from "@/lib/analytics"; initAnalytics(Astro);</script>
-				</Fragment>
-			) : null
-		}
+		{matomoBaseUrl && matomoId ? <Analytics baseUrl={matomoBaseUrl} id={matomoId} /> : null}
 
 		{
 			googleSiteVerification != null ? (

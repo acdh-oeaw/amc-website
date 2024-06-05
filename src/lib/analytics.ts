@@ -1,7 +1,3 @@
-import type { AstroGlobal } from "astro";
-
-import type { Locale } from "@/config/i18n.config";
-
 declare global {
 	interface Window {
 		_paq?: Array<unknown>;
@@ -26,18 +22,16 @@ export function createAnalyticsScript(baseUrl: string, id: number): void {
 /**
  * Track urls without locale prefix, and separate custom event for locale.
  */
-export function trackPageView(locale: Locale, url: URL): void {
-	/** @see https://developer.matomo.org/guides/tracking-javascript-guide#custom-variables */
-	window._paq?.push(["setCustomVariable", 1, "Locale", locale, "page"]);
+export function trackPageView(url: URL): void {
 	window._paq?.push(["setCustomUrl", url]);
 	window._paq?.push(["trackPageView"]);
 	window._paq?.push(["enableLinkTracking"]);
 }
 
-export function initAnalytics(Astro: AstroGlobal) {
+export function initAnalytics() {
 	function onPageLoad() {
 		const url = new URL(window.location.href);
-		trackPageView(Astro.currentLocale as Locale, url);
+		trackPageView(url);
 	}
 
 	/** Track page views with `ViewTransitions`. */
