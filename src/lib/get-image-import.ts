@@ -6,6 +6,8 @@ import type { ImageMetadata } from "astro";
 const images = import.meta.glob<{ default: ImageMetadata }>("/public/assets/**/*.@(jpeg|jpg|png)");
 
 export function getImageImport(path: string) {
+	if (!path.startsWith("/")) return path;
+
 	const publicPath = join("/public", path);
 	const image = images[publicPath];
 	assert(image, `Missing image "${publicPath}".`);

@@ -12,6 +12,7 @@ const { alt = "", href } = Astro.props;
 ---
 
 <figure>
+	{/* @ts-expect-error Upstream type issue. */}
 	<Image alt={alt} src={getImageImport(href)} />
 	<figcaption>
 		<slot />
