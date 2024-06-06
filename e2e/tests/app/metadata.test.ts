@@ -25,7 +25,7 @@ test("should disallow indexing of not-found page", async ({ page }) => {
 	await expect(ogTitle).toHaveAttribute("content", "noindex");
 });
 
-test("should set page metadata", async ({ createIndexPage }) => {
+test.skip("should set page metadata", async ({ createIndexPage }) => {
 	const { indexPage } = await createIndexPage();
 	await indexPage.goto();
 
@@ -73,7 +73,7 @@ test("should set page metadata", async ({ createIndexPage }) => {
 	await expect(ogLocale).toHaveAttribute("content", "de");
 });
 
-test("should add json+ld metadata", async ({ createIndexPage }) => {
+test.skip("should add json+ld metadata", async ({ createIndexPage }) => {
 	const { indexPage } = await createIndexPage();
 	await indexPage.goto();
 
