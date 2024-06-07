@@ -89,7 +89,7 @@ export async function POST(context: APIContext) {
 	const submission = result.output;
 
 	try {
-		const subject = "[AMC website] registration form submission";
+		const subject = `[AMC website] registration form submission ${submission.lastName.toLowerCase()}_${dateTime.format(Date.now())}` ;
 		const message =
 			"Dear maintainer,\n\nplease find attached details about a new request for AMC access permissions in json and pdf formats.\n\nBest,\nAMC website.";
 
@@ -99,11 +99,11 @@ export async function POST(context: APIContext) {
 			text: message,
 			attachments: [
 				{
-					filename: `amc-registration-form-${submission.lastName.toLowerCase()}.json`,
+					filename: `amc-registration-form-${submission.lastName.toLowerCase()}_${dateTime.format(Date.now())}.json`,
 					content: JSON.stringify(submission, null, 2),
 				},
 				{
-					filename: `amc-registration-form-${submission.lastName.toLowerCase()}.pdf`,
+					filename: `amc-registration-form-${submission.lastName.toLowerCase()}_${dateTime.format(Date.now())}.pdf`,
 					content: await createPdf(submission),
 				},
 			],
@@ -139,7 +139,7 @@ function createPdf(submission: RegistrationFormSchema): Promise<Buffer> {
 
 		pdf.image(join(process.cwd(), "./public/assets/images/amc-logo.png"), 20, 20, { height: 50 });
 
-		pdf.fontSize(16).text("Antrag auf Nutzung des amc", 25, 125);
+		pdf.fontSize(16).text(`Antrag auf Nutzung des amc ${submission.lastName} - ${dateTime.format(Date.now())}`, 25, 125);
 
 		pdf.fontSize(12).text("\n\n1. Allgemeines\n\n");
 
