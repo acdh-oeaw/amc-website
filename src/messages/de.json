@@ -37,7 +37,7 @@
 		"skip-to-main-content": "Zum Hauptinhalt springen"
 	},
 	"SuccessPage": {
-		"message": "Registrierung erfolgreich gesendet!",
+		"message": "Registrierung erfolgreich gesendet! Die Bearbeitung Ihrer Anfrage kann einige Tage in Anspruch nehmen. Sollten Sie länger keine Nachricht erhalten, überprüfen Sie bitte Ihren spam-Ordner, bzw. kontaktieren Sie uns gerne erneut",
 		"meta": {
 			"title": "Registrierung"
 		},
