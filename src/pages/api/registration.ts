@@ -1,6 +1,6 @@
 import { join } from "node:path";
 
-import { getFormDataValues, log } from "@acdh-oeaw/lib";
+import { getFormDataValues, isoDate, log } from "@acdh-oeaw/lib";
 import type { APIContext } from "astro";
 import PDFDocument from "pdfkit";
 import * as v from "valibot";
@@ -9,46 +9,41 @@ import { sendEmail } from "@/lib/email";
 
 export const prerender = false;
 
-const RegistrationFormSchema = v.transform(
-	v.object(
-		{
-			"first-name": v.string([v.minLength(1)]),
-			"last-name": v.string([v.minLength(1)]),
-			email: v.string([v.email()]),
-			affiliation: v.string([v.minLength(1)]),
-			renewal: v.picklist(["yes", "no"]),
-			"research-type": v.picklist([
-				"(Pro-)Seminarabeit",
-				"Bachelor- oder Masterarbeit",
-				"Dissertation oder Habilitationsschrift",
-				"Forschungsprojekt",
-				"other",
-			]),
-			"research-type-other": v.optional(v.string([v.minLength(1)])),
-			funding: v.picklist(["no", "other"]),
-			"funding-other": v.optional(v.string([v.minLength(1)])),
-			"short-title": v.string([v.minLength(1)]),
-			description: v.string([v.minLength(1)]),
-			duration: v.string([v.minLength(1)]),
-			publication: v.picklist(["no", "other"]),
-			"publication-other": v.optional(v.string([v.minLength(1)])),
-			ai: v.picklist(["no", "other"]),
-			"ai-other": v.optional(v.string([v.minLength(1)])),
-			"terms-and-conditions": v.literal("on"),
-			"data-consent": v.literal("on"),
-		},
-		[
-			v.custom((input) => {
-				if (input.ai === "other" && input["ai-other"] == null) return false;
-				if (input.funding === "other" && input["funding-other"] == null) return false;
-				if (input.publication === "other" && input["publication-other"] == null) return false;
-				if (input["research-type"] === "other" && input["research-type-other"] == null)
-					return false;
-				return true;
-			}),
-		],
-	),
-	(data) => {
+const RegistrationFormSchema = v.pipe(
+	v.object({
+		"first-name": v.pipe(v.string(), v.nonEmpty()),
+		"last-name": v.pipe(v.string(), v.nonEmpty()),
+		email: v.pipe(v.string(), v.email()),
+		affiliation: v.pipe(v.string(), v.nonEmpty()),
+		renewal: v.picklist(["yes", "no"]),
+		"research-type": v.picklist([
+			"(Pro-)Seminarabeit",
+			"Bachelor- oder Masterarbeit",
+			"Dissertation oder Habilitationsschrift",
+			"Forschungsprojekt",
+			"other",
+		]),
+		"research-type-other": v.optional(v.pipe(v.string(), v.nonEmpty())),
+		funding: v.picklist(["no", "other"]),
+		"funding-other": v.optional(v.pipe(v.string(), v.nonEmpty())),
+		"short-title": v.pipe(v.string(), v.nonEmpty()),
+		description: v.pipe(v.string(), v.nonEmpty()),
+		duration: v.pipe(v.string(), v.nonEmpty()),
+		publication: v.picklist(["no", "other"]),
+		"publication-other": v.optional(v.pipe(v.string(), v.nonEmpty())),
+		ai: v.picklist(["no", "other"]),
+		"ai-other": v.optional(v.pipe(v.string(), v.nonEmpty())),
+		"terms-and-conditions": v.literal("on"),
+		"data-consent": v.literal("on"),
+	}),
+	v.check((input) => {
+		if (input.ai === "other" && input["ai-other"] == null) return false;
+		if (input.funding === "other" && input["funding-other"] == null) return false;
+		if (input.publication === "other" && input["publication-other"] == null) return false;
+		if (input["research-type"] === "other" && input["research-type-other"] == null) return false;
+		return true;
+	}),
+	v.transform((data) => {
 		return {
 			firstName: data["first-name"],
 			lastName: data["last-name"],
@@ -69,11 +64,12 @@ const RegistrationFormSchema = v.transform(
 			ai: data.ai === "other" ? data["ai-other"]! : "Nein",
 			termsAndConditions: true,
 			dataConsent: true,
+			date: isoDate(new Date()),
 		};
-	},
+	}),
 );
 
-type RegistrationFormSchema = v.Output<typeof RegistrationFormSchema>;
+type RegistrationFormSchema = v.InferOutput<typeof RegistrationFormSchema>;
 
 const dateTime = new Intl.DateTimeFormat("de", { dateStyle: "medium" });
 
@@ -88,8 +84,10 @@ export async function POST(context: APIContext) {
 
 	const submission = result.output;
 
+	const suffix = [submission.lastName.toLowerCase(), submission.date].join("_");
+
 	try {
-		const subject = `[AMC website] registration form submission ${submission.lastName.toLowerCase()}_${dateTime.format(Date.now())}`;
+		const subject = `[AMC website] registration form submission ${suffix}`;
 		const message =
 			"Dear maintainer,\n\nplease find attached details about a new request for AMC access permissions in json and pdf formats.\n\nBest,\nAMC website.";
 
@@ -99,11 +97,11 @@ export async function POST(context: APIContext) {
 			text: message,
 			attachments: [
 				{
-					filename: `amc-registration-form-${submission.lastName.toLowerCase()}_${dateTime.format(Date.now())}.json`,
+					filename: `amc-registration-form-${suffix}.json`,
 					content: JSON.stringify(submission, null, 2),
 				},
 				{
-					filename: `amc-registration-form-${submission.lastName.toLowerCase()}_${dateTime.format(Date.now())}.pdf`,
+					filename: `amc-registration-form-${suffix}.pdf`,
 					content: await createPdf(submission),
 				},
 			],
@@ -120,6 +118,8 @@ export async function POST(context: APIContext) {
 //
 
 function createPdf(submission: RegistrationFormSchema): Promise<Buffer> {
+	const date = dateTime.format(new Date(submission.date));
+
 	return new Promise((resolve, reject) => {
 		const pdf = new PDFDocument();
 
@@ -139,13 +139,7 @@ function createPdf(submission: RegistrationFormSchema): Promise<Buffer> {
 
 		pdf.image(join(process.cwd(), "./public/assets/images/amc-logo.png"), 20, 20, { height: 50 });
 
-		pdf
-			.fontSize(16)
-			.text(
-				`Antrag auf Nutzung des amc ${submission.lastName} - ${dateTime.format(Date.now())}`,
-				25,
-				125,
-			);
+		pdf.fontSize(16).text(`Antrag auf Nutzung des amc ${submission.lastName} - ${date}`, 25, 125);
 
 		pdf.fontSize(12).text("\n\n1. Allgemeines\n\n");
 
@@ -177,7 +171,7 @@ function createPdf(submission: RegistrationFormSchema): Promise<Buffer> {
 					`Nutzungsbedingungen mit Fassung 2021-01-21 akzeptiert: Ja`,
 					`Ausdrückliche Zustimmung zur Datenspeicherung erteilt: Ja`,
 					`Vorgesehene Laufzeit des Forschungsvorhabens: ${submission.duration}`,
-					`Datum der Antragstellung: ${dateTime.format(Date.now())}`,
+					`Datum der Antragstellung: ${date}`,
 					"",
 					"Die Zugangsberechtigung wird für einen Zeitraum von 6 Monaten ab dem Datum der Bewilligung vergeben.",
 				].join("\n"),
