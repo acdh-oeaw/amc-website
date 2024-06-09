@@ -6,6 +6,6 @@ interface Props {
 const { class: className } = Astro.props;
 ---
 
-<h1 class:list={["leading-tighter text-[#212529] text-3xl font-extrabold", className]}>
+<h1 class:list={["text-3xl font-extrabold leading-tight text-[#212529]", className]}>
 	<slot />
 </h1>

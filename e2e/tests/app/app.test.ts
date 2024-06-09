@@ -65,17 +65,17 @@ test.describe("app", () => {
 		}
 	});
 
-	test("should serve a webmanifest", async ({ request }) => {
+	test("should serve a webmanifest", async ({ createI18n, request }) => {
 		const response = await request.get("/manifest.webmanifest");
 		const body = await response.body();
 
-		// TODO: use toMatchSnapshot
+		const i18n = await createI18n();
+
 		expect(body.toString()).toEqual(
 			JSON.stringify({
-				name: "Austrian Media Corpus",
-				short_name: "AMC",
-				description:
-					"Das Austrian Media Corpus (amc) ist eine Textdatenbank, die nahezu die gesamte österreichische Printmedienproduktion der letzten Jahrzehnte für die sprachwissenschaftliche Forschung zugänglich macht.",
+				name: i18n.t("metadata.title"),
+				short_name: i18n.t("metadata.shortTitle"),
+				description: i18n.t("metadata.description"),
 				icons: [
 					{ src: "/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
 					{ src: "/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
