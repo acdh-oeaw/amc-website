@@ -181,7 +181,7 @@ function createPdf(submission: RegistrationFormSchema): Promise<Buffer> {
 
 		pdf
 			.fontSize(8)
-			.txt(
+			.text(
 				"\n\nAustrian Centre for Digital Humanities and Cultural Heritage - ACDH-CH\nContact: info@acdh.oeaw.ac.at\n",
 			);
 
