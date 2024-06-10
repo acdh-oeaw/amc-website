@@ -83,8 +83,10 @@ export async function POST(context: APIContext) {
 	}
 
 	const submission = result.output;
-	// filenames: add lastname + date and make sure filename does not contain \s or ' 
-	const suffix = [submission.lastName.toLowerCase().replace(/[\s']+/g,"_"), submission.date].join("_");
+	// filenames: add lastname + date and make sure filename does not contain \s or '
+	const suffix = [submission.lastName.toLowerCase().replace(/[\s']+/g, "_"), submission.date].join(
+		"_",
+	);
 
 	try {
 		const subject = `[AMC website] registration form submission ${submission.lastName}`;
@@ -176,11 +178,12 @@ function createPdf(submission: RegistrationFormSchema): Promise<Buffer> {
 					"Die Zugangsberechtigung wird für einen Zeitraum von 6 Monaten ab dem Datum der Bewilligung vergeben.",
 				].join("\n"),
 			);
-			
+
 		pdf
 			.fontSize(8)
-			.txt("\n\nAustrian Centre for Digital Humanities and Cultural Heritage - ACDH-CH\nContact: info@acdh.oeaw.ac.at\n",
-			); 
+			.txt(
+				"\n\nAustrian Centre for Digital Humanities and Cultural Heritage - ACDH-CH\nContact: info@acdh.oeaw.ac.at\n",
+			);
 
 		pdf.end();
 	});
