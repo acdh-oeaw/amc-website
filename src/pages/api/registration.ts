@@ -83,11 +83,11 @@ export async function POST(context: APIContext) {
 	}
 
 	const submission = result.output;
-
-	const suffix = [submission.lastName.toLowerCase(), submission.date].join("_");
+	// filenames: add lastname + date and make sure filename does not contain \s or ' 
+	const suffix = [submission.lastName.toLowerCase().replace(/[\s']+/g,"_"), submission.date].join("_");
 
 	try {
-		const subject = `[AMC website] registration form submission ${suffix}`;
+		const subject = `[AMC website] registration form submission ${submission.lastName}`;
 		const message =
 			"Dear maintainer,\n\nplease find attached details about a new request for AMC access permissions in json and pdf formats.\n\nBest,\nAMC website.";
 
@@ -139,7 +139,7 @@ function createPdf(submission: RegistrationFormSchema): Promise<Buffer> {
 
 		pdf.image(join(process.cwd(), "./public/assets/images/amc-logo.png"), 20, 20, { height: 50 });
 
-		pdf.fontSize(16).text(`Antrag auf Nutzung des amc ${submission.lastName} - ${date}`, 25, 125);
+		pdf.fontSize(16).text(`Antrag auf Nutzung des amc: ${submission.lastName} - ${date}`, 25, 125);
 
 		pdf.fontSize(12).text("\n\n1. Allgemeines\n\n");
 
@@ -168,7 +168,7 @@ function createPdf(submission: RegistrationFormSchema): Promise<Buffer> {
 					"",
 					`Publikation geplant: ${submission.publication}`,
 					`KI-Modelle verwendet: ${submission.ai}`,
-					`Nutzungsbedingungen mit Fassung 2021-01-21 akzeptiert: Ja`,
+					`Nutzungsbedingungen mit Fassung 21.1.2021 akzeptiert: Ja`,
 					`Ausdrückliche Zustimmung zur Datenspeicherung erteilt: Ja`,
 					`Vorgesehene Laufzeit des Forschungsvorhabens: ${submission.duration}`,
 					`Datum der Antragstellung: ${date}`,
@@ -176,6 +176,11 @@ function createPdf(submission: RegistrationFormSchema): Promise<Buffer> {
 					"Die Zugangsberechtigung wird für einen Zeitraum von 6 Monaten ab dem Datum der Bewilligung vergeben.",
 				].join("\n"),
 			);
+			
+		pdf
+			.fontSize(8)
+			.txt("\n\nAustrian Centre for Digital Humanities and Cultural Heritage - ACDH-CH\nContact: info@acdh.oeaw.ac.at\n",
+			); 
 
 		pdf.end();
 	});
