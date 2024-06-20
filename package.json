@@ -45,13 +45,13 @@
 		"@astrojs/sitemap": "^3.1.6",
 		"@floating-ui/dom": "^1.6.5",
 		"@fontsource-variable/inter": "^5.0.18",
-		"@iconify-json/lucide": "^1.1.193",
+		"@iconify-json/lucide": "^1.1.194",
 		"@keystatic/astro": "^5.0.0",
-		"@keystatic/core": "^0.5.20",
+		"@keystatic/core": "^0.5.22",
 		"@mdx-js/mdx": "^3.0.1",
 		"@pagefind/default-ui": "^1.1.0",
 		"@shikijs/rehype": "^1.7.0",
-		"astro": "^4.10.3",
+		"astro": "^4.11.0",
 		"astro-icon": "^1.1.0",
 		"cva": "^1.0.0-beta.1",
 		"date-fns": "^3.6.0",
@@ -59,7 +59,7 @@
 		"hast-util-heading-rank": "^3.0.0",
 		"hast-util-to-string": "^3.0.0",
 		"lucide-react": "^0.395.0",
-		"nodemailer": "^6.9.13",
+		"nodemailer": "^6.9.14",
 		"pagefind": "^1.1.0",
 		"pdfkit": "^0.15.0",
 		"react": "^18.3.1",
@@ -74,9 +74,9 @@
 		"satori": "^0.10.13",
 		"sharp": "^0.33.4",
 		"shiki": "^1.7.0",
-		"unified": "^11.0.4",
+		"unified": "^11.0.5",
 		"unist-util-visit": "^5.0.0",
-		"valibot": "^0.32.0",
+		"valibot": "^0.33.3",
 		"vfile": "^6.0.1",
 		"vite": "^5.3.1"
 	},
@@ -94,7 +94,7 @@
 		"@playwright/test": "^1.44.1",
 		"@types/hast": "^3.0.4",
 		"@types/mdx": "^2.0.13",
-		"@types/node": "^20.14.2",
+		"@types/node": "^20.14.6",
 		"@types/nodemailer": "^6.4.15",
 		"@types/pdfkit": "^0.13.4",
 		"@types/react": "^18.3.3",
@@ -109,6 +109,7 @@
 		"eslint-plugin-tailwindcss": "^3.17.3",
 		"is-ci": "^3.0.1",
 		"lint-staged": "^15.2.7",
+		"mdast-util-mdx-jsx": "^3.1.2",
 		"npm-run-all2": "^6.2.0",
 		"postcss": "^8.4.38",
 		"prettier": "^3.3.2",
@@ -119,11 +120,6 @@
 		"tailwindcss": "^3.4.4",
 		"type-fest": "^4.20.1",
 		"typescript": "^5.4.5"
-	},
-	"pnpm": {
-		"overrides": {
-			"@keystatic/core": "0.5.19"
-		}
 	},
 	"browserslist": {
 		"development": [

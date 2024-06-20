@@ -4,9 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  '@keystatic/core': 0.5.19
-
 importers:
 
   .:
@@ -19,13 +16,13 @@ importers:
         version: 0.0.3
       '@astrojs/mdx':
         specifier: ^3.1.1
-        version: 3.1.1(astro@4.10.3(@types/node@20.14.2)(typescript@5.4.5))
+        version: 3.1.1(astro@4.11.0(@types/node@20.14.6)(typescript@5.4.5))
       '@astrojs/node':
         specifier: ^8.3.1
-        version: 8.3.1(astro@4.10.3(@types/node@20.14.2)(typescript@5.4.5))
+        version: 8.3.1(astro@4.11.0(@types/node@20.14.6)(typescript@5.4.5))
       '@astrojs/react':
         specifier: ^3.6.0
-        version: 3.6.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.3.1(@types/node@20.14.2))
+        version: 3.6.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.3.1(@types/node@20.14.6))
       '@astrojs/rss':
         specifier: ^4.0.6
         version: 4.0.6
@@ -39,14 +36,14 @@ importers:
         specifier: ^5.0.18
         version: 5.0.18
       '@iconify-json/lucide':
-        specifier: ^1.1.193
-        version: 1.1.193
+        specifier: ^1.1.194
+        version: 1.1.194
       '@keystatic/astro':
         specifier: ^5.0.0
-        version: 5.0.0(@keystatic/core@0.5.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(astro@4.10.3(@types/node@20.14.2)(typescript@5.4.5))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 5.0.0(@keystatic/core@0.5.22(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(astro@4.11.0(@types/node@20.14.6)(typescript@5.4.5))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@keystatic/core':
-        specifier: 0.5.19
-        version: 0.5.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^0.5.22
+        version: 0.5.22(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@mdx-js/mdx':
         specifier: ^3.0.1
         version: 3.0.1
@@ -57,8 +54,8 @@ importers:
         specifier: ^1.7.0
         version: 1.7.0
       astro:
-        specifier: ^4.10.3
-        version: 4.10.3(@types/node@20.14.2)(typescript@5.4.5)
+        specifier: ^4.11.0
+        version: 4.11.0(@types/node@20.14.6)(typescript@5.4.5)
       astro-icon:
         specifier: ^1.1.0
         version: 1.1.0
@@ -81,8 +78,8 @@ importers:
         specifier: ^0.395.0
         version: 0.395.0(react@18.3.1)
       nodemailer:
-        specifier: ^6.9.13
-        version: 6.9.13
+        specifier: ^6.9.14
+        version: 6.9.14
       pagefind:
         specifier: ^1.1.0
         version: 1.1.0
@@ -126,20 +123,20 @@ importers:
         specifier: ^1.7.0
         version: 1.7.0
       unified:
-        specifier: ^11.0.4
-        version: 11.0.4
+        specifier: ^11.0.5
+        version: 11.0.5
       unist-util-visit:
         specifier: ^5.0.0
         version: 5.0.0
       valibot:
-        specifier: ^0.32.0
-        version: 0.32.0
+        specifier: ^0.33.3
+        version: 0.33.3
       vfile:
         specifier: ^6.0.1
         version: 6.0.1
       vite:
         specifier: ^5.3.1
-        version: 5.3.1(@types/node@20.14.2)
+        version: 5.3.1(@types/node@20.14.6)
     devDependencies:
       '@acdh-oeaw/eslint-config':
         specifier: ^1.0.7
@@ -181,8 +178,8 @@ importers:
         specifier: ^2.0.13
         version: 2.0.13
       '@types/node':
-        specifier: ^20.14.2
-        version: 20.14.2
+        specifier: ^20.14.6
+        version: 20.14.6
       '@types/nodemailer':
         specifier: ^6.4.15
         version: 6.4.15
@@ -225,6 +222,9 @@ importers:
       lint-staged:
         specifier: ^15.2.7
         version: 15.2.7
+      mdast-util-mdx-jsx:
+        specifier: ^3.1.2
+        version: 3.1.2
       npm-run-all2:
         specifier: ^6.2.0
         version: 6.2.0
@@ -813,8 +813,8 @@ packages:
   '@humanwhocodes/object-schema@2.0.3':
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
 
-  '@iconify-json/lucide@1.1.193':
-    resolution: {integrity: sha512-W2vTXvOgogRAqEN1htpILhajn0xm93AUDfmgh3zRRobpPqYNwx91lE9oNBxvz8AY2dVaCzK9zZjC2/H25C5AIA==}
+  '@iconify-json/lucide@1.1.194':
+    resolution: {integrity: sha512-+0mXyNLmAnoS4aTVlYtKzdAe6BHs0tKoLf8KfQUVuFW03+r4HFon6bjuxGc80VpaHBiK8E/OxsTXzNPYR6xNrQ==}
 
   '@iconify/tools@3.0.7':
     resolution: {integrity: sha512-DxfhFLMnooS34dHelpGUnnYrxLZHs0czC1CgrBhAbuL8ddVzBb2VEQm8kh9qGh7A34qeXAB5iSHH3A72rAaFrg==}
@@ -978,8 +978,8 @@ packages:
   '@juggle/resize-observer@3.4.0':
     resolution: {integrity: sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==}
 
-  '@keystar/ui@0.7.5':
-    resolution: {integrity: sha512-n65I/AwvjlrwMVUUHm3PbFFeSteQ2PeVZx7Y6sfOcRS1vAfBIOdN/qwk1BYd6ssyMLsx/x3xALAXt45jNL7d9g==}
+  '@keystar/ui@0.7.6':
+    resolution: {integrity: sha512-EMMKKAPkcBvWXUvQRHlNw7v1lR2x4D7EUuLeiYXuDxMej2iL4kcBypfJ2e5TdMjMYIlqcJZ91aYXEPxel/xGQg==}
     peerDependencies:
       next: '>=14'
       react: ^18.2.0
@@ -991,13 +991,13 @@ packages:
   '@keystatic/astro@5.0.0':
     resolution: {integrity: sha512-ahPtok9c1IEwjXwL7Ud6ooRPA7CpVGTQV/uHk560zznNX913E2QX9MlmO10qQtgvUwl2mPK7U68ucpwLp3fWfw==}
     peerDependencies:
-      '@keystatic/core': 0.5.19
+      '@keystatic/core': '*'
       astro: 2 || 3 || 4
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  '@keystatic/core@0.5.19':
-    resolution: {integrity: sha512-y/0PFHLKARQWgFvsu6Kp3/ZoNkLyseNEyrez7tPmfXX08hPMNVlXlwpojCLiXOKAMFYI3XgLgwKHOf5gIsJa3g==}
+  '@keystatic/core@0.5.22':
+    resolution: {integrity: sha512-gg4TFrL1NDG86o+UGBJvvqChYg5IL4wzrhYc+Hildkh2t/SYyxqlm3FLMQqqdc9EPT+dHdnmsngeTerapVvX4w==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -1768,8 +1768,8 @@ packages:
   '@types/node@17.0.45':
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
 
-  '@types/node@20.14.2':
-    resolution: {integrity: sha512-xyu6WAMVwv6AKFLB+e/7ySZVr/0zLCzOa7rSpq6jNwpqOrUbcACDWC+53d4n2QHOnDou0fbIsg8wZu/sxrnI4Q==}
+  '@types/node@20.14.6':
+    resolution: {integrity: sha512-JbA0XIJPL1IiNnU7PFxDXyfAwcwVVrOoqyzzyQTyMeVhBzkJVMSkC1LlVsRQ2lpqiY4n6Bb9oCS6lzDKVQxbZw==}
 
   '@types/nodemailer@6.4.15':
     resolution: {integrity: sha512-0EBJxawVNjPkng1zm2vopRctuWVCxk34JcIlRuXSf54habUWdz1FB7wHDqOqvDa8Mtpt0Q3LTXQkAs2LNyK5jQ==}
@@ -2047,8 +2047,8 @@ packages:
   astro-icon@1.1.0:
     resolution: {integrity: sha512-Nksc09p7UuHeMcPNS9w1pKqRw3+wEmmh0A3FJW+FNXvqaeWI4RLvD1MCWErpY3Z5Cvad317rvLdik/Hg8GEk8Q==}
 
-  astro@4.10.3:
-    resolution: {integrity: sha512-TWCJM+Vg+y0UoEz/H75rfp/u2N8yxeQQ2UrU9+fMcbjlzQJtGGDq3ApdundqPZgAuCryRuJnrKytStMZCFnlvQ==}
+  astro@4.11.0:
+    resolution: {integrity: sha512-3VWxz/08sChQIX68tuE7Y769DUdjsT3Zq2/y4SkrDRlwN9IZ/aebwcRWr5a2yMSdO2vpFxtEdobq0mKnMlLErg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3952,8 +3952,8 @@ packages:
   node-releases@2.0.14:
     resolution: {integrity: sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==}
 
-  nodemailer@6.9.13:
-    resolution: {integrity: sha512-7o38Yogx6krdoBf3jCAqnIN4oSQFx+fMa0I7dK1D+me9kBxx12D+/33wSb+fhOCtIxvYJ+4x4IMEhmhCKfAiOA==}
+  nodemailer@6.9.14:
+    resolution: {integrity: sha512-Dobp/ebDKBvz91sbtRKhcznLThrKxKt97GI2FAlAyy+fk19j73Uz3sBXolVtmcXjaorivqsbbbjDY+Jkt4/bQA==}
     engines: {node: '>=6.0.0'}
 
   normalize-path@3.0.0:
@@ -5016,8 +5016,8 @@ packages:
   unified@10.1.2:
     resolution: {integrity: sha512-pUSWAi/RAnVy1Pif2kAoeWNBa3JVrx0MId2LASj8G+7AiHWoKZNTomq6LG326T68U7/e263X6fTdcXIy7XnF7Q==}
 
-  unified@11.0.4:
-    resolution: {integrity: sha512-apMPnyLjAX+ty4OrNap7yumyVAMlKx5IWU2wlzzUdYJO9A8f1p9m/gywF/GM2ZDFcjQPrx59Mc90KwmxsoklxQ==}
+  unified@11.0.5:
+    resolution: {integrity: sha512-xKvGhPWw3k84Qjh8bI3ZeJjqnyadK+GEFtazSfZv/rKeTkTjOJho6mFqh2SM96iIcZokxiOpg78GazTSg8+KHA==}
 
   unist-util-find-after@5.0.0:
     resolution: {integrity: sha512-amQa0Ep2m6hE2g72AugUItjbuM8X8cGQnFoHk0pGfrFeT9GZhzN5SW8nRsiGKK7Aif4CrACPENkA6P/Lw6fHGQ==}
@@ -5089,8 +5089,8 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  valibot@0.32.0:
-    resolution: {integrity: sha512-FXBnJl4bNOmeg7lQv+jfvo/wADsRBN8e9C3r+O77Re3dEnDma8opp7p4hcIbF7XJJ30h/5SVohdjer17/sHOsQ==}
+  valibot@0.33.3:
+    resolution: {integrity: sha512-/fuY1DlX8uiQ7aphlzrrI2DbG0YJk84JMgvz2qKpUIdXRNsS53varfo4voPjSrjUr5BSV2K0miSEJUOlA5fQFg==}
 
   vfile-location@5.0.2:
     resolution: {integrity: sha512-NXPYyxyBSH7zB5U6+3uDdd6Nybz6o6/od9rk8bp9H8GR3L+cm/fC0uUTbqBmUTnMCUDslAGBOIKNfvvb+gGlDg==}
@@ -5526,7 +5526,7 @@ snapshots:
       remark-rehype: 11.1.0
       remark-smartypants: 2.1.0
       shiki: 1.7.0
-      unified: 11.0.4
+      unified: 11.0.5
       unist-util-remove-position: 5.0.0
       unist-util-visit: 5.0.0
       unist-util-visit-parents: 6.0.1
@@ -5534,12 +5534,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@3.1.1(astro@4.10.3(@types/node@20.14.2)(typescript@5.4.5))':
+  '@astrojs/mdx@3.1.1(astro@4.11.0(@types/node@20.14.6)(typescript@5.4.5))':
     dependencies:
       '@astrojs/markdown-remark': 5.1.0
       '@mdx-js/mdx': 3.0.1
       acorn: 8.12.0
-      astro: 4.10.3(@types/node@20.14.2)(typescript@5.4.5)
+      astro: 4.11.0(@types/node@20.14.6)(typescript@5.4.5)
       es-module-lexer: 1.5.3
       estree-util-visit: 2.0.0
       github-slugger: 2.0.0
@@ -5555,9 +5555,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/node@8.3.1(astro@4.10.3(@types/node@20.14.2)(typescript@5.4.5))':
+  '@astrojs/node@8.3.1(astro@4.11.0(@types/node@20.14.6)(typescript@5.4.5))':
     dependencies:
-      astro: 4.10.3(@types/node@20.14.2)(typescript@5.4.5)
+      astro: 4.11.0(@types/node@20.14.6)(typescript@5.4.5)
       send: 0.18.0
       server-destroy: 1.0.1
     transitivePeerDependencies:
@@ -5567,11 +5567,11 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/react@3.6.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.3.1(@types/node@20.14.2))':
+  '@astrojs/react@3.6.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.3.1(@types/node@20.14.6))':
     dependencies:
       '@types/react': 18.3.3
       '@types/react-dom': 18.3.0
-      '@vitejs/plugin-react': 4.3.1(vite@5.3.1(@types/node@20.14.2))
+      '@vitejs/plugin-react': 4.3.1(vite@5.3.1(@types/node@20.14.6))
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       ultrahtml: 1.5.3
@@ -6040,7 +6040,7 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.3': {}
 
-  '@iconify-json/lucide@1.1.193':
+  '@iconify-json/lucide@1.1.194':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -6200,7 +6200,7 @@ snapshots:
 
   '@juggle/resize-observer@3.4.0': {}
 
-  '@keystar/ui@0.7.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@keystar/ui@0.7.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@emotion/css': 11.11.2
@@ -6290,18 +6290,18 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@keystatic/astro@5.0.0(@keystatic/core@0.5.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(astro@4.10.3(@types/node@20.14.2)(typescript@5.4.5))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@keystatic/astro@5.0.0(@keystatic/core@0.5.22(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(astro@4.11.0(@types/node@20.14.6)(typescript@5.4.5))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
-      '@keystatic/core': 0.5.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@keystatic/core': 0.5.22(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/react': 18.3.3
-      astro: 4.10.3(@types/node@20.14.2)(typescript@5.4.5)
+      astro: 4.11.0(@types/node@20.14.6)(typescript@5.4.5)
       cookie: 0.5.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       set-cookie-parser: 2.6.0
 
-  '@keystatic/core@0.5.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@keystatic/core@0.5.22(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.5
       '@braintree/sanitize-url': 6.0.4
@@ -6309,7 +6309,7 @@ snapshots:
       '@emotion/weak-memoize': 0.3.1
       '@floating-ui/react': 0.24.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@internationalized/string': 3.2.1
-      '@keystar/ui': 0.7.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@keystar/ui': 0.7.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@markdoc/markdoc': 0.4.0(@types/react@18.3.3)(react@18.3.1)
       '@react-aria/focus': 3.16.2(react@18.3.1)
       '@react-aria/i18n': 3.10.2(react@18.3.1)
@@ -6410,7 +6410,7 @@ snapshots:
       remark-parse: 11.0.0
       remark-rehype: 11.1.0
       source-map: 0.7.4
-      unified: 11.0.4
+      unified: 11.0.5
       unist-util-position-from-estree: 2.0.0
       unist-util-stringify-position: 4.0.0
       unist-util-visit: 5.0.0
@@ -7384,7 +7384,7 @@ snapshots:
       '@types/hast': 3.0.4
       hast-util-to-string: 3.0.0
       shiki: 1.7.0
-      unified: 11.0.4
+      unified: 11.0.5
       unist-util-visit: 5.0.0
 
   '@shikijs/transformers@1.7.0':
@@ -7473,7 +7473,7 @@ snapshots:
 
   '@types/cheerio@0.22.35':
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 20.14.6
 
   '@types/cookie@0.6.0': {}
 
@@ -7531,19 +7531,19 @@ snapshots:
 
   '@types/node@17.0.45': {}
 
-  '@types/node@20.14.2':
+  '@types/node@20.14.6':
     dependencies:
       undici-types: 5.26.5
 
   '@types/nodemailer@6.4.15':
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 20.14.6
 
   '@types/parse-json@4.0.2': {}
 
   '@types/pdfkit@0.13.4':
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 20.14.6
 
   '@types/prop-types@15.7.12': {}
 
@@ -7558,13 +7558,13 @@ snapshots:
 
   '@types/sax@1.2.7':
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 20.14.6
 
   '@types/semver@7.5.8': {}
 
   '@types/tar@6.1.13':
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 20.14.6
       minipass: 4.2.8
 
   '@types/unist@2.0.10': {}
@@ -7573,7 +7573,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 20.14.2
+      '@types/node': 20.14.6
     optional: true
 
   '@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)':
@@ -7700,14 +7700,14 @@ snapshots:
     transitivePeerDependencies:
       - graphql
 
-  '@vitejs/plugin-react@4.3.1(vite@5.3.1(@types/node@20.14.2))':
+  '@vitejs/plugin-react@4.3.1(vite@5.3.1(@types/node@20.14.6))':
     dependencies:
       '@babel/core': 7.24.7
       '@babel/plugin-transform-react-jsx-self': 7.24.5(@babel/core@7.24.7)
       '@babel/plugin-transform-react-jsx-source': 7.24.1(@babel/core@7.24.7)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.3.1(@types/node@20.14.2)
+      vite: 5.3.1(@types/node@20.14.6)
     transitivePeerDependencies:
       - supports-color
 
@@ -7936,7 +7936,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@4.10.3(@types/node@20.14.2)(typescript@5.4.5):
+  astro@4.11.0(@types/node@20.14.6)(typescript@5.4.5):
     dependencies:
       '@astrojs/compiler': 2.8.0
       '@astrojs/internal-helpers': 0.4.0
@@ -7995,8 +7995,8 @@ snapshots:
       tsconfck: 3.1.0(typescript@5.4.5)
       unist-util-visit: 5.0.0
       vfile: 6.0.1
-      vite: 5.3.1(@types/node@20.14.2)
-      vitefu: 0.2.5(vite@5.3.1(@types/node@20.14.2))
+      vite: 5.3.1(@types/node@20.14.6)
+      vitefu: 0.2.5(vite@5.3.1(@types/node@20.14.6))
       which-pm: 2.2.0
       yargs-parser: 21.1.1
       zod: 3.23.8
@@ -10386,7 +10386,7 @@ snapshots:
 
   node-releases@2.0.14: {}
 
-  nodemailer@6.9.13: {}
+  nodemailer@6.9.14: {}
 
   normalize-path@3.0.0: {}
 
@@ -10874,7 +10874,7 @@ snapshots:
       '@types/hast': 3.0.4
       hast-util-properties-to-mdx-jsx-attributes: 1.0.0
       parse-srcset: 1.0.2
-      unified: 11.0.4
+      unified: 11.0.5
       unist-util-visit: 5.0.0
     transitivePeerDependencies:
       - supports-color
@@ -10883,7 +10883,7 @@ snapshots:
     dependencies:
       '@types/hast': 3.0.4
       hast-util-from-html: 2.0.1
-      unified: 11.0.4
+      unified: 11.0.5
 
   rehype-raw@7.0.0:
     dependencies:
@@ -10903,21 +10903,21 @@ snapshots:
     dependencies:
       '@types/hast': 3.0.4
       hast-util-to-html: 9.0.1
-      unified: 11.0.4
+      unified: 11.0.5
 
   rehype@13.0.1:
     dependencies:
       '@types/hast': 3.0.4
       rehype-parse: 9.0.0
       rehype-stringify: 10.0.0
-      unified: 11.0.4
+      unified: 11.0.5
 
   remark-frontmatter@5.0.0:
     dependencies:
       '@types/mdast': 4.0.3
       mdast-util-frontmatter: 2.0.1
       micromark-extension-frontmatter: 2.0.0
-      unified: 11.0.4
+      unified: 11.0.5
     transitivePeerDependencies:
       - supports-color
 
@@ -10928,7 +10928,7 @@ snapshots:
       micromark-extension-gfm: 3.0.0
       remark-parse: 11.0.0
       remark-stringify: 11.0.0
-      unified: 11.0.4
+      unified: 11.0.5
     transitivePeerDependencies:
       - supports-color
 
@@ -10938,7 +10938,7 @@ snapshots:
       estree-util-is-identifier-name: 3.0.0
       estree-util-value-to-estree: 3.1.1
       toml: 3.0.0
-      unified: 11.0.4
+      unified: 11.0.5
       yaml: 2.4.2
 
   remark-mdx@3.0.1:
@@ -10953,7 +10953,7 @@ snapshots:
       '@types/mdast': 4.0.3
       mdast-util-from-markdown: 2.0.0
       micromark-util-types: 2.0.0
-      unified: 11.0.4
+      unified: 11.0.5
     transitivePeerDependencies:
       - supports-color
 
@@ -10962,7 +10962,7 @@ snapshots:
       '@types/hast': 3.0.4
       '@types/mdast': 4.0.3
       mdast-util-to-hast: 13.1.0
-      unified: 11.0.4
+      unified: 11.0.5
       vfile: 6.0.1
 
   remark-smartypants@2.1.0:
@@ -10975,14 +10975,14 @@ snapshots:
     dependencies:
       retext: 9.0.0
       retext-smartypants: 6.1.0
-      unified: 11.0.4
+      unified: 11.0.5
       unist-util-visit: 5.0.0
 
   remark-stringify@11.0.0:
     dependencies:
       '@types/mdast': 4.0.3
       mdast-util-to-markdown: 2.1.0
-      unified: 11.0.4
+      unified: 11.0.5
 
   remove-accents@0.5.0: {}
 
@@ -11028,7 +11028,7 @@ snapshots:
     dependencies:
       '@types/nlcst': 2.0.3
       parse-latin: 7.0.0
-      unified: 11.0.4
+      unified: 11.0.5
 
   retext-smartypants@5.2.0:
     dependencies:
@@ -11053,7 +11053,7 @@ snapshots:
     dependencies:
       '@types/nlcst': 2.0.3
       nlcst-to-string: 4.0.0
-      unified: 11.0.4
+      unified: 11.0.5
 
   retext@8.1.0:
     dependencies:
@@ -11067,7 +11067,7 @@ snapshots:
       '@types/nlcst': 2.0.3
       retext-latin: 4.0.0
       retext-stringify: 4.0.0
-      unified: 11.0.4
+      unified: 11.0.5
 
   reusify@1.0.4: {}
 
@@ -11725,7 +11725,7 @@ snapshots:
       trough: 2.2.0
       vfile: 5.3.7
 
-  unified@11.0.4:
+  unified@11.0.5:
     dependencies:
       '@types/unist': 3.0.2
       bail: 2.0.2
@@ -11833,7 +11833,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  valibot@0.32.0: {}
+  valibot@0.33.3: {}
 
   vfile-location@5.0.2:
     dependencies:
@@ -11863,18 +11863,18 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite@5.3.1(@types/node@20.14.2):
+  vite@5.3.1(@types/node@20.14.6):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.38
       rollup: 4.17.2
     optionalDependencies:
-      '@types/node': 20.14.2
+      '@types/node': 20.14.6
       fsevents: 2.3.3
 
-  vitefu@0.2.5(vite@5.3.1(@types/node@20.14.2)):
+  vitefu@0.2.5(vite@5.3.1(@types/node@20.14.6)):
     optionalDependencies:
-      vite: 5.3.1(@types/node@20.14.2)
+      vite: 5.3.1(@types/node@20.14.6)
 
   volar-service-css@0.0.45(@volar/language-service@2.2.4):
     dependencies:
