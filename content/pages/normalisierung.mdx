@@ -3,19 +3,20 @@ title: Normalisierung
 ---
 ## Normalisierung von Trefferzahlen in der Recherche
 
-Sollen Suchergebnisse nach verschiedenen Attributwerten wie Jahr, Regionen oder Medium ausgewertet werden, so ist es ***unabdingbar***, die absoluten Zählungsergebnisse aus der Suchmaschine zu ***normalisieren***, um valide Ergebnisse zu erhalten. D.h. statt der absoluten Trefferzahlen sind unbedingt die relativen Trefferzahlen zu verwenden.
+Sollen Suchergebnisse nach verschiedenen Attributwerten wie Jahr, Region oder Medium ausgewertet werden, so ist es ***unabdingbar***, die absoluten Zählungsergebnisse aus der Suchmaschine zu ***normalisieren***, um valide Ergebnisse zu erhalten. D.h. statt der absoluten Trefferzahlen sind unbedingt die relativen Trefferzahlen zu verwenden.
 
-*Anmerkung zur Bedienung der aktuellen NoSke*
+### Bedienungshinweise für die *aktuellen* NoSke 
 
-Metadaten wie Jahr, Region und Medium werden in der Terminologie der NoSke **text types** genannt. In der aktuellen NoSke-Version ist es möglich, bei Frequenz-Auswertungen nach *einem* solchen **text type** die korrekten, normalisierten Werte direkt anzeigen zu lassen. Dazu ist in der Anzeige eines *Frequenz*-Ergebnisses die Option *"Show relative in text type"* und/oder *"Relative density"* zu aktivieren.
+Metadaten wie Jahr, Region und Medium werden in der Terminologie der NoSke **text types** genannt. In der aktuellen NoSke-Version ist es mittlerweile möglich, bei Frequenz-Auswertungen nach *einem* solchen **text type** die korrekt normalisierten Werte direkt anzeigen zu lassen. Dazu ist in der Anzeige eines *Frequenz*-Ergebnisses die Option *"Relative Häufigkeiten anzeigen / Show relative in text type"* und/oder *"Prozentualer Anteil an Konkordanzzeilen anzeigen / Relative density"* zu aktivieren.
 
-Erstere liefert die Ergebnisse in hpm – *hits per million*, letztere stellt die relative Verteilung der Ergebnisse als %-Satz dar.
+Erstere liefert die Ergebnisse in *i.p.m*  (*instance per million* oder auch *hits per million*). 
+Die *Relative Häugigkeit* stellt die relative Verteilung der Ergebnisse als %-Satz dar. 
 
 Vgl. den Screenshot einer Auswertung des Begriffs "Haus" nach `doc.year` im Demo-Korpus `amc4_demo`:
 
 ![](/assets/content/pages/normalisierung/Screenshot_freq_amc4_demo_Haus-2048x755.png)
 
-(Anmerkung: Seit 2024 bietet die NoSketch-Engine übrigens für diese häufig nachgefragte Auswertung — Trefferzahlen über die Zeit — in der Werkzeugleiste rechts oben eine eigene Funktion namens "Der Zeitsstrahl" / "Timeline" an, die auch gleich eine grafisch ansprechendere Visualisierung vornimmt).
+(*Tip*: Seit 2024 bietet die NoSketch-Engine übrigens für diese häufig nachgefragte Auswertung — Trefferzahlen über die Zeit — in der Werkzeugleiste rechts oben eine eigene Funktion namens "Der Zeitsstrahl" / "Timeline" an, die auch gleich eine grafisch ansprechendere Visualisierung produziert).
 
 Bei der Frequenzauswertung nach einem einzelnen text type ist also aktuell eine nachträgliche manuelle Normalisierung nicht mehr notwendig. Diese bleibt aber weiterhin unverzichtbar, wenn gleichzeitig mehr als ein text type quantitativ ausgewertet werden soll. Also wenn z.B. die Verteilung von Treffern über `doc.year` und `doc.region` – also gleichzeitig über Zeit und Raum – verglichen werden soll.
 
@@ -37,12 +38,13 @@ Um die unabdingbare Normalisierung selbst durchführen zu können, ist das Wisse
 
 Für die tatsächliche Berechnung normalisierter Frequenzwerte steht unten für jede Korpus-Version eine Datei im Microsoft Excel-Format (xlsx) zum Download zur Verfügung.
 
-Diese enthält die Gesamtanzahl der vorhanden Token für jede Kombination aus docsrc (Medienname) region, year und seit amc\_4.3/2023 auch yymm (d.h. Monate). Damit sind also die Grundgesamtheiten für alle üblicherweise verwendeten Facettierungen des Korpus verfügbar. Mit diesen Informationen kann die jeweilige Umrechnung der absoluten Trefferzahlen in relative, normalisierte Trefferzahlen z.B. in einem Tabellenkalkulationsprogramm vorgenommen werden.
+Diese Datei enthält die Gesamtanzahl der vorhanden Token für jede Kombination aus `docsrc` (Medienname) `region`, `year` und  —  seit amc\_4.3/2023  —  auch `yymm` (d.h. Monate). Damit sind also die Grundgesamtheiten für alle üblicherweise verwendeten Facettierungen des Korpus verfügbar. Mit diesen Informationen kann die jeweilige Umrechnung der absoluten Trefferzahlen in relative, normalisierte Trefferzahlen z.B. in einem Tabellenkalkulationsprogramm vorgenommen werden.
 
 | Korpus      | xlsx zur Normalsierung (Downloadlink)                                                                                                                                   |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| amc\_4.24q2 | <Download href="/assets/content/pages/normalisierung/freqs_amc_4.24q1_region_province_docsrc_mediatype_year_yymm_for_normalization_2024-04-16.xlsx">Download</Download> |
 | amc\_4.24q1 | <Download href="/assets/content/pages/normalisierung/freqs_amc_4.24q1_region_province_docsrc_mediatype_year_yymm_for_normalization_2024-04-16.xlsx">Download</Download> |
-| amc\_4.3    | <Download href="/assets/content/pages/normalisierung/freqs_amc_4.3_region_province_docsrc_mediatype_year_yymm_for_normalization_2024-02-09.xlsx">Download</Download>    |
+| amc\_4.3 == amc\_4.23q4LTS   | <Download href="/assets/content/pages/normalisierung/freqs_amc_4.3_region_province_docsrc_mediatype_year_yymm_for_normalization_2024-02-09.xlsx">Download</Download>    |
 | amc\_4.2    | <Download href="/assets/content/pages/normalisierung/freqs_amc_4.2_region_docsrc_year_for_normalization_2023-02-05.xlsx">Download</Download>                            |
 | amc\_4.1    | <Download href="/assets/content/pages/normalisierung/freqs_amc_4.1_region_docsrc_year_for_normalization_2022-04-11.xlsx">Download</Download>                            |
 | amc\_3.2    | <Download href="/assets/content/pages/normalisierung/freqs_amc_3.2_region_docsrc_year_for_normalization_2021-02-26.xlsx">Download</Download>                            |
