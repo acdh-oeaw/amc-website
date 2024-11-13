@@ -75,8 +75,8 @@ jobs:
         uses: actions/cache@v4
         with:
           path: node_modules/.astro/
-          key: ${{ runner.os }}-astro-20.x-${{ github.run_id }}
-          restore-keys: ${{ runner.os }}-astro-20.x
+          key: ${{ runner.os }}-astro-22.x-${{ github.run_id }}
+          restore-keys: ${{ runner.os }}-astro-22.x
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
