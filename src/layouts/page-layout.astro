@@ -18,8 +18,13 @@ const { description, locale, robots, title } = Astro.props;
 <DocumentLayout description={description} locale={locale} robots={robots} title={title}>
 	<SkipLink />
 
-	<div class="grid min-h-full grid-rows-[auto_1fr_auto]">
+	<div class="grid min-h-full grid-rows-[auto_auto_1fr_auto]">
 		<WebsiteHeader />
+		<aside class="text-balance bg-[#BC0000] px-4 py-1 text-center text-sm font-medium text-white">
+			Aufgrund einer Störung in der AMC-Speicherinfrastruktur ist die Benützung des Corpus bis auf
+			weiteres leider nicht möglich. Wir arbeiten an der Wiederherstellung des Betriebs und bitten
+			vielmals um Entschuldigung für die Unannehmlichkeiten.
+		</aside>
 		<slot />
 		<WebsiteFooter />
 	</div>
