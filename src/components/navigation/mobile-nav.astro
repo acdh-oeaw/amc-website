@@ -8,7 +8,7 @@ import type { Navigation } from "@/lib/content/types";
 import navigation from "~/content/navigation.json";
 ---
 
-<div id={mobileNavId} hidden class="px-4 pb-6 lg:hidden" data-mobile-nav>
+<div class="px-4 pb-6 lg:hidden" data-mobile-nav hidden id={mobileNavId}>
 	<ul class="grid gap-y-2 text-[#444]" role="list">
 		{
 			(navigation as Navigation).links.map((item) => {

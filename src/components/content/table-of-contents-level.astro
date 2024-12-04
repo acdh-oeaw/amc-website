@@ -9,7 +9,7 @@ interface Props {
 const { depth = 0, headings } = Astro.props;
 ---
 
-<ol class="grid gap-y-1.5 text-[#444]" style={{ marginLeft: String(depth * 8) + "px" }}>
+<ol class="grid gap-y-1.5 text-[#444]" style={{ marginLeft: `${String(depth * 8)}px` }}>
 	{
 		headings.map((heading) => {
 			return (
@@ -17,7 +17,7 @@ const { depth = 0, headings } = Astro.props;
 					{heading.id != null ? (
 						<a
 							class="inline-flex underline decoration-dotted transition hover:text-[#212529] hover:decoration-solid"
-							href={"#" + heading.id}
+							href={`#${heading.id}`}
 						>
 							{heading.value}
 						</a>

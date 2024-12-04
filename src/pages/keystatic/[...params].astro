@@ -1,0 +1,37 @@
+---
+import "tailwindcss/tailwind.css";
+
+import { createI18n } from "@/lib/i18n";
+import { Keystatic } from "@/lib/keystatic/page";
+
+export const prerender = false;
+
+const locale = "en";
+const { t } = await createI18n(locale);
+
+const metadata = t("metadata");
+---
+
+<html lang={locale}>
+	<head>
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<meta charset="utf-8" />
+
+		<title>{["CMS", metadata.title].join(" | ")}</title>
+
+		<link href="/favicon.ico" rel="icon" sizes="32x32" type="image/x-icon" />
+
+		<meta content="noindex" name="robots" />
+	</head>
+
+	<body>
+		<Keystatic client:load />
+	</body>
+</html>
+
+<style is:global>
+	body {
+		/** FIXME: work around for @see https://github.com/Thinkmill/keystatic/issues/1292 */
+		font-synthesis: style;
+	}
+</style>

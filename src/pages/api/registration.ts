@@ -51,16 +51,15 @@ const RegistrationFormSchema = v.pipe(
 			affiliation: data.affiliation,
 			renewal: data.renewal === "no" ? "Nein" : "Ja",
 			researchType:
-				// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 				data["research-type"] === "other" ? data["research-type-other"]! : data["research-type"],
-			// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+
 			funding: data.funding === "other" ? data["funding-other"]! : "Nein",
 			shortTitle: data["short-title"],
 			description: data.description,
 			duration: data.duration,
-			// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+
 			publication: data.publication === "other" ? data["publication-other"]! : "Nein",
-			// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+
 			ai: data.ai === "other" ? data["ai-other"]! : "Nein",
 			termsAndConditions: true,
 			dataConsent: true,

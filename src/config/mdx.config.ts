@@ -26,7 +26,6 @@ const typography: Record<Locale, TypographicOptions> = {
 };
 
 export async function createConfig(locale: Locale) {
-	// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 	if (cache.has(locale)) return cache.get(locale)!;
 
 	const { t } = await createI18n(locale);
@@ -44,7 +43,7 @@ export async function createConfig(locale: Locale) {
 				return t("Mdx.FootnoteBackLabel", {
 					reference:
 						String(referenceIndex + 1) +
-						(rereferenceIndex > 1 ? "-" + String(rereferenceIndex) : ""),
+						(rereferenceIndex > 1 ? `-${String(rereferenceIndex)}` : ""),
 				});
 			},
 			footnoteLabel: t("Mdx.Footnotes"),

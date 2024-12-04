@@ -1,4 +1,6 @@
-# syntax=docker/dockerfile:1
+# syntax=docker/dockerfile:1.12-labs
+# labs version is needed for `COPY --exclude`.
+# @see https://docs.docker.com/reference/dockerfile/#copy---exclude
 
 # using alpine base image to avoid `sharp` memory leaks.
 # @see https://sharp.pixelplumbing.com/install#linux-memory-allocator
@@ -19,7 +21,7 @@ RUN pnpm fetch --prod
 RUN pnpm install --frozen-lockfile --ignore-scripts --offline --prod
 
 # build
-FROM base as build
+FROM base AS build
 
 RUN pnpm fetch --dev
 
@@ -47,6 +49,8 @@ RUN pnpm install --frozen-lockfile --offline
 
 ENV NODE_ENV=production
 
+# to mount secrets which need to be available at build time
+# @see https://docs.docker.com/build/building/secrets/
 RUN --mount=type=secret,id=KEYSTATIC_GITHUB_CLIENT_ID,uid=1000 \
 		--mount=type=secret,id=KEYSTATIC_GITHUB_CLIENT_SECRET,uid=1000 \
 		--mount=type=secret,id=KEYSTATIC_SECRET,uid=1000 \
@@ -64,7 +68,7 @@ WORKDIR /app
 USER node
 
 COPY --from=base --chown=node:node /app/node_modules ./node_modules
-COPY --from=build --chown=node:node /app/dist ./
+COPY --from=build --chown=node:node --exclude=client/assets/content/assets/ /app/dist ./
 # needed for registration form pdf
 COPY --from=build --chown=node:node /app/public/assets/images/amc-logo.png ./public/assets/images/amc-logo.png
 

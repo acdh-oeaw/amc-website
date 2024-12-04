@@ -14,7 +14,7 @@ export async function GET(context: APIContext) {
 	return rss({
 		title: metadata.title,
 		description: metadata.description,
-		// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+
 		site: context.site!,
 		/** @see https://docs.astro.build/en/guides/rss/#generating-items */
 		items: [],

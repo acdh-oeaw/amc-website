@@ -14,12 +14,12 @@ const { label, name, required, value } = Astro.props;
 const id = generateUniqueId();
 ---
 
-<Radio id={id} data-radio label={label} name={name} required={required} value={value} />
+<Radio data-radio id={id} label={label} name={name} required={required} value={value} />
 <input
 	aria-labelledby={id}
 	class="rounded-md border border-neutral-300 px-3 py-1.5 disabled:cursor-not-allowed disabled:bg-neutral-50 disabled:opacity-50"
 	data-radio-text={value}
-	name={[name, value].join("-")}
 	disabled={true}
+	name={[name, value].join("-")}
 	required={required}
 />
