@@ -1,23 +1,43 @@
 ---
-title: Annotationsdetails STANDARDFORA
+title: NoSke-Korpora für STANDARDFORA
 ---
-Diese Seite beinhaltet die detaillierte Beschreibung der in den STANDARDFORA verwendeten Annotationen.
+
+## <span id="intro"></span>Übersicht
+
+Diese Seite dient der Beschreibung der in den STANDARDFORA-Korpora verwendeten Annotationen.
+
+Aktuelle Korpus-Version: **www_standardfora_v1_25.q1**
+
+Die Korpusbenennung verwendet folgendes Schema: `www_standardfora_v<VERSIONSNUMMER>_<JAHR>.q<QUARTALSNUMMER>`
+
+Eine gleichlautende `<VERSIONSNUMMER>` bedeutet, dass identischen Annotoationskonventionen verwendet wurden. 
+`<JAHR>.q<QUARTAL>` kodiert den Genesezeitpunkt der jüngsten Textdaten im jeweiligen Korpus.  
+Aktuell reichen die posting Daten zurück bis 08/2020.   `www_standardfora_v1_25.q1` bedeutet also, dass das Korpus Texte von 08/2020 bis 03/2025 enthält.
+Korpora mit derselben Versionsnummer sind also miteinder kompatibel und unterscheiden sich nur in der Aktualität der Texte.
+
 Die Annotation mit linguistischen Informationen (Lemmatisierung, PoS, NER, DpendecyParse) erfolgt bei den STANDARDFORA mit denselben Werkzeugen+Methoden wie sie beim amc eingesetzt werden.
 Die entsprechenden Token-Attribute wie *lemma*, *pos*, *posTT* etc. sind daher völlig identisch wie beim amc.  
 
-Abweichungen zum "normalen" amc ergeben sich im Foren-Posting-Korpus hauptsächlich in den Metadaten.
+Abweichungen zum "normalen" amc ergeben sich im Foren-Posting-Korpus hauptsächlich in den Metadaten. 
+Insbesondere ist es wichtig, die Unterscheidung zwischen den redaktionellen Artikeln (_"artikeln"_) und den dazugehörigen Kommentaren (_"postings"_) zu ermöglichen, ebenso wie die Zuordnung von _postings zu bestimmten _artikeln_  zu erhalten. 
 
-Foren-spezifische  **neue** Metadaten sind :
+Dafür wurden folgenden Foren-spezifische  **zusätzlichen** Metadaten-Felder eingeführt, deren detailierte Beschreibung weiter unten folgt:
 
 <div style={{backgroundColor: 'violet', padding: '1rem'}}>
-[*doc.forumtype*](#doc.forumtype) [*doc.page_link*](#doc.page_link) und [*doc.weblink*](#doc.weblink)
+[*doc.forumtype*](#doc.forumtype), [*doc.page_link*](#doc.page_link) und [*doc.weblink*](#doc.weblink)
 </div>
+
+Andere aus dem amc bekannten Metadatenfelder haben in den STANDARDFORA wiederum keine Relevanz mehr, und sind unten mit 
+ _`=> In WWSTAFORA nicht anwendbar`_ gekennzeichnet. 
+
+Als Erleichterung für die NutzerInnen wurden 2 Subkorpora mit den selbsterklärenden Namen _artikel_ und postings_ vordefiniert, die sofort verwendet werden können um Suchabfragen exklusiv auf redaktionellen Artikeln vs. Kommentaren auszuführen.  
 
 <span id="top"></span>
 
-## <span id="titel"></span>Attribute und Strukturen in Version v1  *STANDARDFORA*
+## <span id="titel"></span>Attribute und Strukturen in Version v1 *STANDARDFORA*
 
-**Version:** v 1.0 (zuletzt geändert: 2025-04-29)
+**Version des Korpus:** v1 
+**Version der Dokumentation:** v1.0 (zuletzt geändert: 2025-04-30)
 
 **Autor:** Hannes Pirker [Austrian Centre for Digital Humanities and Cultural Heritage (ACDH-CH)](https://www.oeaw.ac.at/acdh)
 
@@ -34,9 +54,11 @@ Foren-spezifische  **neue** Metadaten sind :
         [*lemma_lc*](#lemma_lc)
   - [Strukturen und ihre Attribute](#Structs)
       - [*`<doc>`*](#doc) : [*id*](#doc.id)
-        [*forumtype*](#doc.forumtype)
+        <div style={{backgroundColor: 'violet', padding: '1rem'}}>
+	[*forumtype*](#doc.forumtype)
         [*page_link*](#doc.page_link)
         [*weblink*](#doc.weblink)
+        </div>
         [*autor*](#doc.autor) 
         [*datum*](#doc.datum)
         [*datum_full*](#doc.datum_full) [*datum*](#doc.datum)
