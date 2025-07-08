@@ -148,7 +148,7 @@ function createPdf(submission: RegistrationFormSchema): Promise<Buffer> {
 		pdf
 			.fontSize(10)
 			.text(
-				"Dieser Antrag zur Nutzung des austrian media corpus erfolgt auf Basis der Kooperationsvereinbarung zwischen der Österreichischen Akademie der Wissenschaften und der APA Austria Presseagentur (aktuelle Fassung: Version 4.0 vom 1.12.2023).Der Antrag wurde von Seiten des Austrian Centre for Digital Humanities and Cultural Heritage (ACDH-CH) geprüft und befürwortet.",
+				"Dieser Antrag zur Nutzung des austrian media corpus erfolgt auf Basis der Kooperationsvereinbarung zwischen der Österreichischen Akademie der Wissenschaften und der APA Austria Presseagentur (aktuelle Fassung: Version 4.0 vom 1.12.2023).Der Antrag wurde von Seiten des Austrian Centre for Digital Humanities (ACDH) geprüft und befürwortet.",
 			);
 
 		pdf.fontSize(12).text("\n\n2. Antrag\n\n");
@@ -182,7 +182,7 @@ function createPdf(submission: RegistrationFormSchema): Promise<Buffer> {
 		pdf
 			.fontSize(8)
 			.text(
-				"\n\nAustrian Centre for Digital Humanities and Cultural Heritage - ACDH-CH\nContact: info@acdh.oeaw.ac.at\n",
+				"\n\nAustrian Centre for Digital Humanities - ACDH\nContact: info@acdh.oeaw.ac.at\n",
 			);
 
 		pdf.end();
