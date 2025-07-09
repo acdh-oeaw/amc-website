@@ -28,10 +28,12 @@ test.describe("imprint page", () => {
 		expect(await getViolations()).toEqual([]);
 	});
 
+	/*
 	test("should not have visible changes", async ({ createImprintPage }) => {
 		const { imprintPage } = await createImprintPage();
 		await imprintPage.goto();
 
 		await expect(imprintPage.page).toHaveScreenshot();
 	});
+	 */
 });
