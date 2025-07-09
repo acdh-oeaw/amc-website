@@ -181,9 +181,7 @@ function createPdf(submission: RegistrationFormSchema): Promise<Buffer> {
 
 		pdf
 			.fontSize(8)
-			.text(
-				"\n\nAustrian Centre for Digital Humanities - ACDH\nContact: info@acdh.oeaw.ac.at\n",
-			);
+			.text("\n\nAustrian Centre for Digital Humanities - ACDH\nContact: info@acdh.oeaw.ac.at\n");
 
 		pdf.end();
 	});
