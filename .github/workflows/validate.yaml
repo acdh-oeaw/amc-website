@@ -2,7 +2,7 @@ name: Validate
 
 concurrency:
   group: "${{ github.workflow }}-${{ github.ref }}-validate"
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
 
 on:
   pull_request:
@@ -21,15 +21,13 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        node-version: [22.x]
-        os: [ubuntu-22.04]
+        node-version: [24.x]
+        os: [ubuntu-24.04]
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
-      # Necessary because `actions/setup-node` does not yet support `corepack`.
-      # @see https://github.com/actions/setup-node/issues/531
       - name: Install pnpm
         uses: pnpm/action-setup@v4
 
@@ -91,7 +89,7 @@ jobs:
         env:
           PUBLIC_APP_BASE_URL: "http://localhost:3000"
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         if: always()
         with:
           name: playwright-report
@@ -101,7 +99,7 @@ jobs:
   build-deploy:
     if: ${{ github.event_name == 'push' }}
     needs: [validate]
-    uses: ./.github/workflows/build-deploy.yml
+    uses: ./.github/workflows/build-deploy.yaml
     secrets: inherit
     # https://docs.github.com/en/actions/using-workflows/reusing-workflows#access-and-permissions
     permissions:

@@ -4,10 +4,9 @@
 	"license": "MIT",
 	"type": "module",
 	"engines": {
-		"node": "22.x",
-		"pnpm": "9.x"
+		"node": "^24"
 	},
-	"packageManager": "pnpm@9.12.3",
+	"packageManager": "pnpm@10.24.0",
 	"scripts": {
 		"build": "run-s build:site generate:search-index",
 		"build:site": "astro build",
@@ -94,7 +93,7 @@
 		"@playwright/test": "^1.53.2",
 		"@types/hast": "^3.0.4",
 		"@types/mdx": "^2.0.13",
-		"@types/node": "^22.9.0",
+		"@types/node": "^24.10.1",
 		"@types/nodemailer": "^6.4.15",
 		"@types/pdfkit": "^0.13.4",
 		"@types/react": "^18.3.3",
