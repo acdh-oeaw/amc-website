@@ -4,7 +4,7 @@
 # @see https://sharp.pixelplumbing.com/install#linux-memory-allocator
 
 # base
-FROM node:22-alpine AS base
+FROM node:24-alpine AS base
 
 RUN corepack enable
 
@@ -13,7 +13,7 @@ WORKDIR /app
 
 USER node
 
-COPY --chown=node:node .npmrc package.json pnpm-lock.yaml ./
+COPY --chown=node:node .npmrc package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 
 RUN pnpm fetch --prod
 RUN pnpm install --frozen-lockfile --ignore-scripts --offline --prod
@@ -43,7 +43,7 @@ ARG PUBLIC_REDMINE_ID
 # disable validation for runtime environment variables
 ENV ENV_VALIDATION=public
 
-RUN pnpm install --frozen-lockfile --offline
+RUN pnpm install --frozen-lockfile --prefer-offline
 
 ENV NODE_ENV=production
 
@@ -56,7 +56,7 @@ RUN --mount=type=secret,id=KEYSTATIC_GITHUB_CLIENT_ID,uid=1000 \
 		pnpm run build
 
 # serve
-FROM node:22-alpine AS serve
+FROM node:24-alpine AS serve
 
 RUN mkdir /app && chown -R node:node /app
 WORKDIR /app
