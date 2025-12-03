@@ -550,8 +550,8 @@
 					{
 						"wwwsrc": "WWWBVZAT",
 						"www": "https://www.bvz.at",
-						"docsrc": "Burgenländische Volkszeitung",
-						"docsrc_name": "BVZ",
+						"docsrc_name": "Burgenländische Volkszeitung",
+						"docsrc": "BVZ",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "aost"
@@ -566,8 +566,8 @@
 					{
 						"wwwsrc": "WWWDIEPRESSE",
 						"www": "https://diepresse.com",
-						"docsrc": "Die Presse",
-						"docsrc_name": "PRESSE",
+						"docsrc_name": "Die Presse",
+						"docsrc": "PRESSE",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "agesamt"
@@ -582,8 +582,8 @@
 					{
 						"wwwsrc": "WWWFALTER",
 						"www": "https://www.falter.at",
-						"docsrc": "Falter",
-						"docsrc_name": "FALTER",
+						"docsrc_name": "Falter",
+						"docsrc": "FALTER",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "aost"
@@ -619,8 +619,8 @@
 					{
 						"wwwsrc": "WWWGEWINNCOM",
 						"www": "https://www.gewinn.com",
-						"docsrc": "Gewinn",
-						"docsrc_name": "GEWINN",
+						"docsrc_name": "Gewinn",
+						"docsrc": "GEWINN",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "spezifisch"
@@ -628,8 +628,8 @@
 					{
 						"wwwsrc": "WWWHEUTEAT",
 						"www": "https://www.heute.at",
-						"docsrc": "Heute",
-						"docsrc_name": "HEUTE",
+						"docsrc_name": "Heute",
+						"docsrc": "HEUTE",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "aost"
@@ -658,8 +658,8 @@
 					{
 						"wwwsrc": "WWWKLEINEZ",
 						"www": "https://www.kleinezeitung.at",
-						"docsrc": "Kleine Zeitung",
-						"docsrc_name": "KLEINE",
+						"docsrc_name": "Kleine Zeitung",
+						"docsrc": "KLEINE",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "asuedost"
@@ -667,8 +667,8 @@
 					{
 						"wwwsrc": "WWWKRONE",
 						"www": "https://www.krone.at",
-						"docsrc": "Kronenzeitung",
-						"docsrc_name": "KRONE",
+						"docsrc_name": "Kronenzeitung",
+						"docsrc": "KRONE",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "agesamt"
@@ -676,8 +676,8 @@
 					{
 						"wwwsrc": "WWWKURIERAT",
 						"www": "https://kurier.at",
-						"docsrc": "Kurier",
-						"docsrc_name": "KURIER",
+						"docsrc_name": "Kurier",
+						"docsrc": "KURIER",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "agesamt"
@@ -692,8 +692,8 @@
 					{
 						"wwwsrc": "WWWMNETAT",
 						"www": "https://medianet.at",
-						"docsrc": "Medianet",
-						"docsrc_name": "MEDIANET",
+						"docsrc_name": "Medianet",
+						"docsrc": "MEDIANET",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "agesamt"
@@ -708,8 +708,8 @@
 					{
 						"wwwsrc": "WWWNACHRICHT",
 						"www": "https://www.nachrichten.at",
-						"docsrc": "OÖ Nachrichten",
-						"docsrc_name": "OOEN",
+						"docsrc_name": "OÖ Nachrichten",
+						"docsrc": "OOEN",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "amitte"
@@ -717,8 +717,8 @@
 					{
 						"wwwsrc": "WWWNEUEAT",
 						"www": "https://www.neue.at",
-						"docsrc": "Neue Vorarlberger Tageszeitung",
-						"docsrc_name": "NVT",
+						"docsrc_name": "Neue Vorarlberger Tageszeitung",
+						"docsrc": "NVT",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "awest",
@@ -727,8 +727,8 @@
 					{
 						"wwwsrc": "WWWNOENAT",
 						"www": "https://www.noen.at",
-						"docsrc": "NÖ Nachrichten",
-						"docsrc_name": "NÖN",
+						"docsrc_name": "NÖ Nachrichten",
+						"docsrc": "NÖN",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "aost"
@@ -736,7 +736,7 @@
 					{
 						"wwwsrc": "WWWORFAT",
 						"www": "https://orf.at",
-						"docsrc": "ORF online / agesamt und regional",
+						"docsrc_name": "ORF online / agesamt und regional",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "agesamt"
@@ -744,8 +744,8 @@
 					{
 						"wwwsrc": "WWWPROFIL",
 						"www": "https://www.profil.at",
-						"docsrc": "Profil",
-						"docsrc_name": "PROFIL",
+						"docsrc_name": "Profil",
+						"docsrc": "PROFIL",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "agesamt"
@@ -767,8 +767,8 @@
 					{
 						"wwwsrc": "WWWSTA",
 						"www": "http://derstandard.at",
-						"docsrc": "Der Standard",
-						"docsrc_name": "STANDARD",
+						"docsrc_name": "Der Standard",
+						"docsrc": "STANDARD",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "agesamt"
@@ -797,8 +797,8 @@
 					{
 						"wwwsrc": "WWWTTCOM",
 						"www": "https://www.tt.com",
-						"docsrc": "Tiroler Tageszeitung",
-						"docsrc_name": "TT",
+						"docsrc_name": "Tiroler Tageszeitung",
+						"docsrc": "TT",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "awest",
@@ -814,8 +814,8 @@
 					{
 						"wwwsrc": "WWWVNAT",
 						"www": "https://www.vn.at",
-						"docsrc": "Vorarlberg Nachrichten",
-						"docsrc_name": "VN",
+						"docsrc_name": "Vorarlberg Nachrichten",
+						"docsrc": "VN",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "awest",
@@ -824,7 +824,7 @@
 					{
 						"wwwsrc": "WWWVOLAT",
 						"www": "https://www.vol.at",
-						"docsrc": "Vorarlberg Online",
+						"docsrc_name": "Vorarlberg Online",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "awest",
@@ -833,8 +833,8 @@
 					{
 						"wwwsrc": "WWWVOLBLATT",
 						"www": "https://volksblatt.at",
-						"docsrc": "Oberösterreichisches Volksblatt / vormals: Neues Volksblatt",
-						"docsrc_name": "NVB",
+						"docsrc_name": "Oberösterreichisches Volksblatt / vormals: Neues Volksblatt",
+						"docsrc": "NVB",
 						"sourcetype": "www",
 						"from": "2023",
 						"region": "amitte"
