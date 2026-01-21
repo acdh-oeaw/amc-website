@@ -238,12 +238,12 @@
 						"province": "T"
 					},
 					{
-						"docsrc": "~~OEREICHE~~",
-						"docsrc_name": "~~Österreich~~",
-						"sourcetype": "~~print~~",
-						"from": "~~2006~~",
-						"to": "~~2025~~",
-						"region": "~~agesamt~~"
+						"docsrc": "DELETED_OEREICHE_ENTFERNT",
+						"docsrc_name": "Österreich",
+						"sourcetype": "print",
+						"from": "2006",
+						"to": "2025",
+						"region": "agesamt"
 					},
 					{
 						"docsrc": "OOEN",
