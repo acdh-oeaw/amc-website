@@ -14,15 +14,24 @@ Die zweite Ziffernfolge markiert die zeitliche und somit quantitative Entwicklun
 **Versionsnummern nach dem "neuen System" (seit 2024)**
 
 Seit dem Jahr 2024 wurden die "Update-Zyklen" des amc drastisch verkürzt. Die Textbasis wird nicht mehr bloß 1 x pro Jahr aktualisiert sondern nunmehr 1 x pro Quartal.
-Um die Übersichtlichkeit und die Aussagekraft der Versionsnummern zu erhöhen wurde das Benennungsschema verändert: Weiterhin signalisiert die erste Ziffer den Annotationsstand und die zweite Ziffer den "Zeitschnitt". Nur wird jetzt die zeitliche Komponente explizit benannt: es werden Jahr und Quartalsnummer angegeben. Damit ist nun der "Aktualitätsstand" eines Korpus direkt in seinem  Namen ablesbar. Das erste Update nach amc\_4.*3* heißt daher nicht mehr amc\_4.*4*. Da es nun Texte bis inklusive 2024 - Quartal 1 enthält lautet die Bezeichnung nunmehr amc\_4.*24q1*.  
+Um die Übersichtlichkeit und die Aussagekraft der Versionsnummern zu erhöhen wurde das Benennungsschema verändert: Weiterhin signalisiert die erste Ziffer den Annotationsstand und die zweite Ziffer den "Zeitschnitt". Nur wird jetzt die zeitliche Komponente explizit benannt: es werden Jahr und Quartalsnummer angegeben. Damit ist nun der "Aktualitätsstand" eines Korpus direkt in seinem  Namen ablesbar. Das erste Update nach amc\_4.*3* heißt daher nicht mehr amc\_4.*4*. Da es nun Texte bis inklusive 2024 - Quartal 1 enthält lautet die Bezeichnung nunmehr amc\_4.*24q1*. 
 
-**Vorhaltung alter Versionen**
+**Versionsnummern auf "x" (z.B. amc_4.3 vs. amc_4.3x)**
 
-Mit den kürzeren Updatezyklen wird es also ab nun 4 neue Versionsschritte pro Jahr geben. Wir können derzeit nicht garantieren, dass wir all diese Versionen mit vergleichsweise geringfügigen Änderungsschritten "ewig" in der NoSke vorhalten werden. Es ist aber geplant, zumindest einmal jählich eine *long term supported (LTS)* Version bereitzustellen. Für diese wird die Langzeitverfügbarkeit auf Dauer gewährleistet sein. Als LTS sind diejenigen Versionen vorgesehen, die das Quartal 4 – also ein abgeschlossenes Jahr – enthalten, und diese Versionen werden auch mit dem Namenszusatz `LTS` versehen sein.
+Im Jahr 2025 hat die Zeitung "Österreich" die Berechtigung zur Speicherung ihrer Daten zurückgezogen. 
+Daher ist dieses Medium seit Version *amc_4.25q5LTSx* in allen neu gebauten Korpora nicht mehr enthalten. 
+Die Texte dieser Zeitung müssen aber auch aus allen bereits bestehenden Korpora entfernt werden. 
+Es wurden also von den bestehenden Korpora neue Varianten gebaut, aus denen "Österreich" entfernt wurde. 
+Diese neuen Versionen tragen nun den Namenszusatz "x". D.h. aus "amc_4.3" wurde ein (um "Österreich" bereinigtes) "amc_4.3x". 
+Die Originalversionen werden nach einer kurzen "grace period" mit Ende 03/2026 vollständig entfernt.   
+
+**ACHTUNG**: versionen amc_4.1 amc_4.2 amc_4.3 amc_4.24q4LTS werden im März 2026 entfernt und durch ihre bereits verfügbaren "x"-Varianten ersetzt!
+
+**Vorhaltung älterer Versionen**
+
+Mit den kürzeren Updatezyklen wird es also ab nun 4 neue Versionsschritte pro Jahr geben. Wir können nicht garantieren, dass wir all diese Versionen mit vergleichsweise geringfügigen Änderungsschritten "ewig" in der NoSke vorhalten werden. Es ist aber geplant, zumindest einmal jählich eine *long term supported (LTS)* Version bereitzustellen. Für diese wird die Langzeitverfügbarkeit auf Dauer gewährleistet sein. Als LTS sind diejenigen Versionen vorgesehen, die das Quartal 4 – also ein abgeschlossenes Jahr – enthalten, und diese Versionen werden auch mit dem Namenszusatz `LTS` versehen sein.
 
 Die erste LTS Version nach diesem Namensschema trägt also den Namen `amc_4.24q4LTS`.
-
-Oder umgekehrt: die bisherigen Versionen amc\_4.2 und 4.3 würden nach dem neuen Namensschema die Bezeichnung 4.*22q4LTS* bzw. 4.*23q4LTS* tragen.
 
 ## Archiv
 
@@ -30,6 +39,16 @@ Archivierte quantitative Informationen zu **älteren Versionen**
 
 | Version  | Periode           | Details                 |
 |  ------- |  ---------------- |  ---------------------- |
+| amc\_4.24q4LTSx | bis incl. 12/2024 | siehe [unten](#amc24LTSx) |
+| amc\_4.3x | bis incl. 12/2023 | siehe [unten](#amc43x) |
+| amc\_4.2x | bis incl. 12/2022 | siehe [unten](#amc42x) |
+| amc\_4.1x | bis incl. 12/2021 | siehe [unten](#amc41x) |
+
+** Versionen zur baldigen Skartierung! **
+
+ Archivierte quantitative Informationen zu älteren Versionen **die mit 2026-03-31 entfernt werden**
+
+| amc\_4.24q3 | bis incl. 09/2025 | siehe [unten](#amc25q3) |
 | amc\_4.24q2 | bis incl. 06/2025 | siehe [unten](#amc25q2) |
 | amc\_4.24q1 | bis incl. 03/2025 | siehe [unten](#amc25q1) |
 | amc\_4.24q4LTS | bis incl. 12/2024 | siehe [unten](#amc24LTS) |
@@ -42,8 +61,69 @@ Archivierte quantitative Informationen zu **älteren Versionen**
 | amc\_3.2 | bis incl. 12/2020 | siehe [unten](#amc32) |
 | amc\_3.1 | bis incl. 12/2018 | siehe [unten](#amc31) |
 
-
 ****
+## <span id="amc24LTSx">amc\_4.24q4LTSx</span>
+(bis incl. 2024-12)
+
+### Anzahl der Token, Words, etc.
+
+|:--|--:|
+| Dokumente | 50.090.854 |
+| Sätze | 1.039.574.877 |
+| Token | 12.521.622.928 |
+| Wörter | 9.487.953.982 |
+
+## <span id="amc_43x">amc\_4.3x</span>
+(bis incl. 2023-12)
+
+### Anzahl der Token, Words, etc.
+
+|:--|--:|
+| Dokumente | 48.880.513 |
+| Absätze | 364.913.303 |
+| Sätze | 1.012.025.323 |
+| Token | 12.182.176.046 |
+| Wörter | 9.221.502.489 |
+
+## <span id="amc_42x">amc\_4.2x</span>
+(bis incl. 2022-12)
+
+### Anzahl der Token, Words, etc.
+
+|:--|--:|
+| Dokumente | 47.497.659 |
+| Absätze | 355.094.399 |
+| Sätze | 981.741.540 |
+| Token | 11.818.066.207 |
+| Wörter | 8.938.490.106 |
+
+
+## <span id="amc_41x">amc\_4.1x</span>
+(bis incl. 2021-12)
+
+### Anzahl der Token, Words, etc.
+
+|:--|--:|
+| Dokumente | 46.005.552 |
+| Absätze | 344.302.954 |
+| Sätze | 948.403.019 |
+| Token | 11.428.845.125 |
+| Wörter | 8.638.159.631 |
+
+** Versionen zur baldigen (2026-03) Skarktierung! **
+
+## <span id="amc25q3">amc\_4.24q3</span>
+(bis incl. 2025 Quartal 3 – also bis 2025-09-31)
+
+### Anzahl der Token, Words, etc.
+
+|  | Counts |
+| --| -- |
+| Dokumente | 52.291.868 |
+| Sätze | 1.079.323.799 |
+| Token | 12.993.408.689 |
+| Wörter | 9.864.080.492 |
+
 ## <span id="amc25q2">amc\_4.24q2</span>
 (bis incl. 2025 Quartal 2 – also bis 2025-06-30)
 
