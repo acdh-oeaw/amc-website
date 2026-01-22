@@ -64,6 +64,15 @@
 							"label": "Mehr lesen",
 							"href": "/registrierung/"
 						}
+					},
+										{
+					"title": "Release Notes",
+						"image": "/assets/content/index-page/sections/1/cards/2/image.jpg",
+						"leadIn": "Auf dieser Seite finden sich Informationen über neue Versionen etc.",
+						"link": {
+							"label": "Mehr lesen",
+							"href": "/dokumentation/release-notes/"
+						}
 					}
 				]
 			}
