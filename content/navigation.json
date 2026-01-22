@@ -20,6 +20,10 @@
 				"label": "Dokumentation",
 				"links": [
 					{
+						"label": "Release Notes",
+						"href": "/dokumentation/release-notes/"
+					},
+					{
 						"label": "Medienliste",
 						"href": "/dokumentation/medienliste/"
 					},
