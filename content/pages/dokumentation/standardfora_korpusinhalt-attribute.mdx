@@ -2,8 +2,8 @@
 title: NoSke-Korpora für STANDARDFORA
 ---
 
-**Version des Korpus:** v2 
-**Version der Dokumentation:** v2.0 (zuletzt geändert: 2026-05-05)
+**Version des Korpus:** v3 
+**Version der Dokumentation:** v3.0 (zuletzt geändert: 2026-05-28)
 
 **Autor:** Hannes Pirker [Austrian Centre for Digital Humanities (ACDH)](https://www.oeaw.ac.at/acdh)
 
@@ -13,13 +13,13 @@ title: NoSke-Korpora für STANDARDFORA
 
 Diese Seite dient der Beschreibung der in den STANDARDFORA-Korpora verwendeten Annotationen.
 
-Aktuelle Korpus-Version: **www_standardfora_v2_25q4**
+Aktuelle Korpus-Version: **www_standardfora_v3_25q4**
 
 Die Korpusbenennung verwendet folgendes Schema: `www_standardfora_v<VERSIONSNUMMER>_<JAHR>.q<QUARTAL>`
 
 Eine gleichlautende `<VERSIONSNUMMER>` bedeutet, dass identische Annotationskonventionen verwendet wurden. 
 `<JAHR>.q<QUARTAL>` kodiert den Genesezeitpunkt der jüngsten Textdaten im jeweiligen Korpus.  
-Aktuell reichen die posting Daten zurück bis 08/2020.   `www_standardfora_v2_25q4` bedeutet also, dass das Korpus Texte von 08/2020 bis 12/2025 enthält.
+Aktuell reichen die posting Daten zurück bis 08/2020.   `www_standardfora_v3_25q4` bedeutet also, dass das Korpus Texte von 08/2020 bis 12/2025 enthält.
 Korpora mit derselben Versionsnummer sind miteinder kompatibel und unterscheiden sich nur in der Aktualität der Texte.
 
 Die Annotation mit linguistischen Informationen (Lemmatisierung, PoS, NER, DependencyParse) erfolgt bei den STANDARDFORA mit denselben Werkzeugen+Methoden wie sie beim amc eingesetzt werden.
@@ -41,7 +41,7 @@ Als Erleichterung für die NutzerInnen wurden 2 Subkorpora mit den selbsterklär
 
 <span id="top"></span>
 
-## <span id="titel"></span>Attribute und Strukturen in `www_standardfora_v1`
+## <span id="titel"></span>Attribute und Strukturen in `www_standardfora_v3`
 
 
 ## Inhalt
@@ -472,14 +472,16 @@ Standarmäßig wird die *doc.id* bei Suchergebnissen (KWIC-Listen) als Referenz 
 
 ### <span id="doc.forumtype"></span>forumtype: Unterscheidung postings vs Originalartikel
 
-Das Korpus enthält neben den user-postings auch die originalen Artikeln zu welchen die user-Kommentare erfasst wurden. 
+Versionen des Korpus können neben den user-postings auch die originalen Artikel zu welchen die user-Kommentare erfasst wurden enthalten. 
 
 Das Attribute *forumtype* kodiert die Unterscheidung dieser beiden Text-Typen im Korpus
 
 | Wert | Bedeutung|
 |:---|:---|
-|ORIGINAL| Redaktioneller Artikel |
-|REPLY| user posting zu einem Artikel |
+|original| Redaktioneller Artikel |
+|reply| user posting zu einem Artikel |
+
+Das heißt: Dokumente mit *forumtype="reply"* (_postings_) sind in _allen_ Korpora enthalten. Einzelne Versionen enthalten dazu auch noch Dokumente mit *forumtype="original"*.  
 
 Quelle: Originaldokument
 
