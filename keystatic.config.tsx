@@ -364,26 +364,9 @@ export default config({
 													],
 													defaultValue: "print",
 												}),
-												printtype: fields.select({
+												printtype: fields.text({
 													label: "Art des Printmediums (printtype)",
-													options: [
-														{
-															label: "zeitung",
-															value: "Zeitung",
-														},
-														{
-															label: "Zeitschrift",
-															value: "zeitschrift",
-														},
-														{
-															label: "Fachmedium",
-															value: "fachmedium",
-														},
-														{
-															label: "-",
-															value: "-",
-														},
-													],
+													// validation: { isRequired: false },
 												}),
 												from: fields.text({
 													label: "von (year)",
