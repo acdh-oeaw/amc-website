@@ -178,5 +178,8 @@
 	},
 	"stylelint": {
 		"extends": "@acdh-oeaw/stylelint-config"
+	},
+	"volta": {
+		"node": "24.20.0"
 	}
 }

@@ -1,0 +1,237 @@
+docsrc	docsrc_name	description	status_action	region	province	printtype	mediatype	date_from	date_to	timeliness
+1BUS	1Bus	"Das österreichische Magazin für Bus, Coach & Reise"	added_in_amc5	agesamt	-	fachmedium	print	2019-03-18	2026-05-11	
+1CONSTRUCTION	1Construction	"Österreichisches Magazin für die Bauwirtschaft"	added_in_amc5	agesamt	-	fachmedium	print	2019-03-11	2026-03-16	
+1TRANSPORTER	1Transporter	"Das Transporter Magazin"	added_in_amc5	agesamt	-	fachmedium	print	2019-04-29	2025-12-09	
+1TRUCKMAG	1Truck	"Das Magazin für Transport Manager"	added_in_amc5	agesamt	-	fachmedium	print	2019-03-11	2026-05-14	
+A3BAU	"a3 Das Baumagazin"	"Das Österreichische Baumagazin"	added_in_amc5	agesamt	-	fachmedium	print	1999-02-25	2026-06-25	
+ABFORUM	"Architektur & Bau Forum"	"Fachmagazin für Architektur und Bau"	added_in_amc5	agesamt	-	fachmedium	print	2003-05-09	2020-12-21	eingestellt
+ACADEMIA	Academia	"Artikel mit Titel und Trefferumgebung"	im_amc	agesamt	-	zeitschrift	print	2008-02-01	2026-05-29	
+AERZTEWO	"Ärzte Woche"	"Österreichische Zeitung für Medizin"	added_in_amc5	agesamt	-	fachmedium	print	2010-11-18	2026-06-25	
+APA	"APA-Meldungen digital"	APA-Basisdienst	im_amc	agesamt	-	-	agentur	1986-01-02	2026-06-30	
+ARBEITW	"Arbeit & Wirtschaft"	"Die Zeitschrift von AK und ÖGB"	im_amc	agesamt	-	zeitschrift	print	2000-01-01	2026-06-18	
+ATVVOLL	ATV	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	agesamt	-	-	av_transcript	2005-03-10	2020-07-04	eingestellt
+AUBILDOE	"Auto Bild Österreich"	"Der Österreich-Teil der Auto BILD"	added_in_amc5	agesamt	-	zeitschrift	print	2012-09-28	2026-06-17	
+AUGUSTIN	Augustin	"Artikel mit Titel und Trefferumgebung"	im_amc	aost	W	zeitschrift	print	2003-01-17	2026-06-17	
+AUSINNOV	"Austria Innovativ"	"Österreichisches Magazin für Forschung und Technologie"	added_in_amc5	agesamt	-	fachmedium	print	2012-02-10	2026-06-15	
+AUSTRIAEUROPE	"Austria - Europes Heart"	"Publikation zum Wirtschaftsstandort Österreich"	added_in_amc5	agesamt	-	fachmedium	print	2020-04-21	2026-02-25	
+AUTLOOK	AUTlook	"Das österreichische Fachmagazin für Automatisierungstechnik"	added_in_amc5	agesamt	-	fachmedium	print	2019-05-03	2025-11-19	
+AUTOAKT	AUTO-aktuell	"Auto, Tuning, Freizeit"	added_in_amc5	agesamt	-	zeitschrift	print	2007-03-01	2019-06-29	eingestellt
+AUTOREVU	"Auto Revue"	"Österreichisches Automobilmagazin"	added_in_amc5	agesamt	-	zeitschrift	print	2012-08-24	2026-06-26	
+AUTOSERVH	Autoservice	"Das Wirtschafts- und Technikmagazin für die Automobilbranche"	added_in_amc5	agesamt	-	fachmedium	print	2019-06-07	2026-06-10	
+AUTOWIRT	"AUTO & Wirtschaft Österreich"	"Fachmagazin für die österreichische Automobilbranche"	added_in_amc5	agesamt	-	fachmedium	print	2006-01-01	2026-06-15	
+BALLESTE	Ballesterer	"Österreichisches Fußballmagazin"	added_in_amc5	agesamt	-	zeitschrift	print	2013-07-16	2026-05-27	
+BAUBLATT	"Baublatt Österreich"	"Magazin für Bau, Maschinen, Geräte und Technik"	added_in_amc5	agesamt	-	fachmedium	print	2012-06-12	2026-06-29	
+BAUERNZT	"Österreichische Bauernzeitung"	"Wochenzeitung für den ländlichen Raum"	im_amc	agesamt	-	zeitung	print	2010-03-18	2026-06-25	
+BAUREP	"Bau & Immobilienreport"	"Magazin für den Bau- und Immobilienmarkt"	added_in_amc5	agesamt	-	fachmedium	print	2000-03-06	2026-06-23	
+BAUZEIT	"Österreichische Bauzeitung"	"Fachzeitschrift für die Bauwirtschaft"	added_in_amc5	agesamt	-	fachmedium	print	2003-06-13	2026-06-26	
+BEEYMOFOE1	"ORF Radio Ö1"	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	agesamt	-	-	av_transcript	2023-01-01	2026-06-30	
+BEEYMOFOE3	"ORF Radio Ö3"	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	agesamt	-	-	av_transcript	2023-01-01	2026-06-30	
+BEEYMOFORF1	ORF1	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	agesamt	-	-	av_transcript	2023-01-01	2026-06-30	
+BEEYMOFORF2	ORF2	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	agesamt	-	-	av_transcript	2023-01-01	2026-06-30	
+BEEYMOFORF3	ORF3	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	agesamt	-	-	av_transcript	2024-08-30	2024-09-03	eingestellt
+BEEYMOFRADIOBGLD	"ORF Radio Burgenland"	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	aost	BGL	-	av_transcript	2023-01-01	2026-06-30	
+BEEYMOFRADIOKTN	"ORF Radio Kärnten"	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	asuedost	KT	-	av_transcript	2023-01-04	2026-06-30	
+BEEYMOFRADIONOE	"ORF Radio Niederösterreich"	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	aost	"NÖ"	-	av_transcript	2023-01-03	2026-06-30	
+BEEYMOFRADIOOOE	"ORF Radio Oberösterreich"	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	amitte	"OÖ"	-	av_transcript	2023-01-02	2026-06-30	
+BEEYMOFRADIOSBG	"ORF Radio Salzburg"	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	amitte	SB	-	av_transcript	2023-01-01	2026-06-30	
+BEEYMOFRADIOSTMK	"ORF Radio Steiermark"	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	asuedost	ST	-	av_transcript	2023-01-02	2026-06-30	
+BEEYMOFRADIOTIR	"ORF Radio Tirol"	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	awest	T	-	av_transcript	2023-01-01	2026-06-30	
+BEEYMOFRADIOVBG	"ORF Radio Vorarlberg"	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	awest	V	-	av_transcript	2023-01-02	2026-06-30	
+BEEYMOFRADIOW	"ORF Radio Wien"	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	aost	W	-	av_transcript	2023-01-01	2026-06-30	
+BERGWELT	Bergwelten	"Das Magazin für alpine Lebensfreude"	added_in_amc5	agesamt	-	zeitschrift	print	2017-03-21	2026-05-14	
+BEZNOE	"Bezirksblätter Niederösterreich"	"Regionale Wochenzeitschrift für Niederösterreich"	added_in_amc5	aost	"NÖ"	zeitung	print	2010-10-06	2026-06-24	
+BIBER	biber	"Das Magazin für neue Österreicher"	added_in_amc5	agesamt	-	zeitschrift	print	2013-12-12	2026-05-06	
+BILAND	"Blick ins Land"	"Das Magazin für den ländlichen Raum"	added_in_amc5	agesamt	-	zeitschrift	print	2005-10-03	2026-06-15	
+BOERSENK	Börsen-Kurier	"Wochenzeitung für Finanz und Wirtschaft"	added_in_amc5	agesamt	-	zeitschrift	print	2010-01-14	2026-06-26	
+BUEHNE	"BÜHNE"	"Österreichs Theater- und Kulturmagazin"	added_in_amc5	agesamt	-	zeitschrift	print	2012-08-30	2026-05-28	
+BUNDESLI	Bundesliga-Journal	"Journal der Österreichischen Fußball-Bundesliga"	added_in_amc5	agesamt	-	zeitschrift	print	1990-02-15	2025-08-01	
+BURBEZ	"Bezirksblätter Burgenland"	"Regionale Wochenzeitschrift für das Burgenland"	added_in_amc5	aost	BGL	zeitung	print	2010-10-06	2026-06-24	
+BUSIART	Businessart	"Magazin für nachhaltiges Wirtschaften"	added_in_amc5	agesamt	-	zeitschrift	print	2012-10-18	2026-06-18	
+BUSMONAT	"Business Monat"	"Magazin für Wirtschaft, Nachhaltigkeit und Genuss"	added_in_amc5	agesamt	-	fachmedium	print	2018-01-19	2026-06-12	
+BUSREP	Bus&Hotelreport	"Magazin für Touristik, Gastronomie und Bustechnik"	added_in_amc5	agesamt	-	fachmedium	print	2007-01-01	2026-04-30	
+BVZ	"Burgenländische Volkszeitung"	"Wochenzeitung für das Burgenland"	im_amc	aost	BGL	zeitung	print	2003-12-03	2026-06-25	
+CASH	Cash	"Das Handelsmagazin"	added_in_amc5	agesamt	-	fachmedium	print	2000-04-01	2026-06-30	eingestellt
+CHEFINFO	Chefinfo	"Das Magazin der Führungskräfte"	added_in_amc5	agesamt	-	fachmedium	print	2018-09-11	2026-06-10	
+COLORH	Color	"Österreichische Fachzeitschrift für das Malergewerbe"	added_in_amc5	agesamt	-	fachmedium	print	2013-11-08	2026-06-03	
+COMPETCIRCLE	"Competence Circle"	"Die Publikation zur EXPO REAL"	added_in_amc5	agesamt	-	fachmedium	print	2022-09-01	2024-09-16	eingestellt
+COMWELT	"IT WELT"	it.telekommunikation.business	added_in_amc5	agesamt	-	fachmedium	print	1997-01-13	2026-06-24	
+DACHWAND	"Dach Wand"	"Österreichisches Fachmagazin für Dachdecker und Spengler"	added_in_amc5	agesamt	-	fachmedium	print	2013-10-28	2026-06-26	
+DASFEUILL	"Das Feuilleton"	"Zeitung für Debatte, Kultur, Medien und Zeitgeschehen"	added_in_amc5	agesamt	-	zeitschrift	print	2023-12-01	2025-11-28	
+DATUM	Datum	"Magazin für anspruchsvolle Leserinnen und Leser"	im_amc	agesamt	-	zeitschrift	print	2007-01-01	2026-06-05	
+DERBAUEH	"Der Bauer"	"Informationen der Landwirtschaftskammer Oberösterreich"	added_in_amc5	amitte	"OÖ"	zeitschrift	print	2013-11-06	2026-06-17	
+DERBOERS	"Der Börsianer"	"Österreichisches Fachmagazin für den Kapitalmarkt"	added_in_amc5	agesamt	-	fachmedium	print	2014-10-10	2026-05-12	
+DERPLANH	"der Plan"	"Zeitschrift der Kammer der Architekten und Ingenieurkonsulenten"	added_in_amc5	agesamt	-	fachmedium	print	2014-09-22	2026-05-20	
+DERSONNT	"Der Sonntag"	"Kirchenzeitung für Kärnten"	added_in_amc5	aost	-	zeitschrift	print	2013-06-20	2026-06-25	
+DFZ	"DFZ Floridsdorfer Zeitung"	"Magazin für Floridsdorf"	added_in_amc5	aost	W	zeitschrift	print	2016-03-03	2026-06-24	
+DGW	"Die Ganze Woche"	"Österreichische Wochenzeitschrift"	added_in_amc5	agesamt	-	zeitschrift	print	2011-11-30	2026-06-24	
+DIEBGLIN	Burgenländerin	"Das Gesellschaftsmagazin des Burgenlandes"	added_in_amc5	aost	BGL	zeitschrift	print	2017-02-03	2026-05-29	
+DIEINFO	Stadtlandwirtschaft	"Informationen der Landwirtschaftskammer Wien"	added_in_amc5	aost	W	zeitschrift	print	2014-01-03	2026-06-05	
+DIELANDH	"Die Landwirtschaft"	"Informationen der Landwirtschaftskammer Niederösterreich"	added_in_amc5	aost	"NÖ"	zeitschrift	print	2014-01-03	2026-06-26	
+DIENOEIN	Niederösterreicherin	"Das Gesellschaftsmagazin Niederösterreichs"	added_in_amc5	aost	"NÖ"	zeitschrift	print	2017-02-03	2026-05-29	
+DIEOBER	Oberösterreicherin	"Das Gesellschaftsmagazin Oberösterreichs"	added_in_amc5	amitte	"OÖ"	zeitschrift	print	2017-02-03	2026-05-29	eingestellt
+DIEWIR	"Die Wirtschaft"	"Österreichisches Wirtschaftsmagazin"	im_amc	agesamt	-	fachmedium	print	2003-05-01	2023-11-24	eingestellt
+DIOEZESE	Martinus	"Kirchenzeitung für Burgenland"	added_in_amc5	aost	BGL	zeitschrift	print	2013-06-19	2026-06-24	
+DISPOH	dispo	"Das Magazin für Logistik und Supply Chain Management"	added_in_amc5	agesamt	-	fachmedium	print	2019-05-16	2026-05-18	
+ECHO	Echo	"Regionale Nachrichtenillustrierte"	im_amc	awest	T	zeitschrift	print	2004-01-01	2026-06-05	
+ECONOVA	econova	"Österreichisches Wirtschaftsmagazin"	added_in_amc5	awest	T	fachmedium	print	2012-04-02	2026-05-15	
+ELEKTRONH	"elektronik report"	"Fachzeitung für Elektronik und Prozessautomatisierung"	added_in_amc5	agesamt	-	fachmedium	print	2019-05-08	2021-11-09	eingestellt
+EMEDIA	E-Media	"Internet. Computer. Handy."	im_amc	agesamt	-	zeitschrift	print	2000-12-22	2023-04-28	eingestellt
+ENREP	Energiereport	"Fachmagazin für den Energiemarkt"	added_in_amc5	agesamt	-	fachmedium	print	2000-10-01	2023-11-21	eingestellt
+EUNDWH	"E & W"	"Österreichische Fachzeitschrift für die Elektrobranche"	added_in_amc5	agesamt	-	fachmedium	print	2013-12-16	2026-06-09	
+EXTRA	Extradienst	"Informationen für die Kommunikationsbranche"	added_in_amc5	agesamt	-	zeitschrift	print	2001-09-28	2026-05-19	
+FACTORY	Factory	"Fachmagazin für Produktion & Technologie"	added_in_amc5	agesamt	-	fachmedium	print	2003-02-01	2025-11-12	
+FAKTUM	FaktuM	"Informationen für Touristiker"	added_in_amc5	agesamt	-	zeitschrift	print	2001-07-12	2025-04-04	eingestellt
+FALSTAFF	Falstaff	"Internationale Zeitschrift für Essen, Trinken und Reisen"	added_in_amc5	agesamt	-	zeitschrift	print	2013-10-11	2026-05-29	
+FALTER	Falter	"Die Stadtzeitung für Wien und die Steiermark"	im_amc	aost	W	zeitung	print	1998-08-05	2026-06-24	
+FIRMENWAH	Firmenwagen	"Magazin für Flottenbetreiber und kostenbewusste Vielfahrer"	added_in_amc5	agesamt	-	fachmedium	print	2019-06-07	2026-06-12	
+FLOTTEW	FLOTTE	"Magazin für österreichische Firmenwagenbetreiber"	added_in_amc5	agesamt	-	fachmedium	print	2011-12-01	2026-06-29	
+FM	FM	"Fachmagazin für Touristik, Gastronomie, Hotellerie"	added_in_amc5	agesamt	-	fachmedium	print	2001-08-01	2025-05-16	eingestellt
+FOKUS	ImmoFokus	"Magazin für die österreichische Immobilienwirtschaft"	added_in_amc5	agesamt	-	fachmedium	print	2014-12-15	2023-12-11	eingestellt
+FONDSEXK	"Fonds exklusiv"	"Das Magazin für die Kapitalanlage"	added_in_amc5	agesamt	-	fachmedium	print	2012-03-23	2026-06-26	
+FORBESAT	"Forbes (deutsch)"	"Deutschsprachige Ausgabe des Finanz- und Wirtschafts-Magazins Forbes für Österreich"	added_in_amc5	agesamt	-	zeitschrift	print	2015-04-02	2026-06-18	
+FORMATDB	Format	"Wirtschafts- und Nachrichtenmagazin"	im_amc	agesamt	-	zeitschrift	print	1998-10-05	2018-12-07	eingestellt
+FURCHE	"Die Furche"	"Wochenzeitung für Gesellschaft, Politik, Kultur, Religion und Wirtschaft"	im_amc	agesamt	-	zeitung	print	1998-01-01	2026-06-25	
+GEBAEUDE	"Gebäude Installation"	"Österreichisches Fachmagazin der Haustechnik-Branche"	added_in_amc5	agesamt	-	fachmedium	print	2013-10-23	2026-06-15	
+GELD	"geld magazin"	"Österreichisches Wirtschaftsmagazin"	added_in_amc5	agesamt	-	fachmedium	print	2005-03-01	2026-06-29	
+GESUNDH	"Gesünder leben"	"Österreichisches Gesundheits- und Lifestylemagazin"	added_in_amc5	agesamt	-	zeitschrift	print	2012-06-06	2026-06-05	
+GEWINN	Gewinn	"Österreichisches Wirtschaftsmagazin"	im_amc	agesamt	-	zeitschrift	print	1998-01-01	2026-06-03	
+GLAS	Glas	"Österreichisches Fachmagazin für die Glas-Wirtschaft"	added_in_amc5	agesamt	-	fachmedium	print	2013-12-02	2026-06-11	
+GOEDH	"GÖD Magazin"	"Mitgliedermagazin der Gewerkschaft öffentlicher Dienst"	added_in_amc5	agesamt	-	zeitschrift	print	2018-02-01	2026-06-26	
+GOLFWEEK	"Golf Week"	"Golf Magazin für den deutschsprachigen Raum"	added_in_amc5	agesamt	-	zeitschrift	print	2016-04-15	2026-06-26	
+GRAZER	derGrazer	"Gratissonntagszeitung für Graz und Umgebung"	im_amc	asuedost	ST	zeitung	print	2008-02-03	2026-06-30	
+GUSTOH	Gusto	"Das österreichische Kochjournal"	added_in_amc5	agesamt	-	zeitschrift	print	2012-08-23	2026-06-25	
+HEUTE	Heute	"Gratis-Tageszeitung für Wien, NÖ, OÖ"	im_amc	aost	-	zeitung	print	2007-03-16	2026-06-30	
+HGVPRAX	"HGV Praxis"	"Zeitschrift für Hotellerie, Gastronomie und Großverpflegung"	added_in_amc5	agesamt	-	fachmedium	print	2012-06-05	2024-10-31	eingestellt
+HITEC	hi!tec	"Das Innovationsmagazin von Siemens Österreich"	added_in_amc5	agesamt	-	zeitschrift	print	2016-07-06	2026-06-23	
+HLKHEIZ	HLK	"Österreichs spezialisiertes Fachmagazin für Heizung. Lüftung. Klima- und Kältetechnik"	added_in_amc5	agesamt	-	fachmedium	print	2019-05-20	2025-12-01	
+HOLZKUR	Holzkurier	"Wochenblatt für die Forst- und Holzwirtschaft"	added_in_amc5	agesamt	-	fachmedium	print	2010-03-04	2026-06-25	
+HOR	Horizont	"Werbung, Marketing, Kommunikation und Medien"	im_amc	agesamt	-	fachmedium	print	2000-03-24	2026-06-26	
+IM	Industriemagazin	"Magazin für Wirtschaft und Technik"	im_amc	agesamt	-	fachmedium	print	1999-12-01	2026-06-03	
+IMMOINVE	"immobilien investment"	"Immobilienprojekte in Österreich"	added_in_amc5	agesamt	-	fachmedium	print	2020-04-21	2026-06-25	
+IMMOMAG	Immobilienmagazin	"Magazin für die Immobilienwirtschaft & Anleger"	added_in_amc5	agesamt	-	fachmedium	print	2012-02-02	2026-06-03	
+ISCHLWOC	"Ischler Woche"	"Wochenzeitung für das innere Salzkammergut"	added_in_amc5	amitte	"OÖ"	zeitung	print	2014-12-24	2026-06-24	
+ISR	ISR	"Internationale Seilbahn-Rundschau"	added_in_amc5	agesamt	-	fachmedium	print	2011-12-07	2026-06-23	
+ITT	"it & t Business"	"Fachmagazin für IT und Telekommunikation"	added_in_amc5	agesamt	-	fachmedium	print	2002-07-01	2025-12-15	
+KAERNTNH	"Kärntner Bauer"	"Informationen der Landwirtschaftskammer Kärnten"	added_in_amc5	asuedost	KT	zeitschrift	print	2013-11-15	2026-06-19	
+KFZWIRTS	"KFZ Wirtschaft"	"Österreichisches Fachmagazin für die Kfz-Branche"	added_in_amc5	agesamt	-	fachmedium	print	2013-11-11	2026-06-11	
+KIRCHEBU	"Kirche bunt"	"Kirchenzeitung für Niederösterreich"	added_in_amc5	aost	"NÖ"	zeitschrift	print	2013-07-04	2026-06-25	
+KIRCHENZ	KirchenZeitung	"Kirchenzeitung für Oberösterreich"	added_in_amc5	amitte	"OÖ"	zeitschrift	print	2013-06-19	2026-06-24	
+KLEINE	"Kleine Zeitung"	"Tageszeitung für Steiermark und Kärnten"	im_amc	asuedost	-	zeitung	print	1996-08-01	2026-06-30	
+KOMMUNAL	Kommunal	"Zeitung des österreichischen Gemeindebundes"	added_in_amc5	agesamt	-	fachmedium	print	2003-11-20	2026-06-12	
+KOMMUNEN	"Kommunen der Zukunft"	"Sonderheft zum Städtetag in den Bundesländern"	added_in_amc5	agesamt	-	fachmedium	print	2020-05-04	2026-06-01	
+KONSUM	"Der Konsument"	"Das Konsumentenmagazin des VKI"	im_amc	agesamt	-	zeitschrift	print	1996-01-01	2026-06-25	
+KRONE	"Kronen Zeitung"	"Überregionale Österreichische Tageszeitung"	im_amc	agesamt	-	zeitung	print	1994-01-01	2026-06-30	
+KTNMONAT	"Kärntner Monat"	"Das Szene-Magazin für Kärnten"	im_amc	asuedost	KT	zeitschrift	print	2005-01-01	2026-06-26	eingestellt
+KTNREGIO	"Kärntner Regionalmedien"	"Regionale Medien für Kärnten"	added_in_amc5	asuedost	KT	zeitung	print	2017-11-29	2026-06-02	
+KTNW	"WOCHE Kärnten"	"Regionale Wochenzeitung für Kärnten"	added_in_amc5	asuedost	KT	zeitung	print	2005-06-08	2026-06-24	
+KTZ	"Kärntner Tageszeitung"	"Tageszeitung für Kärnten (eingestellt)"	im_amc	asuedost	KT	zeitung	print	1999-01-02	2014-02-28	eingestellt
+KURIER	Kurier	"Überregionale Österreichische Tageszeitung"	im_amc	agesamt	-	zeitung	print	1992-01-01	2026-06-30	
+KW	"Kärntner Wirtschaft"	"Die Wochenzeitung der Wirtschaftskammer Kärnten"	im_amc	asuedost	KT	zeitschrift	print	1996-01-12	2026-06-26	
+LANDWIRH	"Landwirtschaftliche Blätter"	"Informationen der Landwirtschaftskammer Steiermark"	added_in_amc5	awest	ST	zeitschrift	print	2013-11-07	2026-06-24	
+LEBENSAR	Lebensart	"Magazin für nachhaltige Lebenskultur"	added_in_amc5	agesamt	-	zeitschrift	print	2012-10-18	2026-06-18	
+LOOKLIVE	"Wienlive look!"	"Das Magazin für Wien"	added_in_amc5	aost	W	zeitschrift	print	2017-02-03	2026-06-26	
+MEDIANET	Medianet	"Wirtschaftszeitung für Marketing und Sales"	im_amc	agesamt	-	fachmedium	print	2002-01-08	2026-06-26	
+MEDICALT	"Medical Tribune"	"Österreichisches Fachmagazin für Ärzte"	added_in_amc5	agesamt	-	fachmedium	print	2011-02-02	2025-07-03	eingestellt
+MEDIP	"Medizin populär"	"Gesundheitsmagazin aus dem Verlagshaus der Ärzte"	added_in_amc5	agesamt	-	zeitschrift	print	2012-01-09	2026-06-01	
+MEDMGR	"Medien Manager"	"Faszinierende Welt der Medien"	added_in_amc5	agesamt	-	fachmedium	print	2003-01-01	2026-06-17	
+METALLH	Metall	"Österreichisches Fachmagazin für die metallverarbeitende Wirtschaft"	added_in_amc5	agesamt	-	fachmedium	print	2013-10-16	2026-06-12	
+MISS	MISS	"Österreichisches Lifestyle-Magazin"	added_in_amc5	agesamt	-	zeitschrift	print	2014-02-06	2024-04-04	eingestellt
+MITTBURG	"Mitteilungsblatt der Burgenl. Landwirts"	"Informationen der Landwirtschaftskammer Burgenland"	added_in_amc5	aost	BGL	zeitschrift	print	2013-11-01	2026-06-10	
+MOMENTS	"Moments Oberösterreich"	"Das Magazin für die schönsten Augenblicke"	added_in_amc5	amitte	"OÖ"	zeitschrift	print	2018-08-30	2026-06-26	
+MOMESTMK	"Moments Steiermark"	"Das Magazin für die schönsten Augenblicke"	added_in_amc5	asuedost	ST	zeitschrift	print	2018-08-30	2026-06-05	
+MOTORRAD	Motorradmagazin	"Österreichisches Hochglanz-Motorradmagazin"	added_in_amc5	agesamt	-	zeitschrift	print	2013-05-02	2026-06-18	
+MWVOLL	"ORF (Radio and TV)"	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	agesamt	-	-	av_transcript	2003-02-03	2022-12-31	eingestellt
+NEWBUSIN	"New Business"	"Fachmagazin aus der Werbe- und Medienbranche"	added_in_amc5	agesamt	-	fachmedium	print	2014-03-10	2026-06-05	
+NEWS	News	"Politik. Geld. Szene. Leute."	im_amc	agesamt	-	zeitschrift	print	1999-01-07	2026-06-25	
+NEWSLEBE	"Woman Balance"	"Österreichisches Gesundheitsmagazin"	added_in_amc5	agesamt	-	zeitschrift	print	2012-09-07	2025-09-11	eingestellt
+NOEN	"Niederösterreichische Nachrichten"	"Niederösterreichische Wochenzeitung"	im_amc	aost	"NÖ"	zeitung	print	1995-07-31	2026-06-24	
+NOEWIRT	"Wirtschaft Niederösterreich"	"Die Zeitung der Wirtschaftskammer Niederösterreich"	added_in_amc5	aost	"NÖ"	zeitschrift	print	2013-02-15	2026-06-26	
+NVB	"Neues Volksblatt (bis 2018) / Oberösterreichisches Volksblatt (ab 2018)"	"Tageszeitung für Oberösterreich"	im_amc	amitte	"OÖ"	zeitung	print	1997-09-01	2023-12-30	eingestellt
+NVT	"Neue Vorarlberger Tageszeitung"	"Tageszeitung für Vorarlberg"	im_amc	awest	V	zeitung	print	1997-01-02	2026-06-30	
+OBEROESW	"Oberösterreichische Wirtschaft"	"Die Zeitung für Oberösterreichs Unternehmen"	added_in_amc5	amitte	"OÖ"	fachmedium	print	2016-07-29	2026-06-18	
+OBERRUND	"Oberländer Rundschau"	"Wochenzeitung für die Bezirke Imst, Landeck, Reutte, Telfs"	im_amc	awest	T	zeitung	print	2010-10-07	2026-06-24	
+OECOOKING	"Österreich Cooking"	"Österreichisches Koch-Magazin"	added_in_amc5	agesamt	-	zeitschrift	print	2016-08-05	2025-12-19	skartiert
+OEGEM	"Österreichische Gemeindezeitung"	"Österreichische Gemeindezeitung"	added_in_amc5	agesamt	-	fachmedium	print	2007-12-01	2026-05-13	
+OEGZ	"ÖGZ Gastgewerbe-&Hotelzeitung"	"Österreichische Fachzeitung für Gastronomie"	added_in_amc5	agesamt	-	fachmedium	print	2001-01-12	2026-06-05	
+OEINSIDER	"Österreich Insider"	"Ein neues Magazin für ein neues Jahrzehnt"	added_in_amc5	agesamt	-	zeitschrift	print	2020-01-10	2025-12-31	skartiert
+OEINSTA	"Der Österreichische Installateur"	"Fachmagazin für Sanitär-, Heizungs- und Lüftungstechniker"	added_in_amc5	agesamt	-	fachmedium	print	2012-02-21	2026-06-30	
+OEMADONNA	"Österreich Madonna"	"Österreichisches Frauen-Magazin"	added_in_amc5	agesamt	-	zeitschrift	print	2016-07-30	2025-12-27	skartiert
+OEREICHE	"Österreich"	#N/A	skartiert	agesamt	-	zeitung	print	#N/A	#N/A	
+OESTERREICH	"Österreich"	#N/A	skartiert	agesamt	-		print	#N/A	#N/A	
+OEVERKH	"Österreichische Verkehrszeitung"	"Wöchentliche Zeitung für Transport und Logistik"	added_in_amc5	agesamt	-	zeitschrift	print	2019-02-20	2026-06-17	
+OFLEISHH	"Fleisch & Co"	"Österreichisches Fachmagazin für die Fleischwirtschaft"	added_in_amc5	agesamt	-	fachmedium	print	2013-11-01	2024-09-06	eingestellt
+OOEN	"Oberösterreichische Nachrichten"	"Tageszeitung für Oberösterreich"	im_amc	amitte	"OÖ"	zeitung	print	1996-01-02	2026-06-30	
+ORFNACHH	"ORF nachlese"	"Programmbegleitendes Magazin des ORF"	added_in_amc5	agesamt	-	zeitschrift	print	2014-01-09	2026-05-30	
+OTS	"Original Text Service"	OTS-Originaltext-Service	im_amc	agesamt	-	-	agentur	1989-06-01	2026-06-30	
+PACKAGIN	Packaging	"Das Magazin für moderne Verpackung"	added_in_amc5	agesamt	-	fachmedium	print	2013-09-20	2025-12-15	
+PERFECTE	"Perfect Eagle"	"Die Golfzeitschrift"	added_in_amc5	agesamt	-	zeitschrift	print	2014-03-28	2022-09-30	eingestellt
+PHINFO	"Pharmig Info"	"Hintergrund-Info zu Gesundheit, Politik, Wirtschaft"	added_in_amc5	agesamt	-	fachmedium	print	1995-01-01	2026-06-17	
+PRESSE	"Die Presse"	"überregionale österreichische Tageszeitung"	im_amc	agesamt	-	zeitung	print	1991-09-02	2026-06-30	
+PRINTPUH	"Print & Publishing"	"Magazin für digitale und gedruckte Kommunikation"	added_in_amc5	agesamt	-	fachmedium	print	2013-03-29	2026-05-22	
+PRO7VOLL	PRO7	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	agesamt	-	-	av_transcript	2007-02-27	2020-05-06	eingestellt
+PROFIL	Profil	"Österreichisches Nachrichtenmagazin"	im_amc	agesamt	-	zeitschrift	print	1994-01-03	2026-06-27	
+PUBLICH	public	"Österreichisches Gemeindemagazin"	added_in_amc5	agesamt	-	fachmedium	print	2014-05-21	2025-09-24	
+PULSVOLL	PULS4	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	agesamt	-	-	av_transcript	2007-02-28	2020-07-01	eingestellt
+PUNKTUMH	Elektropraxis	"Österreichs Fachmagazin für Elektroinstallationstechnik"	added_in_amc5	agesamt	-	fachmedium	print	2019-04-29	2026-04-27	
+RAIFF	Raiffeisenzeitung	"Die Wochenzeitung des Österreichischen Raiffeisenverbandes"	added_in_amc5	agesamt	-	zeitschrift	print	2004-07-01	2026-06-25	
+REGAL	Regal	"Fachjournal für Markenartikel und Einzelhandel"	added_in_amc5	agesamt	-	fachmedium	print	1995-08-01	2026-06-01	
+REISEAKT	REISE-aktuell	"internationales Reisemagazin"	added_in_amc5	agesamt	-	zeitschrift	print	2007-01-01	2025-12-04	
+REPPLUS	"Report Plus"	"Österreichisches Wirtschaftsmagazin"	added_in_amc5	agesamt	-	fachmedium	print	2004-02-06	2026-06-23	
+RUPERTUS	Rupertusblatt	"Kirchenzeitung für Salzburg"	added_in_amc5	amitte	SB	zeitschrift	print	2013-06-20	2026-06-25	
+SALZBAU	"Salzburger Bauer"	"Informationen der Landwirtschaftskammer Salzburg"	added_in_amc5	amitte	SB	zeitschrift	print	2013-11-07	2026-06-25	
+SAT1VOLL	SAT1	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	agesamt	-	-	av_transcript	2008-03-17	2020-05-28	eingestellt
+SBGBEZ	"Salzburger Bezirksblätter"	"Regionale Wochenzeitschrift für Salzburg"	added_in_amc5	amitte	SB	zeitung	print	2010-10-06	2026-06-24	
+SBGW	"Salzburger Woche"	"Wochenzeitung für Salzburg"	im_amc	amitte	SB	zeitung	print	2007-11-22	2026-06-30	
+SERVUS	"Servus in Stadt und Land"	"Lebensstil- und Heimatzeitschrift"	added_in_amc5	agesamt	-	zeitschrift	print	2017-02-28	2026-06-26	
+SERVUSGU	"Servus Gute Küche"	"Das Magazin für Liebhaber der alpenländischen Küche"	added_in_amc5	agesamt	-	zeitschrift	print	2017-03-14	2025-09-25	
+SERVUSKI	"Servus Kinder"	"Das Magazin für große und kleine Kinder"	added_in_amc5	agesamt	-	zeitschrift	print	2017-03-28	2026-06-26	eingestellt
+SN	"Salzburger Nachrichten"	"Überregionale Österreichische Tageszeitung"	im_amc	amitte	SB	zeitung	print	1991-06-10	2026-06-30	
+SOBLATT	"Sonntagsblatt für Steiermark"	"Kirchenzeitung für Steiermark"	added_in_amc5	asuedost	ST	zeitschrift	print	2013-06-20	2026-06-25	
+SOLI	Solidarität	"Die Monatszeitschrift des ÖGB"	im_amc	agesamt	-	zeitschrift	print	2001-09-01	2025-02-01	eingestellt
+SONNTAGH	Sonntag	"Kirchenzeitung für Wien"	added_in_amc5	asuedost	KT	zeitschrift	print	2013-06-20	2026-06-25	
+SPORTZTG	Sportzeitung	"Die Zeitung des Sports"	im_amc	agesamt	-	zeitschrift	print	1996-03-04	2019-12-17	eingestellt
+STANDARD	"Der Standard"	"Überregionale Österreichische Tageszeitung"	im_amc	agesamt	-	zeitung	print	1990-09-25	2026-06-30	
+STEIRIN	Steirerin	"Das Gesellschaftsmagazin für die Steiermark"	added_in_amc5	asuedost	ST	zeitschrift	print	2017-02-03	2026-05-29	
+STEIWIRH	"Steirische Wirtschaft"	"Die Zeitung der Wirtschaftskammer Steiermark"	added_in_amc5	asuedost	ST	zeitschrift	print	2015-05-04	2026-06-19	
+STMONAT	"Steirer Monat"	"Steirisches Monatsmagzin (eingestellt)"	im_amc	asuedost	ST	zeitschrift	print	2005-02-03	2012-07-15	eingestellt
+STYLEUP	"Style up Your Life"	"Österreichisches Fashionmagazin"	added_in_amc5	agesamt	-	zeitschrift	print	2019-04-19	2025-11-19	
+SVZ	"Salzburger Volkszeitung"	"Tageszeitung für Salzburg (eingestellt)"	im_amc	amitte	SB	zeitung	print	2007-06-25	2014-08-14	eingestellt
+TAI	"Tourist Austria International"	"Österreichs Wochenzeitung für Tourismuswirtschaft"	added_in_amc5	agesamt	-	fachmedium	print	2001-03-02	2026-06-12	
+TERRAM	"Terra Mater"	"Natur- und Wissensmagazin"	added_in_amc5	agesamt	-	zeitschrift	print	2017-04-04	2025-10-16	
+TEXTIL	"Österreichische Textilzeitung"	"Fachzeitschrift für die österreichische Textilwirtschaft"	added_in_amc5	agesamt	-	fachmedium	print	2012-05-11	2026-02-11	
+TGATECHH	TGA	"Technische Gebäude Ausrüstung"	added_in_amc5	agesamt	-	fachmedium	print	2019-05-23	2026-06-30	
+THEREDBU	"The Red Bulletin"	"Internationales Lifestylemagazin"	added_in_amc5	agesamt	-	zeitschrift	print	2017-03-14	2026-06-12	
+TIPS	TIPS	"Regionale Wochenzeitschrift für Oberösterreich"	added_in_amc5	amitte	"OÖ"	zeitung	print	2011-07-20	2026-06-24	
+TIRBEZ	"Tiroler Bezirksblätter"	"Regionale Wochenzeitschrift für Tirol"	added_in_amc5	awest	T	zeitung	print	2010-10-06	2026-06-24	
+TIROLERI	Tirolerin	"Mode- und Lifestyleillustrierte für Tirol"	added_in_amc5	awest	T	zeitschrift	print	2017-02-03	2026-05-29	
+TIROLERS	"Tiroler Sonntag"	"Kirchenzeitung für Tirol"	added_in_amc5	awest	T	zeitschrift	print	2013-07-11	2026-06-25	
+TIROLERWH	"Tiroler Wirtschaft"	"Die Zeitung der Wirtschaftskammer Tirol"	added_in_amc5	awest	T	zeitschrift	print	2016-03-24	2026-06-25	
+TISCH	"Tischler Journal"	"Österreichisches Fachmagazin für die Tischlerei-Branche"	added_in_amc5	agesamt	-	fachmedium	print	2013-11-12	2026-06-03	
+TOPGEWIN	"TOP Gewinn"	"Beilage zu GEWINN (eingestellt)"	added_in_amc5	agesamt	-	zeitschrift	print	2014-06-17	2022-12-13	eingestellt
+TRAFIKZT	"Trafikanten Zeitung"	"Fachzeitung zur österreichischen Tabakwirtschaft"	added_in_amc5	agesamt	-	fachmedium	print	2009-06-01	2026-06-19	
+TRAKTUEL	Traktuell	"Internationale Transport Revue"	added_in_amc5	agesamt	-	fachmedium	print	2019-04-10	2026-06-17	
+TRAVELDRIVE	"Travel & Drive"	"Lifestyle Magazin hervorgegangen aus AUTO-aktuell und REISE-aktuell"	added_in_amc5	agesamt	-	zeitschrift	print	2026-03-27	2026-06-26	
+TREND	trend	"Premium-Ausgabe des Wirtschaftsmagazins trend"	im_amc	agesamt	-	zeitschrift	print	1994-01-01	2026-06-26	
+TT	"Tiroler Tageszeitung"	"Tageszeitung für Tirol"	im_amc	awest	T	zeitung	print	1996-01-02	2026-06-30	
+TTKOMP	"TT Kompakt"	"Gratis-Tageszeitung für Tirol"	im_amc	awest	T	zeitung	print	2008-05-15	2024-12-20	eingestellt
+TVMEDIA	"TV Media"	Medienmagazin	im_amc	agesamt	-	zeitschrift	print	1999-01-02	2026-06-24	
+UNSERLAH	"Unser Ländle"	"Informationen der Landwirtschaftskammer Vorarlberg"	added_in_amc5	awest	V	zeitschrift	print	2013-11-08	2026-06-25	
+UNTERKAH	"Unterkärntner Nachrichten"	"Regionale Wochenzeitung für das Lavanttal"	added_in_amc5	asuedost	KT	zeitung	print	2014-12-30	2026-06-24	
+VERKEHR	Verkehr	"Wochenzeitung für Verkehrswirtschaft"	added_in_amc5	agesamt	-	fachmedium	print	2002-01-11	2026-06-26	
+VERSMAK	"Der Versicherungsmakler"	"Das offizielle Organ des Fachverbandes der Versicherungsmakler in der WKÖ"	added_in_amc5	agesamt	-	fachmedium	print	2012-05-22	2026-04-30	
+VN	"Vorarlberger Nachrichten"	"Tageszeitung für Vorarlberg"	im_amc	awest	V	zeitung	print	1997-01-02	2026-06-30	
+VORARLKI	"Vorarlberger KirchenBlatt"	"Kirchenzeitung für Vorarlberg"	added_in_amc5	awest	V	zeitschrift	print	2013-06-20	2026-06-25	
+WIBLATT	Wirtschaftsblatt	"ehem. Tageszeitung für Wirtschaft & Finanzen (eingestellt)"	im_amc	agesamt	-	zeitung	print	1995-01-01	2016-09-02	eingestellt
+WIENBEZ	"bz Wiener Bezirkszeitung"	"Regionale Wochenzeitschrift für Wien"	added_in_amc5	aost	W	zeitung	print	2010-10-06	2026-06-24	
+WIENER	Wiener	"Die Zeitschrift für den Mann"	im_amc	agesamt	-	zeitschrift	print	2001-07-01	2026-04-23	
+WIENERIN	Wienerin	"Österreichisches Frauenmagazin"	im_amc	agesamt	-	zeitschrift	print	2001-07-01	2026-05-29	
+WIENWIRH	"Wiener Wirtschaft"	"Informationen der Wirtschaftskammer Wien"	added_in_amc5	aost	W	zeitschrift	print	2012-10-12	2026-06-25	
+WIRTSCHN	Wirtschaftsnachrichten	"Österreichisches Wirtschaftsmagazin"	added_in_amc5	agesamt	-	zeitschrift	print	2010-11-02	2026-06-10	
+WOCHESTMK	"WOCHE Steiermark"	"Regionale Wochenzeitschrift für die Steiermark"	added_in_amc5	asuedost	ST	zeitung	print	2005-04-06	2026-06-24	
+WOMAN	Woman	"Österreichische Frauenzeitung"	im_amc	agesamt	-	zeitschrift	print	2003-01-03	2026-06-25	
+WOMANELEV	"Woman Elevate"	"Line Extension der WOMAN-Familie"	added_in_amc5	agesamt	-	zeitschrift	print	2024-03-28	2024-10-24	eingestellt
+WOMANVIV	"Woman Viva"	"Österreichisches Lifestyle-Magazin"	added_in_amc5	agesamt	-	zeitschrift	print	2014-04-03	2015-09-04	eingestellt
+WUFF	WUFF	"Das Österreichische Hundemagazin"	added_in_amc5	agesamt	-	zeitschrift	print	2014-01-08	2018-11-09	eingestellt
+WZ	"Wiener Zeitung"	"Überregionale Österreichische Tageszeitung"	im_amc	agesamt	-	zeitung	print	1996-08-01	2023-06-30	eingestellt
+YACHTREV	"Yacht Revue"	"Österreichs Magazin für Wassersport"	added_in_amc5	agesamt	-	zeitschrift	print	2012-09-07	2026-04-30	
+ZILLHEIM	"Zillertaler Heimatstimme"	"Wochenzeitung für das Zillertal"	added_in_amc5	awest	T	zeitung	print	2026-01-15	2026-06-25	

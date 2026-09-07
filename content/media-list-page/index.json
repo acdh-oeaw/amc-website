@@ -10,77 +10,77 @@
 					{
 						"docsrc": "APA",
 						"docsrc_name": "APA-Meldungen digital",
-						"sourcetype": "agentur",
+						"mediatype": "agentur",
 						"from": "1986",
 						"region": "agesamt"
 					},
 					{
 						"docsrc": "OTS",
 						"docsrc_name": "Original Text Service",
-						"sourcetype": "agentur",
+						"mediatype": "agentur",
 						"from": "1989",
 						"region": "agesamt"
 					},
 					{
 						"docsrc": "ACADEMIA",
 						"docsrc_name": "Academia",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2008",
 						"region": "spezifisch"
 					},
 					{
 						"docsrc": "ARBEITW",
 						"docsrc_name": "Arbeit und Wirtschaft",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2000",
 						"region": "spezifisch"
 					},
 					{
 						"docsrc": "AUGUSTIN",
 						"docsrc_name": "Augustin",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2003",
 						"region": "spezifisch"
 					},
 					{
 						"docsrc": "BAUERNZT",
 						"docsrc_name": "Bauernzeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2010",
 						"region": "spezifisch"
 					},
 					{
 						"docsrc": "BVZ",
 						"docsrc_name": "Burgenländische Volkszeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2003",
 						"region": "aost"
 					},
 					{
 						"docsrc": "DATUM",
 						"docsrc_name": "Datum",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2007",
 						"region": "agesamt"
 					},
 					{
 						"docsrc": "DIEWIR",
 						"docsrc_name": "Die Wirtschaft",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2003",
 						"region": "spezifisch"
 					},
 					{
 						"docsrc": "ECHO",
 						"docsrc_name": "Echo",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2004",
 						"region": "spezifisch"
 					},
 					{
 						"docsrc": "EMEDIA",
 						"docsrc_name": "E-Media",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2000",
 						"to": "2023",
 						"region": "spezifisch"
@@ -88,84 +88,84 @@
 					{
 						"docsrc": "FALTER",
 						"docsrc_name": "Falter",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1998",
 						"region": "aost"
 					},
 					{
 						"docsrc": "FORMATDB",
 						"docsrc_name": "Format",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1998",
 						"region": "agesamt"
 					},
 					{
 						"docsrc": "FURCHE",
 						"docsrc_name": "Die Furche",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1998",
 						"region": "agesamt"
 					},
 					{
 						"docsrc": "GEWINN",
 						"docsrc_name": "Gewinn",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1998",
 						"region": "spezifisch"
 					},
 					{
 						"docsrc": "GRAZER",
 						"docsrc_name": "Der Grazer",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2008",
 						"region": "asuedost"
 					},
 					{
 						"docsrc": "HEUTE",
 						"docsrc_name": "Heute",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2007",
 						"region": "aost"
 					},
 					{
 						"docsrc": "HOR",
 						"docsrc_name": "Horizont",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2000",
 						"region": "spezifisch"
 					},
 					{
 						"docsrc": "IM",
 						"docsrc_name": "Industriemagazin",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1999",
 						"region": "spezifisch"
 					},
 					{
 						"docsrc": "KLEINE",
 						"docsrc_name": "Kleine Zeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1996",
 						"region": "asuedost"
 					},
 					{
 						"docsrc": "KONSUM",
 						"docsrc_name": "Der Konsument",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1996",
 						"region": "spezifisch"
 					},
 					{
 						"docsrc": "KRONE",
 						"docsrc_name": "Kronen Zeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1994",
 						"region": "agesamt"
 					},
 					{
 						"docsrc": "KTNMONAT",
 						"docsrc_name": "Neuer Kärntner Monat",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2005",
 						"to": "2013",
 						"region": "asuedost"
@@ -173,7 +173,7 @@
 					{
 						"docsrc": "KTZ",
 						"docsrc_name": "Kärntner Tageszeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1999",
 						"to": "2014",
 						"region": "asuedost"
@@ -181,42 +181,42 @@
 					{
 						"docsrc": "KURIER",
 						"docsrc_name": "Kurier",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1992",
 						"region": "agesamt"
 					},
 					{
 						"docsrc": "KW",
 						"docsrc_name": "Kärntner Wirtschaft",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1996",
 						"region": "spezifisch"
 					},
 					{
 						"docsrc": "MEDIANET",
 						"docsrc_name": "Medianet",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2002",
 						"region": "agesamt"
 					},
 					{
 						"docsrc": "NEWS",
 						"docsrc_name": "News",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1999",
 						"region": "agesamt"
 					},
 					{
 						"docsrc": "NOEN",
 						"docsrc_name": "NÖ Nachrichten",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1995",
 						"region": "aost"
 					},
 					{
 						"docsrc": "NVB",
 						"docsrc_name": "Neues Volksblatt (bis 2018) – danach Oberösterreichisches Volksblatt",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1997",
 						"to": "2023",
 						"region": "amitte"
@@ -224,7 +224,7 @@
 					{
 						"docsrc": "NVT",
 						"docsrc_name": "Neue Vorarlberger Tageszeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1997",
 						"region": "awest",
 						"province": "V"
@@ -232,7 +232,7 @@
 					{
 						"docsrc": "OBERRUND",
 						"docsrc_name": "Oberländer Rundschau",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2010",
 						"region": "awest",
 						"province": "T"
@@ -240,7 +240,7 @@
 					{
 						"docsrc": "OEREICHE wurde ENTFERNT!",
 						"docsrc_name": "Österreich",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2006",
 						"to": "2025",
 						"region": "agesamt"
@@ -248,63 +248,63 @@
 					{
 						"docsrc": "OOEN",
 						"docsrc_name": "OÖ Nachrichten",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1996",
 						"region": "amitte"
 					},
 					{
 						"docsrc": "PRESSE",
 						"docsrc_name": "Die Presse",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1991",
 						"region": "agesamt"
 					},
 					{
 						"docsrc": "PROFIL",
 						"docsrc_name": "Profil",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1994",
 						"region": "agesamt"
 					},
 					{
 						"docsrc": "SBGW",
 						"docsrc_name": "Salzburger Woche",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2007",
 						"region": "amitte"
 					},
 					{
 						"docsrc": "SN",
 						"docsrc_name": "Salzburger Nachrichten",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1991",
 						"region": "agesamt"
 					},
 					{
 						"docsrc": "SOLI",
 						"docsrc_name": "Solidarität",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2001",
 						"region": "spezifisch"
 					},
 					{
 						"docsrc": "SPORTZTG",
 						"docsrc_name": "Sportzeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1996",
 						"region": "spezifisch"
 					},
 					{
 						"docsrc": "STANDARD",
 						"docsrc_name": "Der Standard",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1990",
 						"region": "agesamt"
 					},
 					{
 						"docsrc": "STMONAT",
 						"docsrc_name": "Steirer Monat",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2005",
 						"to": "2012",
 						"region": "asuedost"
@@ -312,7 +312,7 @@
 					{
 						"docsrc": "SVZ",
 						"docsrc_name": "Salzburger Volkszeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2007",
 						"to": "2014",
 						"region": "amitte"
@@ -320,14 +320,14 @@
 					{
 						"docsrc": "TREND",
 						"docsrc_name": "Trend",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1994",
 						"region": "spezifisch"
 					},
 					{
 						"docsrc": "TT",
 						"docsrc_name": "Tiroler Tageszeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1996",
 						"region": "awest",
 						"province": "T"
@@ -335,7 +335,7 @@
 					{
 						"docsrc": "TTKOMP",
 						"docsrc_name": "TT Kompakt",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2008",
 						"region": "awest",
 						"province": "T"
@@ -343,14 +343,14 @@
 					{
 						"docsrc": "TVMEDIA",
 						"docsrc_name": "TV-Media",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1999",
 						"region": "spezifisch"
 					},
 					{
 						"docsrc": "VN",
 						"docsrc_name": "Vorarlberger Nachrichten",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1997",
 						"region": "awest",
 						"province": "T"
@@ -358,7 +358,7 @@
 					{
 						"docsrc": "WIBLATT",
 						"docsrc_name": "Wirtschaftsblatt",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1995",
 						"to": "2016",
 						"region": "agesamt"
@@ -366,28 +366,28 @@
 					{
 						"docsrc": "WIENER",
 						"docsrc_name": "Wiener",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2001",
 						"region": "spezifisch"
 					},
 					{
 						"docsrc": "WIENERIN",
 						"docsrc_name": "Wienerin",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2001",
 						"region": "spezifisch"
 					},
 					{
 						"docsrc": "WOMAN",
 						"docsrc_name": "Woman",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2003",
 						"region": "spezifisch"
 					},
 					{
 						"docsrc": "WZ",
 						"docsrc_name": "Wiener Zeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1996",
 						"to": "06/2023",
 						"region": "agesamt"
@@ -395,7 +395,7 @@
 					{
 						"docsrc": "ATVVOLL",
 						"docsrc_name": "ATV",
-						"sourcetype": "tv",
+						"mediatype": "tv",
 						"from": "2005",
 						"to": "2020",
 						"region": "agesamt"
@@ -403,7 +403,7 @@
 					{
 						"docsrc": "MWVOLL",
 						"docsrc_name": "ORF (Radio and TV)",
-						"sourcetype": "tv",
+						"mediatype": "tv",
 						"from": "2003",
 						"to": "2022",
 						"region": "spezifisch"
@@ -411,7 +411,7 @@
 					{
 						"docsrc": "PRO7VOLL",
 						"docsrc_name": "PRO7",
-						"sourcetype": "tv",
+						"mediatype": "tv",
 						"from": "2007",
 						"to": "2020",
 						"region": "agesamt"
@@ -419,7 +419,7 @@
 					{
 						"docsrc": "PULSVOLL",
 						"docsrc_name": "PULS4",
-						"sourcetype": "tv",
+						"mediatype": "tv",
 						"from": "2007",
 						"to": "2020",
 						"region": "agesamt"
@@ -427,7 +427,7 @@
 					{
 						"docsrc": "SAT1VOLL",
 						"docsrc_name": "SAT1",
-						"sourcetype": "tv",
+						"mediatype": "tv",
 						"from": "2008",
 						"to": "2020",
 						"region": "agesamt"
@@ -435,77 +435,77 @@
 					{
 						"docsrc": "BEEYMOFORF1",
 						"docsrc_name": "ORF 1",
-						"sourcetype": "tv",
+						"mediatype": "tv",
 						"from": "2023",
 						"region": "agesamt"
 					},
 					{
 						"docsrc": "BEEYMOFORF2",
 						"docsrc_name": "ORF 2",
-						"sourcetype": "tv",
+						"mediatype": "tv",
 						"from": "2023",
 						"region": "agesamt"
 					},
 					{
 						"docsrc": "BEEYMOFOE1",
 						"docsrc_name": "ORF Radio Ö1",
-						"sourcetype": "radio",
+						"mediatype": "radio",
 						"from": "2023",
 						"region": "agesamt"
 					},
 					{
 						"docsrc": "BEEYMOFOE3",
 						"docsrc_name": "ORF Radio Ö3",
-						"sourcetype": "radio",
+						"mediatype": "radio",
 						"from": "2023",
 						"region": "agesamt"
 					},
 					{
 						"docsrc": "BEEYMOFRADIOBGLD",
 						"docsrc_name": "ORF Radio Burgenland",
-						"sourcetype": "radio",
+						"mediatype": "radio",
 						"from": "2023",
 						"region": "aost"
 					},
 					{
 						"docsrc": "BEEYMOFRADIOKTN",
 						"docsrc_name": "ORF Radio Kärnten",
-						"sourcetype": "radio",
+						"mediatype": "radio",
 						"from": "2023",
 						"region": "asued"
 					},
 					{
 						"docsrc": "BEEYMOFRADIONOE",
 						"docsrc_name": "ORF Radio Niederösterreich",
-						"sourcetype": "radio",
+						"mediatype": "radio",
 						"from": "2023",
 						"region": "aost"
 					},
 					{
 						"docsrc": "BEEYMOFRADIOOOE",
 						"docsrc_name": "ORF Radio Oberösterreich",
-						"sourcetype": "radio",
+						"mediatype": "radio",
 						"from": "2023",
 						"region": "amitte"
 					},
 					{
 						"docsrc": "BEEYMOFRADIOSBG",
 						"docsrc_name": "ORF Radio Salzburg",
-						"sourcetype": "radio",
+						"mediatype": "radio",
 						"from": "2023",
 						"region": "amitte"
 					},
 					{
 						"docsrc": "BEEYMOFRADIOSTMK",
 						"docsrc_name": "ORF Radio Steiermark",
-						"sourcetype": "radio",
+						"mediatype": "radio",
 						"from": "2023",
 						"region": "asued"
 					},
 					{
 						"docsrc": "BEEYMOFRADIOTIR",
 						"docsrc_name": "ORF Radio Tirol",
-						"sourcetype": "radio",
+						"mediatype": "radio",
 						"from": "2023",
 						"region": "awest",
 						"province": "T"
@@ -513,7 +513,7 @@
 					{
 						"docsrc": "BEEYMOFRADIOVBG",
 						"docsrc_name": "ORF Radio Vorarlberg",
-						"sourcetype": "radio",
+						"mediatype": "radio",
 						"from": "2023",
 						"region": "awest",
 						"province": "V"
@@ -529,21 +529,21 @@
 					{
 						"wwwsrc": "WWW5MINAT",
 						"www": "https://www.5min.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
 					{
 						"wwwsrc": "WWWANDRE",
 						"www": "https://www.andreas-unterberger.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
 					{
 						"wwwsrc": "WWWAUTO",
 						"www": "https://www.autoaktuell.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
@@ -552,14 +552,14 @@
 						"www": "https://www.bvz.at",
 						"docsrc_name": "Burgenländische Volkszeitung",
 						"docsrc": "BVZ",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "aost"
 					},
 					{
 						"wwwsrc": "WWWCASHAT",
 						"www": "https://www.cash.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
@@ -568,14 +568,14 @@
 						"www": "https://diepresse.com",
 						"docsrc_name": "Die Presse",
 						"docsrc": "PRESSE",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "agesamt"
 					},
 					{
 						"wwwsrc": "WWWDOSSIERAT",
 						"www": "https://www.dossier.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
@@ -584,35 +584,35 @@
 						"www": "https://www.falter.at",
 						"docsrc_name": "Falter",
 						"docsrc": "FALTER",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "aost"
 					},
 					{
 						"wwwsrc": "WWWFILMAT",
 						"www": "https://www.film.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
 					{
 						"wwwsrc": "WWWFREIZEITAT",
 						"www": "https://freizeit.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
 					{
 						"wwwsrc": "WWWFUTUREZONEAT",
 						"www": "https://futurezone.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
 					{
 						"wwwsrc": "WWWGESUENDLEBAT",
 						"www": "https://gesuenderleben.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
@@ -621,7 +621,7 @@
 						"www": "https://www.gewinn.com",
 						"docsrc_name": "Gewinn",
 						"docsrc": "GEWINN",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
@@ -630,28 +630,28 @@
 						"www": "https://www.heute.at",
 						"docsrc_name": "Heute",
 						"docsrc": "HEUTE",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "aost"
 					},
 					{
 						"wwwsrc": "WWWHORIZONTAT",
 						"www": "https://www.horizont.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
 					{
 						"wwwsrc": "WWWKATHPRESSAT",
 						"www": "https://www.kathpress.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
 					{
 						"wwwsrc": "WWWKAT",
 						"www": "https://k.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
@@ -660,7 +660,7 @@
 						"www": "https://www.kleinezeitung.at",
 						"docsrc_name": "Kleine Zeitung",
 						"docsrc": "KLEINE",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "asuedost"
 					},
@@ -669,7 +669,7 @@
 						"www": "https://www.krone.at",
 						"docsrc_name": "Kronenzeitung",
 						"docsrc": "KRONE",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "agesamt"
 					},
@@ -678,14 +678,14 @@
 						"www": "https://kurier.at",
 						"docsrc_name": "Kurier",
 						"docsrc": "KURIER",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "agesamt"
 					},
 					{
 						"wwwsrc": "WWWMEINBEZIRKAT",
 						"www": "https://www.meinbezirk.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
@@ -694,14 +694,14 @@
 						"www": "https://medianet.at",
 						"docsrc_name": "Medianet",
 						"docsrc": "MEDIANET",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "agesamt"
 					},
 					{
 						"wwwsrc": "WWWMOTORAT",
 						"www": "https://motor.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
@@ -710,7 +710,7 @@
 						"www": "https://www.nachrichten.at",
 						"docsrc_name": "OÖ Nachrichten",
 						"docsrc": "OOEN",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "amitte"
 					},
@@ -719,7 +719,7 @@
 						"www": "https://www.neue.at",
 						"docsrc_name": "Neue Vorarlberger Tageszeitung",
 						"docsrc": "NVT",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "awest",
 						"province": "V"
@@ -729,7 +729,7 @@
 						"www": "https://www.noen.at",
 						"docsrc_name": "NÖ Nachrichten",
 						"docsrc": "NÖN",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "aost"
 					},
@@ -737,7 +737,7 @@
 						"wwwsrc": "WWWORFAT",
 						"www": "https://orf.at",
 						"docsrc_name": "ORF online / agesamt und regional",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "agesamt"
 					},
@@ -746,21 +746,21 @@
 						"www": "https://www.profil.at",
 						"docsrc_name": "Profil",
 						"docsrc": "PROFIL",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "agesamt"
 					},
 					{
 						"wwwsrc": "WWWREISE",
 						"www": "https://www.reiseaktuell.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
 					{
 						"wwwsrc": "WWWSALZBURG24",
 						"www": "https://www.salzburg24.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "amitte"
 					},
@@ -769,28 +769,28 @@
 						"www": "http://derstandard.at",
 						"docsrc_name": "Der Standard",
 						"docsrc": "STANDARD",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "agesamt"
 					},
 					{
 						"wwwsrc": "WWWTEXTILZEITAT",
 						"www": "https://www.textilzeitung.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
 					{
 						"wwwsrc": "WWWTHEGAP",
 						"www": "https://thegap.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
 					{
 						"wwwsrc": "WWWTIPSAT",
 						"www": "https://www.tips.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "spezifisch"
 					},
@@ -799,7 +799,7 @@
 						"www": "https://www.tt.com",
 						"docsrc_name": "Tiroler Tageszeitung",
 						"docsrc": "TT",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "awest",
 						"province": "T"
@@ -807,7 +807,7 @@
 					{
 						"wwwsrc": "WWWVIENN",
 						"www": "https://www.vienna.at",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "aost"
 					},
@@ -816,7 +816,7 @@
 						"www": "https://www.vn.at",
 						"docsrc_name": "Vorarlberg Nachrichten",
 						"docsrc": "VN",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "awest",
 						"province": "V"
@@ -825,7 +825,7 @@
 						"wwwsrc": "WWWVOLAT",
 						"www": "https://www.vol.at",
 						"docsrc_name": "Vorarlberg Online",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "awest",
 						"province": "V"
@@ -835,7 +835,7 @@
 						"www": "https://volksblatt.at",
 						"docsrc_name": "Oberösterreichisches Volksblatt / vormals: Neues Volksblatt",
 						"docsrc": "NVB",
-						"sourcetype": "www",
+						"mediatype": "www",
 						"from": "2023",
 						"region": "amitte"
 					}
@@ -850,7 +850,7 @@
 					{
 						"docsrc": "APA",
 						"docsrc_name": "APA-Meldungen digital",
-						"sourcetype": "agentur",
+						"mediatype": "agentur",
 						"from": "1986",
 						"to": "2022",
 						"region": "agesamt"
@@ -858,7 +858,7 @@
 					{
 						"docsrc": "OTS",
 						"docsrc_name": "Original Text Service",
-						"sourcetype": "agentur",
+						"mediatype": "agentur",
 						"from": "1989",
 						"to": "2022",
 						"region": "agesamt"
@@ -866,7 +866,7 @@
 					{
 						"docsrc": "ACADEMIA",
 						"docsrc_name": "Academia",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2008",
 						"to": "2022",
 						"region": "spezifisch"
@@ -874,7 +874,7 @@
 					{
 						"docsrc": "ARBEITW",
 						"docsrc_name": "Arbeit und Wirtschaft",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2000",
 						"to": "2022",
 						"region": "spezifisch"
@@ -882,7 +882,7 @@
 					{
 						"docsrc": "AUGUSTIN",
 						"docsrc_name": "Augustin",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2003",
 						"to": "2022",
 						"region": "spezifisch"
@@ -890,7 +890,7 @@
 					{
 						"docsrc": "BAUERNZT",
 						"docsrc_name": "Bauernzeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2010",
 						"to": "2022",
 						"region": "spezifisch"
@@ -898,7 +898,7 @@
 					{
 						"docsrc": "BVZ",
 						"docsrc_name": "Burgenländische Volkszeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2003",
 						"to": "2022",
 						"region": "aost"
@@ -906,7 +906,7 @@
 					{
 						"docsrc": "DATUM",
 						"docsrc_name": "Datum",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2007",
 						"to": "2022",
 						"region": "agesamt"
@@ -914,7 +914,7 @@
 					{
 						"docsrc": "DIEWIR",
 						"docsrc_name": "Die Wirtschaft",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2003",
 						"to": "2022",
 						"region": "spezifisch"
@@ -922,7 +922,7 @@
 					{
 						"docsrc": "ECHO",
 						"docsrc_name": "Echo",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2004",
 						"to": "2022",
 						"region": "spezifisch"
@@ -930,7 +930,7 @@
 					{
 						"docsrc": "EMEDIA",
 						"docsrc_name": "E-Media",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2000",
 						"to": "2022",
 						"region": "spezifisch"
@@ -938,7 +938,7 @@
 					{
 						"docsrc": "FALTER",
 						"docsrc_name": "Falter",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1998",
 						"to": "2022",
 						"region": "aost"
@@ -946,7 +946,7 @@
 					{
 						"docsrc": "FORMATDB",
 						"docsrc_name": "Format",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1998",
 						"to": "2022",
 						"region": "agesamt"
@@ -954,7 +954,7 @@
 					{
 						"docsrc": "FURCHE",
 						"docsrc_name": "Die Furche",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1998",
 						"to": "2022",
 						"region": "agesamt"
@@ -962,7 +962,7 @@
 					{
 						"docsrc": "GEWINN",
 						"docsrc_name": "Gewinn",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1998",
 						"to": "2022",
 						"region": "spezifisch"
@@ -970,7 +970,7 @@
 					{
 						"docsrc": "GRAZER",
 						"docsrc_name": "Der Grazer",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2008",
 						"to": "2022",
 						"region": "asuedost"
@@ -978,7 +978,7 @@
 					{
 						"docsrc": "HEUTE",
 						"docsrc_name": "Heute",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2007",
 						"to": "2022",
 						"region": "aost"
@@ -986,7 +986,7 @@
 					{
 						"docsrc": "HOR",
 						"docsrc_name": "Horizont",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2000",
 						"to": "2022",
 						"region": "spezifisch"
@@ -994,7 +994,7 @@
 					{
 						"docsrc": "IM",
 						"docsrc_name": "Industriemagazin",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1999",
 						"to": "2022",
 						"region": "spezifisch"
@@ -1002,7 +1002,7 @@
 					{
 						"docsrc": "KLEINE",
 						"docsrc_name": "Kleine Zeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1996",
 						"to": "2022",
 						"region": "asuedost"
@@ -1010,7 +1010,7 @@
 					{
 						"docsrc": "KONSUM",
 						"docsrc_name": "Der Konsument",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1996",
 						"to": "2022",
 						"region": "spezifisch"
@@ -1018,7 +1018,7 @@
 					{
 						"docsrc": "KRONE",
 						"docsrc_name": "Kronen Zeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1994",
 						"to": "2022",
 						"region": "agesamt"
@@ -1026,7 +1026,7 @@
 					{
 						"docsrc": "KTNMONAT",
 						"docsrc_name": "Neuer Kärntner Monat",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2005",
 						"to": "2013",
 						"region": "asuedost"
@@ -1034,7 +1034,7 @@
 					{
 						"docsrc": "KTZ",
 						"docsrc_name": "Kärntner Tageszeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1999",
 						"to": "2014",
 						"region": "asuedost"
@@ -1042,7 +1042,7 @@
 					{
 						"docsrc": "KURIER",
 						"docsrc_name": "Kurier",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1992",
 						"to": "2022",
 						"region": "agesamt"
@@ -1050,7 +1050,7 @@
 					{
 						"docsrc": "KW",
 						"docsrc_name": "Kärntner Wirtschaft",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1996",
 						"to": "2022",
 						"region": "spezifisch"
@@ -1058,7 +1058,7 @@
 					{
 						"docsrc": "MEDIANET",
 						"docsrc_name": "Medianet",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2002",
 						"to": "2022",
 						"region": "agesamt"
@@ -1066,7 +1066,7 @@
 					{
 						"docsrc": "NEWS",
 						"docsrc_name": "News",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1999",
 						"to": "2022",
 						"region": "agesamt"
@@ -1074,7 +1074,7 @@
 					{
 						"docsrc": "NOEN",
 						"docsrc_name": "NÖ Nachrichten",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1995",
 						"to": "2022",
 						"region": "aost"
@@ -1082,7 +1082,7 @@
 					{
 						"docsrc": "NVB",
 						"docsrc_name": "Neues Volksblatt",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1997",
 						"to": "2022",
 						"region": "amitte"
@@ -1090,7 +1090,7 @@
 					{
 						"docsrc": "NVT",
 						"docsrc_name": "Neue Vorarlberger Tageszeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1997",
 						"to": "2022",
 						"region": "awest"
@@ -1098,7 +1098,7 @@
 					{
 						"docsrc": "OBERRUND",
 						"docsrc_name": "Oberländer Rundschau",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2010",
 						"to": "2022",
 						"region": "awest"
@@ -1106,7 +1106,7 @@
 					{
 						"docsrc": "OEREICHE",
 						"docsrc_name": "Österreich",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2006",
 						"to": "2015",
 						"region": "agesamt"
@@ -1114,7 +1114,7 @@
 					{
 						"docsrc": "OOEN",
 						"docsrc_name": "OÖ Nachrichten",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1996",
 						"to": "2022",
 						"region": "amitte"
@@ -1122,7 +1122,7 @@
 					{
 						"docsrc": "PRESSE",
 						"docsrc_name": "Die Presse",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1991",
 						"to": "2022",
 						"region": "agesamt"
@@ -1130,7 +1130,7 @@
 					{
 						"docsrc": "PROFIL",
 						"docsrc_name": "Profil",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1994",
 						"to": "2022",
 						"region": "agesamt"
@@ -1138,7 +1138,7 @@
 					{
 						"docsrc": "SBGW",
 						"docsrc_name": "Salzburger Woche",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2007",
 						"to": "2022",
 						"region": "amitte"
@@ -1146,7 +1146,7 @@
 					{
 						"docsrc": "SN",
 						"docsrc_name": "Salzburger Nachrichten",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1991",
 						"to": "2022",
 						"region": "agesamt"
@@ -1154,7 +1154,7 @@
 					{
 						"docsrc": "SOLI",
 						"docsrc_name": "Solidarität",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2001",
 						"to": "2022",
 						"region": "spezifisch"
@@ -1162,7 +1162,7 @@
 					{
 						"docsrc": "SPORTZTG",
 						"docsrc_name": "Sportzeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1996",
 						"to": "2022",
 						"region": "spezifisch"
@@ -1170,7 +1170,7 @@
 					{
 						"docsrc": "STANDARD",
 						"docsrc_name": "Der Standard",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1990",
 						"to": "2022",
 						"region": "agesamt"
@@ -1178,7 +1178,7 @@
 					{
 						"docsrc": "STMONAT",
 						"docsrc_name": "Steirer Monat",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2005",
 						"to": "2012",
 						"region": "asuedost"
@@ -1186,7 +1186,7 @@
 					{
 						"docsrc": "SVZ",
 						"docsrc_name": "Salzburger Volkszeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2007",
 						"to": "2014",
 						"region": "amitte"
@@ -1194,7 +1194,7 @@
 					{
 						"docsrc": "TREND",
 						"docsrc_name": "Trend",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1994",
 						"to": "2022",
 						"region": "spezifisch"
@@ -1202,7 +1202,7 @@
 					{
 						"docsrc": "TT",
 						"docsrc_name": "Tiroler Tageszeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1996",
 						"to": "2022",
 						"region": "awest"
@@ -1210,7 +1210,7 @@
 					{
 						"docsrc": "TTKOMP",
 						"docsrc_name": "TT Kompakt",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2008",
 						"to": "2022",
 						"region": "awest"
@@ -1218,7 +1218,7 @@
 					{
 						"docsrc": "TVMEDIA",
 						"docsrc_name": "TV-Media",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1999",
 						"to": "2022",
 						"region": "spezifisch"
@@ -1226,7 +1226,7 @@
 					{
 						"docsrc": "VN",
 						"docsrc_name": "Vorarlberger Nachrichten",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1997",
 						"to": "2022",
 						"region": "awest"
@@ -1234,7 +1234,7 @@
 					{
 						"docsrc": "WIBLATT",
 						"docsrc_name": "Wirtschaftsblatt",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1995",
 						"to": "2016",
 						"region": "agesamt"
@@ -1242,7 +1242,7 @@
 					{
 						"docsrc": "WIENER",
 						"docsrc_name": "Wiener",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2001",
 						"to": "2022",
 						"region": "spezifisch"
@@ -1250,7 +1250,7 @@
 					{
 						"docsrc": "WIENERIN",
 						"docsrc_name": "Wienerin",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2001",
 						"to": "2022",
 						"region": "spezifisch"
@@ -1258,7 +1258,7 @@
 					{
 						"docsrc": "WOMAN",
 						"docsrc_name": "Woman",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "2003",
 						"to": "2022",
 						"region": "spezifisch"
@@ -1266,7 +1266,7 @@
 					{
 						"docsrc": "WZ",
 						"docsrc_name": "Wiener Zeitung",
-						"sourcetype": "print",
+						"mediatype": "print",
 						"from": "1996",
 						"to": "2022",
 						"region": "agesamt"
@@ -1274,7 +1274,7 @@
 					{
 						"docsrc": "ATVVOLL",
 						"docsrc_name": "ATV",
-						"sourcetype": "tv",
+						"mediatype": "tv",
 						"from": "2005",
 						"to": "2020",
 						"region": "agesamt"
@@ -1282,7 +1282,7 @@
 					{
 						"docsrc": "MWVOLL",
 						"docsrc_name": "ORF (Radio and TV)",
-						"sourcetype": "tv",
+						"mediatype": "tv",
 						"from": "2003",
 						"to": "2022",
 						"region": "spezifisch"
@@ -1290,7 +1290,7 @@
 					{
 						"docsrc": "PRO7VOLL",
 						"docsrc_name": "PRO7",
-						"sourcetype": "tv",
+						"mediatype": "tv",
 						"from": "2007",
 						"to": "2020",
 						"region": "agesamt"
@@ -1298,7 +1298,7 @@
 					{
 						"docsrc": "PULSVOLL",
 						"docsrc_name": "PULS4",
-						"sourcetype": "tv",
+						"mediatype": "tv",
 						"from": "2007",
 						"to": "2020",
 						"region": "agesamt"

@@ -22,28 +22,37 @@ const { items } = Astro.props;
 								<span class="block text-xs font-medium uppercase tracking-wider">
 									Vollständige Bezeichnung
 								</span>
-								<span class="font-mono text-[10px] text-neutral-400">docsrc_name</span>
+								<span class="font-mono text-[0.6rem] text-neutral-400">docsrc_name</span>
 							</dt>
 							<dd>{item.docsrc_name}</dd>
 						</div>
 						<div>
 							<dt class="text-neutral-600">
 								<span class="block text-xs font-medium uppercase tracking-wider">Medientyp</span>
-								<span class="font-mono text-[10px] text-neutral-400">sourcetype</span>
+								<span class="font-mono text-[0.6rem] text-neutral-400">mediatype</span>
 							</dt>
-							<dd>{item.sourcetype}</dd>
+							<dd>{item.mediatype}</dd>
 						</div>
+						{item.printtype ? (
+							<div>
+								<dt class="text-neutral-600">
+									<span class="block text-xs font-medium uppercase tracking-wider">Printtyp</span>
+									<span class="font-mono text-[0.6rem] text-neutral-400">printtype</span>
+								</dt>
+								<dd>{item.printtype}</dd>
+							</div>
+						) : null}
 						<div>
 							<dt class="text-neutral-600">
 								<span class="block text-xs font-medium uppercase tracking-wider">Zeitraum</span>
-								<span class="font-mono text-[10px] text-neutral-400">from - to</span>
+								<span class="font-mono text-[0.6rem] text-neutral-400">from - to</span>
 							</dt>
 							<dd>{[item.from, item.to].filter(isNonNullable).join(" - ")}</dd>
 						</div>
 						<div>
 							<dt class="text-neutral-600">
 								<span class="block text-xs font-medium uppercase tracking-wider">Region</span>
-								<span class="font-mono text-[10px] text-neutral-400">region</span>
+								<span class="font-mono text-[0.6rem] text-neutral-400">region</span>
 							</dt>
 							<dd>{item.region}</dd>
 						</div>
@@ -51,7 +60,7 @@ const { items } = Astro.props;
 							<div>
 								<dt class="text-neutral-600">
 									<span class="block text-xs font-medium uppercase tracking-wider">Bundesland</span>
-									<span class="font-mono text-[10px] text-neutral-400">province</span>
+									<span class="font-mono text-[0.6rem] text-neutral-400">province</span>
 								</dt>
 								<dd>{item.province}</dd>
 							</div>

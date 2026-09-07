@@ -4,9 +4,9 @@ title: Annotationsdetails
 Diese Seite beinhaltet die detaillierte Beschreibung aller im amc verwendeten Annotationen.
 <span id="top"></span>
 
-## <span id="titel"></span>Attribute und Strukturen in Version 4.x des *Austrian Media Corpus (amc)*
+## <span id="titel"></span>Attribute und Strukturen in Version 5.x des *Austrian Media Corpus (amc)*
 
-**Version:** 1.1b (zuletzt geändert: 2024-05-21)
+**Version:** 1.2 (zuletzt geändert: 2026-08-31)
 
 **Autor:** Hannes Pirker [Austrian Centre for Digital Humanities (ACDH)](https://www.oeaw.ac.at/acdh)
 
@@ -26,7 +26,7 @@ Diese Seite beinhaltet die detaillierte Beschreibung aller im amc verwendeten An
         [*datum_full*](#doc.datum_full) [*datum*](#doc.datum)
         [*year*](#doc.year) [*yymm*](#doc.yymm)
         [*bibl*](#doc.bibl_Bibliografische%20Angaben_)
-        [*mediatype*](#doc.mediatype) [*docsrc*](#doc.docsrc)
+        [*mediatype*](#doc.mediatype)  [*printtype*](#doc.printtype) [*docsrc*](#doc.docsrc)
         [*docsrc_name*](#doc.docsrc_name) [*region*](#doc.region)
         [*province*](#doc.province) [*ressort2*](#doc.ressort2)
         [*autor*](#doc.autor) [*mutation*](#doc.mutation)
@@ -61,7 +61,7 @@ Die orthografische Wortform des Token.
 
 ### <span id="ix"></span>ix *(Index)*
 
-Quelle: Spacy 3.2
+Quelle: Spacy 3.8
 
 Alle Token tragen eine Indexnummer. Hierfür werden die
 Token innerhalb eines Absatzes beginnend mit *0* fortlaufend
@@ -117,7 +117,7 @@ pos=*VFIN.Full.2.Sg.Past.Ind*
 
 ### <span id="posTI"></span>posTI: PoS aus Spacy im STTS Format
 
-Quelle: Spacy 3.2
+Quelle: Spacy 3.8
 
 PartOfSpeech (Wortart) unter Verwendung von Modellen,
 die auf dem Tiger Korpus trainiert wurden. Verwendetes Tagset:
@@ -136,7 +136,7 @@ Tagset
 
 ### <span id="posUDS"></span><span>posUDS: PoS aus Spacy im Universal Depencies Format</span>
 
-Quelle: Spacy 3.2
+Quelle: Spacy 3.8
 
 PartOfSpeech (Wortart) aus dem Attribut *posTI*,
 allerdings unter Verwendung des Universal Depencies POS tagset (UDS).
@@ -177,7 +177,7 @@ tagset](https://universaldependencies.org/u/pos/)
 
 ### <span id="ner"></span>ner: Named Entity Recognition
 
-Quelle: Spacy 3.2
+Quelle: Spacy 3.8
 
 Dieses Attribut enthält die Ergebnisse der *Named
 Entity Recognition*.
@@ -192,7 +192,7 @@ Entity Recognition*.
 
 ### <span id="iob"></span>iob
 
-Quelle: Spacy 3.2
+Quelle: Spacy 3.8
 
 Dieses Attribut wird verwendet, um *Entities* zu
 markieren, die sich aus *mehr als einem* Token zusammensetzen (wie es
@@ -212,7 +212,7 @@ wikipedia](https://en.wikipedia.org/wiki/Inside%E2%80%93outside%E2%80%93beginnin
 
 ### <span id="ixNP"></span><span>ixNP: *Noun-Phrase-Index*</span>
 
-Quelle: Spacy 3.2
+Quelle: Spacy 3.8
 
 Spacy versucht sogenannte *noun chunks* -- einfache
 Nominalphrasen -- zu identifizieren. Die einzelnen Elemente eines
@@ -236,7 +236,7 @@ Beispiel:
 
 ### <span id="ixDEP"></span><span>ixDEP: Index des Elternknoten in Dependenzstruktur</span>
 
-Quelle: Spacy 3.2
+Quelle: Spacy 3.8
 
 Mit den Attributen *dep* und *ixDEP* werden
 Dependenzstrukturen kodiert. Die Modelle für den Dependenzparser wurden
@@ -253,7 +253,7 @@ sich selbst.)
 
 ### <span id="neg"></span><span>neg (*Negation*)</span>
 
-Quelle: eigener code auf Basis von Spacy 3.2 (*experimentell*) 
+Quelle: eigener code auf Basis von Spacy 3.8 (*experimentell*) 
 
 Wörter, die im Kontext des Wortes *"nicht"* stehen, und daher möglicherweise
 einer Negation unterliegen. In der Mehrzahl sind es Verben, die mit
@@ -471,13 +471,22 @@ Medienname, Ausgabe, Datum und Seitennummer in der Printausgabe. Bsp.:
 
 Zuordnung zu einem Medientyp.
 
-| mediatype | Bedeutung                | Anmerkung                                                                       |
+| mediatype     | Bedeutung                | Anmerkung                                                  |
+| :------------ | :----------------------- | ---------------------------------------------------------- |
+| print         | Printmedium              |                                                            |
+| av_transkript | TV- oder Radiotranskript |                                                            |
+| agentur       | Online Agenturmeldung    | Umfasst die beiden Medien `APA` und `OTS`               |
+
+#### <span id="doc.printtype"></span>printtype
+
+Dient zur weiteren Aufschlüsselung des Medientyps `print` in weitere Unterkategorien: 
+
+| printtype | Bedeutung                | Erscheinungsfrequenz | Anmerkung                                                                       |
 | :-------- | :----------------------- | ------------------------------------------------------------------------------- |
-| print     | Printmedium              |                                                                                 |
-| tv        | TV- oder Radiotranskript | **Achtung:** bis inclusivie 2022 wird *nicht* zwischen Radio + TV unterschieden |
-|           |                          | seit 2023: tv steht nun tatsächlich nur für Television                          |
-| radio     | Radiotranskript          | existiert erst seit 2023                                                        |
-| agentur   | Online Agenturmeldung    |                                                                                 |
+| zeitung     | (Tages)Zeitungen             |  täglich |                                                                               |
+| zeitschrift    | Wochen- oder Monatszeitschiften  | wöchentlich oder monatlich | |
+| fachmedium     | Medien mit Spartenschwerpunkt | typischerweise monatlich oder seltener | Adressat:innen: Fachpersonal, Führungskräfte, Branchenvertreter:innen etc. |
+
 
 #### <span id="doc.docsrc"></span>docsrc: Medien-Kürzel
 
@@ -489,72 +498,26 @@ dieser eindeutigen Kurzform.
 
 #### <span id="doc.docsrc_name"></span>docsrc_name: Medien-Name
 
-Der Name des Mediums in der Langform. *Zuordnung zwischen *docsrc*
-*docsrc_name* und *mediatype**
+Der Name des Mediums in der Langform. 
+Die vollständige *Zuordnung zwischen *docsrc*
+*docsrc_name* und *mediatype** entnehmen Sie der aktuellen [Medienliste auf der amc-website](
+https://amc.acdh.oeaw.ac.at/dokumentation/medienliste/)
 
 | doc.docsrc | doc.docsrcname                 | doc.mediatype |
 | :--------- | :----------------------------- | :------------ |
 | APA        | APA-Meldungen digital          | agentur       |
 | OTS        | Original Text Service          | agentur       |
-|            |                                |               |
+| ...        |                                |               |
 | ACADEMIA   | Academia                       | print         |
 | ARBEITW    | Arbeit und Wirtschaft          | print         |
 | AUGUSTIN   | Augustin                       | print         |
-| BAUERNZT   | Bauernzeitung                  | print         |
-| BVZ        | Burgenländische Volkszeitung   | print         |
-| DATUM      | Datum                          | print         |
-| DIEWIR     | Die Wirtschaft                 | print         |
-| ECHO       | Echo                           | print         |
-| EMEDIA     | E-Media                        | print         |
-| FALTER     | Falter                         | print         |
-| FORMATDB   | Format                         | print         |
-| FURCHE     | Die Furche                     | print         |
-| GEWINN     | Gewinn                         | print         |
-| GRAZER     | Der Grazer                     | print         |
-| HEUTE      | Heute                          | print         |
-| HOR        | Horizont                       | print         |
-| IM         | Industriemagazin               | print         |
-| KLEINE     | Kleine Zeitung                 | print         |
-| KONSUM     | Der Konsument                  | print         |
-| KRONE      | Kronen Zeitung                 | print         |
-| KTNMONAT   | Neuer Kärntner Monat           | print         |
-| KTZ        | Kärntner Tageszeitung          | print         |
-| KURIER     | Kurier                         | print         |
-| KW         | Kärntner Wirtschaft            | print         |
-| MEDIANET   | Medianet                       | print         |
-| NEWS       | News                           | print         |
-| NOEN       | NÖ Nachrichten                 | print         |
-| NVB        | Neues Volksblatt               | print         |
-| NVT        | Neue Vorarlberger Tageszeitung | print         |
-| OBERRUND   | Oberländer Rundschau           | print         |
-| ~~OEREICHE~~   | ~~Österreich~~                     | ~~print~~         |
-| OOEN       | OÖ Nachrichten                 | print         |
-| OTS        | Original Text Service          | agentur       |
 | PRESSE     | Die Presse                     | print         |
-| PROFIL     | Profil                         | print         |
-| SBGW       | Salzburger Woche               | print         |
-| SN         | Salzburger Nachrichten         | print         |
-| SOLI       | Solidarität                    | print         |
-| SPORTZTG   | Sportzeitung                   | print         |
-| STANDARD   | Der Standard                   | print         |
-| STMONAT    | Steirer Monat                  | print         |
-| SVZ        | Salzburger Volkszeitung        | print         |
-| TREND      | Trend                          | print         |
-| TT         | Tiroler Tageszeitung           | print         |
-| TTKOMP     | TT Kompakt                     | print         |
-| TVMEDIA    | TV-Media                       | print         |
-| VN         | Vorarlberger Nachrichten       | print         |
-| WIBLATT    | Wirtschaftsblatt               | print         |
-| WIENER     | Wiener                         | print         |
-| WIENERIN   | Wienerin                       | print         |
-| WOMAN      | Woman                          | print         |
-| WZ         | Wiener Zeitung                 | print         |
-|            |                                |               |
-| ATVVOLL    | ATV                            | tv            |
-| MWVOLL     | ORF (Radio and TV)             | tv            |
-| PRO7VOLL   | PRO7                           | tv            |
-| PULSVOLL   | PULS4                          | tv            |
-| SAT1VOLL   | SAT1                           | tv            |
+| ...        |                                |               |
+| ATVVOLL    | ATV                            | av_transkript            |
+| MWVOLL     | ORF (Radio and TV)             | av_transkript            |
+| PRO7VOLL   | PRO7                           | av_transkript            |
+| ...        |                                |               |
+
 
 [*zurück zum Beginn*](#top)
 
@@ -563,32 +526,38 @@ Der Name des Mediums in der Langform. *Zuordnung zwischen *docsrc*
 Die Zuordnung von Artikeln zu einer Region erfolgt einfach über den
 Mediennamen. Die Werte `aost, amitte, asuedost, awest` bezeichnen
 "echte" geographische Regionen. `agesamt` wird bei Medien vergeben, die
-als überregional eingestuft werden. *Zuordnung zwischen *docsrc* und
+als überregional eingestuft werden. 
+Beispiele für die *Zuordnung zwischen *docsrc* und
 *region**
+
+
 
 | doc.region | doc.docsrc                                                                                                                                                   | Notiz                                                                            |
 | :--------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------- |
-| aost       | FaltER, BVZ, HEUTE, NOEN                                                                                                                                     | Wien, Niederösterreich, Burgenland                                               |
-| amitte     | OOEN, NVB, SBGW, SVZ                                                                                                                                         | Oberösterreich, Salzburg                                                         |
-| asuedost   | KLEINE, KTZ, GRAZER, KTNMONAT, STMONAT                                                                                                                       | Kärnten, Steiermark                                                              |
-| awest      | NVT, OBERRUND, TT, TTKOMP, VN                                                                                                                                | Tirol, Vorarlberg                                                                |
-| agesamt    | APA, DATUM, FORMATDB, FURCHE, KRONE, KURIER, MEDIANET, NEWS, OEREICHE, OTS, PRESSE, PROFIL, SN, STANDARD, WZ, WIBLATT, ATVVOLL, PRO7VOLL, PULSVOLL, SAT1VOLL | Medien, die regional nicht zuzuordnen sind                                       |
-| spezifisch | ACADEMIA, ARBEITW, AUGUSTIN, BAUERNZT, DIEWIR, ECHO, EMEDIA, GEWINN, HOR, IM, KONSUM, KW, SOLI, SPORTZTG, TREND, TVMEDIA, WIENER, WIENERIN, WOMAN, MWVOLL    | Medien, die regional nicht zuzuordenbar und/oder thematisch sehr spezifisch sind |
+| aost       | Falter, BVZ, HEUTE, NOEN, ...                                                                                                                                     | Wien, Niederösterreich, Burgenland                                               |
+| amitte     | OOEN, NVB, SBGW, SVZ, ...                                                                                                                                         | Oberösterreich, Salzburg                                                         |
+| asuedost   | KLEINE, KTZ, GRAZER, KTNMONAT, STMONAT, ...                                                                                                                       | Kärnten, Steiermark                                                              |
+| awest      | NVT, OBERRUND, TT, TTKOMP, VN, ...                                                                                                                                | Tirol, Vorarlberg                                                                |
+| agesamt    | APA, DATUM, FORMATDB, FURCHE, KRONE, KURIER, MEDIANET, NEWS, OEREICHE, OTS, PRESSE, PROFIL, SN, STANDARD, ...    | Medien, die regional nicht zuzuordenbar und/oder thematisch sehr spezifisch sind |
 
 [*zurück zum Beginn*](#top)
 
 #### <span id="doc.province"></span>province: Bundesland
 
-Bundesland. Zur Zeit ist das Attribut *province* nur für Medien aus den
+Bundesland. Das Attribut *province* ist vor Allem für Medien aus den
 Ländern Vorarlberg und Tirol in Verwendung, da diese weitere
 Unterscheidung der Region *awest* linguistisch bedeutsam sein kann
-(bairischer vs. alemannischer Sprachraum). Bei allen anderen Medien
-bleibt *province* leer. *Zuordnung zwischen *docsrc* und *province**
+(bairischer vs. alemannischer Sprachraum). 
+Beispiele für die *Zuordnung zwischen *docsrc* und *province**
 
 | doc.province | doc.docsrc         | Name       |
 | :----------- | :----------------- | :--------- |
 | V            | VN, NVT            | Vorarlberg |
 | T            | TT,TTKOMP,OBERRUND | Tirol      |
+
+Auch hier gilt wieder: Die vollständige *Zuordnung zwischen *docsrc*
+*docsrc_name* und *region** und **province** entnehmen Sie der aktuellen [Medienliste auf der amc-website](
+https://amc.acdh.oeaw.ac.at/dokumentation/medienliste/)
 
 [*zurück zum Beginn*](#top)
 
@@ -717,13 +686,13 @@ Quelle: Paragraphenmarker werden aus den input-Daten übernommen
 
 ### <span id="s"></span> Struktur  `<s>` - Satz
 
-Quelle: Spacy 3.2
+Quelle: Spacy 3.8
 
 [*zurück zum Beginn*](#top)
 
-### <span id="metainfo"></span> Struktur `<meta_info>` - Sonderinfos für tv-Transkripte 
+### <span id="metainfo"></span> Struktur `<meta_info>` - Sonderinfos für AV-Transkripte 
 
-(Wird *ausschließlich* in Quellen mit *mediatype* 'tv' verwendet) In den
+(Wird *ausschließlich* in Quellen mit *mediatype* 'av_transkript' verwendet) In den
 Radio- und TV-Transkripten können zusätzliche Metainformation enthalten
 sein, die mit Hilfe der Struktur `<meta_info>` explizit ausgezeichnet
 werden.
@@ -905,7 +874,7 @@ Insbesondere relevant für das amc sind:
 ## <span id="tools"></span>Verwendete NLP-Tools
 
 Die folgenden Tools wurden für die Erstellung der Annotationen im amc
-version 4.x verwendet.
+version 5.x verwendet.
 
 ### Tokenisierung
 
@@ -933,7 +902,7 @@ version 4.x verwendet.
 
 ### PoS Tagging, Named Entities, Dependenzstrukturen
 
-  - Spacy v 3.2 [https://spacy.io](https://spacy.io)
+  - Spacy v 3.8 [https://spacy.io](https://spacy.io)
 
 [*zurück zum Beginn*](#top)
 
@@ -941,7 +910,7 @@ version 4.x verwendet.
 
 ### Vollformlexika
 
-  - Dbnary (dump von 2022-01) [http://kaiko.getalp.org/about-dbnary](http://kaiko.getalp.org/about-dbnary) :
+  - Dbnary (dump von 2026-02-25) [http://kaiko.getalp.org/about-dbnary](http://kaiko.getalp.org/about-dbnary) :
     aus dem Wiktionary abgeleitete Vollformlexika
 
 [*zurück zum Beginn*](#top)

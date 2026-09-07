@@ -9,16 +9,16 @@ Sollen Suchergebnisse nach verschiedenen Attributwerten wie Jahr, Region oder Me
 
 Metadaten wie Jahr, Region und Medium werden in der Terminologie der NoSke **text types** genannt. In der aktuellen NoSke-Version ist es mittlerweile möglich, bei Frequenz-Auswertungen nach *einem* solchen **text type** die korrekt normalisierten Werte direkt anzeigen zu lassen. Dazu ist in der Anzeige eines *Frequenz*-Ergebnisses die Option *"Relative Häufigkeiten anzeigen / Show relative in text type"* und/oder *"Prozentualer Anteil an Konkordanzzeilen anzeigen / Relative density"* zu aktivieren.
 
-Erstere liefert die Ergebnisse in *i.p.m*  (*instance per million* oder auch *hits per million*). 
-Die *Relative Häugigkeit* stellt die relative Verteilung der Ergebnisse als %-Satz dar. 
+Die erste Option liefert die Ergebnisse in *i.p.m*  (*instance per million* oder auch *hits per million*).  
+Die zweite Option - *Relative Häugigkeit* - stellt die relative Verteilung der Ergebnisse als %-Satz dar. 
 
 Vgl. den Screenshot einer Auswertung des Begriffs "Haus" nach `doc.year` im Demo-Korpus `amc4_demo`:
 
 ![](/assets/content/pages/normalisierung/Screenshot_freq_amc4_demo_Haus-2048x755.png)
 
-(*Tip*: Seit 2024 bietet die NoSketch-Engine übrigens für diese häufig nachgefragte Auswertung — Trefferzahlen über die Zeit — in der Werkzeugleiste rechts oben eine eigene Funktion namens "Der Zeitsstrahl" / "Timeline" an, die auch gleich eine grafisch ansprechendere Visualisierung produziert).
+(*Tip*: die NoSketch-Engine bietet übrigens für diese häufig nachgefragte Auswertung — Trefferzahlen über die Zeit — in der Werkzeugleiste rechts oben eine eigene Funktion namens "Der Zeitsstrahl" / "Timeline" an, die auch gleich eine grafisch ansprechendere Visualisierung produziert).
 
-Bei der Frequenzauswertung nach einem einzelnen text type ist also aktuell eine nachträgliche manuelle Normalisierung nicht mehr notwendig. Diese bleibt aber weiterhin unverzichtbar, wenn gleichzeitig mehr als ein text type quantitativ ausgewertet werden soll. Also wenn z.B. die Verteilung von Treffern über `doc.year` und `doc.region` – also gleichzeitig über Zeit und Raum – verglichen werden soll.
+Bei der Frequenzauswertung nach einem einzelnen **text type** ist also aktuell eine nachträgliche manuelle Normalisierung nicht mehr notwendig. Diese bleibt aber weiterhin unverzichtbar, wenn gleichzeitig *mehr* als ein text type quantitativ ausgewertet werden soll. Also wenn z.B. die Verteilung von Treffern über `doc.year` und `doc.region` – also gleichzeitig über Zeit und Raum – verglichen werden soll.
 
 Der Einfachheit halber wurden aber für die nachfolgende Erörterung der "Normalisierungsnotwendigkeit" Beispiele mit lediglich einem text type beibehalten.
 
@@ -32,7 +32,7 @@ Es muss daher vor einem Vergleich von Trefferzahlen für unterschiedliche Attrib
 
 Oder um ein reales Beispiel aus einem anderen Zusammenhang zu nehmen: es ist hoffentlich einleuchtend, dass der Vergleich der absoluten Fallzahlen für COVID-19 Infektionen zwischen sagen wir Liechtenstein (Einwohnerzahl ca. 39.000) und Indien (Einwohnerzahl ca. 1.4 Mrd) weitgehend sinnlos ist. Für einen aussagekräftigen Vergleich müssen immer normalisierte Zahlen (also z.B. "Anzahl der Infektionen pro 10 Mio Einwohner") verwendet werden.
 
-Ein in der Korpuslinguistik gängiges Maß für die Formulierung einer relative Trefferzahl ist z.B. Treffer pro Millionen Token (häufig abgekürzt als hpm – hits per million). Wie oben bereits erwähnt, liefern Frequenzauswertungen mit dem Korpustool NoSketch Engine bei Auswertungen für ein Attribut sowohl absolute als auch relative Frequenzwerte. Sollen aber Frequenzen für mehr als ein Attribut miteinander verglichen werden, muss die Berechnung der relativen Trefferzahl selbst vorgenommen werden! Ein ganz typischer Anwendungsfall sind Auswertungen der Auftretensfrequenz eines Begriffs sowohl über die Zeit als auch über Regionen.
+Ein in der Korpuslinguistik gängiges Maß für die Formulierung einer relative Trefferzahl ist z.B. Treffer pro Millionen Token (häufig abgekürzt als `hpm` – hits per million). Wie oben bereits erwähnt, liefern Frequenzauswertungen mit dem Korpustool NoSketch Engine bei Auswertungen für *ein* Attribut sowohl absolute als auch relative Frequenzwerte. Sollen aber Frequenzen für mehr als ein Attribut miteinander verglichen werden, muss die Berechnung der relativen Trefferzahl selbst vorgenommen werden! Ein ganz typischer Anwendungsfall sind Auswertungen der Auftretensfrequenz eines Begriffs sowohl über die Zeit als auch über Regionen.
 
 Um die unabdingbare Normalisierung selbst durchführen zu können, ist das Wissen über die Größe der Grundgesamtheit in jeder der Unterkategorien nötig.
 
@@ -42,6 +42,7 @@ Diese Datei enthält die Gesamtanzahl der vorhanden Token für jede Kombination 
 
 | Korpus      | xlsx zur Normalsierung (Downloadlink)                                                                                                                                   |
 | ----------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| **amc\_5.25q4LTS** | <Download href="/assets/content/pages/normalisierung/freqs_amc_5.25q4LTS_region_province_docsrc_mediatype_year_yymm_for_normalization_2026-09-07.xlsx"> Download</Download> |
 | **amc\_4.25q4LTSx** | <Download href="/assets/content/pages/normalisierung/freqs_amc_4.25q4LTSx_region_province_docsrc_mediatype_year_yymm_for_normalization_2026-01-14.xlsx"> Download</Download> |
 | amc\_4.25q3 DEPRECATED  | <Download href="/assets/content/pages/normalisierung/freqs_amc_4.25q3_region_province_docsrc_mediatype_year_yymm_for_normalization_2025-10-06.xlsx">Download</Download> | 
 | amc\_4.25q2 DEPRECATED  | <Download href="/assets/content/pages/normalisierung/freqs_amc_4.25q2_region_province_docsrc_mediatype_year_yymm_for_normalization_2025-07-08.xlsx">Download</Download> |
