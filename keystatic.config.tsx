@@ -334,8 +334,8 @@ export default config({
 													label: "Vollständige Bezeichnung (docsrc_name)",
 													validation: { isRequired: true },
 												}),
-												sourcetype: fields.select({
-													label: "Medientyp (sourcetype)",
+												mediatype: fields.select({
+													label: "Medientyp (mediatype)",
 													options: [
 														{
 															label: "Agentur",
@@ -352,6 +352,10 @@ export default config({
 														{
 															label: "Radio",
 															value: "radio",
+														},
+														{
+															label: "AV-Transkription",
+															value: "av_transcript",
 														},
 														// {
 														// 	label: "WWW",
@@ -403,7 +407,7 @@ export default config({
 													defaultValue: "agesamt",
 												}),
 												province: fields.text({
-													label: "Bundesland, nur bei Vbg. und Tirol (province)",
+													label: "Bundesland",
 													// validation: { isRequired: false },
 												}),
 											},
@@ -462,8 +466,8 @@ export default config({
 													label: "Vollständige Bezeichnung (docsrc_name)",
 													// validation: { isRequired: false },
 												}),
-												sourcetype: fields.select({
-													label: "Medientyp (sourcetype)",
+												mediatype: fields.select({
+													label: "Medientyp (mediatype)",
 													options: [
 														// {
 														// 	label: "Agentur",
