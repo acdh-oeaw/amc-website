@@ -381,10 +381,9 @@ export default config({
 														},
 														{
 															label: "-",
-															value: "NN",
+															value: "-",
 														},
 													],
-													defaultValue: "NN",
 												}),
 												from: fields.text({
 													label: "von (year)",
