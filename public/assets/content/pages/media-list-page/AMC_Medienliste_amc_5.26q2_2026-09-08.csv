@@ -5,13 +5,13 @@ docsrc	docsrc_name	description	status_action	region	province	printtype	mediatype
 1TRUCKMAG	1Truck	"Das Magazin für Transport Manager"	added_in_amc5	agesamt	-	fachmedium	print	2019-03-11	2026-05-14	
 A3BAU	"a3 Das Baumagazin"	"Das Österreichische Baumagazin"	added_in_amc5	agesamt	-	fachmedium	print	1999-02-25	2026-06-25	
 ABFORUM	"Architektur & Bau Forum"	"Fachmagazin für Architektur und Bau"	added_in_amc5	agesamt	-	fachmedium	print	2003-05-09	2020-12-21	eingestellt
-ACADEMIA	Academia	"Artikel mit Titel und Trefferumgebung"	im_amc	agesamt	-	zeitschrift	print	2008-02-01	2026-05-29	
+ACADEMIA	Academia	"Zeitschrift des Cartellverbandes (CV)"	im_amc	agesamt	-	zeitschrift	print	2008-02-01	2026-05-29	
 AERZTEWO	"Ärzte Woche"	"Österreichische Zeitung für Medizin"	added_in_amc5	agesamt	-	fachmedium	print	2010-11-18	2026-06-25	
 APA	"APA-Meldungen digital"	APA-Basisdienst	im_amc	agesamt	-	-	agentur	1986-01-02	2026-06-30	
 ARBEITW	"Arbeit & Wirtschaft"	"Die Zeitschrift von AK und ÖGB"	im_amc	agesamt	-	zeitschrift	print	2000-01-01	2026-06-18	
 ATVVOLL	ATV	"Volltexttranskripte aus ausgewählten Informationssendungen"	im_amc	agesamt	-	-	av_transcript	2005-03-10	2020-07-04	eingestellt
 AUBILDOE	"Auto Bild Österreich"	"Der Österreich-Teil der Auto BILD"	added_in_amc5	agesamt	-	zeitschrift	print	2012-09-28	2026-06-17	
-AUGUSTIN	Augustin	"Artikel mit Titel und Trefferumgebung"	im_amc	aost	W	zeitschrift	print	2003-01-17	2026-06-17	
+AUGUSTIN	Augustin	"Wiener Obdachlosenzeitung"	im_amc	aost	W	zeitschrift	print	2003-01-17	2026-06-17	
 AUSINNOV	"Austria Innovativ"	"Österreichisches Magazin für Forschung und Technologie"	added_in_amc5	agesamt	-	fachmedium	print	2012-02-10	2026-06-15	
 AUSTRIAEUROPE	"Austria - Europes Heart"	"Publikation zum Wirtschaftsstandort Österreich"	added_in_amc5	agesamt	-	fachmedium	print	2020-04-21	2026-02-25	
 AUTLOOK	AUTlook	"Das österreichische Fachmagazin für Automatisierungstechnik"	added_in_amc5	agesamt	-	fachmedium	print	2019-05-03	2025-11-19	
