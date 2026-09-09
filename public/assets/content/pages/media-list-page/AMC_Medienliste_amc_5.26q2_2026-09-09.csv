@@ -150,14 +150,9 @@ NVB	"Neues Volksblatt (bis 2018) / Oberösterreichisches Volksblatt (ab 2018)"	"
 NVT	"Neue Vorarlberger Tageszeitung"	"Tageszeitung für Vorarlberg"	im_amc	awest	V	zeitung	print	1997-01-02	2026-06-30	
 OBEROESW	"Oberösterreichische Wirtschaft"	"Die Zeitung für Oberösterreichs Unternehmen"	added_in_amc5	amitte	"OÖ"	fachmedium	print	2016-07-29	2026-06-18	
 OBERRUND	"Oberländer Rundschau"	"Wochenzeitung für die Bezirke Imst, Landeck, Reutte, Telfs"	im_amc	awest	T	zeitung	print	2010-10-07	2026-06-24	
-OECOOKING	"Österreich Cooking"	"Österreichisches Koch-Magazin"	added_in_amc5	agesamt	-	zeitschrift	print	2016-08-05	2025-12-19	skartiert
 OEGEM	"Österreichische Gemeindezeitung"	"Österreichische Gemeindezeitung"	added_in_amc5	agesamt	-	fachmedium	print	2007-12-01	2026-05-13	
 OEGZ	"ÖGZ Gastgewerbe-&Hotelzeitung"	"Österreichische Fachzeitung für Gastronomie"	added_in_amc5	agesamt	-	fachmedium	print	2001-01-12	2026-06-05	
-OEINSIDER	"Österreich Insider"	"Ein neues Magazin für ein neues Jahrzehnt"	added_in_amc5	agesamt	-	zeitschrift	print	2020-01-10	2025-12-31	skartiert
 OEINSTA	"Der Österreichische Installateur"	"Fachmagazin für Sanitär-, Heizungs- und Lüftungstechniker"	added_in_amc5	agesamt	-	fachmedium	print	2012-02-21	2026-06-30	
-OEMADONNA	"Österreich Madonna"	"Österreichisches Frauen-Magazin"	added_in_amc5	agesamt	-	zeitschrift	print	2016-07-30	2025-12-27	skartiert
-OEREICHE	"Österreich"	#N/A	skartiert	agesamt	-	zeitung	print	#N/A	#N/A	
-OESTERREICH	"Österreich"	#N/A	skartiert	agesamt	-		print	#N/A	#N/A	
 OEVERKH	"Österreichische Verkehrszeitung"	"Wöchentliche Zeitung für Transport und Logistik"	added_in_amc5	agesamt	-	zeitschrift	print	2019-02-20	2026-06-17	
 OFLEISHH	"Fleisch & Co"	"Österreichisches Fachmagazin für die Fleischwirtschaft"	added_in_amc5	agesamt	-	fachmedium	print	2013-11-01	2024-09-06	eingestellt
 OOEN	"Oberösterreichische Nachrichten"	"Tageszeitung für Oberösterreich"	im_amc	amitte	"OÖ"	zeitung	print	1996-01-02	2026-06-30	
