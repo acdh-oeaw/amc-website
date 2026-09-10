@@ -3,6 +3,28 @@
   "image": "/assets/content/media-list-page/image.jpg",
   "lists": [
     {
+      "discriminant": "print5",
+      "value": {
+        "title": "amc_5.26q2: Medienliste",
+        "items": [
+          {
+            "docsrc": "APA",
+            "docsrc_name": "APA-Meldungen digital",
+            "description": "APA-Basisdienst",
+            "mediatype": "agentur",
+            "printtype": "-",
+            "year_from": "1986",
+            "year_to": "2026",
+            "date_from": "1986-01-02",
+            "date_to": "2026-06-30",
+            "region": "agesamt",
+            "province": "-",
+            "status_action": "im_amc"
+          }
+        ]
+      }
+    },
+    {
       "discriminant": "print",
       "value": {
         "title": "amc_4.3 (amc_4.23q4LTS): Medienliste",
