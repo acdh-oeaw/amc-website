@@ -308,6 +308,146 @@ export default config({
 				}),
 				lists: fields.blocks(
 					{
+						print5: {
+							label: "Print5",
+							schema: fields.object(
+								{
+									title: fields.text({
+										label: "Title",
+										validation: { isRequired: true },
+									}),
+									description: fields.mdx({
+										label: "Description",
+										options: {
+											image: createAssetPaths("/content/media-list-page/"),
+										},
+										components: createComponents("/content/media-list-page/"),
+									}),
+									items: fields.array(
+										fields.object(
+											{
+												docsrc: fields.text({
+													label: "Kurzname (docsrc)",
+													validation: { isRequired: true },
+												}),
+												docsrc_name: fields.text({
+													label: "Vollständige Bezeichnung (docsrc_name)",
+													validation: { isRequired: true },
+												}),
+												description: fields.text({
+													label: "Beschreibung",
+													// validation: { isRequired: true },
+												}),
+												mediatype: fields.select({
+													label: "Medientyp (mediatype)",
+													options: [
+														{
+															label: "Agentur",
+															value: "agentur",
+														},
+														{
+															label: "Print",
+															value: "print",
+														},
+														{
+															label: "AV-Transkription",
+															value: "av_transcript",
+														},
+														// {
+														// 	label: "WWW",
+														// 	value: "www",
+														// },
+													],
+													defaultValue: "print",
+												}),
+												printtype: fields.text({
+													label: "Art des Printmediums (printtype)",
+													// validation: { isRequired: false },
+												}),
+												year_from: fields.text({
+													label: "von (year)",
+													// validation: { isRequired: false },
+												}),
+												year_to: fields.text({
+													label: "bis (year)",
+													// validation: { isRequired: false },
+												}),
+												date_from: fields.text({
+													label: "von Ausgabe",
+													// validation: { isRequired: false },
+												}),
+												date_to: fields.text({
+													label: "bis Ausgabe)",
+													// validation: { isRequired: false },
+												}),
+												region: fields.select({
+													label: "Region (region)",
+													options: [
+														{
+															label: "Gesamt",
+															value: "agesamt",
+														},
+														{
+															label: "Spezifisch",
+															value: "spezifisch",
+														},
+														{
+															label: "Ost",
+															value: "aost",
+														},
+														{
+															label: "Südost",
+															value: "asuedost",
+														},
+														{
+															label: "Süd",
+															value: "asued",
+														},
+														{
+															label: "Mitte",
+															value: "amitte",
+														},
+														{
+															label: "West",
+															value: "awest",
+														},
+													],
+													defaultValue: "agesamt",
+												}),
+												province: fields.text({
+													label: "Bundesland",
+													// validation: { isRequired: false },
+												}),
+												status_action: fields.text({
+													label: "Status",
+													// validation: { isRequired: false },
+												}),
+												timeliness: fields.text({
+													label: "Aktualität",
+													// validation: { isRequired: false },
+												}),
+											},
+											{
+												label: "Item",
+											},
+										),
+										{
+											label: "Items",
+											itemLabel(props) {
+												return props.fields.docsrc.value;
+											},
+											validation: { length: { min: 1 } },
+										},
+									),
+								},
+								{
+									label: "List",
+								},
+							),
+							itemLabel(props) {
+								return props.fields.title.value;
+							},
+						},
 						print: {
 							label: "Print",
 							schema: fields.object(
