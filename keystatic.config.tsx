@@ -334,10 +334,6 @@ export default config({
 													label: "Vollständige Bezeichnung (docsrc_name)",
 													validation: { isRequired: true },
 												}),
-												description: fields.text({
-													label: "Beschreibung",
-													// validation: { isRequired: true },
-												}),
 												mediatype: fields.select({
 													label: "Medientyp (mediatype)",
 													options: [
@@ -372,20 +368,12 @@ export default config({
 													label: "Art des Printmediums (printtype)",
 													// validation: { isRequired: false },
 												}),
-												year_from: fields.text({
+												from: fields.text({
 													label: "von (year)",
 													// validation: { isRequired: false },
 												}),
-												year_to: fields.text({
+												to: fields.text({
 													label: "bis (year)",
-													// validation: { isRequired: false },
-												}),
-												date_from: fields.text({
-													label: "von Ausgabe",
-													// validation: { isRequired: false },
-												}),
-												date_to: fields.text({
-													label: "bis Ausgabe)",
 													// validation: { isRequired: false },
 												}),
 												region: fields.select({
@@ -424,14 +412,6 @@ export default config({
 												}),
 												province: fields.text({
 													label: "Bundesland",
-													// validation: { isRequired: false },
-												}),
-												status_action: fields.text({
-													label: "Status",
-													// validation: { isRequired: false },
-												}),
-												timeliness: fields.text({
-													label: "Aktualität",
 													// validation: { isRequired: false },
 												}),
 											},
