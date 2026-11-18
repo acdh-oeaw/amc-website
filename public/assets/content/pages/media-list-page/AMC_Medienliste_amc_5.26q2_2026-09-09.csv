@@ -121,7 +121,7 @@ KOMMUNAL	Kommunal	"Zeitung des österreichischen Gemeindebundes"	added_in_amc5	a
 KOMMUNEN	"Kommunen der Zukunft"	"Sonderheft zum Städtetag in den Bundesländern"	added_in_amc5	agesamt	-	fachmedium	print	2020-05-04	2026-06-01	
 KONSUM	"Der Konsument"	"Das Konsumentenmagazin des VKI"	im_amc	agesamt	-	zeitschrift	print	1996-01-01	2026-06-25	
 KRONE	"Kronen Zeitung"	"Überregionale Österreichische Tageszeitung"	im_amc	agesamt	-	zeitung	print	1994-01-01	2026-06-30	
-KTNMONAT	"Kärntner Monat"	"Das Szene-Magazin für Kärnten"	im_amc	asuedost	KT	zeitschrift	print	2005-01-01	2026-06-26	eingestellt
+KTNMONAT	"Kärntner Monat"	"Das Szene-Magazin für Kärnten"	im_amc	asuedost	KT	zeitschrift	print	2005-01-01	2026-06-26	
 KTNREGIO	"Kärntner Regionalmedien"	"Regionale Medien für Kärnten"	added_in_amc5	asuedost	KT	zeitung	print	2017-11-29	2026-06-02	
 KTNW	"WOCHE Kärnten"	"Regionale Wochenzeitung für Kärnten"	added_in_amc5	asuedost	KT	zeitung	print	2005-06-08	2026-06-24	
 KTZ	"Kärntner Tageszeitung"	"Tageszeitung für Kärnten (eingestellt)"	im_amc	asuedost	KT	zeitung	print	1999-01-02	2014-02-28	eingestellt
