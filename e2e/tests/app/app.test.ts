@@ -2,7 +2,6 @@ import { createUrl } from "@acdh-oeaw/lib";
 
 import { expect, test } from "~/e2e/lib/test";
 
-// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 const baseUrl = process.env.PUBLIC_APP_BASE_URL!;
 
 test.describe("app", () => {

@@ -30,58 +30,52 @@ const documentTitle = t("IndexPage.meta.title");
 				/>
 				<div class="absolute inset-0 size-full bg-[#cfeefbeb]"></div>
 			</div>
-			<div class="relative mx-auto grid w-full max-w-screen-lg gap-y-6 px-4 py-16">
+			<div class="relative mx-auto grid w-full max-w-(--breakpoint-lg) gap-y-6 px-4 py-16">
 				<h1 class="text-5xl font-medium text-[#212529]">{page.hero.title}</h1>
-				<p class="max-w-[52rem] text-lg text-[#444]">
-					{page.hero.leadIn}
-				</p>
+				<p class="max-w-[52rem] text-lg text-[#444]">{page.hero.leadIn}</p>
 				<div>
-					{
-						page.hero.links.map((link) => {
-							return (
-								<a
-									class="inline-flex rounded-md border border-[#0000001a] px-4 py-1.5 text-[#212529] transition hover:bg-[#212529] hover:text-white"
-									href={link.href}
-								>
-									{link.label}
-								</a>
-							);
-						})
-					}
+					{page.hero.links.map((link) => {
+						return (
+							<a
+								class="inline-flex rounded-md border border-[#0000001a] px-4 py-1.5 text-[#212529] transition hover:bg-[#212529] hover:text-white"
+								href={link.href}
+							>
+								{link.label}
+							</a>
+						);
+					})}
 				</div>
 			</div>
 		</section>
 
 		<div class="grid gap-y-12 py-12">
-			{
-				page.main.sections.map((section) => {
-					const sectionStyles = {
-						fluid: "grid-fluid-cols-80",
-						"two-columns": "grid-cols-2",
-						"three-columns": "grid-cols-3",
-						"four-columns": "grid-cols-4",
-					};
+			{page.main.sections.map((section) => {
+				const sectionStyles = {
+					fluid: "grid-fluid-cols-80",
+					"two-columns": "grid-cols-2",
+					"three-columns": "grid-cols-3",
+					"four-columns": "grid-cols-4",
+				};
 
-					return (
-						<section class="mx-auto grid w-full max-w-screen-lg gap-y-8 px-4">
-							<h2 class="border-b border-[#00000026] text-xl font-medium">
-								<span class="-my-px inline-flex border-b border-[#212529] pb-4 text-[#212529]">
-									{section.title}
-								</span>
-							</h2>
-							<ul class:list={["grid gap-8", sectionStyles[section.variant]]} role="list">
-								{section.cards.map((card) => {
-									return (
-										<li>
-											<Card {...card} />
-										</li>
-									);
-								})}
-							</ul>
-						</section>
-					);
-				})
-			}
+				return (
+					<section class="mx-auto grid w-full max-w-(--breakpoint-lg) gap-y-8 px-4">
+						<h2 class="border-b border-[#00000026] text-xl font-medium">
+							<span class="-my-px inline-flex border-b border-[#212529] pb-4 text-[#212529]">
+								{section.title}
+							</span>
+						</h2>
+						<ul class:list={["grid gap-8", sectionStyles[section.variant]]} role="list">
+							{section.cards.map((card) => {
+								return (
+									<li>
+										<Card {...card} />
+									</li>
+								);
+							})}
+						</ul>
+					</section>
+				);
+			})}
 		</div>
 	</MainContent>
 </PageLayout>

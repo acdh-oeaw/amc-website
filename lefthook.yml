@@ -1,0 +1,14 @@
+pre-commit:
+  jobs:
+    - name: lint-code
+      glob: "*.{astro,js,jsx,mjs,cjs,ts,tsx,mts,cts}"
+      run: pnpm exec oxlint --fix {staged_files}
+      stage_fixed: true
+    - name: lint-styles
+      glob: "*.{astro,css}"
+      run: pnpm exec stylelint --fix --allow-empty-input {staged_files}
+      stage_fixed: true
+    - name: format
+      exclude: "content/**"
+      run: pnpm exec oxfmt --write {staged_files}
+      stage_fixed: true

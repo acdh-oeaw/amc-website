@@ -6,12 +6,13 @@ website for the austrian media corpus.
 
 prerequisites:
 
-- [node.js 24.x](https://nodejs.org/en/download)
-- [pnpm 10.x](https://pnpm.io/installation)
+- [node.js 26.x](https://nodejs.org/en/download)
+- [pnpm 12.x](https://pnpm.io/installation)
 
 > [!TIP]
 >
-> you can use `pnpm` to install the required node.js version with `pnpm env use 24 --global`
+> you can use `pnpm` to install the required node.js version with
+> `pnpm runtime set node 26 --global`
 
 set required environment variables in `.env.local`:
 
@@ -61,6 +62,10 @@ run a development server on <http://localhost:3000>:
 pnpm run dev
 ```
 
+format code with `pnpm run format:fix` (Oxfmt), lint with `pnpm run lint:check` (Oxlint and
+Stylelint), and check types with `pnpm run types:check` (Astro and TypeScript). Lefthook installs
+the pre-commit checks during `pnpm install` and fixes staged files.
+
 > [!TIP]
 >
 > this template supports developing in containers. when opening the project in your editor, you
@@ -109,5 +114,6 @@ a working setup.
 >
 > by default, this will deploy a `node` server, which will serve pre-rendered pages, assets, and api
 > routes. if you prefer a truly static build, which uses `caddy` as a fileserver, use the
-> `Dockerfile.static` instead, and remove `output: "hybrid"` from `astro.config.ts`. you will also
-> need to change the `generate:search-index` script to `pagefind --site ./dist/`.
+> `Dockerfile.static` instead, and remove the Node adapter and server-rendered routes from
+> `astro.config.ts` and `src/pages`. you will also need to change the `generate:search-index` script
+> to `pagefind --site ./dist/`.

@@ -3,7 +3,7 @@
 	"editor.codeActionsOnSave": {
 		"source.fixAll": "explicit"
 	},
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.defaultFormatter": "oxc.oxc-vscode",
 	"editor.formatOnSave": true,
 	"editor.inlayHints.enabled": "offUnlessPressed",
 	"editor.linkedEditing": true,
@@ -12,11 +12,6 @@
 	},
 	"editor.rulers": [100],
 	"editor.stickyScroll.enabled": true,
-	"eslint.enable": true,
-	"eslint.options": {
-		"ignorePath": ".gitignore"
-	},
-	"eslint.validate": ["astro", "javascript", "typescript", "typescriptreact"],
 	"files.associations": {
 		"*.css": "tailwindcss"
 	},
@@ -24,8 +19,6 @@
 	"html.autoCreateQuotes": false,
 	"less.validate": false,
 	"mdx.server.enable": true,
-	"prettier.documentSelectors": ["**/*.astro"],
-	"prettier.ignorePath": ".gitignore",
 	"scss.validate": false,
 	"stylelint.enable": true,
 	"stylelint.snippet": ["astro", "css", "postcss", "tailwindcss"],
