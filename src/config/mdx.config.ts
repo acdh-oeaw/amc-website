@@ -1,7 +1,6 @@
 import { join } from "node:path";
 
 import type { CompileOptions } from "@mdx-js/mdx";
-// import withSyntaxHighlighter from "@shikijs/rehype";
 import withAssets from "rehype-mdx-import-media";
 import withHeadingIds from "rehype-slug";
 import withFrontmatter from "remark-frontmatter";
@@ -11,8 +10,6 @@ import withTypographicQuotes from "remark-smartypants";
 import type { Options as TypographicOptions } from "retext-smartypants";
 
 import type { Locale } from "@/config/i18n.config";
-// import { config as syntaxHighlighterConfig } from "@/config/syntax-highlighter.config";
-// import { withMdxFootnotes } from "@/lib/content/footnotes";
 import { withMdxTableOfContents, withTableOfContents } from "@/lib/content/table-of-contents";
 import { createI18n } from "@/lib/i18n";
 
@@ -26,7 +23,6 @@ const typography: Record<Locale, TypographicOptions> = {
 };
 
 export async function createConfig(locale: Locale) {
-	// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 	if (cache.has(locale)) return cache.get(locale)!;
 
 	const { t } = await createI18n(locale);
@@ -35,7 +31,7 @@ export async function createConfig(locale: Locale) {
 		baseUrl: join(process.cwd(), "public"),
 		remarkPlugins: [
 			withFrontmatter,
-			withMdxFrontmatter,
+			[withMdxFrontmatter, { name: "frontmatter" }],
 			withGfm,
 			[withTypographicQuotes, typography[locale]],
 		],
@@ -49,14 +45,7 @@ export async function createConfig(locale: Locale) {
 			},
 			footnoteLabel: t("Mdx.Footnotes"),
 		},
-		rehypePlugins: [
-			// withMdxFootnotes,
-			withHeadingIds,
-			withTableOfContents,
-			withMdxTableOfContents,
-			// [withSyntaxHighlighter, syntaxHighlighterConfig],
-			withAssets,
-		],
+		rehypePlugins: [withHeadingIds, withTableOfContents, withMdxTableOfContents, withAssets],
 	};
 
 	cache.set(locale, config);

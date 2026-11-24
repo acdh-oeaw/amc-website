@@ -11,15 +11,13 @@ const imprint = t("WebsiteFooter.links.imprint");
 ---
 
 <footer class="border-t border-t-[#00000026] bg-white">
-	<div class="mx-auto grid w-full max-w-screen-lg gap-y-6 px-4 py-12 text-[#444]">
+	<div class="mx-auto grid w-full max-w-(--breakpoint-lg) gap-y-6 px-4 py-12 text-[#444]">
 		<div class="flex w-full items-center gap-x-1.5 border-b border-[#00000026] pb-4">
 			<Icon aria-hidden="true" class="size-4.5" name="lucide:message-circle" />
 			<span class="text-sm font-medium">Kontakt</span>
 		</div>
 
-		<div
-			class="grid items-start gap-x-8 gap-y-4 xs:grid-cols-[auto_1fr] xs:gap-y-8 md:grid-cols-[auto_1fr_auto_1fr]"
-		>
+		<div class="grid items-start gap-x-8 gap-y-4 xs:grid-cols-[auto_1fr] xs:gap-y-8 md:grid-cols-[auto_1fr_auto_1fr]">
 			<div>
 				<a class="inline-flex py-1" href="https://www.oeaw.ac.at/acdh/">
 					<img
@@ -45,7 +43,7 @@ const imprint = t("WebsiteFooter.links.imprint");
 				</div>
 				<div>
 					<div>
-						T:
+						T:{" "}
 						<a
 							class="underline decoration-dotted underline-offset-4 hover:no-underline"
 							href="tel:+43 1 51581-2200"
@@ -54,7 +52,7 @@ const imprint = t("WebsiteFooter.links.imprint");
 						</a>
 					</div>
 					<div>
-						E:
+						E:{" "}
 						<a
 							class="underline decoration-dotted underline-offset-4 hover:no-underline"
 							href="mailto:acdh@oeaw.ac.at"
@@ -98,7 +96,7 @@ const imprint = t("WebsiteFooter.links.imprint");
 			<div class="grid gap-y-2">
 				<div class="font-medium">CLARIAH-AT</div>
 				<div>
-					E:
+					E:{" "}
 					<a
 						class="underline decoration-dotted underline-offset-4 hover:no-underline"
 						href="mailto:office@clariah.at"
@@ -110,7 +108,7 @@ const imprint = t("WebsiteFooter.links.imprint");
 		</div>
 	</div>
 	<div class="bg-[#f1f1f1] py-2 text-center text-sm text-[#444]">
-		&copy; Copyright OEAW |
+		&copy; Copyright OEAW |{" "}
 		<Link class="underline decoration-dotted underline-offset-4 hover:no-underline" href="/imprint">
 			{imprint}
 		</Link>

@@ -6,12 +6,13 @@ website for the austrian media corpus.
 
 prerequisites:
 
-- [node.js 24.x](https://nodejs.org/en/download)
-- [pnpm 10.x](https://pnpm.io/installation)
+- [node.js 26.x](https://nodejs.org/en/download)
+- [pnpm 12.x](https://pnpm.io/installation)
 
 > [!TIP]
 >
-> you can use `pnpm` to install the required node.js version with `pnpm env use 24 --global`
+> you can use `pnpm` to install the required node.js version with
+> `pnpm runtime set node 26 --global`
 
 set required environment variables in `.env.local`:
 
@@ -61,6 +62,10 @@ run a development server on <http://localhost:3000>:
 pnpm run dev
 ```
 
+format code with `pnpm run format:fix` (Oxfmt), lint with `pnpm run lint:check` (Oxlint and
+Stylelint), and check types with `pnpm run types:check` (Astro and TypeScript). Lefthook installs
+the pre-commit checks during `pnpm install` and fixes staged files.
+
 > [!TIP]
 >
 > this template supports developing in containers. when opening the project in your editor, you
@@ -73,6 +78,14 @@ the filesystem), or at <https://amc.acdh-ch-dev.oeaw.ac.at/admin> (this will com
 github repository).
 
 ## how to deploy
+
+the Docker build installs dependencies before copying source files and accepts an empty Astro cache.
+the deployment workflow exports the updated cache from the `astro-cache` target for the next build.
+private environment variables are read when the container starts; `ENV_VALIDATION=public` is used
+only while building, and runtime validation defaults to `enabled`.
+
+to smoke-test a locally built image, run `node scripts/smoke-image.mjs amc-website:smoke`. the test
+starts disposable containers, checks HTTP and runtime configuration, and sends no email.
 
 - ask a sysadmin to create a new acdh-ch kubernetes project.
 - create a new namespace in that project via [rancher](https://rancher.acdh-dev.oeaw.ac.at), and set
@@ -109,5 +122,6 @@ a working setup.
 >
 > by default, this will deploy a `node` server, which will serve pre-rendered pages, assets, and api
 > routes. if you prefer a truly static build, which uses `caddy` as a fileserver, use the
-> `Dockerfile.static` instead, and remove `output: "hybrid"` from `astro.config.ts`. you will also
-> need to change the `generate:search-index` script to `pagefind --site ./dist/`.
+> `Dockerfile.static` instead, and remove the Node adapter and server-rendered routes from
+> `astro.config.ts` and `src/pages`. you will also need to change the `generate:search-index` script
+> to `pagefind --site ./dist/`.

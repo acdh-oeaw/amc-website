@@ -23,10 +23,10 @@ const { default: Content } = await processMdx(await page.content(), locale);
 		<PageSection>
 			<PageCard image={image}>
 				<PageTitle>{title}</PageTitle>
-				<div class="prose">
+				<div class="prose max-w-none">
 					<Content />
 				</div>
-				<div class="mx-auto w-full max-w-screen-md py-8">
+				<div class="mx-auto w-full max-w-(--breakpoint-md) py-8">
 					<RegistrationForm />
 				</div>
 			</PageCard>

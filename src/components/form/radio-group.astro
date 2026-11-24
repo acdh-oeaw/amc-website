@@ -12,6 +12,8 @@ const id = crypto.randomUUID();
 ---
 
 <div aria-labelledby={id} class="grid gap-y-1" role="radiogroup">
-	<Label id={id} required={required}>{label}</Label>
+	<Label id={id} required={required}>
+		{label}
+	</Label>
 	<slot />
 </div>

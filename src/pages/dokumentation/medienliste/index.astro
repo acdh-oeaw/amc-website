@@ -25,28 +25,26 @@ const { default: Content } = await processMdx(await page.content(), locale);
 		<PageSection>
 			<PageCard image={image}>
 				<PageTitle>{title}</PageTitle>
-				<div class="prose">
+				<div class="prose max-w-none">
 					<Content />
 				</div>
-				<div class="prose">
-					{
-						lists.map(async (list) => {
-							const { default: Content } = await processMdx(await list.value.description(), locale);
+				<div class="prose max-w-none">
+					{lists.map(async (list) => {
+						const { default: Content } = await processMdx(await list.value.description(), locale);
 
-							return (
-								<div>
-									<h2>{list.value.title}</h2>
-									<Content />
+						return (
+							<div>
+								<h2>{list.value.title}</h2>
+								<Content />
 
-									{list.discriminant === "print" && <MediaListPrint items={list.value.items} />}
+								{list.discriminant === "print" && <MediaListPrint items={list.value.items} />}
 
-									{list.discriminant === "print5" && <MediaListPrint5 items={list.value.items} />}
+								{list.discriminant === "print5" && <MediaListPrint5 items={list.value.items} />}
 
-									{list.discriminant === "web" && <MediaListWeb items={list.value.items} />}
-								</div>
-							);
-						})
-					}
+								{list.discriminant === "web" && <MediaListWeb items={list.value.items} />}
+							</div>
+						);
+					})}
 				</div>
 			</PageCard>
 		</PageSection>

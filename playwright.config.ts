@@ -1,12 +1,13 @@
+import { existsSync } from "node:fs";
 import { join } from "node:path";
+import { loadEnvFile } from "node:process";
 
 import { defineConfig, devices } from "@playwright/test";
-import { isCI } from "ci-info";
-import { config as dotenv } from "dotenv";
-import { expand } from "dotenv-expand";
+import isInCi from "is-in-ci";
 
 for (const envFilePath of [".env.test.local", ".env.local", ".env.test", ".env"]) {
-	expand(dotenv({ path: join(process.cwd(), envFilePath) }));
+	const path = join(process.cwd(), envFilePath);
+	if (existsSync(path)) loadEnvFile(path);
 }
 
 const port = 3000;
@@ -16,11 +17,11 @@ export default defineConfig({
 	testDir: "./e2e",
 	snapshotDir: "./e2e/snapshots",
 	fullyParallel: true,
-	forbidOnly: isCI,
-	retries: isCI ? 2 : 0,
+	forbidOnly: isInCi,
+	retries: isInCi ? 2 : 0,
 	maxFailures: 10,
-	workers: isCI ? 1 : undefined,
-	reporter: isCI ? "github" : "html",
+	workers: isInCi ? 1 : undefined,
+	reporter: isInCi ? "github" : "html",
 	use: {
 		baseURL: baseUrl,
 		trace: "on-first-retry",
@@ -69,8 +70,8 @@ export default defineConfig({
 		// },
 	],
 	webServer: {
-		command: "pnpm run start",
+		command: "pnpm run start --ignore-lock",
 		url: baseUrl,
-		reuseExistingServer: !isCI,
+		reuseExistingServer: !isInCi,
 	},
 });

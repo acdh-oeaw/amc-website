@@ -22,9 +22,7 @@ const home = t("WebsiteHeader.links.home");
 ---
 
 <header class="border-b-[5px] border-brand bg-white text-[#444]">
-	<div
-		class="mx-auto flex w-full max-w-screen-lg items-center justify-between px-4 py-6 text-md font-medium"
-	>
+	<div class="mx-auto flex w-full max-w-(--breakpoint-lg) items-center justify-between px-4 py-6 text-md font-medium">
 		<Nav class="flex-1" label={t("WebsiteHeader.navigation-primary")}>
 			<NavMenuLink class="-ml-4 shrink-0" href="/">
 				<Image alt="" class="block h-12 w-auto" fetchpriority="high" loading="eager" src={logo} />
@@ -32,36 +30,34 @@ const home = t("WebsiteHeader.links.home");
 			</NavMenuLink>
 
 			<ul class="hidden flex-1 flex-wrap items-center gap-x-2 lg:flex" role="list">
-				{
-					(navigation as Navigation).links.map((item) => {
-						if (item.discriminant === "menu") {
-							return (
-								<li>
-									<NavMenu>
-										<NavMenuTrigger>{item.value.label}</NavMenuTrigger>
-										<NavMenuPopover>
-											<ul role="list">
-												{item.value.links.map((link) => {
-													return (
-														<li>
-															<NavMenuItem href={link.href}>{link.label}</NavMenuItem>
-														</li>
-													);
-												})}
-											</ul>
-										</NavMenuPopover>
-									</NavMenu>
-								</li>
-							);
-						}
-
+				{(navigation as Navigation).links.map((item) => {
+					if (item.discriminant === "menu") {
 						return (
 							<li>
-								<NavMenuLink href={item.value.href}>{item.value.label}</NavMenuLink>
+								<NavMenu>
+									<NavMenuTrigger>{item.value.label}</NavMenuTrigger>
+									<NavMenuPopover>
+										<ul role="list">
+											{item.value.links.map((link) => {
+												return (
+													<li>
+														<NavMenuItem href={link.href}>{link.label}</NavMenuItem>
+													</li>
+												);
+											})}
+										</ul>
+									</NavMenuPopover>
+								</NavMenu>
 							</li>
 						);
-					})
-				}
+					}
+
+					return (
+						<li>
+							<NavMenuLink href={item.value.href}>{item.value.label}</NavMenuLink>
+						</li>
+					);
+				})}
 			</ul>
 
 			<div class="ml-auto lg:hidden">

@@ -4,29 +4,29 @@
 # @see https://sharp.pixelplumbing.com/install#linux-memory-allocator
 
 # base
-FROM node:24-alpine AS base
-
-RUN corepack enable
+FROM node:26-alpine AS base
 
 RUN mkdir /app && chown -R node:node /app
 WORKDIR /app
+
+COPY package.json ./
+RUN npm install --global "pnpm@$(node -p "require('./package.json').devEngines.packageManager.version")"
 
 USER node
 
 COPY --chown=node:node .npmrc package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 
 RUN pnpm fetch --prod
-RUN pnpm install --frozen-lockfile --ignore-scripts --offline --prod
+RUN pnpm install --frozen-lockfile --ignore-scripts --offline --prod --no-runtime
 
 # build
-FROM base as build
+FROM base AS build
 
 RUN pnpm fetch --dev
+RUN pnpm install --frozen-lockfile --offline --no-runtime
 
+# This also imports the Astro cache when it is present; a cold build needs none.
 COPY --chown=node:node ./ ./
-
-# astro assets cache
-COPY --chown=node:node ./node_modules/.astro ./node_modules/.astro
 
 ARG PUBLIC_APP_BASE_PATH
 ARG PUBLIC_APP_BASE_URL
@@ -43,20 +43,20 @@ ARG PUBLIC_REDMINE_ID
 # disable validation for runtime environment variables
 ENV ENV_VALIDATION=public
 
-RUN pnpm install --frozen-lockfile --prefer-offline
-
 ENV NODE_ENV=production
 
-RUN --mount=type=secret,id=KEYSTATIC_GITHUB_CLIENT_ID,uid=1000 \
-		--mount=type=secret,id=KEYSTATIC_GITHUB_CLIENT_SECRET,uid=1000 \
-		--mount=type=secret,id=KEYSTATIC_SECRET,uid=1000 \
-			KEYSTATIC_GITHUB_CLIENT_ID=$(cat /run/secrets/KEYSTATIC_GITHUB_CLIENT_ID) \
-			KEYSTATIC_GITHUB_CLIENT_SECRET=$(cat /run/secrets/KEYSTATIC_GITHUB_CLIENT_SECRET) \
-			KEYSTATIC_SECRET=$(cat /run/secrets/KEYSTATIC_SECRET) \
+RUN --mount=type=secret,id=KEYSTATIC_GITHUB_CLIENT_ID,env=KEYSTATIC_GITHUB_CLIENT_ID \
+		--mount=type=secret,id=KEYSTATIC_GITHUB_CLIENT_SECRET,env=KEYSTATIC_GITHUB_CLIENT_SECRET \
+		--mount=type=secret,id=KEYSTATIC_SECRET,env=KEYSTATIC_SECRET \
 		pnpm run build
 
+# Export build-generated assets separately so CI can persist the updated cache.
+FROM scratch AS astro-cache
+
+COPY --from=build /app/node_modules/.astro /
+
 # serve
-FROM node:24-alpine AS serve
+FROM node:26-alpine AS serve
 
 RUN mkdir /app && chown -R node:node /app
 WORKDIR /app

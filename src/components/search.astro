@@ -21,7 +21,7 @@ const { t } = await createI18n(Astro.currentLocale as Locale | undefined);
 
 	<dialog
 		aria-label={t("Search.search")}
-		class="fixed mx-auto min-h-full w-full max-w-screen-md border bg-[#f1f1f1] backdrop:bg-[#545864a8] backdrop:backdrop-blur-sm open:grid sm:mt-[5rem] sm:max-h-[calc(100%-10rem)] sm:min-h-[16rem] sm:rounded-lg sm:shadow-lg"
+		class="fixed mx-auto min-h-full w-full max-w-(--breakpoint-md) border bg-[#f1f1f1] backdrop:bg-[#545864a8] backdrop:backdrop-blur-xs open:grid sm:mt-[5rem] sm:max-h-[calc(100%-10rem)] sm:min-h-[16rem] sm:rounded-lg sm:shadow-lg"
 	>
 		<div class="grid size-full gap-y-4 px-8 py-6" data-dialog-content>
 			<div class="relative mt-8">
@@ -106,18 +106,20 @@ const { t } = await createI18n(Astro.currentLocale as Locale | undefined);
 </script>
 
 <style is:global>
+	@reference "../styles/index.css";
+
 	site-search {
 		display: contents;
 	}
 
 	/* stylelint-disable-next-line selector-class-pattern */
 	.pagefind-ui .pagefind-ui__search-input:focus {
-		@apply outline outline-2 outline-focus-ring;
+		@apply outline-2 outline-focus-ring;
 	}
 
 	/* stylelint-disable-next-line selector-class-pattern */
 	.pagefind-ui .pagefind-ui__result {
-		@apply !border-t-0 !py-2;
+		@apply border-t-0! py-2!;
 	}
 
 	/* stylelint-disable-next-line selector-class-pattern */

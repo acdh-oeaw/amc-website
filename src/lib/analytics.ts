@@ -34,6 +34,6 @@ export function initAnalytics() {
 		trackPageView(url);
 	}
 
-	/** Track page views with `ViewTransitions`. */
+	/** Track page views with `ClientRouter`. */
 	document.addEventListener("astro:page-load", onPageLoad);
 }

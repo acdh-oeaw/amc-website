@@ -1,14 +1,183 @@
-/* stylelint-disable comment-empty-line-before */
+@import "tailwindcss" source("../");
 
-:root {
-	--font-body: "Inter Variable";
+@plugin "@tailwindcss/typography";
 
-	/* --color-background: #f1f1f1; */
-	/* --color-border: #0000001a; */
-	/* --color-separator: #00000026; */
+@source "../../content";
+@source "../../keystatic.config.tsx";
+
+@custom-variant dark (&:where([data-ui-color-scheme="dark"], [data-ui-color-scheme="dark"] *));
+
+@theme {
+	--breakpoint-xs: 30rem;
+	--breakpoint-lg: 70rem;
+	--breakpoint-3xl: 120rem;
+	--font-body: "Inter Variable", system-ui, sans-serif;
+	--font-heading: "Inter Variable", system-ui, sans-serif;
+	--default-font-family: var(--font-body);
+	--text-2xs: 0.625rem;
+	--text-2xs--line-height: 0.75rem;
+	--text-md: 1rem;
+	--text-md--line-height: 1.5rem;
+	--radius-sm: 2px;
+	--radius-md: 4px;
+	--radius-lg: 8px;
+	--color-gray-50: rgb(249 250 251);
+	--color-gray-100: rgb(243 244 246);
+	--color-gray-200: rgb(229 231 235);
+	--color-gray-300: rgb(209 213 219);
+	--color-gray-400: rgb(156 163 175);
+	--color-gray-500: rgb(107 114 128);
+	--color-gray-600: rgb(75 85 99);
+	--color-gray-700: rgb(55 65 81);
+	--color-gray-800: rgb(31 41 55);
+	--color-gray-900: rgb(17 24 39);
+	--color-gray-950: rgb(3 7 18);
+	--color-neutral-0: hsl(0deg 0% 100%);
+	--color-neutral-50: hsl(0deg 0% 98.04%);
+	--color-neutral-100: hsl(240deg 4.76% 95.88%);
+	--color-neutral-200: hsl(240deg 5.88% 90%);
+	--color-neutral-300: hsl(240deg 4.88% 83.92%);
+	--color-neutral-400: hsl(240deg 5.03% 64.9%);
+	--color-neutral-500: hsl(240deg 3.83% 46.08%);
+	--color-neutral-600: hsl(240deg 5.2% 33.92%);
+	--color-neutral-700: hsl(240deg 5.26% 26.08%);
+	--color-neutral-800: hsl(240deg 3.7% 15.88%);
+	--color-neutral-900: hsl(240deg 5.88% 10%);
+	--color-neutral-950: hsl(240deg 10% 3.92%);
+	--color-neutral-1000: hsl(0deg 0% 0%);
 	--color-brand: hsl(182.8deg 57.6% 70.4%);
-	/* --color-foreground-body: #444; */
-	/* --color-foreground-heading: #212529; */
-	/* --color-foreground-muted: #6f757c; */
-	/* --color--hover: #212529; */
+}
+
+@theme inline {
+	--color-background: var(--color-neutral-0);
+	--color-on-background: var(--color-neutral-950);
+	--color-primary: var(--color-neutral-900);
+	--color-border: var(--color-neutral-200);
+	--color-input: var(--color-neutral-200);
+	--color-focus-ring: var(--color-neutral-950);
+}
+
+@layer base {
+	@media (prefers-reduced-motion: reduce) {
+		*,
+		::before,
+		::after {
+			scroll-behavior: auto !important;
+			transition-duration: 0.01ms !important;
+			animation-duration: 0.01ms !important;
+			animation-iteration-count: 1 !important;
+		}
+	}
+
+	*,
+	::before,
+	::after {
+		border-color: var(--color-border);
+	}
+
+	:root {
+		overflow: hidden;
+		block-size: 100%;
+		color-scheme: light;
+		background-color: var(--color-background);
+		color: var(--color-on-background);
+		font-size: 1rem;
+		font-family: var(--font-body);
+		font-synthesis: none;
+		overflow-wrap: break-word;
+		tab-size: 4;
+		text-rendering: optimizeLegibility;
+		text-size-adjust: none;
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	:root[data-ui-color-scheme="dark"] {
+		--color-background: var(--color-neutral-950);
+		--color-on-background: var(--color-neutral-50);
+		--color-primary: var(--color-neutral-50);
+		--color-border: var(--color-neutral-800);
+		--color-input: var(--color-neutral-800);
+		--color-focus-ring: var(--color-neutral-300);
+
+		color-scheme: dark;
+	}
+
+	body {
+		overflow-y: auto;
+		block-size: 100%;
+	}
+
+	:focus {
+		outline: none;
+	}
+
+	:focus-visible {
+		outline: 2px solid var(--color-focus-ring);
+		outline-offset: 0;
+	}
+
+	a {
+		text-underline-offset: 0.15em;
+	}
+
+	blockquote,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		text-wrap: balance;
+	}
+
+	dialog {
+		margin: auto;
+		background-color: var(--color-background);
+		color: var(--color-on-background);
+	}
+
+	iframe {
+		border: 0;
+	}
+
+	input::placeholder,
+	textarea::placeholder {
+		color: rgb(156 163 175);
+	}
+
+	p {
+		text-wrap: pretty;
+	}
+
+	table {
+		font-variant-numeric: tabular-nums;
+	}
+
+	textarea {
+		min-block-size: 3lh;
+		field-sizing: content;
+	}
+
+	[id] {
+		scroll-margin-block-start: 2ex;
+	}
+}
+
+@utility grid-fluid-cols-* {
+	grid-template-columns: repeat(auto-fill, minmax(calc(var(--spacing) * --value(integer)), 1fr));
+}
+
+.prose :where(blockquote p:first-of-type)::before,
+.prose :where(blockquote p:last-of-type)::after,
+.prose :where(code)::before,
+.prose :where(code)::after {
+	content: none;
+}
+
+@layer base {
+	@media (resolution >= 200dpi) {
+		:root {
+			font-size: 18px;
+		}
+	}
 }

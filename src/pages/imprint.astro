@@ -25,7 +25,7 @@ const imprintHtml = await request(imprintUrl, { responseType: "text" });
 		<PageSection>
 			<PageCard>
 				<PageTitle>{title}</PageTitle>
-				<div class="prose" set:html={imprintHtml} />
+				<div class="prose max-w-none" set:html={imprintHtml} />
 			</PageCard>
 		</PageSection>
 	</MainContent>

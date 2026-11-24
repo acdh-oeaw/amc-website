@@ -3,6 +3,7 @@ import node from "@astrojs/node";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import keystatic from "@keystatic/astro";
+import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 import icon from "astro-icon";
 import { loadEnv } from "vite";
@@ -11,6 +12,10 @@ import { loadEnv } from "vite";
 // import { createConfig as createMdxConfig } from "./src/config/mdx.config";
 
 const env = loadEnv(import.meta.env.MODE, process.cwd(), "");
+if (!env.PUBLIC_APP_BASE_URL) {
+	throw new Error("PUBLIC_APP_BASE_URL is required");
+}
+const appBaseUrl = new URL(env.PUBLIC_APP_BASE_URL);
 
 export default defineConfig({
 	/**
@@ -22,9 +27,7 @@ export default defineConfig({
 		mode: "standalone",
 	}),
 	base: env.PUBLIC_APP_BASE_PATH,
-	experimental: {
-		contentCollectionCache: true,
-	},
+	compressHTML: "jsx",
 	integrations: [
 		icon({
 			/** @see https://www.astroicon.dev/reference/configuration/#include */
@@ -57,7 +60,7 @@ export default defineConfig({
 	// 	smartypants: false,
 	// 	syntaxHighlight: false,
 	// },
-	output: "hybrid",
+	output: "static",
 	prefetch: {
 		defaultStrategy: "hover",
 		prefetchAll: true,
@@ -70,10 +73,20 @@ export default defineConfig({
 	},
 	scopedStyleStrategy: "where",
 	security: {
+		allowedDomains: [
+			{
+				protocol: appBaseUrl.protocol.slice(0, -1),
+				hostname: appBaseUrl.hostname,
+				port: appBaseUrl.port,
+			},
+		],
 		checkOrigin: true,
 	},
 	server: {
 		port: 3000,
 	},
 	site: env.PUBLIC_APP_BASE_URL,
+	vite: {
+		plugins: [tailwindcss()],
+	},
 });

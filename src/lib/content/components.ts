@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-
 import type { MDXComponents } from "mdx/types";
 
 import Download from "@/components/content/download.astro";
@@ -12,7 +10,6 @@ export function useMDXComponents(): MDXComponents {
 	return {
 		Download,
 		Figure,
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		img: Img as any,
 		LinkButton,
 		TableOfContents,

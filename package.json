@@ -4,25 +4,37 @@
 	"license": "MIT",
 	"type": "module",
 	"engines": {
-		"node": "^24"
+		"node": "^26"
 	},
-	"packageManager": "pnpm@10.24.0",
+	"packageManager": "pnpm@12.23.0",
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "12.23.0",
+			"onFail": "download"
+		},
+		"runtime": {
+			"name": "node",
+			"version": "^26.0.0",
+			"onFail": "download"
+		}
+	},
 	"scripts": {
 		"build": "run-s build:site generate:search-index",
 		"build:site": "astro build",
 		"dev": "astro dev",
-		"format:check": "prettier . \"!./content/**\" --cache --check --ignore-path ./.gitignore",
-		"format:fix": "pnpm run format:check --write",
+		"format:check": "oxfmt --check .",
+		"format:fix": "oxfmt --write .",
 		"generate:search-index": "pagefind --site ./dist/client/",
 		"lint:check": "run-p --continue-on-error \"lint:*:check\"",
 		"lint:fix": "run-p --continue-on-error \"lint:*:fix\"",
-		"lint:code:check": "eslint . --cache --ext .astro,.js,.ts,.tsx --ignore-path ./.gitignore",
+		"lint:code:check": "oxlint --deny-warnings .",
 		"lint:code:fix": "pnpm run lint:code:check --fix",
 		"lint:styles:check": "stylelint \"./**/*.@(astro|css)\" --cache --ignore-path ./.gitignore",
 		"lint:styles:fix": "pnpm run lint:styles:check --fix",
 		"preinstall": "npx only-allow pnpm",
 		"prepare": "run-s setup",
-		"setup": "is-ci || simple-git-hooks",
+		"setup": "is-in-ci || test ! -e .git || lefthook install",
 		"start": "astro preview",
 		"sync": "astro sync",
 		"test": "exit 0",
@@ -35,90 +47,75 @@
 		"validate": "run-s format:check lint:check types:check test test:e2e"
 	},
 	"dependencies": {
-		"@acdh-oeaw/lib": "^0.1.12",
-		"@acdh-oeaw/validate-env": "^0.0.3",
-		"@astrojs/mdx": "^3.1.1",
-		"@astrojs/node": "^8.3.1",
-		"@astrojs/react": "^3.6.0",
-		"@astrojs/rss": "^4.0.6",
-		"@astrojs/sitemap": "^3.1.6",
-		"@floating-ui/dom": "^1.6.5",
-		"@fontsource-variable/inter": "^5.0.18",
-		"@iconify-json/lucide": "^1.1.194",
-		"@keystatic/astro": "^5.0.0",
-		"@keystatic/core": "^0.5.22",
-		"@mdx-js/mdx": "^3.0.1",
-		"@pagefind/default-ui": "^1.1.0",
-		"@shikijs/rehype": "^1.7.0",
-		"astro": "^4.11.0",
-		"astro-icon": "^1.1.0",
-		"cva": "1.0.0-beta.1",
-		"date-fns": "^3.6.0",
-		"estree-util-value-to-estree": "^3.1.1",
+		"@acdh-oeaw/lib": "^0.3.7",
+		"@acdh-oeaw/validate-env": "^0.4.0",
+		"@astrojs/mdx": "^8.1.6",
+		"@astrojs/node": "^11.1.14",
+		"@astrojs/react": "^7.1.9",
+		"@astrojs/rss": "^4.0.19",
+		"@astrojs/sitemap": "^3.7.6",
+		"@floating-ui/dom": "^1.8.0",
+		"@fontsource-variable/inter": "^5.3.0",
+		"@iconify-json/lucide": "^1.2.158",
+		"@keystatic/astro": "^6.0.0",
+		"@keystatic/core": "^0.6.10",
+		"@mdx-js/mdx": "^3.1.1",
+		"@pagefind/default-ui": "^1.6.0",
+		"astro": "^7.4.13",
+		"astro-icon": "^1.2.0",
+		"date-fns": "^4.4.0",
+		"estree-util-value-to-estree": "^3.5.0",
 		"hast-util-heading-rank": "^3.0.0",
-		"hast-util-to-string": "^3.0.0",
-		"lucide-react": "^0.395.0",
-		"nodemailer": "^6.9.14",
-		"pagefind": "^1.1.0",
-		"pdfkit": "^0.15.0",
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1",
-		"rehype-mdx-import-media": "^1.2.0",
+		"hast-util-to-string": "^3.0.1",
+		"lucide-react": "^1.78.0",
+		"nodemailer": "^10.6.1",
+		"pagefind": "^1.6.0",
+		"pdfkit": "^0.21.0",
+		"react": "^19.3.1",
+		"react-dom": "^19.3.1",
+		"rehype-mdx-import-media": "^1.4.0",
 		"rehype-slug": "^6.0.0",
 		"remark-frontmatter": "^5.0.0",
-		"remark-gfm": "^4.0.0",
-		"remark-mdx-frontmatter": "^4.0.0",
-		"remark-smartypants": "^3.0.1",
-		"retext-smartypants": "^6.1.0",
-		"satori": "^0.10.13",
-		"sharp": "^0.33.4",
-		"shiki": "^1.7.0",
+		"remark-gfm": "^4.0.1",
+		"remark-mdx-frontmatter": "^6.0.0",
+		"remark-smartypants": "^3.0.3",
+		"retext-smartypants": "^6.2.0",
+		"satori": "^0.63.2",
+		"sharp": "^0.35.5",
 		"unified": "^11.0.5",
-		"unist-util-visit": "^5.0.0",
-		"valibot": "^0.33.3",
-		"vfile": "^6.0.1",
-		"vite": "^5.3.1"
+		"unist-util-visit": "^5.2.0",
+		"valibot": "^1.5.0",
+		"vfile": "^6.0.3",
+		"vite": "^8.3.8"
 	},
 	"devDependencies": {
-		"@acdh-oeaw/eslint-config": "^1.0.7",
-		"@acdh-oeaw/eslint-config-astro": "^1.0.10",
-		"@acdh-oeaw/eslint-config-playwright": "^1.0.10",
-		"@acdh-oeaw/eslint-config-react": "^1.0.8",
-		"@acdh-oeaw/prettier-config": "^2.0.0",
-		"@acdh-oeaw/stylelint-config": "^2.0.1",
-		"@acdh-oeaw/tailwindcss-preset": "^0.0.22",
-		"@acdh-oeaw/tsconfig": "^1.0.2",
-		"@astrojs/check": "^0.7.0",
-		"@astrojs/ts-plugin": "^1.8.0",
-		"@playwright/test": "^1.53.2",
-		"@types/hast": "^3.0.4",
-		"@types/mdx": "^2.0.13",
-		"@types/node": "^24.10.1",
-		"@types/nodemailer": "^6.4.15",
-		"@types/pdfkit": "^0.13.4",
-		"@types/react": "^18.3.3",
-		"@types/react-dom": "^18.3.0",
-		"autoprefixer": "^10.4.19",
-		"axe-core": "^4.9.1",
-		"axe-playwright": "^2.1.0",
-		"ci-info": "^4.0.0",
-		"dotenv": "^16.4.5",
-		"dotenv-expand": "^11.0.6",
-		"eslint": "^8.57.0",
-		"eslint-plugin-tailwindcss": "^3.17.3",
-		"is-ci": "^3.0.1",
-		"lint-staged": "^15.2.7",
-		"mdast-util-mdx-jsx": "^3.1.2",
-		"npm-run-all2": "^6.2.0",
-		"postcss": "^8.4.38",
-		"prettier": "^3.3.2",
-		"prettier-plugin-astro": "^0.14.0",
-		"schema-dts": "^1.1.2",
-		"simple-git-hooks": "^2.11.1",
-		"stylelint": "^16.6.1",
-		"tailwindcss": "^3.4.4",
-		"type-fest": "^4.20.1",
-		"typescript": "^5.4.5"
+		"@acdh-oeaw/stylelint-config": "^4.0.0",
+		"@acdh-oeaw/tsconfig": "^1.5.1",
+		"@astrojs/check": "^0.9.12",
+		"@astrojs/compiler-rs": "^0.5.3",
+		"@astrojs/ts-plugin": "^1.11.0",
+		"@playwright/test": "^1.65.1",
+		"@tailwindcss/typography": "^0.5.20",
+		"@tailwindcss/vite": "^4.3.5",
+		"@types/hast": "^3.0.5",
+		"@types/mdx": "^2.0.14",
+		"@types/node": "^26.6.6",
+		"@types/nodemailer": "^8.0.2",
+		"@types/pdfkit": "^0.17.7",
+		"@types/react": "^19.3.0",
+		"@types/react-dom": "^19.3.0",
+		"axe-core": "^4.14.1",
+		"axe-playwright": "^2.2.2",
+		"is-in-ci": "^2.0.0",
+		"lefthook": "^2.2.2",
+		"npm-run-all2": "^9.1.0",
+		"oxfmt": "^0.80.0",
+		"oxlint": "^1.95.0",
+		"schema-dts": "^2.1.0",
+		"stylelint": "^18.1.0",
+		"tailwindcss": "^4.3.5",
+		"type-fest": "^6.0.3",
+		"typescript": "^6.0.3"
 	},
 	"browserslist": {
 		"development": [
@@ -132,54 +129,20 @@
 			"not op_mini all"
 		]
 	},
-	"eslintConfig": {
-		"extends": [
-			"@acdh-oeaw/eslint-config",
-			"@acdh-oeaw/eslint-config/strict",
-			"@acdh-oeaw/eslint-config-astro",
-			"@acdh-oeaw/eslint-config-react",
-			"@acdh-oeaw/eslint-config-playwright",
-			"plugin:eslint-plugin-tailwindcss/recommended"
-		],
-		"settings": {
-			"tailwindcss": {
-				"callees": [
-					"cn",
-					"variants"
-				],
-				"classRegex": "^class(:list)?$"
-			}
-		}
-	},
-	"lint-staged": {
-		"*.astro": [
-			"eslint --cache --fix",
-			"stylelint --cache --fix",
-			"prettier --cache --write"
-		],
-		"*.css": [
-			"stylelint --cache --fix",
-			"prettier --cache --write"
-		],
-		"*.@(js|ts|tsx)": [
-			"eslint --cache --fix",
-			"prettier --cache --write"
-		],
-		"*.!(astro|css|js|ts|tsx),!./content/**": "prettier --cache --ignore-unknown --write"
-	},
-	"postcss": {
-		"plugins": {
-			"tailwindcss": {},
-			"autoprefixer": {}
-		}
-	},
-	"simple-git-hooks": {
-		"pre-commit": "pnpm exec lint-staged"
-	},
 	"stylelint": {
-		"extends": "@acdh-oeaw/stylelint-config"
+		"extends": "@acdh-oeaw/stylelint-config",
+		"rules": {
+			"at-rule-prelude-no-invalid": [
+				true,
+				{
+					"ignoreAtRules": [
+						"apply"
+					]
+				}
+			]
+		}
 	},
 	"volta": {
-		"node": "24.20.0"
+		"node": "26.13.1"
 	}
 }
