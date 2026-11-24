@@ -79,6 +79,14 @@ github repository).
 
 ## how to deploy
 
+the Docker build installs dependencies before copying source files and accepts an empty Astro cache.
+the deployment workflow exports the updated cache from the `astro-cache` target for the next build.
+private environment variables are read when the container starts; `ENV_VALIDATION=public` is used
+only while building, and runtime validation defaults to `enabled`.
+
+to smoke-test a locally built image, run `node scripts/smoke-image.mjs amc-website:smoke`. the test
+starts disposable containers, checks HTTP and runtime configuration, and sends no email.
+
 - ask a sysadmin to create a new acdh-ch kubernetes project.
 - create a new namespace in that project via [rancher](https://rancher.acdh-dev.oeaw.ac.at), and set
   the `KUBE_NAMESPACE` github variable to that namespace.

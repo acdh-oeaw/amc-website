@@ -17,6 +17,9 @@ jobs:
     name: Validate
     runs-on: ${{ matrix.os }}
     timeout-minutes: 60
+    env:
+      PUBLIC_APP_BASE_URL: "http://localhost:3000"
+      PUBLIC_REDMINE_ID: ${{ vars.SERVICE_ID || '11419' }}
 
     strategy:
       fail-fast: true
@@ -78,14 +81,9 @@ jobs:
 
       - name: Build app
         run: pnpm run build
-        env:
-          PUBLIC_APP_BASE_URL: "http://localhost:3000"
-          PUBLIC_REDMINE_ID: "${{ vars.SERVICE_ID }}"
 
       - name: Run e2e tests
         run: pnpm run test:e2e
-        env:
-          PUBLIC_APP_BASE_URL: "http://localhost:3000"
 
       - uses: actions/upload-artifact@v7
         if: always()
@@ -94,9 +92,37 @@ jobs:
           path: playwright-report/
           retention-days: 30
 
+  docker-smoke:
+    name: Test Docker image
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
+
+      - name: Build image without a host Astro cache
+        uses: docker/build-push-action@v7
+        with:
+          context: .
+          load: true
+          tags: amc-website:smoke
+          build-args: |
+            PUBLIC_APP_BASE_URL=http://localhost:3000
+            PUBLIC_REDMINE_ID=11419
+          secrets: |
+            KEYSTATIC_SECRET=amc-build-secret-sentinel
+          cache-from: type=gha,scope=amc-smoke
+          cache-to: type=gha,scope=amc-smoke,mode=max
+
+      - name: Smoke-test running container
+        run: node scripts/smoke-image.mjs amc-website:smoke
+
   build-deploy:
     if: ${{ github.event_name == 'push' }}
-    needs: [validate]
+    needs: [validate, docker-smoke]
     uses: ./.github/workflows/build-deploy.yaml
     secrets: inherit
     # https://docs.github.com/en/actions/using-workflows/reusing-workflows#access-and-permissions

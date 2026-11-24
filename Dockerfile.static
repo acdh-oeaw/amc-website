@@ -6,16 +6,18 @@
 # build
 FROM node:26-alpine AS build
 
-RUN npm install --global pnpm@12.23.0
-
 RUN mkdir /app && chown -R node:node /app
 WORKDIR /app
+
+COPY package.json ./
+RUN npm install --global "pnpm@$(node -p "require('./package.json').devEngines.packageManager.version")"
 
 USER node
 
 COPY --chown=node:node .npmrc package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 
 RUN pnpm fetch
+RUN pnpm install --frozen-lockfile --offline --no-runtime
 
 COPY --chown=node:node ./ ./
 
@@ -31,8 +33,6 @@ ARG PUBLIC_REDMINE_ID
 ENV ENV_VALIDATION=public
 
 ENV NODE_ENV=production
-
-RUN pnpm install --frozen-lockfile --offline
 
 RUN pnpm run build
 

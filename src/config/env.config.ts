@@ -2,9 +2,22 @@ import { log } from "@acdh-oeaw/lib";
 import { createEnv, ValidationError } from "@acdh-oeaw/validate-env/astro";
 import * as v from "valibot";
 
-const environment = import.meta.env.SSR
-	? Object.assign({}, process.env, import.meta.env)
-	: import.meta.env;
+// Only public values are compiled into the bundle. Private values and validation
+// settings must come from the environment of the running server.
+const environment: Record<string, unknown> = {
+	...(import.meta.env.SSR ? process.env : {}),
+	PUBLIC_APP_BASE_PATH: import.meta.env.PUBLIC_APP_BASE_PATH,
+	PUBLIC_APP_BASE_URL: import.meta.env.PUBLIC_APP_BASE_URL,
+	PUBLIC_BOTS: import.meta.env.PUBLIC_BOTS,
+	PUBLIC_GOOGLE_SITE_VERIFICATION: import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION,
+	PUBLIC_KEYSTATIC_GITHUB_APP_SLUG: import.meta.env.PUBLIC_KEYSTATIC_GITHUB_APP_SLUG,
+	PUBLIC_KEYSTATIC_GITHUB_REPO_NAME: import.meta.env.PUBLIC_KEYSTATIC_GITHUB_REPO_NAME,
+	PUBLIC_KEYSTATIC_GITHUB_REPO_OWNER: import.meta.env.PUBLIC_KEYSTATIC_GITHUB_REPO_OWNER,
+	PUBLIC_KEYSTATIC_MODE: import.meta.env.PUBLIC_KEYSTATIC_MODE,
+	PUBLIC_MATOMO_BASE_URL: import.meta.env.PUBLIC_MATOMO_BASE_URL,
+	PUBLIC_MATOMO_ID: import.meta.env.PUBLIC_MATOMO_ID,
+	PUBLIC_REDMINE_ID: import.meta.env.PUBLIC_REDMINE_ID,
+};
 
 export const env = createEnv({
 	environment,

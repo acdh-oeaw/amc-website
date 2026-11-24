@@ -71,11 +71,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
+      - name: Ensure astro cache directory exists
+        run: mkdir -p node_modules/.astro
+
       - name: Cache astro build artefacts
         uses: actions/cache@v6
         with:
           path: node_modules/.astro/
-          key: ${{ runner.os }}-astro-26.x-${{ github.run_id }}
+          key: ${{ runner.os }}-astro-26.x-docker-${{ github.run_id }}
           restore-keys: ${{ runner.os }}-astro-26.x
 
       - name: Set up Docker Buildx
@@ -104,7 +107,7 @@ jobs:
           push: true
           tags: "${{ steps.meta.outputs.tags }}"
           labels: "${{ steps.meta.outputs.labels }}"
-          build-args: |
+          build-args: &build-args |
             "PUBLIC_APP_BASE_PATH=${{ vars.PUBLIC_APP_BASE_PATH }}"
             "PUBLIC_APP_BASE_URL=${{ needs.vars.outputs.public_url }}"
             "PUBLIC_BOTS=${{ vars.PUBLIC_BOTS }}"
@@ -116,12 +119,28 @@ jobs:
             "PUBLIC_MATOMO_BASE_URL=${{ vars.PUBLIC_MATOMO_BASE_URL }}"
             "PUBLIC_MATOMO_ID=${{ vars.PUBLIC_MATOMO_ID }}"
             "PUBLIC_REDMINE_ID=${{ vars.SERVICE_ID }}"
-          secrets: |
+          secrets: &build-secrets |
             "KEYSTATIC_GITHUB_CLIENT_ID=${{ secrets.K8S_SECRET_KEYSTATIC_GITHUB_CLIENT_ID }}"
             "KEYSTATIC_GITHUB_CLIENT_SECRET=${{ secrets.K8S_SECRET_KEYSTATIC_GITHUB_CLIENT_SECRET }}"
             "KEYSTATIC_SECRET=${{ secrets.K8S_SECRET_KEYSTATIC_SECRET }}"
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+      - name: Export updated astro cache
+        uses: docker/build-push-action@v7
+        with:
+          context: .
+          target: astro-cache
+          outputs: type=local,dest=${{ runner.temp }}/astro-cache
+          build-args: *build-args
+          secrets: *build-secrets
+
+      - name: Restore exported cache for saving
+        env:
+          ASTRO_CACHE: ${{ runner.temp }}/astro-cache
+        run: |
+          rm -rf node_modules/.astro
+          mv "$ASTRO_CACHE" node_modules/.astro
 
   deploy:
     name: Deploy docker image
